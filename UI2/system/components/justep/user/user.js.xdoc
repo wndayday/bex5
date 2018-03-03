@@ -1,0 +1,53 @@
+/**
+	@name $UI/system/components/justep/user/user
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：如用户注册、登录、修改密码、修改基本信息等 ;
+		<b>使用方法</b>：拖入设计器中，系统会自动生成用户注册页、用户登录页、修改密码页及修改基本信息页，您可以根据自己的需求调整界面布局;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+/**
+	@name $UI/system/components/justep/user/user#login
+	@operation
+	@see $UI/system/components/justep/user/user#login
+	@description 用户登录
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/user/user#logout
+	@operation
+	@see $UI/system/components/justep/user/user#logout
+	@description 用户注销登录
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/user/user#register
+	@operation
+	@see $UI/system/components/justep/user/user#register
+	@description 用户注册
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/user/user#showUser
+	@operation
+	@see $UI/system/components/justep/user/user#showUser
+	@description 显示用户信息
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/user/user#changePassword
+	@operation
+	@see $UI/system/components/justep/user/user#changePassword
+	@description 修改登录密码
+	@returns {void}
+*/

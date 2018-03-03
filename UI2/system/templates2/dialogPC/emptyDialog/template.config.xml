@@ -1,0 +1,12 @@
+<template text="空白对话框" desc="空白对话框" custom="false">
+	<images>
+	<image src="empty.png"/>
+	</images>
+
+	<items>
+		<item file="template/empty.w"></item>
+		<item file="template/empty.js" />
+		<item file="template/empty.css" />
+	</items>
+
+</template>

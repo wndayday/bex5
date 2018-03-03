@@ -1,0 +1,14 @@
+/**
+	@name $UI/system/components/justep/labelEdit/labelOutput
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：带标签的显示框，用来显示动态文本;
+		<b>使用方法</b>：拖入设计器中，可配置文本、也可绑定文本；可设置输出框组件的样式风格;
+	</xmp>
+	
+*/
+
+

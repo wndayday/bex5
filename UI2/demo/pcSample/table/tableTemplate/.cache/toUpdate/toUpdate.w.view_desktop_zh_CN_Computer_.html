@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyayEfi" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyayEfi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.o-marginLeft.cyayEfi{margin-left: 15px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyayEfi" class="cyayEfi"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcqmMjaa-iosstatusbar cyayEfi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyayEfi"> 
+    <div class="x-panel-content cyayEfi" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyayEfi"> 
+      <div style="width:85%;" __cid="cyayEfi" class="cyayEfi"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyayEfi" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyayEfi"> 
+          <label class="x-label cyayEfi" xid="label6" style="text-align:right;" __cid="cyayEfi">姓名：</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyayEfi" xid="nameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cyayEfi"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyayEfi" xid="labelPassword1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyayEfi"> 
+          <label class="x-label cyayEfi" xid="label2" style="text-align:right;" __cid="cyayEfi">密码：</label>  
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cyayEfi" xid="password" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="cyayEfi"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyayEfi" xid="labelSelect1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyayEfi"> 
+          <label class="x-label cyayEfi" xid="label3" style="text-align:right;" __cid="cyayEfi">学历：</label>  
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cyayEfi" xid="educationSelect" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:educationData.datas,optionsValue:'type',optionsText:'type',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cyayEfi"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyayEfi" xid="labelRadioGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyayEfi"> 
+          <label class="x-label cyayEfi" xid="label4" style="text-align:right;" __cid="cyayEfi">性别：</label>  
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radios x-edit cyayEfi" xid="radioGroup" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:sexData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cyayEfi"> 
+            <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cyayEfi" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('type'),value:ref('type')}" __cid="cyayEfi">  
+              <input type="radio" __cid="cyayEfi" class="cyayEfi"/>  
+              <label __cid="cyayEfi" class="cyayEfi"/> 
+            </span> 
+          </span> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyayEfi" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyayEfi"> 
+          <label class="x-label cyayEfi" xid="label5" style="text-align:right;" __cid="cyayEfi">入职日期：</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyayEfi" xid="dateInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;,&quot;max&quot;:&quot;js:new Date()&quot;}" __cid="cyayEfi"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cyayEfi" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyayEfi"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray pull-right o-marginLeft cyayEfi" xid="clearButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clearButtonClick" data-config="{&quot;label&quot;:&quot;清空&quot;}" __cid="cyayEfi"> 
+        <i xid="i2" __cid="cyayEfi" class="cyayEfi"/>  
+        <span xid="span2" class="text-muted cyayEfi" __cid="cyayEfi">清空</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-info pull-right cyayEfi" xid="OKButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:OKButtonClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cyayEfi"> 
+        <i xid="i1" __cid="cyayEfi" class="cyayEfi"/>  
+        <span xid="span1" __cid="cyayEfi" class="cyayEfi">确定</span> 
+      </a> 
+    </div>  
+    <style __cid="cyayEfi" class="cyayEfi">.x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqmMjaa-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cyayEfi" class="cyayEfi"/> 
+</div>

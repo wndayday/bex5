@@ -1,0 +1,34 @@
+window.__justep.__ResourceEngine.loadCss([{url: '/v_7541fc352bbb4e3bad0a9e46441f9e40l_zh_CNs_desktopd_pc/system/components/pc.addon.min.css', include: '$model/system/components/justep/pagerBar/css/pagerBar,$model/system/components/justep/widgets/css/widgets,$model/system/components/justep/absoluteLayout/css/absoluteLayout,$model/system/components/justep/pagerLimitSelect/css/pagerLimitSelect,$model/system/components/justep/cellLayout/css/cellLayout,$model/system/components/justep/smartContainer/css/smartContainer'},{url: '/v_b9e116319ded4ce4b3368b63f793c196l_zh_CNs_desktopd_pc/system/components/bootstrap.min.css', include: '$model/system/components/bootstrap/lib/css/bootstrap,$model/system/components/bootstrap/lib/css/bootstrap-theme'},{url: '/v_18b1e8c4a9e146c89735a88d7d662818l_zh_CNs_desktopd_pc/system/components/comp.min.css', include: '$model/system/components/justep/lib/css2/dataControl,$model/system/components/justep/input/css/datePickerPC,$model/system/components/justep/messageDialog/css/messageDialog,$model/system/components/justep/lib/css3/round,$model/system/components/justep/input/css/datePicker,$model/system/components/justep/row/css/row,$model/system/components/justep/attachment/css/attachment,$model/system/components/justep/barcode/css/barcodeImage,$model/system/components/bootstrap/dropdown/css/dropdown,$model/system/components/justep/dataTables/css/dataTables,$model/system/components/justep/contents/css/contents,$model/system/components/justep/common/css/forms,$model/system/components/justep/locker/css/locker,$model/system/components/justep/menu/css/menu,$model/system/components/justep/scrollView/css/scrollView,$model/system/components/justep/loadingBar/loadingBar,$model/system/components/justep/dialog/css/dialog,$model/system/components/justep/bar/css/bar,$model/system/components/justep/popMenu/css/popMenu,$model/system/components/justep/lib/css/icons,$model/system/components/justep/lib/css4/e-commerce,$model/system/components/justep/toolBar/css/toolBar,$model/system/components/justep/popOver/css/popOver,$model/system/components/justep/panel/css/panel,$model/system/components/bootstrap/carousel/css/carousel,$model/system/components/justep/wing/css/wing,$model/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/system/components/justep/titleBar/css/titleBar,$model/system/components/justep/lib/css1/linear,$model/system/components/justep/numberSelect/css/numberList,$model/system/components/justep/list/css/list,$model/system/components/justep/dataTables/css/dataTables'}]);window.__justep.__ResourceEngine.loadJs(['/v_14d69f7be576472185eec7dc9d64d59fl_zh_CNs_desktopd_pc/system/components/comp2.min.js','/v_6327e8cc147044c5965c999dc5f6eaa4l_zh_CNs_desktopd_pc/system/core.min.js','/v_5fa3809050584bba93bc534ad91a1adcl_zh_CNs_desktopd_pc/system/common.min.js','/v_65785d0c7f944fe18c184e1f1e6b1a68l_zh_CNs_desktopd_pc/system/components/comp.min.js','/v_1299d76f8ef44a94b6aebf12e23431ccl_zh_CNs_desktopd_pc/system/components/pc.addon.min.js']);define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/pagerBar/pagerBar');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/controlGroup/controlGroup');
+require('$model/UI2/system/components/justep/input/input');
+require('$model/UI2/system/components/bootstrap/pagination/pagination');
+require('$model/UI2/system/components/justep/attachment/attachmentSimple');
+require('$model/UI2/system/components/justep/windowDialog/windowDialog');
+require('$model/UI2/system/components/justep/labelEdit/labelEdit');
+require('$model/UI2/system/components/justep/dataTables/dataTables');
+require('$model/UI2/system/components/justep/popOver/popOver');
+require('$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect');
+require('$model/UI2/system/components/justep/select/select');
+require('$model/UI2/system/components/justep/bar/bar');
+require('$model/UI2/system/components/justep/output/output');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/demo/pcSample/table/tableTemplate/tableTemplate'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cRfAf2y';
+	this._flag_='d3f53e66c832c31f1cce77db8545d3c9';
+	this.callParent(contextUrl);
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"uAge":{"define":"uAge","label":"年龄","name":"uAge","relation":"uAge","rules":{"number":true},"type":"Float"},"uEducation":{"define":"uEducation","label":"学历","name":"uEducation","relation":"uEducation","type":"String"},"uHiredate":{"define":"uHiredate","label":"入职日期","name":"uHiredate","relation":"uHiredate","rules":{"date":true},"type":"Date"},"uName":{"define":"uName","label":"姓名","name":"uName","relation":"uName","type":"String"},"uRemark":{"define":"uRemark","label":"备注","name":"uRemark","relation":"uRemark","type":"String"},"uSex":{"define":"uSex","label":"性别","name":"uSex","relation":"uSex","type":"String"}},"directDelete":false,"events":{},"idColumn":"uName","limit":20,"xid":"popOverdata"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":false,"confirmRefresh":false,"defCols":{"uAge":{"define":"uAge","label":"年龄","name":"uAge","relation":"uAge","type":"String"},"uEducation":{"define":"uEducation","label":"学历","name":"uEducation","relation":"uEducation","type":"String"},"uHiredate":{"define":"uHiredate","label":"入职日期","name":"uHiredate","relation":"uHiredate","type":"String"},"uId":{"define":"uId","label":"ID","name":"uId","relation":"uId","type":"String"},"uName":{"define":"uName","label":"姓名","name":"uName","relation":"uName","type":"String"},"uPassword":{"define":"uPassword","label":"密码","name":"uPassword","relation":"uPassword","type":"String"},"uRemark":{"define":"uRemark","label":"备注","name":"uRemark","relation":"uRemark","type":"String"},"uSex":{"define":"uSex","label":"性别","name":"uSex","relation":"uSex","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"userDataCustomRefresh"},"idColumn":"uId","initData":"[]","limit":20,"xid":"userData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fFile":{"define":"fFile","label":"文件","name":"fFile","relation":"fFile","type":"String"},"fID":{"define":"fID","label":"ID","name":"fID","relation":"fID","type":"String"}},"directDelete":false,"events":{},"idColumn":"fID","initData":"[{\"fID\":\"1\",\"fFile\":\"\"}]","limit":20,"xid":"fileData"});
+}}); 
+return __result;});

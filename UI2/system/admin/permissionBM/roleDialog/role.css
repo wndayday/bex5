@@ -1,0 +1,18 @@
+.permission-thead{
+	text-align:center;
+}
+
+.popOver-role{
+	width:40%;
+	height:40%;
+	border-radius:7px;
+	background-color:#ffffff;
+}
+
+.role-btn{
+	/* position:absolute;
+	right:0;
+	bottom:10px; */
+	display:flex;
+	justify-content:flex-end;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crUf2y2" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crUf2y2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="crUf2y2" class="crUf2y2"/>  
+  <h4 xid="h44" __cid="crUf2y2" class="crUf2y2">弹窗中的表格
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crUf2y2" xid="showJSButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJSButtonClick" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="crUf2y2"> 
+      <i xid="i4" __cid="crUf2y2" class="crUf2y2"/>  
+      <span xid="span4" __cid="crUf2y2" class="crUf2y2">JS</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crUf2y2" xid="source" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showSourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="crUf2y2"> 
+      <i xid="i5" __cid="crUf2y2" class="crUf2y2"/>  
+      <span xid="span5" __cid="crUf2y2" class="crUf2y2">源码</span> 
+    </a> 
+  </h4>  
+  <h4 xid="h41" __cid="crUf2y2" class="crUf2y2">1、空白弹窗</h4>  
+  <div xid="div1" class="panel-body crUf2y2" __cid="crUf2y2"> 
+    <h5 xid="h51" __cid="crUf2y2" class="crUf2y2">弹出一个空白弹窗</h5>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crUf2y2" xid="dialogButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:dialogButtonClick" data-config="{&quot;label&quot;:&quot;查看效果&quot;}" __cid="crUf2y2"> 
+      <i xid="i1" __cid="crUf2y2" class="crUf2y2"/>  
+      <span xid="span1" __cid="crUf2y2" class="crUf2y2">查看效果</span> 
+    </a> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="wdEmpty" style="left:152px;top:11px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/demo/pcSample/table/widowsDialog/empty.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;空白&quot;}" __cid="crUf2y2" class="crUf2y2">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay crUf2y2" __cid="crUf2y2"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog crUf2y2" style="display:none;" showTitle="true" __cid="crUf2y2">
+      <xhtml:div class="x-dialog-title crUf2y2" __cid="crUf2y2">
+        <xhtml:button class="close crUf2y2" __cid="crUf2y2">
+          <xhtml:span __cid="crUf2y2" class="crUf2y2">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text crUf2y2" __cid="crUf2y2">空白</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body crUf2y2" __cid="crUf2y2"/>
+    </xhtml:div>
+  </span>  
+  <h4 xid="h42" __cid="crUf2y2" class="crUf2y2">2、普通表格弹窗</h4>  
+  <div xid="div2" class="panel-body crUf2y2" __cid="crUf2y2"> 
+    <h5 xid="h52" __cid="crUf2y2" class="crUf2y2">就是把内容放在body中，整体内容随滚动条滚动，没什么特别的地方。</h5>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crUf2y2" xid="wdTableButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:wdTableButtonClick" data-config="{&quot;label&quot;:&quot;查看效果&quot;}" __cid="crUf2y2"> 
+      <i xid="i2" __cid="crUf2y2" class="crUf2y2"/>  
+      <span xid="span2" __cid="crUf2y2" class="crUf2y2">查看效果</span> 
+    </a> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="wdTable" style="left:151px;top:231px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;resizable&quot;:false,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/demo/pcSample/table/widowsDialog/widowsDialog/windowDialogTable.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;普通弹窗表格&quot;}" __cid="crUf2y2" class="crUf2y2">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay crUf2y2" __cid="crUf2y2"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog crUf2y2" style="display:none;" showTitle="true" __cid="crUf2y2">
+      <xhtml:div class="x-dialog-title crUf2y2" __cid="crUf2y2">
+        <xhtml:button class="close crUf2y2" __cid="crUf2y2">
+          <xhtml:span __cid="crUf2y2" class="crUf2y2">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text crUf2y2" __cid="crUf2y2">普通弹窗表格</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body crUf2y2" __cid="crUf2y2"/>
+    </xhtml:div>
+  </span>  
+  <h4 xid="h43" __cid="crUf2y2" class="crUf2y2">3、上下固定的弹窗</h4>  
+  <div xid="div3" class="panel-body crUf2y2" __cid="crUf2y2"> 
+    <h5 xid="h53" __cid="crUf2y2" class="crUf2y2">让弹窗内容也像右侧内页那样有滚动区域和固定区域。</h5>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crUf2y2" xid="wdTableButtonPlus" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:wdTableButtonPlusClick" data-config="{&quot;label&quot;:&quot;查看效果&quot;}" __cid="crUf2y2"> 
+      <i xid="i3" __cid="crUf2y2" class="crUf2y2"/>  
+      <span xid="span3" __cid="crUf2y2" class="crUf2y2">查看效果</span> 
+    </a> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="wdTablePlus" style="left:150px;top:406px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;height&quot;:&quot;85%&quot;,&quot;resizable&quot;:true,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/demo/pcSample/table/widowsDialog/wdTablePlus.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;表头固定弹窗&quot;}" __cid="crUf2y2" class="crUf2y2">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay crUf2y2" __cid="crUf2y2"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog crUf2y2" style="display:none;" showTitle="true" __cid="crUf2y2">
+      <xhtml:div class="x-dialog-title crUf2y2" __cid="crUf2y2">
+        <xhtml:button class="close crUf2y2" __cid="crUf2y2">
+          <xhtml:span __cid="crUf2y2" class="crUf2y2">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text crUf2y2" __cid="crUf2y2">表头固定弹窗</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body crUf2y2" __cid="crUf2y2"/>
+    </xhtml:div>
+  </span> 
+</div>

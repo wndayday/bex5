@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cYBziUz" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYBziUz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cYBziUz" class="cYBziUz"/>  
+  <h4 xmlns="" __cid="cYBziUz" class="cYBziUz">双向选择器（横向铺满）
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cYBziUz" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="cYBziUz"> 
+      <i xid="i1" __cid="cYBziUz" class="cYBziUz"/>  
+      <span xid="span1" __cid="cYBziUz" class="cYBziUz">JS</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cYBziUz" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cYBziUz"> 
+      <i xid="i2" __cid="cYBziUz" class="cYBziUz"/>  
+      <span xid="span2" __cid="cYBziUz" class="cYBziUz">源码</span> 
+    </a> 
+  </h4>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cYBziUz" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;source&quot;,&quot;direction&quot;:&quot;left-bottom&quot;}" __cid="cYBziUz"> 
+    <div class="x-popMenu-overlay cYBziUz" xid="div1" __cid="cYBziUz"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cYBziUz" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cYBziUz"> 
+      <li class="x-menu-item cYBziUz" xid="item1" __cid="cYBziUz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cYBziUz" xid="leftSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:leftSourceClick" data-config="{&quot;label&quot;:&quot;左表源码&quot;}" __cid="cYBziUz"> 
+          <i xid="i3" __cid="cYBziUz" class="cYBziUz"/>  
+          <span xid="span3" __cid="cYBziUz" class="cYBziUz">左表源码</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cYBziUz" xid="divider1" __cid="cYBziUz"/>  
+      <li class="x-menu-item cYBziUz" xid="item2" __cid="cYBziUz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cYBziUz" xid="rightSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:rightSourceClick" data-config="{&quot;label&quot;:&quot;右表源码&quot;}" __cid="cYBziUz"> 
+          <i xid="i4" __cid="cYBziUz" class="cYBziUz"/>  
+          <span xid="span4" __cid="cYBziUz" class="cYBziUz">右表源码</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/bootstrap/row/row" class="row cYBziUz" xid="row2" style="margin-left:0;margin-right:0" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYBziUz"> 
+    <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 cYBziUz" xid="col4" __cid="cYBziUz"> 
+      <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cYBziUz" xid="leftGrid" data="leftEmployee" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;select&quot;,&quot;xid&quot;:&quot;column4&quot;}],&quot;data&quot;:&quot;leftEmployee&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:leftGridCellRender;onRowClick:leftGridRowClick" __cid="cYBziUz"></table> 
+    </div>  
+    <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 cYBziUz" xid="col5" __cid="cYBziUz"> 
+      <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cYBziUz" xid="rightGrid" data="rightEmployee" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;select&quot;,&quot;xid&quot;:&quot;column8&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column6&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column7&quot;}],&quot;data&quot;:&quot;rightEmployee&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:rightGridCellRender;onRowClick:rightGridRowClick" __cid="cYBziUz"></table> 
+    </div> 
+  </div> 
+</div>

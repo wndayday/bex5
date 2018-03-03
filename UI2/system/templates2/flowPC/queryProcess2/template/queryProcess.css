@@ -1,0 +1,36 @@
+/*选项卡*/
+.o-navMenu.nav-tabs li{ margin-bottom:0;}
+.o-navMenu.nav-tabs li a{ border:0; color:#626262; padding:5px 12px; margin-top:5px; margin-left:20px;}
+.o-navMenu.nav-tabs li:hover a{ border:0; border-bottom:2px solid #fff; background-color:#fff;}
+.o-navMenu.nav-tabs li.active a, .o-navMenu.nav-tabs li.active:hover a{ border:0; border-bottom:2px solid #9f9f9f;}
+
+/*黑色按钮*/
+.blackBtn span{ color:#626262;}
+.blackBtn i{ color:#767676;}
+
+/*搜索框*/
+input[xid=input1]{ box-shadow:none; border-radius:0px; border:1px solid #989898; background-color:#f4f4f4;}
+
+/*页中样式*/
+.x-bordered{ background-color:#f4f4f4; border:1px solid #d1d1d1; border-radius:0;}
+
+/*操作栏*/
+.x-toolbar.x-toolbar-spliter{ border:0;}
+
+/*table表格*/
+.table>tbody>tr:hover { background-color: #f2f2f2;}
+.table>tbody>tr.bg-info:hover{ background-color: #f2f2f2;}
+.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th{
+	background-color: #f2f2f2;
+}
+.table-hover>tbody>tr>td.active:hover, .table-hover>tbody>tr>th.active:hover, .table-hover>tbody>tr.active:hover>td, .table-hover>tbody>tr:hover>.active, .table-hover>tbody>tr.active:hover>th{
+	background-color: #f2f2f2;
+}
+
+.table>tbody>tr.bg-info{ background-color:transparent;}
+.table>tfoot{ display:none;}
+.table>tbody td .link{ text-decoration:underline;}
+
+.table{ background-color:#fff;}
+.table thead{ background-color:#d1d1d1;}
+.table>tbody>tr>td{ border-color:#e4e4e4;}

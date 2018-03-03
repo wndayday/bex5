@@ -1,0 +1,12 @@
+.x-popMenu {
+}
+
+.x-popMenu-dialog{
+	z-index:1000;
+	width:24px;
+	height:24px;
+	background-position: center;
+	border:1px solid green;
+	background-image: url(./img/popMenu.png);
+	background-repeat: no-repeat;
+}

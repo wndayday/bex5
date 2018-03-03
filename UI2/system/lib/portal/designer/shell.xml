@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<elements>
+	<element name="$UI/system/lib/portal/shell" icon="shell.png" text="shell" binding-component="$UI/system/lib/portal/shell"
+		 design-view="web-designer">
+		<functions>
+			<function name="loadPage">
+				<param name="url" editor="pageListEditor" />
+			</function>
+			<function name="showPage">
+				<param name="url" editor="pageListEditor" />
+			</function>
+			<function name="closePage">
+				<param name="url" editor="pageListEditor" />
+			</function>
+		</functions>
+	</element>
+</elements>

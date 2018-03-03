@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/output/output" tag-name="div" icon="output.gif" text="显示框"
+		binding-component="$UI/system/components/justep/output/output" 
+        component-type="formControl" 
+        design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" editor-parameter='{"hasLabel":"false"}'/>
+			<!-- 
+			<property name="data" text="关联的data"/>	
+			 -->
+			<property name="dataType" text="数据类型" _text="数据类型,当有bind-ref时使用bind-ref的数据类型" enabled-condition="not(@bind-ref)" editor-ref="dataTypeList"/>	
+			<property name="format" text="格式" _text="格式化，当绑定数据类型为Date、DateTime、Time、数值时的显示格式" editor-ref="inputFormatList"  readonly="false"/>
+			<property name="class"  text="class">
+				<editor-parameter><![CDATA[
+				{
+					"0base": {
+						label: "基础样式",
+						value: "x-output"
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog" />
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['dataType','指定数据类型'],['format','格式化'],['value','值']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'dataType',label:'指定数据类型',type:'string'},
+				    {name:'format',label:'格式化',type:'string'},
+				    {name:'value',label:'值',type:'object'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>
+		<property-editors>
+			<property-editor name="dataTypeList" type="list" >
+				<static-data value="String,Integer,Float,Date,Time,DateTime"/>
+			</property-editor>
+			<property-editor name="inputFormatList" type="list">
+				<static-data value=",0{comma}000,0{comma}000.00,yyyy-MM-dd,yyyy-MM-dd hh{semicolon}mm" />
+			</property-editor>
+		</property-editors>		
+		<toolbar>			
+		</toolbar>
+		
+		<events>
+			<event name="onRender" text="显示渲染事件"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+		   <template name="default"><![CDATA[ 
+				<div component="$UI/system/components/justep/output/output" class="x-output"/>
+		   ]]></template>
+		</templates>
+	</element>
+	
+</elements>

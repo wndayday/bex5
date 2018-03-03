@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<reg-info>
+	<!-- 组件目录注册 -->
+	<component-dirs>
+		default,html,justep/operation,justep/model,justep/data,justep/dataEdit,justep/window,justep/input,justep/output,justep/select,justep/textarea,justep/button,
+		justep/tabs,justep/panel, justep/popOver, justep/popMenu, justep/menu, justep/tree,justep/propEditor,
+		justep/wing, justep/widgets, justep/contents, justep/smartContainer, justep/request,
+		justep/scrollView,justep/titleBar,justep/bar,justep/toolBar,justep/windowContainer,justep/messageDialog,
+		justep/dialog,justep/windowDialog,justep/windowReceiver,justep/windowRunner,justep/list,justep/labelEdit,justep/controlGroup,justep/calendar,
+		justep/gridLayout,justep/row,justep/dataTables,justep/grid,justep/gridSelect,bootstrap/carousel,
+		justep/cordova,justep/cellLayout,justep/excelLayout,justep/absoluteLayout,justep/pagerLimitSelect,justep/pagerBar,justep/router,
+		justep/attachment,justep/editor,justep/resource,justep/extendType,justep/numberSelect,justep/printHtml,justep/distpicker,justep/locker,/justep/inVisibleCompContainer,fragment/btnNavBar,
+		justep/picker,justep/datePicker,justep/timer,justep/shell,justep/dataOperation,justep/richTextarea,justep/user,justep/scan,justep/geolocation,justep/shake,fragment/gridList,
+		justep/qrcode,justep/keyNavigator,justep/swiperView
+	</component-dirs>
+       
+	 <!-- 组件工具箱配置 -->                        
+	<toolbox>
+
+		<catalog name="数据" order="1">
+			<item component-name="$UI/system/components/justep/model/model" webide="false"/><!-- 在webide模式下不可见 -->
+			<item component-name="$UI/system/components/justep/data/data" />
+			<item component-name="$UI/system/components/justep/data/baasData" webide="false"/>
+			<item component-name="$UI/system/components/justep/data/restData" webide="false"/>
+			<item component-name="$UI/system/components/justep/data/aggregateData" webide="false"/>
+		</catalog>
+
+		<catalog name="布局" order="2">
+			<item component-name="$UI/system/components/justep/contents/contents" />
+			<item component-name="$UI/system/components/justep/tabs/tabs" />
+			<item component-name="$UI/system/components/justep/panel/panel" />
+			<item component-name="$UI/system/components/justep/titleBar/titleBar" device="mobile"/>
+			<item component-name="$UI/system/components/justep/bar/bar" webide="false"/>
+			<item component-name="$UI/system/components/justep/toolBar/toolBar" />
+			<item component-name="$UI/system/components/justep/scrollView/scrollView" device="mobile"/>
+			<item component-name="$UI/system/components/justep/row/row" device="mobile"/>
+			<item component-name="$UI/system/components/justep/wing/wing" device="mobile" webide="false"/>
+			<item component-name="$UI/system/components/justep/widgets/widgets" webide="false"/>
+			<item component-name="$UI/system/components/justep/windowContainer/windowContainer" />
+			<item component-name="$UI/system/components/justep/cellLayout/cellLayout" device="pc" webide="false"/>
+			<item component-name="$UI/system/components/justep/excelLayout/excelLayout" device="pc" webide="false"/>
+			<item component-name="$UI/system/components/justep/absoluteLayout/absoluteLayout" device="pc" />
+			<item component-name="$UI/system/components/justep/smartContainer/smartContainer" />
+		</catalog>
+  
+		<catalog name="表单" initial-state="open" design-view="excel" order="3">
+			<item component-name="$UI/system/components/justep/dataEdit/dataEdit" webide="false" />
+			<item component-name="$UI/system/components/justep/input/input" />
+			<item component-name="$UI/system/components/justep/input/password" />
+			<item component-name="$UI/system/components/justep/input/range" />
+			<item component-name="$UI/system/components/justep/output/output" />
+			<item component-name="$UI/system/components/justep/textarea/textarea" />
+			<item component-name="$UI/system/components/justep/button/button" />
+			<item component-name="$UI/system/components/justep/button/toggle" />
+			<item component-name="$UI/system/components/justep/button/radio" />
+			<item component-name="$UI/system/components/justep/button/checkbox" />
+			<item component-name="$UI/system/components/justep/button/radioPC"/>
+			<item component-name="$UI/system/components/justep/button/checkboxPC"/>
+			<item component-name="$UI/system/components/justep/select/select" />
+			<item component-name="$UI/system/components/justep/numberSelect/numberSelect" />
+			<item component-name="$UI/system/components/justep/select/radioGroup" />
+			<item component-name="$UI/system/components/justep/select/checkboxGroup" />
+			<item component-name="$UI/system/components/justep/select/radioGroupPC"/>
+			<item component-name="$UI/system/components/justep/select/checkboxGroupPC" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelInput" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelPassword" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelRange" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelOutput" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelSelect" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelTextarea" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelRadioGroup" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelCheckboxGroup" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelToggle" />
+			<item component-name="$UI/system/components/justep/labelEdit/labelEdit" />
+			<item component-name="$UI/system/components/justep/controlGroup/controlGroup" />
+			<item component-name="$UI/system/components/justep/button/buttonGroup" />
+			<item component-name="$UI/system/components/fragment/btnNavBar/btnNavBar" device="mobile"/>
+		</catalog>
+
+		<catalog name="扩展" initial-state="open" design-view="excel" order="4">
+			<item component-name="$UI/system/components/justep/timer/timer"/>
+
+			<item component-name="$UI/system/components/justep/request/request"/>
+			<!-- 
+			<item component-name="$UI/system/components/justep/code/code" />
+			 -->
+			<item component-name="$UI/system/components/justep/propEditor/propEditor" webide="false" />
+
+			<item component-name="$UI/system/components/justep/shell/shell" webide="false"/>
+			<item component-name="$UI/system/components/justep/shell/shellImpl" webide="false"/>
+			<item component-name="$UI/system/components/justep/list/list(UL)" webide="false"/>
+			<item component-name="$UI/system/components/justep/list/list(Table)" webide="false"/>
+			<item component-name="$UI/system/components/justep/list/list" />
+			<item component-name="$UI/system/components/justep/dataTables/dataTables" />
+			<item component-name="$UI/system/components/justep/tree/tree" device="mobile"/>
+			<item component-name="$UI/system/components/justep/pagerBar/pagerBar"/>
+			<item component-name="$UI/system/components/justep/pagerLimitSelect/pagerLimitSelect"/>
+			<item component-name="$UI/system/components/justep/popOver/popOver"/>
+			<item component-name="$UI/system/components/justep/popMenu/popMenu"/>
+			<item component-name="$UI/system/components/justep/menu/menu" webide="false"/>
+			<item component-name="$UI/system/components/justep/picker/popPicker" device="mobile" webide="false"/>
+			<item component-name="$UI/system/components/justep/dataOperation/dataOperation" webide="false"/>
+			<item component-name="$UI/system/components/justep/user/user" webide="false"/>
+		</catalog>
+
+		<catalog name="高级" design-view="excel" order="5">
+			<item component-name="$UI/system/components/justep/grid/grid" device="pc"/>
+			<item component-name="$UI/system/components/justep/gridSelect/gridSelect" device="pc"/>
+			<item component-name="$UI/system/components/justep/printHtml/printHtml" device="pc"/>
+			<item component-name="$UI/system/components/justep/extendType/commonExtendTypes" webide="false"/>
+			<item component-name="$UI/system/components/justep/router/router"  webide="false"/>
+			<item component-name="$UI/system/components/justep/attachment/attachmentSimple" />
+			<item component-name="$UI/system/components/justep/attachment/attachmentImageSimple"  webide="false"/>
+			<item component-name="$UI/system/components/justep/calendar/calendar"  webide="false"/>
+
+			<item component-name="$UI/system/components/justep/distpicker/provinceSelect" />
+			<item component-name="$UI/system/components/justep/distpicker/citySelect" />
+			<item component-name="$UI/system/components/justep/distpicker/districtSelect" />
+			<item component-name="$UI/system/components/justep/distpicker/distpicker"/>
+			<item component-name="$UI/system/components/justep/distpicker/distpicker2" webide="false" device="mobile"/>
+			<item component-name="$UI/system/components/justep/datePicker/datePicker"  webide="false" device="mobile"/>
+
+			<item component-name="$UI/system/components/justep/locker/locker" webide="false"/>
+			<item component-name="$UI/system/components/justep/richTextarea/richTextarea" device="pc"/>
+			<item component-name="$UI/system/components/justep/qrcode/qrcode"/>
+		</catalog>
+
+		<catalog name="对话框" design-view="excel" order="6">
+			<item component-name="$UI/system/components/justep/messageDialog/messageDialog" />
+			<item component-name="$UI/system/components/justep/dialog/dialog" webide="false"/>
+			<item component-name="$UI/system/components/justep/windowDialog/windowDialog" />
+			<item component-name="$UI/system/components/justep/windowReceiver/windowReceiver" webide="false"/>
+			<item component-name="$UI/system/components/justep/windowRunner/windowRunner" webide="false" />
+		</catalog>
+		
+		<catalog name="本地插件扩展组件" design-view="excel" order="7">
+			<item component-name="$UI/system/components/justep/scan/scan" />
+			<item component-name="$UI/system/components/justep/geolocation/geolocation" />
+			<item component-name="$UI/system/components/justep/shake/shake" />
+		</catalog>
+
+		<!-- 
+		<catalog name="数据编辑扩展" order="7">
+			<item component-name="$UI/system/components/justep/editor/editor" />
+		</catalog>
+		-->
+
+		<catalog name="HTML" design-view="excel" order="9">
+			<item component-name="input(button)" />
+			<item component-name="reset(html)" />
+			<item component-name="submit(html)" />
+			<item component-name="input(html)" />
+			<item component-name="file(html)" />
+			<item component-name="password(html)" />
+			<item component-name="checkbox(html)" />
+			<item component-name="radio(html)" />
+			<item component-name="hidden(html)" />
+			<item component-name="image(html)" />
+			<item component-name="textarea(html)" />
+			<item component-name="select(html)" webide="false"/>
+			<item component-name="horizontalRule(html)" />
+			<!-- htmltable -->
+			<item component-name="table(html)" />
+			<item component-name="div(html)" />
+			<item component-name="span(html)" />
+			<item component-name="p(html)" />
+			<item component-name="i(html)" />
+			<item component-name="label(html)" webide="false" />
+			<item component-name="ul(html)" />
+			<item component-name="li(html)" />
+			<item component-name="h1(html)" />
+			<item component-name="h2(html)" />
+			<item component-name="h3(html)" />
+			<item component-name="h4(html)" />
+			<item component-name="h5(html)" />
+			<item component-name="a(html)" />
+			<item component-name="fieldset(html)" />
+			<item component-name="button(html)" />
+			
+			<item component-name="iframe(html)" />
+			<item component-name="form(html)" webide="false" />
+			<item component-name="hr(html)" />
+		</catalog>
+	</toolbox>
+	
+	<!-- 傻瓜式ide工具栏配置 -->
+	<quickide-toolbox>
+		<catalog name="布局组件" order="1">
+			<item component-name="$UI/system/components/justep/contents/contents" />
+			<item component-name="$UI/system/components/justep/panel/panel" />
+			<item component-name="$UI/system/components/justep/scrollView/scrollView" />
+			<item component-name="$UI/system/components/justep/row/row" />
+			<!--
+			 
+			<item component-name="$UI/system/components/justep/wing/wing" />
+			 -->
+			<item component-name="$UI/system/components/justep/popOver/popOver" />
+			<item component-name="$UI/system/components/justep/windowContainer/windowContainer" />
+			<item component-name="$UI/system/components/justep/list/list" />
+			<item component-name="$UI/system/components/justep/button/buttonGroup" />
+			<item component-name="$UI/system/components/justep/tabs/tabs"  device="pc"/>		
+			<item component-name="$UI/system/components/justep/toolBar/toolBar"  device="pc"/>
+			<item component-name="$UI/system/components/justep/controlGroup/controlGroup" />
+			<item component-name="$UI/system/components/justep/swiperView/swiperView" device="stb"/>
+			
+
+			<item component-name="div(html)"/>
+		</catalog>
+		
+		<catalog name="表单组件" order="2">
+			 <item component-name="$UI/system/components/justep/labelEdit/labelInput" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelPassword" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelOutput" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelSelect" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelTextarea" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelRadioGroup" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelCheckboxGroup" />
+			 <item component-name="$UI/system/components/justep/labelEdit/labelToggle" />
+			 <item component-name="label(html)" />
+			 <item component-name="span(html)" />
+			 <item component-name="image(html)" displayName="静态图片"/>
+			 <item component-name="$UI/system/components/justep/attachment/attachmentImageSimple"  displayName="图片"/>
+			 <item component-name="$UI/system/components/justep/input/input" />
+			 <item component-name="$UI/system/components/justep/input/password" />
+			 <item component-name="$UI/system/components/justep/output/output" />
+			 <item component-name="$UI/system/components/justep/textarea/textarea" />
+			 <item component-name="$UI/system/components/justep/button/button" />
+			 
+			<item component-name="$UI/system/components/justep/select/select" />
+			 <!-- 
+			 <item component-name="$UI/system/components/justep/button/radio" />
+			  -->
+			 <item component-name="$UI/system/components/justep/button/checkbox" />
+			 <item component-name="$UI/system/components/justep/button/toggle" />
+			 <item component-name="$UI/system/components/justep/select/radioGroup" />
+			 <item component-name="$UI/system/components/justep/select/checkboxGroup" />
+			 
+			 <item component-name="$UI/system/components/justep/input/range" device="pc" />
+			<item component-name="$UI/system/components/justep/select/checkboxGroupPC" device="pc" />
+			<!-- 
+			<item component-name="$UI/system/components/justep/labelEdit/labelRange" />
+			 -->
+			<item component-name="$UI/system/components/justep/numberSelect/numberSelect"  device="pc"/>
+			<item component-name="$UI/system/components/justep/button/radioPC" device="pc"/>
+			<item component-name="$UI/system/components/justep/button/checkboxPC" device="pc"/>
+			<item component-name="$UI/system/components/justep/labelEdit/labelEdit"  device="pc"/>
+		</catalog>
+		
+		<catalog name="组合组件" order="3">
+			<item component-name="$UI/system/components/justep/titleBar/titleBar" />
+			<item component-name="$UI/system/components/fragment/btnNavBar/btnNavBar" />
+			<item component-name="$UI/system/components/bootstrap/carousel/carousel(bootstrap)" />
+			<item component-name="$UI/system/components/fragment/gridList"/>
+		</catalog>
+		
+		<catalog name="高级组件" order="4">
+			<item component-name="$UI/system/components/justep/timer/timer"/>
+			<item component-name="$UI/system/components/justep/request/request"/>
+			<!-- 
+			<item component-name="$UI/system/components/justep/code/code" />
+			 -->
+			<item component-name="$UI/system/components/justep/attachment/attachmentSimple" />
+			<!-- 
+			<item component-name="$UI/system/components/justep/attachment/attachmentImageSimple" />
+			 -->
+			<item component-name="$UI/system/components/justep/user/user" />		
+			<item component-name="$UI/system/components/justep/popMenu/popMenu" device="pc"/>
+			<item component-name="$UI/system/components/justep/grid/grid" device="pc"/>
+			<item component-name="$UI/system/components/justep/gridSelect/gridSelect" device="pc"/>		
+			<item component-name="$UI/system/components/justep/calendar/calendar"  device="pc"/>	
+			<item component-name="$UI/system/components/justep/distpicker/distpicker" device="pc"/>
+			<item component-name="$UI/system/components/justep/keyNavigator/keyNavigator" device="stb"/>
+			<!-- 目前没有提供操作 
+			<item component-name="$UI/system/components/justep/distpicker/distpicker2" device="m"/>
+			 -->
+			<item component-name="$UI/system/components/justep/richTextarea/richTextarea" device="pc"/>
+			<item component-name="$UI/system/components/justep/locker/locker" device="m"/>
+			<!-- 
+			<item component-name="$UI/system/components/justep/blob/blob"/>
+			<item component-name="$UI/system/components/justep/blob/blobImage"/>
+			<item component-name="$UI/system/components/justep/barcode/barcodeImage"/>
+			 -->
+			<item component-name="$UI/system/components/justep/dataTables/dataTables" device="pc"/>			
+			<item component-name="$UI/system/components/justep/pagerBar/pagerBar" device="pc"/>
+			<item component-name="$UI/system/components/justep/pagerLimitSelect/pagerLimitSelect" device="pc"/>			
+			<item component-name="$UI/system/components/justep/qrcode/qrcode"/>
+		</catalog>
+		
+		<catalog name="对话框" design-view="excel" order="6" device="pc">
+			<item component-name="$UI/system/components/justep/messageDialog/messageDialog"   device="pc"/>			
+			<item component-name="$UI/system/components/justep/windowDialog/windowDialog"  device="pc"/>			
+		</catalog>
+		
+		<catalog name="本地插件扩展组件" design-view="excel" order="7">
+			<item component-name="$UI/system/components/justep/scan/scan" />
+			<item component-name="$UI/system/components/justep/geolocation/geolocation" />
+			<item component-name="$UI/system/components/justep/shake/shake" />
+		</catalog>
+		
+		<catalog name="bootstrap" order="8" device="pc">
+			<item component-name="$UI/system/components/bootstrap/media/media(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/panel/panel(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/accordion/accordion(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/table/table(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/tabs/tabs(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/dropdown/dropdown(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/navs/navs(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/navbar/navbar(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/carousel/carousel(bootstrap)" device="pc"/>
+
+			<item component-name="$UI/system/components/bootstrap/row/row(bootstrap)" device="pc"/>
+
+			<item component-name="$UI/system/components/bootstrap/inputGroup/inputGroup(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/controlLabel/controlLabel(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/label/label(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/badge/badge(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/scrollSpy/scrollSpy(bootstrap)" device="pc"/>
+
+			<item component-name="$UI/system/components/bootstrap/pagination/pagination(bootstrap)" device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/pager/pager(bootstrap)" device="pc"/>
+ 			<item component-name="$UI/system/components/bootstrap/form/form(bootstrap)"  device="pc"/>
+			<item component-name="$UI/system/components/bootstrap/form/form(bootstrap)#formGroup(bootstrap)"  device="pc"/>
+		</catalog>
+		
+		<catalog name="HTML" design-view="excel" order="9" device="pc">
+			<item component-name="input(button)" device="pc"/>
+			<item component-name="reset(html)" device="pc"/>
+			<item component-name="submit(html)" device="pc"/>
+			<item component-name="input(html)" device="pc"/>
+			<item component-name="file(html)" device="pc"/>
+			<item component-name="password(html)" device="pc"/>
+			<item component-name="checkbox(html)" device="pc"/>
+			<item component-name="radio(html)" device="pc"/>
+			<item component-name="hidden(html)" device="pc"/>
+			<item component-name="image(html)" device="pc"/>
+			<item component-name="textarea(html)" device="pc"/>
+			<item component-name="select(html)" device="pc"/>
+			<item component-name="horizontalRule(html)" device="pc"/>
+			<!-- htmltable -->
+			<item component-name="table(html)" device="pc"/>
+			<item component-name="div(html)" device="pc"/>
+			<item component-name="span(html)" device="pc"/>
+			<item component-name="p(html)" device="pc"/>
+			<item component-name="i(html)" device="pc"/>
+			<item component-name="label(html)" device="pc"/>
+			<item component-name="ul(html)" device="pc"/>
+			<item component-name="li(html)" device="pc"/>
+			<item component-name="h1(html)" device="pc"/>
+			<item component-name="h2(html)" device="pc"/>
+			<item component-name="h3(html)" device="pc"/>
+			<item component-name="h4(html)" device="pc"/>
+			<item component-name="h5(html)" device="pc"/>
+			<item component-name="a(html)" device="pc"/>
+			<item component-name="fieldset(html)" device="pc"/>
+			<item component-name="button(html)" device="pc"/>
+			
+			<item component-name="iframe(html)" device="pc"/>
+			<item component-name="form(html)" device="pc"/>
+			<item component-name="hr(html)" device="pc"/>
+		</catalog>
+	</quickide-toolbox>
+ <depend-css>
+<!--     <item>$UI/system/components/comp.min.css</item> -->
+<!--     <item>$UI/system/components/pc.addon.min.css</item> -->
+ </depend-css>
+	<depend-js>
+<!-- 		<item>$UI/system/core.min.js</item> -->
+<!-- 		<item>$UI/system/common.min.js</item> -->
+		
+<!-- 		<item>$UI/system/components/comp.min.js</item> -->
+<!-- 		<item>$UI/system/components/comp2.min.js</item> -->
+		
+<!-- 		<item>$UI/system/components/justep/cellLayout/designer/cellLayout.min.js</item> -->
+	</depend-js>
+</reg-info>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" xid="window" component="$model/UI2/system/components/justep/window/window" extends="$UI/portal/base/login/login.w" __id="id_1" sysParam="false" class="window portal-login-page login-page portal-login-page window cAnqqQ3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAnqqQ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="">.login-box.cAnqqQ3{margin: 0 auto; padding-top: 7%; width: 420px} .login-logo.cAnqqQ3{font-size: 28px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="receiver" style="left:19px;top:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" class="login-box cAnqqQ3" xid="pageLogin" xui:update-mode="merge" __cid="cAnqqQ3">  
+    <div class="login-logo cAnqqQ3" xid="pageHeader" xui:update-mode="merge" __cid="cAnqqQ3"> 
+      <div class="form-container cAnqqQ3" align="center" __cid="cAnqqQ3">登录BeX5</div> 
+    </div>  
+    <div class="login-box-body cAnqqQ3" xid="pageBody" xui:update-mode="merge" __cid="cAnqqQ3"> 
+      <div class="form-container cAnqqQ3" style="max-width: 420px;margin: 0 auto;padding: 0 15px;" __cid="cAnqqQ3"> 
+        <form class="form-horizontal ng-pristine ng-valid cAnqqQ3" __cid="cAnqqQ3"> 
+          <fieldset __cid="cAnqqQ3" class="cAnqqQ3"> 
+            <div class="form-group cAnqqQ3" __cid="cAnqqQ3"> 
+              <div class="input-group cAnqqQ3" __cid="cAnqqQ3"> 
+                <span class="input-group-addon cAnqqQ3" __cid="cAnqqQ3"> 
+                  <span class="glyphicon glyphicon-envelope cAnqqQ3" __cid="cAnqqQ3"/> 
+                </span>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cAnqqQ3" xid="name" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;用户名&quot;}" __cid="cAnqqQ3"/> 
+              </div> 
+            </div>  
+            <div class="form-group cAnqqQ3" __cid="cAnqqQ3"> 
+              <div class="input-group cAnqqQ3" __cid="cAnqqQ3"> 
+                <span class="input-group-addon cAnqqQ3" __cid="cAnqqQ3"> 
+                  <span class="glyphicon glyphicon-lock cAnqqQ3" __cid="cAnqqQ3"/> 
+                </span>  
+                <input component="$model/UI2/system/components/justep/input/password" class="form-control cAnqqQ3" xid="password" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;密码&quot;}" __cid="cAnqqQ3"/> 
+              </div> 
+            </div>  
+            <div class="form-group cAnqqQ3" __cid="cAnqqQ3"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-block btn-flat cAnqqQ3" xid="login" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginClick" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="cAnqqQ3"> 
+                <i xid="i1" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+                <span xid="span1" __cid="cAnqqQ3" class="cAnqqQ3">登录</span> 
+              </a> 
+            </div>  
+            <div class="form-group cAnqqQ3" __cid="cAnqqQ3"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="row cAnqqQ3" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAnqqQ3"> 
+                <div class="col-xs-4 cAnqqQ3" xid="col1" xui:update-mode="merge" __cid="cAnqqQ3"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cAnqqQ3" xid="remember" label="记住我" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;记住我&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:rememberChange" __cid="cAnqqQ3"> 
+                    <input type="checkbox" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+                    <label __cid="cAnqqQ3" class="cAnqqQ3">记住我</label> 
+                  </span> 
+                </div>  
+                <div class="col-xs-4 cAnqqQ3" xid="col2" xui:update-mode="merge" __cid="cAnqqQ3"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cAnqqQ3" xid="autoLogin" label="自动登录" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;自动登录&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:autoLoginChange" __cid="cAnqqQ3"> 
+                    <input type="checkbox" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+                    <label __cid="cAnqqQ3" class="cAnqqQ3">自动登录</label> 
+                  </span> 
+                </div>  
+                <div class="x-col lang-switch cAnqqQ3" xid="col9" style="display:none;" __cid="cAnqqQ3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link show-langs cAnqqQ3" xid="showLangBtn" style="padding-top: 0px;margin-top:-2px;float:right;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showLangBtnClick" data-config="{&quot;label&quot;:&quot;显示语言选择&quot;}" __cid="cAnqqQ3"> 
+                    <i xid="i3" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+                    <span xid="span3" __cid="cAnqqQ3" class="cAnqqQ3">显示语言选择</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link hide-langs cAnqqQ3" xid="hideLangBtn" style="padding-top: 0px;margin-top:-2px;float:right;display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:hideLangBtnClick" data-config="{&quot;label&quot;:&quot;隐藏语言选择&quot;}" __cid="cAnqqQ3"> 
+                    <i xid="i11" __cid="cAnqqQ3" class="cAnqqQ3"/>  
+                    <span xid="span33" __cid="cAnqqQ3" class="cAnqqQ3">隐藏语言选择</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="form-group login-lang cAnqqQ3" style="display:none;" __cid="cAnqqQ3"> 
+              <div class="input-group cAnqqQ3" __cid="cAnqqQ3"> 
+                <span class="input-group-addon cAnqqQ3" __cid="cAnqqQ3"> 
+                  <span class="glyphicon glyphicon-flag cAnqqQ3" __cid="cAnqqQ3"/> 
+                </span>  
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control cAnqqQ3" xid="lang" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:langs.datas,optionsValue:'fName',optionsText:'fLabel',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-events="onChange:langChange" __cid="cAnqqQ3"/> 
+              </div> 
+            </div> 
+          </fieldset> 
+        </form> 
+      </div> 
+    </div> 
+  </div> 
+</div>

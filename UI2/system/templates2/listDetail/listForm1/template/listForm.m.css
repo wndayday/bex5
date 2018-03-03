@@ -1,0 +1,16 @@
+.font-gray {color:gray}
+.font-bold {font-weight:bold}
+
+/*样式*/
+.x-contents{ background-color:#f0f0f0;}
+.x-titlebar{ background-color:#979797;}
+
+.x-control-group{ background-color:transparent;}
+
+/*列表样式*/
+ul.x-list-template li{ border:1px solid #d1d1d1; border-radius:5px; margin-bottom:15px;}
+
+/*按钮*/
+.x-dialog-button{ width:100px; margin:10px 0 0 10px; background-image:none; border:none; box-shadow:none; border-radius:3px;}
+.x-dialog-button[xid=delBtn]{ background-color:#686868; color:#fff;}
+.x-dialog-button[xid=cancelBtn]{ background-color:#d0d0d0; color:#fff;}

@@ -1,0 +1,13 @@
+/**
+	@name $UI/system/components/justep/keyNavigator/keyNavigator
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：机顶盒应用开发。
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/

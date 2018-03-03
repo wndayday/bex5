@@ -1,0 +1,12 @@
+.x-label{	
+	/*margin: 0.625em 0em;*/
+	/*padding: 0.625em 0.625em 0 0;*/
+	line-height:28px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+
+

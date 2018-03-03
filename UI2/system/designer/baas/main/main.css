@@ -1,0 +1,29 @@
+/***********************************/
+/*框架*/       
+.o-layerPanel{ height:100%; padding-top:40px; padding-bottom:30px; background-color:#36404c; border:0; border-radius:0;}
+.o-layerPanel .panel-heading{ width:100%;height:40px; padding:3px 2px; background:none; border:0; position:absolute;top:0;}                     
+.o-layerPanel .panel-body{ height:100%; padding:0px; padding-left:245px; margin:0 3px; position:relative; top:0px;}
+.o-layerPanel .panel-footer{ width:100%; height:30px; padding:3px; color:#fff; background:none; border:0; position:absolute; bottom:0;}
+
+/*页头工具栏*/
+.o-layerPanel .o-line{ width:1px; height:20px; margin:7px 3px; border-left:1px dashed #000;}
+
+.o-layerPanel .panel-heading .o-tools .btn{ color:#eee;}
+
+.o-layerPanel .panel-heading .o-page{ border-left:2px solid #545b64; padding:0 5px;}
+.o-layerPanel .panel-heading .o-page .btn{ color:#eee; padding:2px 10px; margin:3px 0;}
+.o-layerPanel .panel-heading .o-page .btn.active{ background-color:#5ecaf1; color:#000; border:1px solid #212733; border-radius:3px;}
+
+/*资源管理*/
+.o-resourceTreeContainer{ width:240px; height:100%; background-color:#eee; border:1px solid #000; border-radius:5px; cursor:pointer; overflow:hidden; position:absolute; bottom:-2px; left:0; top:0;}
+.o-resourceTreeContainerInner{ width:240px; height:100%; background-color:#eee; padding-top:36px; overflow:hidden;}
+
+.o-treeHead{ width:100%; height:36px; padding:2px; position:absolute; top:0; left:0;}
+.o-treeHead .o-treeTitle{ line-height:30px; padding-left:5px; margin-bottom:5px; border-bottom:2px solid #ccc;}
+.o-treeHead .o-treeTitle .btn i.minimize{ display:block; width:15px; height:4px; margin-top:2px; background-color:#fff; border:1px solid #696969;}
+
+.o-resourceTreeContainerInner .resource-tree{ width:100%; height:100%; padding-top:50px; overflow:auto;}
+
+/*文档区域*/
+.o-documentArea{ widht:100%; height:100%; border:1px solid #000; border-radius:5px; background-color:#fff; position:relative;}
+

@@ -1,0 +1,24 @@
+.split-line {
+	text-align: center;
+	margin-top: -20px;
+}
+
+.other-login-row {
+	margin-top: -10px;
+}
+
+.icon-weixin {
+	background-image: url(../img/other-login.png);
+	background-position: 0px 0px;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto;
+	border: solid 1px #CECECE;
+	border-radius: 50%;
+	overflow: hidden
+}
+
+.icon-weixin:hover {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}

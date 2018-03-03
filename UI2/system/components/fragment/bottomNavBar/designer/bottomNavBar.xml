@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/fragment/bottomNavBar" text="底部导航"
+		tag-name="div" icon="mutilLayoutListForm.png"  binding-component="$UI/system/components/fragment/bottomNavBar"
+		component-type="bar" 
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号" required="false"
+				editor-discriptor-ref="" />
+			<property name="style" text="样式" editor-ref="styleDialog" />
+		</properties>
+		<templates>
+			<template name="default"><![CDATA[ 
+					<div class="btn-group btn-group-justified x-card" component="$UI/system/components/fragment/bottomNavBar"> 
+				 		<a class="btn btn-link btn-icon-top active" component="$UI/system/components/justep/button/button"  icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				        </a>  
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				        </a> 
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				        </a> 
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				        </a> 
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				        </a> 
+					 </div>
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

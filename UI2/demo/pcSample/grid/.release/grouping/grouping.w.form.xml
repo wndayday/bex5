@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyAVRFz" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyAVRFz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyAVRFz" class="cyAVRFz"/>  
+  <h4 xid="h41" __cid="cyAVRFz" class="cyAVRFz">分组表格
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cyAVRFz" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cyAVRFz"> 
+      <i xid="i1" __cid="cyAVRFz" class="cyAVRFz"/>  
+      <span xid="span1" __cid="cyAVRFz" class="cyAVRFz">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cyAVRFz" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cyAVRFz"> 
+      <i xid="i2" __cid="cyAVRFz" class="cyAVRFz"/>  
+      <span xid="span2" __cid="cyAVRFz" class="cyAVRFz">源码</span>
+    </a>
+  </h4>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cyAVRFz" xid="employeeGrid" data="employeeData" showRowNumber="true" useGroupbar="true" grouping="true" useFooter="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;group&quot;:{&quot;columnShow&quot;:true,&quot;xid&quot;:&quot;default11&quot;},&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;editable&quot;:true,&quot;group&quot;:{&quot;columnShow&quot;:true,&quot;summary&quot;:true,&quot;text&quot;:&quot;{0}性：共{1}人&quot;,&quot;xid&quot;:&quot;default10&quot;},&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column4&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;footerrow&quot;:true,&quot;grouping&quot;:true,&quot;groupingView&quot;:{&quot;groupCollapse&quot;:false,&quot;groupField&quot;:[&quot;sex&quot;],&quot;xid&quot;:&quot;default7&quot;},&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;rownumbers&quot;:true,&quot;useGroupbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cyAVRFz"/> 
+</div>

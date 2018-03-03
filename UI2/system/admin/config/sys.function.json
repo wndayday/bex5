@@ -1,0 +1,14 @@
+[
+		{
+			"title" : "用戶管理",
+			"url" : "$UI/system/admin/user/user.w"
+		},  
+		{
+			"title" : "数据维护",
+			"url" : "$UI/system/admin/dataObjectsBM/index.w"				
+		}, 
+		{
+			"title" : "授权管理",
+			"url" : "$UI/system/admin/roleBM/roleGroupBM.w"				
+		}
+]

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/locker/locker" tag-name="canvas" icon="locker.png" text="手势密码" 
+		binding-component="$UI/system/components/justep/locker/locker" 
+		component-type="formControl"
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="mode" text="模式" editor-ref="locker-mode" readonly="true"/>	
+			<property name="password" text="检验模式密码" editor-ref="locker-password" />	
+			<property name="R" text="圆半径" default-value="26" data-type="integer"/>	
+			<property name="ringColor" text="圆边框颜色" default-value="#888"/>	
+			<property name="fillColor" text="圆填充颜色" default-value="#f3f3f3"/>	
+			<property name="lineColor" text="连线颜色" default-value="rgb(0,136,204)"/>	
+			<property name="pointColor" text="圆心颜色" default-value="rgb(0,136,204)"/>	
+			<property name="SuccessLineColor" text="成功连线颜色" default-value="rgb(20,255,20)"/>	
+			<property name="SuccessPointColor" text="成功圆心颜色" default-value="rgb(20,255,20)"/>	
+			<property name="ErrorLineColor" text="出错连线颜色" default-value="rgb(255,20,20)"/>	
+			<property name="ErrorPointColor" text="出错圆心颜色" default-value="rgb(255,20,20)"/>	
+			
+			<property name="class"  text="class">
+				<editor-parameter><![CDATA[
+				{
+					"0base": {
+						label: "基础样式",
+						value: "x-locker"
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog"/>
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['mode','模式'],['R','圆半径'],['password','密码']]}"  />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'mode',label:'模式',type:'integer'},
+				    {name:'R',label:'圆半径',type:'integer'},
+				    {name:'password',label:'密码',type:'array'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>
+				 
+		<toolbar>	
+		</toolbar>
+
+		<property-editors>
+			<property-editor name="locker-mode" type="list">
+				<static-data value="1:校验密码模式,2:设置密码模式,0:通用模式" />
+			</property-editor>
+			<property-editor name="locker-password" type="dialog" 
+				url="$UI/system/components/justep/locker/designer/setPassword.w"
+				editor-parameter="{width:600,height:500}" >
+			</property-editor>
+		</property-editors>
+
+		<events>  <!--组件事件-->
+			<group name="check">		
+				<event name="onCheckSuccess"  text="校验密码成功"/>
+				<event name="onCheckError"  text="校验密码失败"/>
+			</group>	
+			<group name="password">		
+				<event name="onPasswordFirstSuccess"  text="首次输入密码成功"/>
+				<event name="onPasswordSuccess"  text="设置密码成功"/>
+				<event name="onPasswordError"  text="设置密码失败"/>
+			</group>	
+			<event name="onInput"  text="普通模式输入"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+			<template name="default"><![CDATA[ 
+				<canvas component="$UI/system/components/justep/locker/locker" class="x-locker" mode="1" style="width:320px;height:320px;"/> 
+		   ]]></template>
+		</templates>
+	</element>
+
+		
+</elements>

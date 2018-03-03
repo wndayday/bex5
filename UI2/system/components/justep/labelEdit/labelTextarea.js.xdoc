@@ -1,0 +1,14 @@
+/**
+	@name $UI/system/components/justep/labelEdit/labelTextarea
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：带标签的文本域，多行文本，如内容简介;
+		<b>使用方法</b>：拖入设计器中，配置文本、也可绑定文本；可以配置引用来初始化数据，可以配置值改变触发动作;
+	</xmp>
+	
+*/
+
+

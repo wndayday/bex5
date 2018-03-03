@@ -1,0 +1,52 @@
+/**
+	@name $UI/system/components/justep/titleBar/titleBar
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：几乎每个页面都用到的页头标题 ;
+		<b>使用方法</b>：拖入设计器中；可以配置样式来确定排列风格，如长宽高、颜色、字体字号等;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/titleBar/titleBar#xid
+	@attribute 
+	@type string
+	@description 
+*/
+
+/**
+	@name $UI/system/components/justep/titleBar/titleBar#title
+	@attribute
+	@property 
+	@type string
+	@description 标题
+*/
+	
+/**
+ @name $UI/system/components/justep/titleBar/titleBar#get
+ @function
+ @param {String} name 属性名称，如："title"
+ @returns 返回属性值
+ @description 获取TitleBar的属性
+*/
+
+/**
+ @name $UI/system/components/justep/titleBar/titleBar#set
+ @function
+ @param {json} arg 属性值对
+	<br/><b>结构如下：</b>
+	<xmp> 
+	{
+		"title" : {string} 显示标题
+	}
+	</xmp>
+ @description 设置TitleBar的属性
+*/
+
+	

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cy2yy2e" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cy2yy2e" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.div.cy2yy2e{padding-top: 200px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cy2yy2e" class="cy2yy2e"></div>  
+  <h4 xid="h41" __cid="cy2yy2e" class="cy2yy2e">文本选择器
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cy2yy2e" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="cy2yy2e"> 
+      <i xid="i1" __cid="cy2yy2e" class="cy2yy2e"/>  
+      <span xid="span1" __cid="cy2yy2e" class="cy2yy2e">JS</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cy2yy2e" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cy2yy2e"> 
+      <i xid="i4" __cid="cy2yy2e" class="cy2yy2e"/>  
+      <span xid="span4" __cid="cy2yy2e" class="cy2yy2e">源码</span>
+    </a>
+  </h4>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cy2yy2e" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;source&quot;,&quot;direction&quot;:&quot;left-bottom&quot;}" __cid="cy2yy2e"> 
+    <div class="x-popMenu-overlay cy2yy2e" xid="div1" __cid="cy2yy2e"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cy2yy2e" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cy2yy2e">
+      <li class="x-menu-item cy2yy2e" xid="item1" __cid="cy2yy2e"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cy2yy2e" xid="leftSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:leftSourceClick" data-config="{&quot;label&quot;:&quot;左表源码&quot;}" __cid="cy2yy2e"> 
+          <i xid="i5" __cid="cy2yy2e" class="cy2yy2e"/>  
+          <span xid="span5" __cid="cy2yy2e" class="cy2yy2e">左表源码</span>
+        </a>  
+        <li class="x-menu-divider divider cy2yy2e" xid="divider1" __cid="cy2yy2e"/>
+      </li>  
+      <li class="x-menu-item cy2yy2e" xid="item2" __cid="cy2yy2e"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cy2yy2e" xid="rightSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:rightSourceClick" data-config="{&quot;label&quot;:&quot;右表源码&quot;}" __cid="cy2yy2e"> 
+          <i xid="i6" __cid="cy2yy2e" class="cy2yy2e"/>  
+          <span xid="span6" __cid="cy2yy2e" class="cy2yy2e">右表源码</span>
+        </a> 
+      </li> 
+    </ul>
+  </div>
+  <div component="$model/UI2/system/components/bootstrap/row/row" class="row cy2yy2e" xid="row4" style="margin-left:0;margin-right:0" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cy2yy2e"> 
+    <div class="col col-xs-5 col-sm-5 col-md-5 col-lg-5 cy2yy2e" xid="col4" __cid="cy2yy2e">
+      <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered pull-right cy2yy2e" xid="leftGrid" data="leftEmployee" multiselect="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column4&quot;},{&quot;name&quot;:&quot;select&quot;,&quot;xid&quot;:&quot;column9&quot;}],&quot;data&quot;:&quot;leftEmployee&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:grid1CellRender;onRowClick:leftGridRowClick" __cid="cy2yy2e"/> 
+    </div>  
+    <div class="col col-xs-2 cy2yy2e" xid="col6" __cid="cy2yy2e"> 
+      <div xid="div2" class="div cy2yy2e" __cid="cy2yy2e">
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cy2yy2e" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cy2yy2e"> 
+          <div class="col col-xs-12 cy2yy2e" xid="col10" __cid="cy2yy2e">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-right center-block cy2yy2e" xid="advance" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:advanceClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-a&quot;,&quot;label&quot;:&quot;选择选中行&quot;}" __cid="cy2yy2e"> 
+              <i xid="i2" class="icon-arrow-right-a cy2yy2e" __cid="cy2yy2e"/>  
+              <span xid="span2" __cid="cy2yy2e" class="cy2yy2e">选择选中行</span>
+            </a>
+          </div> 
+        </div>
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cy2yy2e" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cy2yy2e"> 
+          <div class="col col-xs-12 cy2yy2e" xid="col14" __cid="cy2yy2e">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg center-block cy2yy2e" xid="return" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:returnClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-left-a&quot;,&quot;label&quot;:&quot;返回选中行&quot;}" __cid="cy2yy2e"> 
+              <i xid="i3" class="icon-arrow-left-a cy2yy2e" __cid="cy2yy2e"/>  
+              <span xid="span3" __cid="cy2yy2e" class="cy2yy2e">返回选中行</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="col col-xs-5 col-sm-5 col-md-5 col-lg-5 cy2yy2e" xid="col8" __cid="cy2yy2e">
+      <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cy2yy2e" xid="rightGrid" data="rightEmployee" multiselect="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;select&quot;,&quot;xid&quot;:&quot;column10&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column6&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column7&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column8&quot;}],&quot;data&quot;:&quot;rightEmployee&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:grid2CellRender;onRowClick:rightGridRowClick" __cid="cy2yy2e"/>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/fragment/gridList" text="动态栅格"
+		tag-name="div" icon="ul.gif"  binding-component="$UI/system/components/fragment/gridList"
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号" required="false"
+				editor-discriptor-ref="" />
+			<property name="style" text="样式" editor-ref="styleDialog" />
+		</properties>
+		<toolbar>
+		</toolbar>
+		<templates>
+			<template name="default"><![CDATA[ 
+<div class="container" component="$UI/system/components/fragment/gridList"
+	d_canaddchild="false">
+	<div component="$UI/system/components/justep/list/list"
+		d_canaddchild="false">
+		<ul class="x-list-template row" d_canaddchild="false">
+			<li class="col col-xs-3 col-sm-3" d_resizable="false"
+				d_canaddchild="true">
+			</li>
+		</ul>
+	</div>
+</div>
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

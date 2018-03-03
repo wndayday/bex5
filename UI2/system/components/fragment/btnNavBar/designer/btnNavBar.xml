@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/fragment/btnNavBar/btnNavBar" text="导航栏"
+		tag-name="div" icon="mutilLayoutListForm.png"  binding-component="$UI/system/components/fragment/btnNavBar/btnNavBar" 
+		child-range="$UI/system/components/justep/button/button"
+		component-type="bar" 
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号" required="false"
+				editor-discriptor-ref="" />
+			<property name="style" text="样式" editor-ref="styleDialog" />
+			<property name="vercialImage" text="分隔线图片" editor-ref="fileWebDialog" editor-parameter="*.gif;*.jpg;*.png;*.jpeg;*.bmp"/>
+			<property name="selectedImage" text="选中图片" editor-ref="fileWebDialog" editor-parameter="*.gif;*.jpg;*.png;*.jpeg;*.bmp"/>
+		</properties>
+		<toolbar>
+			<item text="添加按钮" method="addBtn"/>
+		</toolbar>
+		<templates>
+			<template name="default"><![CDATA[ 
+					<div class="btn-group btn-group-justified x-card x-btnNavBar" component="$UI/system/components/fragment/btnNavBar/btnNavBar"> 
+				 		<a class="btn btn-link btn-icon-top active" component="$UI/system/components/justep/button/button"  icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				          <div class="x-btnNavBar-vl"/> 
+				        </a>  
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				          <div class="x-btnNavBar-vl"/> 
+				        </a> 
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				          <div class="x-btnNavBar-vl"/> 
+				        </a> 
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				          <div class="x-btnNavBar-vl"/> 
+				        </a> 
+				        
+				 		<a class="btn btn-link btn-icon-top " component="$UI/system/components/justep/button/button" icon="icon-home" label="标签" > 
+				          <i class="icon-home icon" />  
+				          <span xid="span1">标签</span> 
+				          <div class="x-btnNavBar-vl"/> 
+				        </a> 
+					 </div>
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

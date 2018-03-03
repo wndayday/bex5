@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c6VZ7Zn" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6VZ7Zn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c6VZ7Zn" class="c6VZ7Zn"/>  
+  <h4 xid="h41" __cid="c6VZ7Zn" class="c6VZ7Zn">多表头支持
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c6VZ7Zn" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="c6VZ7Zn"> 
+      <i xid="i1" __cid="c6VZ7Zn" class="c6VZ7Zn"/>  
+      <span xid="span1" __cid="c6VZ7Zn" class="c6VZ7Zn">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c6VZ7Zn" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="c6VZ7Zn"> 
+      <i xid="i2" __cid="c6VZ7Zn" class="c6VZ7Zn"/>  
+      <span xid="span2" __cid="c6VZ7Zn" class="c6VZ7Zn">源码</span>
+    </a>
+  </h4>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-title-center c6VZ7Zn" xid="employeeGrid" data="employeeData" multiselect="true" showRowNumber="true" multiboxonly="false" useFilterBar="false" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column4&quot;},{&quot;name&quot;:&quot;id&quot;,&quot;xid&quot;:&quot;column5&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;groupHeaders&quot;:[[{&quot;columnCount&quot;:3,&quot;startColumn&quot;:&quot;name&quot;,&quot;titleText&quot;:&quot;个人信息&quot;,&quot;xid&quot;:&quot;default63&quot;}],[{&quot;columnCount&quot;:2,&quot;startColumn&quot;:&quot;name&quot;,&quot;titleText&quot;:&quot;基本信息&quot;,&quot;xid&quot;:&quot;default65&quot;}]],&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiboxonly&quot;:false,&quot;multiselect&quot;:true,&quot;rownumbers&quot;:true,&quot;useFilterBar&quot;:false,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="c6VZ7Zn"/>
+</div>

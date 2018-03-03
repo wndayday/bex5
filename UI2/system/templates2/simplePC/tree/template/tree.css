@@ -1,0 +1,34 @@
+.curRow {
+	background-color: #9f9f9f;  color:#fff;
+}
+
+/*grid表格*/
+.x-grid-widget-content{ background-color:#fff;}
+
+.x-grid .x-grid-htable{ background-color:#d1d1d1; border:1px solid #d1d1d1; border-bottom:0;}
+.x-grid .x-grid-htable th{ background-image:none;}
+.x-grid .x-grid-btable{ border:1px solid #d1d1d1; width:auto!important;}
+
+.x-priority-secondary, .x-grid-widget-content .x-priority-secondary, .x-grid-widget-header .x-priority-secondary{ background-color:#f4f4f4;}
+
+.x-grid-btable .x-grid-widget-content.x-state-highlight, 
+.x-grid-btable .x-grid-widget-content .x-state-highlight, 
+.x-grid-btable .x-grid-widget-header .x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-state-highlight.x-state-hover{ background-color: #f2f2f2;}
+
+.x-grid-btable .x-grid-widget-content.x-state-hover,
+.x-grid-btable .x-grid-widget-content .x-state-hover,
+.x-grid-btable .x-grid-widget-header .x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-state-focus,
+.x-grid-btable .x-grid-widget-content .x-state-focus,
+.x-grid-btable .x-grid-widget-header .x-state-focus {
+  background: #f2f2f2;
+}
+.x-grid .x-grid-widget-header{ border:0;}
+.x-grid tr.jqgrow td.x-grid-editing{ padding:5px 4px;}/*
+.x-grid tr.jqgrow td.x-grid-editing .x-grid-editer, .x-grid tr.jqgrow td.x-grid-editing .x-grid-editer.x-gridSelect .x-gridSelect-input{ background:#9f9f9f; color:#fff;}
+*/
+.x-grid-widget-content.x-state-highlight .x-icon{ color:#222;}
+.x-grid-widget-content .x-icon{ color:#999;}

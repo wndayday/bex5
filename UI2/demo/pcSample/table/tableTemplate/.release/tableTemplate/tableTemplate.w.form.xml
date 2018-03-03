@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cRfAf2y" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRfAf2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/pagerBar/pagerBar,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/pagination/pagination,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/dataTables/dataTables,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/bar/bar,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/form/form(bootstrap),">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.o-uploadFile.cRfAf2y .x-attachment-content.cRfAf2y{min-height: 32px; min-height: 32px; border-top: 0; background: none; margin-top: 0px} .o-uploadFile.cRfAf2y .x-item-upload.cRfAf2y{width: 80px; height: 32px; line-height: 32px; background: none} .o-uploadFile.cRfAf2y .x-attachment.cRfAf2y{min-height: 32px; padding: 0} .o-uploadFile.cRfAf2y .x-attachment.cRfAf2y .x-attachment-cell.cRfAf2y{float: none; margin: 0; height: 32px; display: block} .o-link.cRfAf2y{padding: 0 10px} .x-popOver-content.cRfAf2y{width: 400px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cRfAf2y" class="cRfAf2y"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cRfAf2y" xid="popOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;column2&quot;,&quot;position&quot;:&quot;center&quot;}" __cid="cRfAf2y"> 
+    <div class="x-popOver-overlay cRfAf2y" xid="div12" __cid="cRfAf2y"/>  
+    <div class="x-popOver-content panel panel-default cRfAf2y" xid="div13" __cid="cRfAf2y"> 
+      <div component="$model/UI2/system/components/justep/bar/bar" class="x-titlebar x-bar cRfAf2y" xid="bar1" bind-html="&quot;用户详细信息&quot;" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="cRfAf2y"/>  
+      <ul role="menu" aria-labelledby="dropdownMenu1" xid="ul1" class="panel-body cRfAf2y" __cid="cRfAf2y"> 
+        <li role="presentation" xid="li3" __cid="cRfAf2y" class="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRfAf2y" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" xid="label2" style="text-align:right;" __cid="cRfAf2y">姓名：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRfAf2y" xid="output7" data-bind="component:{ref:userData.ref('uName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRfAf2y"/> 
+          </div> 
+        </li>  
+        <li role="presentation" xid="li4" __cid="cRfAf2y" class="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRfAf2y" xid="labelOutput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" xid="label3" style="text-align:right;" __cid="cRfAf2y">性别：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRfAf2y" xid="output8" data-bind="component:{ref:userData.ref('uSex'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRfAf2y"/> 
+          </div> 
+        </li>  
+        <li role="presentation" xid="li3" __cid="cRfAf2y" class="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRfAf2y" xid="labelOutput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" xid="label4" style="text-align:right;" __cid="cRfAf2y">年龄：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRfAf2y" xid="output9" data-bind="component:{ref:userData.ref('uAge'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRfAf2y"/> 
+          </div> 
+        </li>  
+        <li role="presentation" xid="li4" __cid="cRfAf2y" class="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRfAf2y" xid="labelOutput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" xid="label5" style="text-align:right;" __cid="cRfAf2y">学历：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRfAf2y" xid="output10" data-bind="component:{ref:userData.ref('uEducation'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRfAf2y"/> 
+          </div> 
+        </li>  
+        <li role="presentation" xid="li5" __cid="cRfAf2y" class="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRfAf2y" xid="labelOutput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" xid="label6" style="text-align:right;" __cid="cRfAf2y">入职日期：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRfAf2y" xid="output11" data-bind="component:{ref:userData.ref('uHiredate'),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;yyyy年MM月dd日&quot;}" __cid="cRfAf2y"/> 
+          </div> 
+        </li>  
+        <li role="presentation" xid="li6" __cid="cRfAf2y" class="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cRfAf2y" xid="labelOutput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" xid="label7" style="text-align:right;" __cid="cRfAf2y">备注：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cRfAf2y" xid="output12" data-bind="component:{ref:userData.ref('uRemark'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cRfAf2y"/> 
+          </div> 
+        </li> 
+      </ul> 
+    </div> 
+  </div>  
+  <h4 xid="h42" __cid="cRfAf2y" class="cRfAf2y">表格基本模板
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cRfAf2y" xid="jsButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsButtonClick" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="cRfAf2y"> 
+      <i xid="i2" __cid="cRfAf2y" class="cRfAf2y"/>  
+      <span xid="span3" __cid="cRfAf2y" class="cRfAf2y">JS</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cRfAf2y" xid="source" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;icon&quot;:&quot;icon-document-text&quot;,&quot;label&quot;:&quot;源码&quot;}" __cid="cRfAf2y"> 
+      <i xid="i6" class="icon-document-text cRfAf2y" __cid="cRfAf2y"/>  
+      <span xid="span7" __cid="cRfAf2y" class="cRfAf2y">源码</span> 
+    </a> 
+  </h4>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cRfAf2y" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;功能面板&quot;}" __cid="cRfAf2y"> 
+    <div class="x-control-group-title x-control-group-title-info cRfAf2y" xid="controlGroupTitle1" __cid="cRfAf2y"> 
+      <span xid="span9" __cid="cRfAf2y" class="cRfAf2y">功能面板</span> 
+    </div>  
+    <div class="form-horizontal container-fluid cRfAf2y" component="$model/UI2/system/components/bootstrap/form/form(bootstrap)" xid="form1" style="height:50px;" __cid="cRfAf2y"> 
+      <div class="form-group cRfAf2y" xid="formGroup1" __cid="cRfAf2y"> 
+        <div class="col-sm-6 cRfAf2y" xid="col8" __cid="cRfAf2y"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cRfAf2y" xid="labelEditBtn1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cRfAf2y"> 
+            <label class="x-label cRfAf2y" style="width:50x;" xid="label1" __cid="cRfAf2y">姓名：</label>  
+            <div class="x-edit cRfAf2y" xid="div3" __cid="cRfAf2y"> 
+              <div class="input-group cRfAf2y" xid="div4" __cid="cRfAf2y"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cRfAf2y" xid="queryInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cRfAf2y"/>  
+                <span class="input-group-btn cRfAf2y" xid="span1" __cid="cRfAf2y"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cRfAf2y" xid="queryButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:queryButtonClick" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;}" __cid="cRfAf2y"> 
+                    <i class="icon-android-search cRfAf2y" xid="i1" __cid="cRfAf2y"/>  
+                    <span xid="span8" __cid="cRfAf2y" class="cRfAf2y">查询</span> 
+                  </a> 
+                </span> 
+              </div> 
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cRfAf2y" xid="resetButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:resetButtonClick" data-config="{&quot;icon&quot;:&quot;icon-loop&quot;,&quot;label&quot;:&quot;重置&quot;}" __cid="cRfAf2y"> 
+              <i xid="i3" class="icon-loop cRfAf2y" __cid="cRfAf2y"/>  
+              <span xid="span2" __cid="cRfAf2y" class="cRfAf2y">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div __cid="cRfAf2y" class="cRfAf2y"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-left cRfAf2y" xid="addButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addButtonClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-plus&quot;,&quot;label&quot;:&quot;新增用户&quot;}" __cid="cRfAf2y"> 
+      <i xid="i4" class="icon-ios7-plus cRfAf2y" __cid="cRfAf2y"/>  
+      <span xid="span4" __cid="cRfAf2y" class="cRfAf2y">新增用户</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-left cRfAf2y" xid="removeButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeButtonClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-trash&quot;,&quot;label&quot;:&quot;批量删除&quot;}" __cid="cRfAf2y"> 
+      <i xid="i5" class="icon-ios7-trash cRfAf2y" __cid="cRfAf2y"/>  
+      <span xid="span6" __cid="cRfAf2y" class="cRfAf2y">批量删除</span> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple" class="o-uploadFile pull-left cRfAf2y" data-bind="component:{ref:fileData.ref('fFile'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cRfAf2y"> 
+      <div class="x-attachment cRfAf2y" xid="div25" __cid="cRfAf2y"> 
+        <div class="x-attachment-content cRfAf2y" xid="div26" __cid="cRfAf2y"> 
+          <div class="x-attachment-cell cRfAf2y" data-bind="visible:$state.get() == 'upload'" xid="div31" __cid="cRfAf2y"> 
+            <div class="x-attachment-item x-item-upload cRfAf2y" data-bind="visible:$state.get() == 'upload'" xid="div32" __cid="cRfAf2y"> 
+              <i xid="i7" class="icon-document-text cRfAf2y" __cid="cRfAf2y"/> 附件上传
+            </div> 
+          </div>  
+          <div style="clear:both;" xid="div35" __cid="cRfAf2y" class="cRfAf2y"/> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" class="table table-bordered table-hover table-striped cRfAf2y" xid="userDataTables" data="userData" multiSelect="true" scrollY="360" scrollX="1" responsive="false" showRowNumber="false" data-config="{&quot;columns&quot;:[{&quot;className&quot;:&quot;text-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uName&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uPassword&quot;,&quot;visible&quot;:false,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;className&quot;:&quot;text-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uSex&quot;,&quot;width&quot;:&quot;50&quot;,&quot;xid&quot;:&quot;column4&quot;},{&quot;className&quot;:&quot;text-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uAge&quot;,&quot;width&quot;:&quot;50&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;className&quot;:&quot;text-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uEducation&quot;,&quot;width&quot;:&quot;150&quot;,&quot;xid&quot;:&quot;column6&quot;},{&quot;className&quot;:&quot;text-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uHiredate&quot;,&quot;width&quot;:&quot;150&quot;,&quot;xid&quot;:&quot;column7&quot;},{&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uRemark&quot;,&quot;width&quot;:&quot;&quot;,&quot;xid&quot;:&quot;column8&quot;},{&quot;className&quot;:&quot;text-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;uOperate&quot;,&quot;title&quot;:&quot;操作&quot;,&quot;width&quot;:&quot;200&quot;,&quot;xid&quot;:&quot;column9&quot;}],&quot;data&quot;:&quot;userData&quot;,&quot;flexibleWidth&quot;:true,&quot;multiSelect&quot;:true,&quot;responsive&quot;:false,&quot;scrollX&quot;:&quot;1&quot;,&quot;scrollY&quot;:&quot;360&quot;,&quot;showRowNumber&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowCheckedAll:userDataTablesRowCheckedAll;onCellRender:userDataTablesCellRender;onRowClick:userDataTablesRowClick" __cid="cRfAf2y"/>  
+  <div component="$model/UI2/system/components/justep/pagerBar/pagerBar" class="x-pagerbar container-fluid cRfAf2y" xid="pagerBar1" data-bind="component:{name:'$model/UI2/system/components/justep/pagerBar/pagerBar'}" data-config="{&quot;data&quot;:&quot;userData&quot;}" __cid="cRfAf2y"> 
+    <div class="row cRfAf2y" xid="div5" __cid="cRfAf2y"> 
+      <div class="col-sm-3 cRfAf2y" xid="div6" __cid="cRfAf2y"> 
+        <div class="x-pagerbar-length cRfAf2y" xid="div7" __cid="cRfAf2y"> 
+          <label component="$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect" class="x-pagerlimitselect cRfAf2y" xid="pagerLimitSelect2" data-bind="component:{name:'$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect'}" data-config="{&quot;data&quot;:&quot;userData&quot;,&quot;defaultValue&quot;:10}" __cid="cRfAf2y"> 
+            <span xid="span11" __cid="cRfAf2y" class="cRfAf2y">显示</span>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control input-sm cRfAf2y" xid="select2" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" __cid="cRfAf2y"> 
+              <option value="10" xid="default6" __cid="cRfAf2y" class="cRfAf2y">10</option>  
+              <option value="20" xid="default7" __cid="cRfAf2y" class="cRfAf2y">20</option>  
+              <option value="50" xid="default8" __cid="cRfAf2y" class="cRfAf2y">50</option>  
+              <option value="100" xid="default9" __cid="cRfAf2y" class="cRfAf2y">100</option> 
+            </select>  
+            <span xid="span12" __cid="cRfAf2y" class="cRfAf2y">条</span> 
+          </label> 
+        </div> 
+      </div>  
+      <div class="col-sm-3 cRfAf2y" xid="div8" __cid="cRfAf2y"> 
+        <div class="x-pagerbar-info cRfAf2y" xid="div9" __cid="cRfAf2y">当前显示0条，共0条</div> 
+      </div>  
+      <div class="col-sm-6 cRfAf2y" xid="div10" __cid="cRfAf2y"> 
+        <div class="x-pagerbar-pagination cRfAf2y" xid="div11" __cid="cRfAf2y"> 
+          <ul class="pagination cRfAf2y" component="$model/UI2/system/components/bootstrap/pagination/pagination" xid="pagination1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/pagination/pagination'}" data-config="{&quot;data&quot;:&quot;userData&quot;}" __cid="cRfAf2y"> 
+            <li class="prev cRfAf2y" xid="li1" __cid="cRfAf2y"> 
+              <a href="#" xid="a2" __cid="cRfAf2y" class="cRfAf2y"> 
+                <span aria-hidden="true" xid="span13" __cid="cRfAf2y" class="cRfAf2y">«</span>  
+                <span class="sr-only cRfAf2y" xid="span14" __cid="cRfAf2y">Previous</span> 
+              </a> 
+            </li>  
+            <li class="next cRfAf2y" xid="li2" __cid="cRfAf2y"> 
+              <a href="#" xid="a3" __cid="cRfAf2y" class="cRfAf2y"> 
+                <span aria-hidden="true" xid="span15" __cid="cRfAf2y" class="cRfAf2y">»</span>  
+                <span class="sr-only cRfAf2y" xid="span16" __cid="cRfAf2y">Next</span> 
+              </a> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialogUpdate" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialogUpdateReceive" data-config="{&quot;height&quot;:&quot;60%&quot;,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/demo/pcSample/table/tableTemplate/toUpdate.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;修改&quot;,&quot;width&quot;:&quot;50%&quot;}" __cid="cRfAf2y" class="cRfAf2y">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cRfAf2y" __cid="cRfAf2y"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cRfAf2y" style="display:none;" showTitle="true" __cid="cRfAf2y">
+      <xhtml:div class="x-dialog-title cRfAf2y" __cid="cRfAf2y">
+        <xhtml:button class="close cRfAf2y" __cid="cRfAf2y">
+          <xhtml:span __cid="cRfAf2y" class="cRfAf2y">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cRfAf2y" __cid="cRfAf2y">修改</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cRfAf2y" __cid="cRfAf2y"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialogAdd" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:windowDialogAddReceive" data-config="{&quot;height&quot;:&quot;80%&quot;,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/demo/pcSample/table/tableTemplate/toAdd.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;新增用户&quot;,&quot;width&quot;:&quot;55%&quot;}" __cid="cRfAf2y" class="cRfAf2y">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cRfAf2y" __cid="cRfAf2y"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cRfAf2y" style="display:none;" showTitle="true" __cid="cRfAf2y">
+      <xhtml:div class="x-dialog-title cRfAf2y" __cid="cRfAf2y">
+        <xhtml:button class="close cRfAf2y" __cid="cRfAf2y">
+          <xhtml:span __cid="cRfAf2y" class="cRfAf2y">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cRfAf2y" __cid="cRfAf2y">新增用户</xhtml:div>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cRfAf2y" __cid="cRfAf2y"/>
+    </xhtml:div>
+  </span> 
+</div>

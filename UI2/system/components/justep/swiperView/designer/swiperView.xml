@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/swiperView/swiperView"
+		binding-component="$UI/system/components/justep/swiperView/swiperView"
+		tag-name="div" icon="swiperView.png" text="横向滑动" display-property="xid"
+		component-type="layout-container" validator="ViewValidator"
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号" required="false" />
+			<property name="slidesPerView" text="列" data-type="number" />
+			<property name="slidesPerColumn" text="行" data-type="number" />
+			<property name="loopTerm" text="循环项(xid)" data-type="string"
+				editor-ref="chooseComponent-editor" />
+			<property name="pagination" text="分页器" data-type="boolean"
+				editor-ref="booleanList" />
+			<property name="directionButton" text="方向按钮" data-type="boolean" editor-ref="booleanList"></property>
+			
+				
+				<property name="spaceBetween" text="距离" data-type="string" />
+				<property name="class" text="class" editor-ref="classSelector" />
+				<property name="style" text="样式" editor-ref="styleDialog" />
+				<include
+					path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']" />
+		</properties>
+		<property-editors>
+			<property-editor name="chooseComponent-editor" type="dialog"
+				url="$UI/system/designer/webIde/editors/compSelector/compSelector.w"
+				editor-parameter="{width:800,height:600}">
+				<dialog-page class-name="chooseComponent" />
+			</property-editor>
+		</property-editors>
+		<toolbar>
+		</toolbar>
+		<events>
+			<event name="reachEnd" type="event" text="达到边界" parameters="event" is-script="true" />
+			
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*" />
+		</events>
+		<templates>
+			<template name="default"><![CDATA[ 
+		   <div component="$UI/system/components/justep/swiperView/swiperView" class="x-swiperView" style="height:300px">
+		        <div class="x-swiperView"></div>
+		   </div>
+		   ]]></template>
+		</templates>
+
+	</element>
+</elements>

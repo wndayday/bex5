@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cIZVV73" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIZVV73" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cIZVV73" class="cIZVV73"/>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cIZVV73" xid="edit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:editClick" data-config="{&quot;label&quot;:&quot;编辑&quot;}" __cid="cIZVV73"> 
+    <i xid="i1" __cid="cIZVV73" class="cIZVV73"/>  
+    <span xid="span1" __cid="cIZVV73" class="cIZVV73">编辑</span> 
+  </a>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cIZVV73" class="cIZVV73"/>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cIZVV73" xid="download" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:downloadClick" data-config="{&quot;label&quot;:&quot;下载&quot;}" __cid="cIZVV73"> 
+    <i xid="i2" __cid="cIZVV73" class="cIZVV73"/>  
+    <span xid="span2" __cid="cIZVV73" class="cIZVV73">下载</span> 
+  </a>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cIZVV73" xid="open" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openClick" data-config="{&quot;label&quot;:&quot;打开&quot;}" __cid="cIZVV73"> 
+    <i xid="i3" __cid="cIZVV73" class="cIZVV73"/>  
+    <span xid="span3" __cid="cIZVV73" class="cIZVV73">打开</span> 
+  </a>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cIZVV73" xid="upload" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;上传&quot;}" __cid="cIZVV73"> 
+    <i xid="i4" __cid="cIZVV73" class="cIZVV73"/>  
+    <span xid="span4" __cid="cIZVV73" class="cIZVV73">上传</span> 
+  </a>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cIZVV73" xid="init" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:initClick" data-config="{&quot;label&quot;:&quot;插件安装&quot;}" __cid="cIZVV73"> 
+    <i xid="i5" __cid="cIZVV73" class="cIZVV73"/>  
+    <span xid="span5" __cid="cIZVV73" class="cIZVV73">插件安装</span> 
+  </a>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cIZVV73" xid="test" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:test" data-config="{&quot;label&quot;:&quot;test&quot;}" __cid="cIZVV73"> 
+    <i xid="i5" __cid="cIZVV73" class="cIZVV73"/>  
+    <span xid="span5" __cid="cIZVV73" class="cIZVV73">test</span> 
+  </a>  
+  <div xid="fileEditor" style="height:50px;" __cid="cIZVV73" class="cIZVV73"/>  
+  <div class="x-panel-content x-flex x-flex-column cIZVV73" xid="content2" __cid="cIZVV73"> 
+    <h3 __cid="cIZVV73" class="cIZVV73">AttachmentSimple</h3>  
+    <p xid="p1" __cid="cIZVV73" class="cIZVV73">attachmentSimple组件，只需要绑定data的某一个字段就可以使用。</p>  
+    <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:data1.ref('fAttachment'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIZVV73" class="cIZVV73"> 
+      <div class="x-attachment cIZVV73" xid="div4" __cid="cIZVV73"> 
+        <div class="x-attachment-content x-card-border cIZVV73" xid="div5" __cid="cIZVV73"> 
+          <div class="x-doc-process cIZVV73" xid="div6" __cid="cIZVV73"> 
+            <div class="progress-bar x-doc-process-bar cIZVV73" role="progressbar" style="width:0%;" xid="div7" __cid="cIZVV73"/>
+          </div>  
+          <div data-bind="foreach:$attachmentItems" xid="div8" __cid="cIZVV73" class="cIZVV73"> 
+            <div class="x-attachment-cell cIZVV73" xid="div9" __cid="cIZVV73"> 
+              <div class="x-attachment-item x-item-other cIZVV73" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div10" __cid="cIZVV73"> 
+                <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIZVV73" xid="a1" __cid="cIZVV73"/>
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-attachment-cell cIZVV73" data-bind="visible:$state.get() == 'upload'" xid="div11" __cid="cIZVV73"> 
+            <div class="x-attachment-item x-item-upload cIZVV73" data-bind="visible:$state.get() == 'upload'" xid="div12" __cid="cIZVV73"/>
+          </div>  
+          <div class="x-attachment-cell cIZVV73" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div13" __cid="cIZVV73"> 
+            <div class="x-attachment-item x-item-remove cIZVV73" data-bind="click:changeState.bind($object,'remove')" xid="div14" __cid="cIZVV73"/>
+          </div>  
+          <div style="clear:both;" xid="div15" __cid="cIZVV73" class="cIZVV73"/>
+        </div> 
+      </div> 
+    </div>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control cIZVV73" xid="input2" style="height:0;width:0;display:none;" data-bind="component:{ref:data1.ref('fAttachment'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cIZVV73"/> 
+  </div> 
+</div>

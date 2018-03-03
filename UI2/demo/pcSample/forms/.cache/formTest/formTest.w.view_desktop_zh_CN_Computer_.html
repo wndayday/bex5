@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cFJ7vye" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFJ7vye" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/dataTables/dataTables,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-col.cFJ7vye{border: 1px rgb(204, 204, 204) solid} .form-control.cFJ7vye{width: 50%} .x-output.cFJ7vye{width: 200px} .spans.cFJ7vye{width: 47%; float: right; margin-top: 8px; color: red}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cFJ7vye" class="cFJ7vye"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cFJ7vye" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;hintInput&quot;,&quot;direction&quot;:&quot;left-bottom&quot;,&quot;dismissible&quot;:false,&quot;opacity&quot;:0.1}" __cid="cFJ7vye"> 
+    <div class="x-popMenu-overlay cFJ7vye" xid="div5" __cid="cFJ7vye"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cFJ7vye" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cFJ7vye"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cFJ7vye" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;hintData&quot;}" __cid="cFJ7vye"> 
+        <ul class="x-list-template hide cFJ7vye" xid="listTemplateUl1" __cid="cFJ7vye" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="li1" __cid="cFJ7vye" class="cFJ7vye"> 
+            <div style="cursor: pointer;" component="$model/UI2/system/components/justep/output/output" class="x-output cFJ7vye" xid="output" data-bind="component:{ref:ref('address'),name:'$model/UI2/system/components/justep/output/output'},event:{click:$model._callModelFn.bind($model, 'outputClick')}" __cid="cFJ7vye"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </ul> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cFJ7vye" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;表单验证&quot;}" __cid="cFJ7vye"> 
+    <div class="x-control-group-title cFJ7vye" xid="controlGroupTitle1" __cid="cFJ7vye"> 
+      <span xid="span3" __cid="cFJ7vye" class="cFJ7vye">表单验证</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFJ7vye" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cFJ7vye"> 
+      <i xid="i6" __cid="cFJ7vye" class="cFJ7vye"/>  
+      <span xid="span4" __cid="cFJ7vye" class="cFJ7vye">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFJ7vye" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cFJ7vye"> 
+      <i xid="i5" __cid="cFJ7vye" class="cFJ7vye"/>  
+      <span xid="span4" __cid="cFJ7vye" class="cFJ7vye">源码</span> 
+    </a>  
+    <div class="form-horizontal container-fluid cFJ7vye" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cFJ7vye"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col1" __cid="cFJ7vye"> 
+          <label xid="label2" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('uName')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col2" __cid="cFJ7vye"> 
+          <span xid="uSpan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入用户名" class="form-control cFJ7vye" xid="uName" data-bind="component:{ref:userData.ref('uName'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'uNameKeyup')}" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col4" __cid="cFJ7vye"> 
+          <label xid="label3" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('name')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col5" __cid="cFJ7vye"> 
+          <span xid="nameSpan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入汉字" class="form-control cFJ7vye" xid="name" data-bind="component:{ref:userData.ref('name'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'nameKeyup')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col12" __cid="cFJ7vye"> 
+          <label xid="label4" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('pass')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col13" __cid="cFJ7vye"> 
+          <span xid="pspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入密码" class="form-control cFJ7vye" type="password" xid="pass" data-bind="component:{ref:userData.ref('pass'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'passKeyup')}" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col11" __cid="cFJ7vye"> 
+          <label xid="label5" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('truePwd')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col10" __cid="cFJ7vye"> 
+          <span xid="repspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="再次输入密码" class="form-control cFJ7vye" type="password" xid="repass" data-bind="component:{ref:userData.ref('truePwd'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'repassKeyup')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col16" __cid="cFJ7vye"> 
+          <label xid="label6" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('Hobby')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col17" __cid="cFJ7vye"> 
+          <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group cFJ7vye" xid="checkboxGroup" data-bind="component:{ref:userData.ref('Hobby'),name:'$model/UI2/system/components/justep/select/checkboxGroup'},foreach:{data:hobbyData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cFJ7vye"> 
+            <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cFJ7vye" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('hobby'),value:ref('hobby')}" __cid="cFJ7vye">  
+              <input type="checkbox" __cid="cFJ7vye" class="cFJ7vye"/>  
+              <label __cid="cFJ7vye" class="cFJ7vye"/> 
+            </span> 
+          </span>  
+          <span xid="hobbyspan" style="color:red;" __cid="cFJ7vye" class="cFJ7vye">*</span> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col15" __cid="cFJ7vye"> 
+          <label xid="label7" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('sex')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col14" __cid="cFJ7vye" data-bind="event:{select:$model._callModelFn.bind($model, 'col14Select')}"> 
+          <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group cFJ7vye" xid="radioGroup" data-bind="component:{ref:userData.ref('sex'),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:sexData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-events="onChange:radioGroupChange" __cid="cFJ7vye"> 
+            <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cFJ7vye" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('sex'),value:ref('sex')}" __cid="cFJ7vye">  
+              <input type="radio" __cid="cFJ7vye" class="cFJ7vye"/>  
+              <label __cid="cFJ7vye" class="cFJ7vye"/> 
+            </span> 
+          </span>  
+          <span xid="sexspan" style="color:red;" __cid="cFJ7vye" class="cFJ7vye">*</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col20" __cid="cFJ7vye"> 
+          <label xid="label8" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('age')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col21" __cid="cFJ7vye"> 
+          <span xid="agespan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入年龄0-200" class="form-control cFJ7vye" xid="age" data-bind="component:{ref:userData.ref('age'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'ageKeyup')}" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col19" __cid="cFJ7vye"> 
+          <label xid="label9" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('email')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col18" __cid="cFJ7vye"> 
+          <span xid="emspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入正确的邮箱" class="form-control cFJ7vye" xid="email" data-bind="component:{ref:userData.ref('email'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'emailKeyup')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col24" __cid="cFJ7vye"> 
+          <label xid="label10" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('tel')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col25" __cid="cFJ7vye"> 
+          <span xid="telspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入正确的手机号码" class="form-control cFJ7vye" xid="tel" data-bind="component:{ref:userData.ref('tel'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'telKeyup')}" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col23" __cid="cFJ7vye"> 
+          <label xid="label11" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('postcode')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col22" __cid="cFJ7vye"> 
+          <span xid="pcspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入正确的邮政编码" class="form-control cFJ7vye" xid="pastcode" data-bind="component:{ref:userData.ref('postcode'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'pastcodeKeyup')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col28" __cid="cFJ7vye"> 
+          <label xid="label12" class="pull-right cFJ7vye" placeholder="请输入正确的邮箱" __cid="cFJ7vye" data-bind="text:userData.label('QQ')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col29" __cid="cFJ7vye"> 
+          <span xid="QQspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入QQ号" class="form-control cFJ7vye" xid="QQ" data-bind="component:{ref:userData.ref('QQ'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'QQKeyup')}" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col27" __cid="cFJ7vye"> 
+          <label xid="label13" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('address')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col26" __cid="cFJ7vye"> 
+          <span xid="IPspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入正确的IP地址" class="form-control cFJ7vye" xid="IP" data-bind="component:{ref:userData.ref('address'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'IPKeyup')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col32" __cid="cFJ7vye"> 
+          <label xid="label14" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('col12')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col33" __cid="cFJ7vye"> 
+          <span xid="decispan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入正负小数" class="form-control cFJ7vye" xid="deci" data-bind="component:{ref:userData.ref('col12'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'deciKeyup')}" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col31" __cid="cFJ7vye"> 
+          <label xid="label15" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('col13')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col30" __cid="cFJ7vye"> 
+          <span xid="integspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入正负整数或小数" class="form-control cFJ7vye" xid="integ" data-bind="component:{ref:userData.ref('col13'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'integKeyup')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col36" __cid="cFJ7vye"> 
+          <label xid="label16" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('radioSelect')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col37" __cid="cFJ7vye"> 
+          <span xid="xiaspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control cFJ7vye" xid="radioSelect" style="width:50%;" data-bind="component:{ref:userData.ref('radioSelect'),name:'$model/UI2/system/components/justep/select/select'},options:selectData.datas,optionsValue:'address',optionsText:'address',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-events="onChange:radioSelectChange" __cid="cFJ7vye"/> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col35" __cid="cFJ7vye"> 
+          <label xid="label17" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('hintSelect')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col34" __cid="cFJ7vye"> 
+          <span xid="hspan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cFJ7vye" xid="hintInput" data-bind="component:{ref:userData.ref('hintSelect'),name:'$model/UI2/system/components/justep/input/input'},event:{focus:$model._callModelFn.bind($model, 'hintInputFocus')}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col44" __cid="cFJ7vye"> 
+          <label xid="label20" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('num')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col45" __cid="cFJ7vye"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cFJ7vye" xid="subBtn" style="float: left;width:10%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subBtnClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-minus-empty&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cFJ7vye"> 
+            <i xid="i1" class="icon-ios7-minus-empty cFJ7vye" __cid="cFJ7vye"/>  
+            <span xid="span1" __cid="cFJ7vye" class="cFJ7vye"/> 
+          </a>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cFJ7vye" xid="input15" style="float: left;width:11%;" data-bind="component:{ref:userData.ref('num'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cFJ7vye"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cFJ7vye" xid="addNumBtN" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addNumBtNClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cFJ7vye"> 
+            <i xid="i4" class="icon-android-add cFJ7vye" __cid="cFJ7vye"/>  
+            <span xid="span2" __cid="cFJ7vye" class="cFJ7vye"/> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-20 cFJ7vye" xid="col47" __cid="cFJ7vye"> 
+          <label xid="label23" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('date')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col46" __cid="cFJ7vye"> 
+          <span xid="datespan" class="spans cFJ7vye" __cid="cFJ7vye">*</span>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cFJ7vye" xid="date" data-bind="component:{ref:userData.ref('date'),name:'$model/UI2/system/components/justep/input/input'}" data-events="onChange:dateChange" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row14" style="height:300px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col55" __cid="cFJ7vye"> 
+          <label xid="label26" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('select')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col54" style="height:100%;" __cid="cFJ7vye"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row18" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+            <div class="x-col x-col-20 x-col-40 cFJ7vye" xid="col3" style="height:100%;" __cid="cFJ7vye"> 
+              <div xid="div1" __cid="cFJ7vye" class="cFJ7vye"> 
+                <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" rowActiveClass="active" class="table table-hover table-striped cFJ7vye" xid="searchGrid" data="empData" ordering="false" multiSelect="false" style="cursor:pointer;" data-config="{&quot;columns&quot;:[{&quot;sName&quot;:&quot;emp&quot;,&quot;xid&quot;:&quot;column1&quot;}],&quot;data&quot;:&quot;empData&quot;,&quot;flexibleWidth&quot;:true,&quot;multiSelect&quot;:false,&quot;ordering&quot;:false,&quot;rowActiveClass&quot;:&quot;active&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowDblClick:searchGridRowDblClick" __cid="cFJ7vye"></table> 
+              </div> 
+            </div>  
+            <div class="x-col x-col-10 cFJ7vye" xid="col6" __cid="cFJ7vye"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-vertical cFJ7vye" style="margin-top:80px;" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cFJ7vye"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFJ7vye" xid="addAllBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addAllBtnClick" data-config="{&quot;label&quot;:&quot;全选&quot;}" __cid="cFJ7vye"> 
+                  <i xid="i8" __cid="cFJ7vye" class="cFJ7vye"/>  
+                  <span xid="span30" __cid="cFJ7vye" class="cFJ7vye">全选</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFJ7vye" xid="removeAllBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeAllBtnClick" data-config="{&quot;label&quot;:&quot;清空&quot;}" __cid="cFJ7vye"> 
+                  <i xid="i11" __cid="cFJ7vye" class="cFJ7vye"/>  
+                  <span xid="span33" __cid="cFJ7vye" class="cFJ7vye">清空</span> 
+                </a> 
+              </div> 
+            </div>  
+            <div class="x-col x-col-20 cFJ7vye" xid="col7" __cid="cFJ7vye"> 
+              <div xid="div4" __cid="cFJ7vye" class="cFJ7vye"> 
+                <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" rowActiveClass="active" class="table table-hover table-striped cFJ7vye" xid="selectGrid" data="addEmp" multiSelect="false" style="cursor:pointer;" data-config="{&quot;columns&quot;:[{&quot;sName&quot;:&quot;emp&quot;,&quot;xid&quot;:&quot;column2&quot;}],&quot;data&quot;:&quot;addEmp&quot;,&quot;flexibleWidth&quot;:true,&quot;multiSelect&quot;:false,&quot;rowActiveClass&quot;:&quot;active&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowDblClick:selectGridRowDblClick" __cid="cFJ7vye"></table> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col x-col-20 cFJ7vye" xid="col59" __cid="cFJ7vye"> 
+          <label xid="label28" class="pull-right cFJ7vye" __cid="cFJ7vye" data-bind="text:userData.label('desc')">label</label> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col58" __cid="cFJ7vye"> 
+          <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cFJ7vye" xid="textarea1" style="height:100px;" data-bind="component:{ref:userData.ref('desc'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cFJ7vye"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cFJ7vye" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFJ7vye"> 
+        <div class="x-col cFJ7vye" xid="col60" __cid="cFJ7vye"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label pull-right cFJ7vye" xid="submitBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'userData.save'}" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cFJ7vye"> 
+            <i xid="i2" __cid="cFJ7vye" class="cFJ7vye"/>  
+            <span xid="span26" __cid="cFJ7vye" class="cFJ7vye">提交</span> 
+          </a> 
+        </div>  
+        <div class="x-col cFJ7vye" xid="col61" __cid="cFJ7vye"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFJ7vye" xid="regestBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regestBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="cFJ7vye"> 
+            <i xid="i3" __cid="cFJ7vye" class="cFJ7vye"/>  
+            <span xid="span27" __cid="cFJ7vye" class="cFJ7vye">重置</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

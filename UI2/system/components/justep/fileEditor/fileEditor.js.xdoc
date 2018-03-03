@@ -1,0 +1,65 @@
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor
+	@model UI2
+	@component
+	@extends $UI/system/lib/base/bindComponent
+	@description 附件组件
+*/
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#bind-ref
+	@attribute 
+	@type string
+	@description 数据引用
+*/
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#onEdit
+	@event
+	@description <b>[回调型事件]</b>组件点击数据记录链接时
+	var downParam = {url : 下载地址不能为空,headers : 文件头文件可选,cancel : false};
+	<xmp>{"source":组件的js对象,"data" : 文件对应的 downParam }</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#onBeforeFileOpen
+	@event
+	@description <b>[回调型事件]</b>文件打开之前
+	@param {$UI/system/components/justep/common/event#ViewEvent} event 它的结构如下:
+	<xmp>{"source":组件的js对象,"data" : 文件对应的data, "cancel" : true/false }</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#onAfterFileOpen
+	@event
+	@description <b>[回调型事件]</b>文件打开之前
+	@param {$UI/system/components/justep/common/event#ViewEvent} event 它的结构如下:
+	<xmp>{"source":组件的js对象,"data" : 文件对应的data, "cancel" : true/false }</xmp>
+*/
+
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#onAfterEdit
+	@event
+	@description <b>[回调型事件]</b>文件打开之前
+	@param {$UI/system/components/justep/common/event#ViewEvent} event 它的结构如下:
+	<xmp>{"source":组件的js对象,"data" : 文件对应的data, "cancel" : true/false }</xmp>
+*/
+
+
+/**
+	@name $UI/system/components/justep/fileeditor/fileeditor#onEditError
+	@event
+	@description <b>[回调型事件]</b>文件打开之前
+	@param {$UI/system/components/justep/common/event#ViewEvent} event 它的结构如下:
+	<xmp>{"source":组件的js对象,"data" : 文件对应的data, "cancel" : true/false }</xmp>
+*/
+
+

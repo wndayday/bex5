@@ -1,0 +1,19 @@
+/**
+	@name $UI/system/components/bootstrap/dropdown/dropdown
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：点击弹出下拉菜单，例如chrome浏览器手机浏览器选择手机型号;
+		<b>使用方法</b>：添加dropdown组件，绑定选定值的存储字段，给menu添加备选项;
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/bootstrap/dropdown/dropdown#autoHideMenu
+	@attribute 
+	@type boolean
+	@description 点击菜单项后自动隐藏菜单
+*/
+ 

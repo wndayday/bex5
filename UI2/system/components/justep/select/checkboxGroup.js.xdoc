@@ -1,0 +1,32 @@
+/**
+	@name $UI/system/components/justep/select/checkboxGroup
+	@component 
+	@extends $UI/system/components/justep/select/radioGroup
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：多项选择题，可以选择多个正确答案的情况 ;
+		<b>使用方法</b>：拖入设计器中；可以配置样式来确定排列风格等;
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/select/checkboxGroup#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+/**
+	@name $UI/system/components/justep/select/checkboxGroup#class
+	@attribute 
+	@type string
+	@description 组件class
+	@example
+	<xmp>
+		基础样式: x-checkbox-group(必须),
+		尺寸样式: x-checkbox-group-lg、x-checkbox-group-sm、x-checkbox-group-xs
+		排列方式：x-checkbox-group-vertical
+	</xmp>
+*/
+

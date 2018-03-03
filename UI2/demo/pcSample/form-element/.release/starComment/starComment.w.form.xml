@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyyiquq" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyyiquq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.div.cyyiquq{margin-left: 40px} .img.cyyiquq{background-image: url($model/UI2/demo/pcSample/form-element/img/1.gif)} .imgs.cyyiquq{background-image: url($model/UI2/demo/pcSample/form-element/img/2.gif)} .imgss.cyyiquq{background-image: url($model/UI2/demo/pcSample/form-element/img/2.gif)} .padd.cyyiquq{margin-left: 3px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyyiquq" class="cyyiquq"></div>  
+  <h4 xid="h42" __cid="cyyiquq" class="cyyiquq">评星等级 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cyyiquq" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsBtnClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cyyiquq"> 
+      <i xid="i4" __cid="cyyiquq" class="cyyiquq"/>  
+      <span xid="span9" __cid="cyyiquq" class="cyyiquq">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cyyiquq" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cyyiquq"> 
+      <i xid="i4" __cid="cyyiquq" class="cyyiquq"/>  
+      <span xid="span9" __cid="cyyiquq" class="cyyiquq">源码</span>
+    </a>
+  </h4>
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cyyiquq" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="cyyiquq"> 
+    <div class="x-control-group-title cyyiquq" xid="controlGroupTitle1" __cid="cyyiquq"> 
+      <span xid="span1" __cid="cyyiquq" class="cyyiquq">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cyyiquq" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cyyiquq"> 
+      <div class="col col-xs-4 cyyiquq" xid="col2" style="width:auto;" __cid="cyyiquq"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cyyiquq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cyyiquq"> 
+          <ul class="x-list-template hide cyyiquq" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cyyiquq"> 
+            <li xid="li3" class="pull-left cyyiquq" __cid="cyyiquq"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output output padd cyyiquq" xid="output" bind-mousemove="outputMousemove" bind-css="{&quot;img&quot;:  $model.numData.val(&quot;num&quot;)==1}" style="width:12px;height:14px;" data-bind="component:{ref:ref('img'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyyiquq"/> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>  
+      <div class="col col-xs-1 cyyiquq" xid="col3" style="width:auto;" __cid="cyyiquq"> 
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cyyiquq" xid="output2" data-bind="component:{ref:numData.ref('grade'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyyiquq"/> 
+      </div> 
+    </div> 
+  </div> 
+</div>

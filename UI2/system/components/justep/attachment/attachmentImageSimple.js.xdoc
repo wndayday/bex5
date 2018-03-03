@@ -1,0 +1,11 @@
+/**
+	@name $UI/system/components/justep/attachment/attachmentImageSimple
+	@model UI2
+	@component
+	@extends $UI/system/components/justep/attachment/attachment
+	@description 
+	<xmp>
+		<b>使用场景</b>：展示数据对象中类型是图像的数据；
+		<b>使用方法</b>：拖入设计器中，设置引用属性关联数据对象中图像类型列,通过只读属性或者data上的规则可控制是否能编辑；
+	</xmp>
+*/

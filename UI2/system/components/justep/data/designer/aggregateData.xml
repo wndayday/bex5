@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/data/aggregateData" tag-name="div" icon="baasData.gif"    text="统计数据"
+		binding-component="$UI/system/components/justep/data/aggregateData" display-property="xid" d_resiable="false" parent-range="$UI/system/components/justep/model/model" resizable="false"
+		component-type="data" validator="DataValidator"  design-view="web-designer" >
+		<properties>
+			<property name="xid" text="编号" required="true" /> 
+			<property name="label" text="名称" />       
+			<property name="className" text="数据对象名" required="true" />
+			<property name="url" text="数据请求url" required="true" />
+			<property name="autoLoad" text="自动加载数据" default-value="true"  editor-ref="booleanList" data-type="boolean"/>
+			<property name="groupBy" text="分组" required="true"/>
+		</properties>
+ 
+		<property-editors><!--属性编辑器描述，可通过下拉列表或者弹出对话框来设置属性值，不这是默认问普通的文本输入框。-->
+			<property-editor name="booleanList" type="list" >
+				<static-data value="true,false" /> <!--直接定义的静态数据 -->				
+			</property-editor>
+		</property-editors>
+		<templates>
+		   <template name="default"><![CDATA[ 
+			<div component="$UI/system/components/justep/data/aggregateData" url="/dbrest">
+			</div>
+		   ]]></template>
+		</templates>
+		<events>
+           <event name="onCreate" text="创建"/>
+           <event name="onDataChange" text="数据发生变化（包括新增、刷新、删除、修改引起的变化），感知从data的变化"/>
+           <event name="onIndexChanging" text="索引改变中"/>
+           <event name="onIndexChanged" text="索引改变"/>
+           <event name="onRefreshError" text="刷新失败"/>
+           <event name="onRefreshCreateParam" text="创建刷新参数"/>
+           <event name="onBeforeRefresh" text="刷新前"/>
+           <event name="onCustomRefresh" text="接管刷新"/>
+           <event name="onAfterRefresh" text="刷新后"/>
+        </events>
+		<toolbar>			
+			<item text="增加过滤条件" method="newFilter"/>	
+			<item text="增加统计过滤条件" method="newFilter"/>	
+		</toolbar>
+	</element>
+	
+	<element name="$UI/system/components/justep/data/aggregateData#having" tag-name="having" icon="filter.gif"  display-property="name"
+		validator="filterValidator" design-view="web-designer"
+		discriminate-condition="executeXpath(starts-with(../@component,'$UI/system/components/justep/data/aggregateData'))">
+		<properties>
+			<property name="name" text="名称" required="true" editor-ref=""/>
+			<property name="having" text="内容" editor-ref="filterDialog" is-virtual = 'true' fixed-value='[...]'/>
+		</properties>
+		
+		<property-editors><!--属性编辑器描述，可通过下拉列表或者弹出对话框来设置属性值，不这是默认问普通的文本输入框。-->
+			<property-editor name="filterDialog" type="dialog">
+				<dialog-page class-name="EditFilterPage"/>				
+			</property-editor>
+		</property-editors>
+		
+		<templates>
+		   <template name="default"><![CDATA[ 
+			<having name=""></having>
+		   ]]></template>
+		</templates>
+	</element>
+	
+	<element name="$UI/system/components/justep/data/aggregateData#filter" tag-name="filter" icon="filter.gif"  display-property="name"
+		validator="filterValidator" design-view="web-designer"
+		discriminate-condition="executeXpath(starts-with(../@component,'$UI/system/components/justep/data/aggregateData'))">
+		<properties>
+			<property name="name" text="名称" required="true" editor-ref=""/>
+			<property name="filter" text="内容" editor-ref="filterDialog" is-virtual = 'true' fixed-value='[...]'/>
+		</properties>
+		
+		<property-editors><!--属性编辑器描述，可通过下拉列表或者弹出对话框来设置属性值，不这是默认问普通的文本输入框。-->
+			<property-editor name="filterDialog" type="dialog">
+				<dialog-page class-name="EditFilterPage"/>				
+			</property-editor>
+		</property-editors>
+		
+		<templates>
+		   <template name="default"><![CDATA[ 
+			<filter name=""></filter>
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

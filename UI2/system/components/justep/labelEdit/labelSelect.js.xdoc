@@ -1,0 +1,14 @@
+/**
+	@name $UI/system/components/justep/labelEdit/labelSelect
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：带标签的下拉列表，如性别、选择生日等;
+		<b>使用方法</b>：拖入设计器中，设置绑定下拉数据，可设置值改变触发动作;
+	</xmp>
+	
+*/
+
+

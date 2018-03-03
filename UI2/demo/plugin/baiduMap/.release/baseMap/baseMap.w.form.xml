@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/demo/plugin/template/demo.w" __id="id_1" design="device:m;" class="window window cRj2eMn" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRj2eMn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>null .baiduMap-top.cRj2eMn{} .baiduMap-content.cRj2eMn{bottom: 300px !important} .baiduMap-bottom.cRj2eMn{height: 300px !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad" __cid="cRj2eMn" class="cRj2eMn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRj2eMn-iosstatusbar cRj2eMn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRj2eMn"> 
+    <div class="x-panel-top cRj2eMn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRj2eMn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cRj2eMn" xid="titleBar" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;基础地图&quot;}" __cid="cRj2eMn"> 
+        <div class="x-titlebar-left cRj2eMn" __cid="cRj2eMn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cRj2eMn" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cRj2eMn"> 
+            <i xid="i6" class="icon-chevron-left cRj2eMn" __cid="cRj2eMn"/>  
+            <span xid="span6" __cid="cRj2eMn" class="cRj2eMn"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cRj2eMn" __cid="cRj2eMn">插件的名字</div>  
+        <div class="x-titlebar-right  cRj2eMn" __cid="cRj2eMn">
+          <div class="empty cRj2eMn" __cid="cRj2eMn"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cRj2eMn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRj2eMn">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cRj2eMn" xid="contents1" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cRj2eMn"> 
+        <div class="x-contents-content active cRj2eMn" xid="demoContent" style="padding:10px;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRj2eMn"> 
+          <div class="x-panel x-full pcRj2eMn-iosstatusbar cRj2eMn" component="$model/UI2/system/components/justep/panel/panel" xid="panel1_3" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRj2eMn"> 
+            <div class="x-panel-content baiduMap-content cRj2eMn" xid="content1_3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRj2eMn"> 
+              <div style="padding:10px" xid="div1_2" xui:parent="demoContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"> 
+                <a class="btn btn-default cRj2eMn" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="removeClick" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeClickClick" data-config="{&quot;label&quot;:&quot;移除单击&quot;}" __cid="cRj2eMn"> 
+                  <i xid="i1_2" __cid="cRj2eMn" class="cRj2eMn"/>  
+                  <span xid="span1_2" __cid="cRj2eMn" class="cRj2eMn">移除单击</span> 
+                </a>  
+                <a class="btn btn-default cRj2eMn" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="removeDBClick" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeDBClickClick" data-config="{&quot;label&quot;:&quot;移除双击&quot;}" __cid="cRj2eMn"> 
+                  <i xid="i2_2" __cid="cRj2eMn" class="cRj2eMn"/>  
+                  <span xid="span2_2" __cid="cRj2eMn" class="cRj2eMn">移除双击</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div2_1" xui:parent="demoContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"> 
+                <a class="btn btn-default cRj2eMn" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="close" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeClick" data-config="{&quot;label&quot;:&quot;关闭地图&quot;}" __cid="cRj2eMn"> 
+                  <i xid="i7_1" __cid="cRj2eMn" class="cRj2eMn"/>  
+                  <span xid="span7_1" __cid="cRj2eMn" class="cRj2eMn">关闭地图</span> 
+                </a>  
+                <a class="btn btn-default cRj2eMn" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="open" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openClick" data-config="{&quot;label&quot;:&quot;打开地图&quot;}" __cid="cRj2eMn"> 
+                  <i xid="i8_1" __cid="cRj2eMn" class="cRj2eMn"/>  
+                  <span xid="span8_1" __cid="cRj2eMn" class="cRj2eMn">打开地图</span> 
+                </a> 
+              </div> 
+            </div>  
+            <div class="x-panel-bottom baiduMap-bottom cRj2eMn" xid="bottom1_3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRj2eMn"/>  
+            <style __cid="cRj2eMn" class="cRj2eMn">.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>
+        </div>  
+        <div class="x-contents-content cRj2eMn" xid="codeContent" style="padding:10px;" xui:update-mode="merge" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRj2eMn">
+          <div style="height:20;" xid="div1_14" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"/>
+          <p xid="p1_14" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn">打开百度地图</p>
+          <div xid="openClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"/>
+          <p xid="p2_14" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn">关闭百度地图</p>
+          <div xid="closeClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"/>
+          <p xid="p3_14" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn">移除双击事件</p>
+          <div xid="removeDBClickClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"/>
+          <p xid="p4_14" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn">移除单击事件</p>
+          <div xid="removeClickClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"/>
+          <div xid="div6_14" xui:parent="codeContent" xui:update-mode="insert" __cid="cRj2eMn" class="cRj2eMn"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cRj2eMn" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRj2eMn">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card  cRj2eMn" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cRj2eMn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cRj2eMn" xid="demo" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:demoClick" data-config="{&quot;label&quot;:&quot;demo&quot;,&quot;target&quot;:&quot;demoContent&quot;}" __cid="cRj2eMn"> 
+          <i xid="i2" __cid="cRj2eMn" class="cRj2eMn"/>  
+          <span xid="span2" __cid="cRj2eMn" class="cRj2eMn">demo</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cRj2eMn" xid="code" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:codeClick" data-config="{&quot;label&quot;:&quot;code&quot;,&quot;target&quot;:&quot;codeContent&quot;}" __cid="cRj2eMn"> 
+          <i xid="i3" __cid="cRj2eMn" class="cRj2eMn"/>  
+          <span xid="span3" __cid="cRj2eMn" class="cRj2eMn">code</span>
+        </a>
+      </div>
+    </div>
+    <style __cid="cRj2eMn" class="cRj2eMn">.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRj2eMn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

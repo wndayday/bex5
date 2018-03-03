@@ -1,0 +1,53 @@
+.basicDiv{
+	padding:10px;
+}
+
+.sunDiv {
+	/*position:absolute;
+	top:46px;
+	left:5px;
+	right:5px;*/
+	margin-top:10px;
+	padding-bottom: 12px;
+	border: 1px solid #888;
+	border-radius: 5px;
+}
+
+.x-dialog-overlay.x-dialog-overlay-visible {
+	opacity: 0;
+}
+
+.x-dialog>.x-dialog-body {
+	padding: 0px;
+}
+
+.x-list>thead>tr>th {
+	padding: 5px 10px 5px;
+	border-left: 1px solid #888;
+	background: -webkit-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -o-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -moz-linear-gradient(#F2F2F2, #D1D1D1);
+	background: linear-gradient(#F2F2F2, #D1D1D1);
+}
+
+.form-control {
+	padding: 0;
+	border: 0;
+	height: 30px;
+}
+
+.x-output {
+	padding: 0;
+	border: 0;
+	height: 30px;
+	line-height: 30px;
+}
+
+.x-list-template>tr {
+	border-bottom: 1px solid #eee;
+}
+
+.x-list-template>tr>td {
+	padding-left: 10px;
+	border-left: 1px solid #eee;
+}

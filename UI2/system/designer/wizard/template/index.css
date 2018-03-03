@@ -1,0 +1,26 @@
+/*页头*/
+.x-panel-top{}
+.x-panel-top .x-list{}
+.x-panel-top .x-list li{ width:33%; position:relative;}
+.x-panel-top .x-list li span{ width:100%; position:absolute; left:0; top:10px;}
+
+.o-point{ width:12px; height:12px; border-radius:50%; background-color:#ccc; position:absolute; top:-4px; left:49%; z-index:1;}
+.o-line{ width:100%; height:4px; background-color:#ddd; margin-left:49%; margin-bottom:3px;}
+
+.x-currentRow{ color:#ff6975; background:transparent;}
+.x-currentRowPoint{ background-color:#ff6975;}
+.x-currentRowLine{ background-color:#ddd;}
+
+/*内容区*/
+.x-panel-content{ top:48px!important; bottom:48px!important;}
+
+.x-panel-content .composeParent{ background-color:#eee; border:1px solid #ccc;}
+.x-panel-content .composeParent, .x-panel-content .composeParent > div{	height: 100%;}
+
+/*页脚*/
+.x-panel-bottom>div{ padding-top:10px;}
+.x-panel-bottom>div>.btn{ color:#333;}
+
+
+
+

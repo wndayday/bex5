@@ -1,0 +1,15 @@
+/**
+	@name $UI/system/components/justep/absoluteLayout/absoluteLayout
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：绝对布局管理器，相对于组件的左上角来指定其他组件布局;
+		<b>使用方法</b>：添加absoluteLayout组件，绑定布局数据;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+

@@ -1,0 +1,12 @@
+.iosstatusbar .x-portal.x-panel >.x-panel-content{
+	top:0 !important;
+}
+
+.no-iosstatusbar .x-portal.x-panel >.x-panel-content{
+	top:-20px!important;
+}
+
+.x-titlebar{background-color:#1f2229;}
+.vc-switch{ box-shadow:none;}
+
+/*.x-panel>.x-panel-content{ padding:15px;}*/

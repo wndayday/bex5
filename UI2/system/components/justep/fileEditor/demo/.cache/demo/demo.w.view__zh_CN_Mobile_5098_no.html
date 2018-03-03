@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cjmmye2" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjmmye2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/bizData,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjmmye2" class="cjmmye2"/>  
+  <div xmlns="" class="x-panel-top cjmmye2" xid="top1" __cid="cjmmye2"> 
+    <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjmmye2" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;fileEditor&quot;}" __cid="cjmmye2"> 
+      <div class="x-titlebar-left cjmmye2" xid="div1" __cid="cjmmye2"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjmmye2" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cjmmye2"> 
+          <i xid="i2" class="icon-chevron-left cjmmye2" __cid="cjmmye2"/>  
+          <span xid="span2" __cid="cjmmye2" class="cjmmye2"/> 
+        </a> 
+      </div>  
+      <div class="x-titlebar-title cjmmye2" xid="div2" __cid="cjmmye2">fileEditor</div>  
+      <div class="x-titlebar-right  cjmmye2" xid="div3" __cid="cjmmye2"> 
+        <div class="empty cjmmye2" __cid="cjmmye2"/> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" class="x-panel-content x-flex x-flex-column cjmmye2" xid="content2" __cid="cjmmye2"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:$model.bizData1.ref(&quot;fText&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;$UI/system/service/doc/common/simpleFileStore.j&quot;}" __cid="cjmmye2" class="cjmmye2"> 
+    <div class="x-attachment cjmmye2" xid="div4" __cid="cjmmye2"> 
+      <div class="x-attachment-content x-card-border cjmmye2" xid="div5" __cid="cjmmye2"> 
+        <div class="x-doc-process cjmmye2" xid="div6" __cid="cjmmye2"> 
+          <div class="progress-bar x-doc-process-bar cjmmye2" role="progressbar" style="width:0%;" xid="progressBar1" __cid="cjmmye2"/> 
+        </div>  
+        <div data-bind="foreach:$attachmentItems" xid="div7" __cid="cjmmye2" class="cjmmye2"> 
+          <div class="x-attachment-cell cjmmye2" xid="div8" __cid="cjmmye2"> 
+            <div class="x-attachment-item x-item-other cjmmye2" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div9" __cid="cjmmye2"> 
+              <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cjmmye2" xid="a1" __cid="cjmmye2"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-attachment-cell cjmmye2" data-bind="visible:$state.get() == 'upload'" xid="div10" __cid="cjmmye2"> 
+          <div class="x-attachment-item x-item-upload cjmmye2" data-bind="visible:$state.get() == 'upload'" xid="div11" __cid="cjmmye2"/> 
+        </div>  
+        <div class="x-attachment-cell cjmmye2" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div12" __cid="cjmmye2"> 
+          <div class="x-attachment-item x-item-remove cjmmye2" data-bind="click:changeState.bind($object,'remove')" xid="div13" __cid="cjmmye2"/> 
+        </div>  
+        <div style="clear:both;" xid="div14" __cid="cjmmye2" class="cjmmye2"/> 
+      </div> 
+    </div> 
+  </div> 
+</div>

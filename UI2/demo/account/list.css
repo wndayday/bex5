@@ -1,0 +1,27 @@
+.h3 {
+	margin : 0;
+	color : inherit;
+	font-size : 24px;
+}
+.x-output {
+	padding : 0px;
+}
+.account-list-line {
+	border-bottom: 1px solid lightgray;	
+	overflow: hidden;
+}
+.account-list-line:active {
+	background-color: lightgray;
+}
+.account-income {
+	color : green;
+}
+.account-payout {
+	color : brown;
+}
+/*左侧目录标题背景*/
+.x-wing-left{ background-color:#f1f1f1;}
+.x-wing-left > .x-titlebar {
+	background-color : orange;
+	
+}

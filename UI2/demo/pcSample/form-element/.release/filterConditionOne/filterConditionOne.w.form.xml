@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caUBriq" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caUBriq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn.caUBriq{padding-top: 13px} .labe.caUBriq{padding-top: 11px; padding-left: 1px; padding-right: 1px} .css.caUBriq{padding-top: 16px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="caUBriq" class="caUBriq"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full caUBriq" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="caUBriq"> 
+    <div class="x-contents-content pull-right active caUBriq" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="caUBriq"> 
+      <h4 xid="h41" __cid="caUBriq" class="caUBriq">文件条件选择
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caUBriq" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsBtnClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="caUBriq"> 
+          <i xid="i1" __cid="caUBriq" class="caUBriq"/>  
+          <span xid="span4" __cid="caUBriq" class="caUBriq">js</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  caUBriq" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="caUBriq"> 
+          <i xid="i1" __cid="caUBriq" class="caUBriq"/>  
+          <span xid="span3" __cid="caUBriq" class="caUBriq">源码</span>
+        </a>
+      </h4>
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group caUBriq" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;1.这是仿支付宝用户中心的条件筛选示例&quot;}" __cid="caUBriq"> 
+        <div class="x-control-group-title caUBriq" xid="controlGroupTitle2" __cid="caUBriq"> 
+          <span xid="span2" __cid="caUBriq" class="caUBriq">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row2" style="height:57px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+          <div class="col col-xs-2  caUBriq" xid="col7" __cid="caUBriq"> 
+            <label xid="label" class="css caUBriq" style="font-size:large;" __cid="caUBriq">交易记录</label> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+          <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 caUBriq" xid="col8" __cid="caUBriq"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 pull-left caUBriq" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+              <label class="x-label caUBriq" xid="label2" bind-text="data.label('date')" style="width:68px;" __cid="caUBriq"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit caUBriq" xid="input" style="width:122px;" data-bind="component:{ref:dateData.ref('startDate'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="caUBriq"/> 
+            </div>  
+            <label xid="label6" style="height:auto;width:auto;" class="pull-left labe caUBriq" __cid="caUBriq">—</label>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 pull-left caUBriq" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit caUBriq" xid="dateInput" style="width:130px;" data-bind="component:{ref:dateData.ref('endDate'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="caUBriq"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+          <div class="col col-xs-12 caUBriq" xid="col12" __cid="caUBriq"> 
+            <label xid="label8" class="pull-left css caUBriq" __cid="caUBriq">交易类型</label>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list caUBriq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tradeTypeData&quot;}" __cid="caUBriq"> 
+              <ul class="x-list-template hide caUBriq" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="caUBriq"> 
+                <li xid="li1" class="pull-left caUBriq" __cid="caUBriq"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 caUBriq" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                    <label class="x-label caUBriq" xid="label7" style="width:13.75px;" __cid="caUBriq"/>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit  caUBriq" xid="output" style="border-radius:4px;" bind-css="{'bg-success':val('tradeType')==data.val('tradeType')}" data-bind="component:{ref:ref('tradeType'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caUBriq"/> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+          <div class="col col-xs-12 caUBriq" xid="col14" __cid="caUBriq"> 
+            <label xid="label10" class="pull-left css caUBriq" __cid="caUBriq">交易状态</label>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list caUBriq" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;datas&quot;}" __cid="caUBriq"> 
+              <ul class="x-list-template hide caUBriq" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="caUBriq"> 
+                <li xid="li2" class="pull-left caUBriq" __cid="caUBriq"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 caUBriq" xid="labelOutput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                    <label class="x-label caUBriq" xid="label9" style="width:13.75px;" __cid="caUBriq"/>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit tradestate caUBriq" xid="tradeStateOutput" style="border-radius:4px;" bind-css="{'bg-success':val('tradeState') == data.val(&quot;tradeState&quot;)}" data-bind="component:{ref:ref('tradeState'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caUBriq"/> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right pull-right caUBriq" xid="highGradeBtn" bind-visible=" $model.displayData.val(&quot;display&quot;)==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:highGradeBtnClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-down-b&quot;,&quot;label&quot;:&quot;高级筛选&quot;}" __cid="caUBriq"> 
+              <i xid="i2" class="icon-arrow-down-b caUBriq" __cid="caUBriq"/>  
+              <span xid="span1" __cid="caUBriq" class="caUBriq">高级筛选</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div xid="div1" bind-visible=" $model.displayData.val(&quot;display&quot;)==0" __cid="caUBriq" class="caUBriq"> 
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+            <div class="col col-xs-12 caUBriq" xid="col1" __cid="caUBriq"> 
+              <label xid="label1" class="pull-left css caUBriq" __cid="caUBriq">时间类型</label>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list caUBriq" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;datetypeData&quot;}" __cid="caUBriq"> 
+                <ul class="x-list-template hide caUBriq" xid="listTemplateUl3" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="caUBriq"> 
+                  <li xid="li3" class="pull-left caUBriq" __cid="caUBriq"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 caUBriq" xid="labelOutput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                      <label class="x-label caUBriq" xid="label3" style="width:13.75px;" __cid="caUBriq"/>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit caUBriq" xid="dateTypeOutput" style="border-radius:4px;" bind-css="{'bg-success':val('dateType') == data.val(&quot;dateType&quot;)}" data-bind="component:{ref:ref('dateType'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caUBriq"/> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+            <div class="col col-xs-12 caUBriq" xid="col2" __cid="caUBriq"> 
+              <label xid="label4" class="pull-left css caUBriq" __cid="caUBriq">资金流向</label>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list caUBriq" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;fundFlowData&quot;}" __cid="caUBriq"> 
+                <ul class="x-list-template hide caUBriq" xid="listTemplateUl4" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="caUBriq"> 
+                  <li xid="li4" class="pull-left caUBriq" __cid="caUBriq"> 
+                    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 caUBriq" xid="labelOutput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                      <label class="x-label caUBriq" xid="label11" style="width:13.75px;" __cid="caUBriq"/>  
+                      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit caUBriq" xid="fundflowOutput" style="border-radius:4px;" bind-css="{'bg-success':val('fundFlow') == data.val(&quot;fundFlow&quot;)}" data-bind="component:{ref:ref('fundFlow'),name:'$model/UI2/system/components/justep/output/output'}" __cid="caUBriq"/> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+            <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 caUBriq" xid="col3" __cid="caUBriq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 pull-left caUBriq" xid="labelInput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                <label class="x-label caUBriq" xid="label12" bind-text="data.label('moneyRange')" style="width:68px;" __cid="caUBriq"/>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit caUBriq" xid="minInput" style="width:122px;" data-bind="component:{ref:moneyRangeData.ref('minMoney'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Float&quot;}" __cid="caUBriq"/> 
+              </div>  
+              <label xid="label13" style="height:auto;width:auto;" class="pull-left labe caUBriq" __cid="caUBriq">—</label>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 pull-left caUBriq" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit caUBriq" xid="maxInput" style="width:130px;" data-bind="component:{ref:moneyRangeData.ref('maxMoney'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Float&quot;}" __cid="caUBriq"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row caUBriq" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="caUBriq"> 
+            <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 caUBriq" xid="col5" __cid="caUBriq"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 pull-left caUBriq" xid="labelInput7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+                <label class="x-label caUBriq" xid="label16" bind-text="data.label('keyword')" style="width:68px;" __cid="caUBriq"/>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit caUBriq" xid="keywordInput" style="width:122px;" data-bind="component:{ref:keywordData.ref('keyword'),name:'$model/UI2/system/components/justep/input/input'}" __cid="caUBriq"/> 
+              </div>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right pull-right caUBriq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-up-b&quot;,&quot;label&quot;:&quot;返回基本筛选&quot;}" __cid="caUBriq"> 
+                <i xid="i8" class="icon-arrow-up-b caUBriq" __cid="caUBriq"/>  
+                <span xid="span9" __cid="caUBriq" class="caUBriq">返回基本筛选</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div2" __cid="caUBriq" class="caUBriq"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 caUBriq" xid="labelTextarea1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caUBriq"> 
+            <label class="x-label caUBriq" xid="label18" bind-text="data.label('curSel')" style="width:68px;" __cid="caUBriq"/>  
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit caUBriq" xid="textarea1" style="width:236px;color:#FF0000;" data-bind="component:{ref:data.ref('curSel'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="caUBriq"/> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cvQ7Jf2" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvQ7Jf2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.image.cvQ7Jf2{margin: 25px 18px 25px 10px} .div.cvQ7Jf2{margin: 20px 20px; border: 1px solid rgb(230, 230, 230)} .div2.cvQ7Jf2{padding-top: 25px} .x-titlebar.cvQ7Jf2{background-color: rgb(47, 164, 231)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cvQ7Jf2" class="cvQ7Jf2"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cvQ7Jf2" xid="titleBar" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;功能图标展示&quot;}" __cid="cvQ7Jf2"> 
+    <div class="x-titlebar-left cvQ7Jf2" xid="left1" __cid="cvQ7Jf2"/>  
+    <div class="x-titlebar-title cvQ7Jf2" xid="title1" __cid="cvQ7Jf2">功能图标展示</div>  
+    <div class="x-titlebar-right  cvQ7Jf2" xid="right1" __cid="cvQ7Jf2"> 
+      <div class="empty cvQ7Jf2" __cid="cvQ7Jf2"/> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cvQ7Jf2" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showjsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cvQ7Jf2"> 
+      <i xid="i2" __cid="cvQ7Jf2" class="cvQ7Jf2"/>  
+      <span xid="span3" __cid="cvQ7Jf2" class="cvQ7Jf2">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cvQ7Jf2" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:isVisible" data-events="onClick:showPageSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cvQ7Jf2"> 
+      <i xid="i3" __cid="cvQ7Jf2" class="cvQ7Jf2"/>  
+      <span xid="span4" __cid="cvQ7Jf2" class="cvQ7Jf2">源码</span> 
+    </a> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/list/list" class="x-list cvQ7Jf2" xid="list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;sudokuData&quot;}" __cid="cvQ7Jf2"> 
+    <ul class="x-list-template hide cvQ7Jf2" xid="listTemplateUl1" __cid="cvQ7Jf2" data-bind="foreach:{data:$model.foreach_list($element),afterRender:$model.foreach_afterRender_list.bind($model,$element)}"> 
+      <li xid="li1" class="pull-left cvQ7Jf2" style="width:30%;height:180px;" __cid="cvQ7Jf2"> 
+        <div style="background-color:#F7F7F7;height:160px;white-space:nowrap;overflow:hidden;" class="div cvQ7Jf2" xid="grid" __cid="cvQ7Jf2" data-bind="event:{click:$model._callModelFn.bind($model, 'gridClick')}"> 
+          <img src="" alt="" xid="image2" style="height:130px;width:72px;" class="pull-left image cvQ7Jf2" __cid="cvQ7Jf2" data-bind="attr:{src:$model.getUrl( $object.val(&quot;fImg&quot;))}"/>  
+          <div xid="div2" style="width:125px;height:180px;white-space:normal;" class="pull-right div2 cvQ7Jf2" __cid="cvQ7Jf2"> 
+            <label xid="label2" __cid="cvQ7Jf2" class="cvQ7Jf2" data-bind="text:ref('fTitle')">label</label>  
+            <div xid="div3" style="height:auto;width:120px;" __cid="cvQ7Jf2" class="cvQ7Jf2" data-bind="text:$object.val(&quot;fOptions1&quot;)"/>  
+            <div xid="div4" style="height:auto;width:120px;" __cid="cvQ7Jf2" class="cvQ7Jf2" data-bind="text:$object.val(&quot;fOptions2&quot;)"/>  
+            <div xid="div5" style="width:120px;height:auto;" __cid="cvQ7Jf2" class="cvQ7Jf2"/> 
+          </div> 
+        </div> 
+      </li> 
+    </ul> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cvQ7Jf2" class="cvQ7Jf2"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cvQ7Jf2" __cid="cvQ7Jf2"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cvQ7Jf2" __cid="cvQ7Jf2">  
+      <div class="x-modal-inner cvQ7Jf2" __cid="cvQ7Jf2"> 
+        <div class="x-modal-title cvQ7Jf2" __cid="cvQ7Jf2"/>  
+        <div class="x-modal-text cvQ7Jf2" __cid="cvQ7Jf2"/>  
+        <input class="x-modal-prompt-input cvQ7Jf2" type="text" __cid="cvQ7Jf2"/> 
+      </div>  
+      <div class="x-modal-buttons cvQ7Jf2" __cid="cvQ7Jf2"> 
+        <a class="x-modal-button x-modal-button-bold OK cvQ7Jf2" value="ok" __cid="cvQ7Jf2">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cvQ7Jf2" value="yes" __cid="cvQ7Jf2">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cvQ7Jf2" value="no" __cid="cvQ7Jf2">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cvQ7Jf2" value="cancel" __cid="cvQ7Jf2">取消</a> 
+      </div> 
+    </div> 
+  </span> 
+</div>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cFBz2Ef" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFBz2Ef" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/toolBar/toolBar,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+  <h4 xmlns="" xid="h41" class="center-block cFBz2Ef" __cid="cFBz2Ef">动态表格操作
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i12" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span12" __cid="cFBz2Ef" class="cFBz2Ef">JS</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i13" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span13" __cid="cFBz2Ef" class="cFBz2Ef">源码</span> 
+    </a> 
+  </h4>  
+  <div xmlns="" component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cFBz2Ef" xid="toolBar1" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cFBz2Ef"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="currentRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:currentRowClick" data-config="{&quot;label&quot;:&quot;获取当前选中行的值&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i1" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span1" __cid="cFBz2Ef" class="cFBz2Ef">获取当前选中行的值</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="firstRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:firstRowClick" data-config="{&quot;label&quot;:&quot;获得第一行的值&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i2" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span2" __cid="cFBz2Ef" class="cFBz2Ef">获得第一行的值</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="idRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:idRowClick" data-config="{&quot;label&quot;:&quot;获得id为2的行的值&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i3" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span3" __cid="cFBz2Ef" class="cFBz2Ef">获得id为2的行的值</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="delete" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteClick" data-config="{&quot;label&quot;:&quot;删除选中行&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i5" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span5" __cid="cFBz2Ef" class="cFBz2Ef">删除选中行</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="addLastRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addLastRowClick" data-config="{&quot;label&quot;:&quot;追加尾行&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i7" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span7" __cid="cFBz2Ef" class="cFBz2Ef">追加尾行</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="beforeRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:beforeRowClick" data-config="{&quot;label&quot;:&quot;在选中行前插入&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i8" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span8" __cid="cFBz2Ef" class="cFBz2Ef">在选中行前插入</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="afterRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:afterRowClick" data-config="{&quot;label&quot;:&quot;在选中行后追加&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i9" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span9" __cid="cFBz2Ef" class="cFBz2Ef">在选中行后追加</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="moveUp" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:moveUpClick" data-config="{&quot;label&quot;:&quot;上移行&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i10" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span10" __cid="cFBz2Ef" class="cFBz2Ef">上移行</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="insertFirstRow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:insertFirstRowClick" data-config="{&quot;label&quot;:&quot;插入首行&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i6" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span6" __cid="cFBz2Ef" class="cFBz2Ef">插入首行</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cFBz2Ef" xid="moveDown" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:moveDownClick" data-config="{&quot;label&quot;:&quot;下移行&quot;}" __cid="cFBz2Ef"> 
+      <i xid="i11" __cid="cFBz2Ef" class="cFBz2Ef"/>  
+      <span xid="span11" __cid="cFBz2Ef" class="cFBz2Ef">下移行</span> 
+    </a> 
+  </div>  
+  <table xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cFBz2Ef" xid="employeeGrid" data="employeeData" multiselect="true" showRowNumber="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;editable&quot;:true,&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column6&quot;},{&quot;editable&quot;:true,&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column7&quot;},{&quot;editable&quot;:true,&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column8&quot;},{&quot;editable&quot;:true,&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column9&quot;},{&quot;hidden&quot;:true,&quot;name&quot;:&quot;id&quot;,&quot;xid&quot;:&quot;column10&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;height&quot;:&quot;100%&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;rownumbers&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cFBz2Ef"></table> 
+</div>

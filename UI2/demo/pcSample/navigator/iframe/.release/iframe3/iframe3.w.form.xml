@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cYV7R32" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYV7R32" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cYV7R32" class="cYV7R32"/>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cYV7R32" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYV7R32"> 
+    <div class="x-col cYV7R32" xid="col7" __cid="cYV7R32"> 
+      <span xid="span1" __cid="cYV7R32" class="cYV7R32">这是iframe页3</span>
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cYV7R32" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYV7R32"> 
+    <div class="x-col cYV7R32" xid="col4" __cid="cYV7R32"> 
+      <span xid="span2" __cid="cYV7R32" class="cYV7R32">这是iframe页3</span>
+    </div> 
+  </div>
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cYV7R32" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYV7R32"> 
+    <div class="x-col cYV7R32" xid="col12" __cid="cYV7R32"> 
+      <span xid="span4" __cid="cYV7R32" class="cYV7R32">这是iframe页3</span>
+    </div> 
+  </div>
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cYV7R32" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cYV7R32"> 
+    <div class="x-col cYV7R32" xid="col1" __cid="cYV7R32"> 
+      <span xid="span3" __cid="cYV7R32" class="cYV7R32">这是iframe页3</span>
+    </div> 
+  </div>
+</div>

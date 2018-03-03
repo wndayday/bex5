@@ -1,0 +1,38 @@
+/**
+	@name $UI/system/components/justep/shake/shake
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：摇一摇加好友，摇一摇抢红包等 ;
+		<b>使用方法</b>：拖入设计器中，设置摇一摇成功后做的事情或处理的数据，可也可设置失败后做的事情及处理的数据;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/shake/shake#startShake
+	@operation
+	@see $UI/system/components/justep/shake/shake#startShake
+	@description 开始监听摇一摇(app)
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/shake/shake#stopShake
+	@operation
+	@see $UI/system/components/justep/shake/shake#stopShake
+	@description 停止监听摇一摇(app)
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/shake/shake#openShakePage
+	@operation
+	@see $UI/system/components/justep/shake/shake#openShakePage
+	@description 打开摇一摇功能(app)
+	@returns {void}
+*/

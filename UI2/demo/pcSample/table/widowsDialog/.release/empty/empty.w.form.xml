@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cbMbyQn" component="$model/UI2/system/components/justep/window/window" design="device:pc;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbMbyQn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cbMbyQn" class="cbMbyQn"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3ymUJz-iosstatusbar cbMbyQn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbMbyQn"> 
+    <div class="x-panel-content cbMbyQn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbMbyQn"/>
+    <div class="x-panel-bottom cbMbyQn" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbMbyQn"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label x-dialog-button cbMbyQn" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;wReceiver.windowCancel&quot;}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cbMbyQn"> 
+        <i xid="i2" __cid="cbMbyQn" class="cbMbyQn"/>  
+        <span xid="span2" __cid="cbMbyQn" class="cbMbyQn">取消</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-info x-dialog-button cbMbyQn" xid="OKBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:OKBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cbMbyQn"> 
+        <i xid="i1" __cid="cbMbyQn" class="cbMbyQn"/>  
+        <span xid="span1" __cid="cbMbyQn" class="cbMbyQn">确定</span> 
+      </a> 
+    </div>
+    <style __cid="cbMbyQn" class="cbMbyQn">.x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3ymUJz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" style="left:228px;top:114px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cbMbyQn" class="cbMbyQn"/> 
+</div>

@@ -1,0 +1,12 @@
+/**
+	@name $UI/system/components/bootstrap/badge/badge
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description 
+	<xmp>
+		<b>使用场景</b>：用于显示未读或接受的消息数量等;
+		<b>使用方法</b>：添加badge(bootstrap)组件,指定要显示的内容;
+	</xmp>
+*/
+

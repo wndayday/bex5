@@ -1,0 +1,15 @@
+.div{
+	margin-left: 40px;
+}
+.img{
+	background-image: url("./img/1.gif");
+}
+.imgs{
+	background-image:  url("./img/2.gif");
+}
+.imgss{
+	background-image:  url("./img/2.gif");
+}
+.padd{
+	margin-left: 3px;
+}

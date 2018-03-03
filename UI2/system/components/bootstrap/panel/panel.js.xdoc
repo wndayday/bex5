@@ -1,0 +1,14 @@
+/**
+	@name $UI/system/components/bootstrap/panel/panel
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：页面需要形成上中下的布局，多用于手机端;
+		<b>使用方法</b>：添加panel组件，可以单独删除头部或底部区域;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/

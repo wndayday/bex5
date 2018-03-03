@@ -1,0 +1,10 @@
+.font-bold {font-weight:bold}
+
+/*页头样式*/
+.x-titlebar{ background-color:#979797; color:#fff;}
+.x-panel-content{ background-color:#f0f0f0;}
+
+.x-control-group{ background-color:transparent;}
+
+/*列表样式*/
+ul.x-list-template li{ border:1px solid #d1d1d1; border-radius:5px; margin-bottom:15px;}

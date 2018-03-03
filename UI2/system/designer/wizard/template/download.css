@@ -1,0 +1,105 @@
+/*分类*/
+.model-title{ padding-bottom:15px;}
+.model-title>span{ font-size:20px; font-weight:bold;}
+.model-title .btn{ margin-right:15px; color:#333;}
+.model-title .btn.active{ color:#fc6e64;}
+
+/*.myTemp:active{ border-bottom:2px solid red; margin-right:10px; transform:scale(1.2); padding-right:5px;}*/
+
+
+/*空白模板*/
+.create, .applist02{ width:20%; height:300px; margin-bottom:20px; float:left; overflow:hidden;}
+
+.create .createContent{ width:95%; height:270px; border-radius:3px; border:1px solid #e4e4e4; background-color:#f6f6f6; position:relative;}
+.create .createContent .btn{ height:100%; color:#CCC;}
+.create .createContent .btn i{ font-size:60px; display:inline-block; margin-top:20%;}
+.create .slectState{ display:none;}
+
+/*模板*/
+.applist02{ position:relative; display:inline-block;}
+
+.applist02 .appContent{ width:95%; height:270px; text-align:center; border:0px solid #fff; border-radius:3px; box-shadow:0px 2px 4px #ccc; background-color:#fff; overflow:hidden; position:relative;}/* vertical-align:middle; outline:none;*/
+.applist02 .appContent .bg{ width:100%; height:100%; border-radius:3px;}
+.applist02 .appContent .cover{ width:100%; height:270px; padding-top:50px; border-radius:3px; color:#fff; background-color:rgba(0,0,0,0.5); position:absolute; top:0; left:0; z-index:3;}
+/*
+.applist02 .appContent .cover .coverindex{ width:100%; height:100%;}
+.applist02 .appContent .cover .coverindex .towDImgP{ width:100%; height:120px; padding-top:50px; overflow:hidden;}
+.applist02 .appContent .cover .coverindex .towDImgP p{ color:white; text-indent:15px;}
+*/
+/*选择按钮*/
+.applist02 .appContent .slectTemp{ width:100%; height:270px; padding:0; background-color:regb(0,0,0,0); position:absolute; top:0; left:0;}
+
+/*标题*/
+.appTitle{ margin-top:10px;}
+
+
+/*选中样式 */
+.slectState{ display:none; width:40px; height:40px; line-height:40px; font-size:20px; color:#fff; border-radius:50%; background-color:#fc6e64; position:absolute; bottom:15px; right:10px;}
+.active-item .slectState{ display:block;}
+
+/*是否发布*/
+.submitBox{ width:100px; height:24px; line-height:24px; color:#fff; background-color:orange; overflow: hidden; position:absolute; top:10px; left:-25px; z-index:2; -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);}
+
+/*翻转*/
+.front{
+	backface-visibility: hidden;
+	transform:rotateY(180deg);
+	transition: all 0.6s ease 0s;
+	display:block;
+}
+
+.back{
+	backface-visibility: hidden;
+	transform:rotateY(0deg);
+	transition: all 0.6s ease 0s;
+	display:block;
+}
+
+/*是否发布
+.releaseBox,.submitBox{
+	 position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 4;
+    overflow: hidden;
+}
+.releaseBox .inner,.submitBox .inner{
+	position: absolute;
+    left: -25px;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size:12px;
+    color: #fff;
+    top: 4px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color:red ;
+}
+.submitBox .inner{
+	background-color:#f8ac59 ;
+}
+.releaseBtn{
+	padding:3px 5px;
+	text-decoration: blink;
+	margin-right: 10px;
+	float: right;
+	font-size:12px;
+	color:#18a689;
+	border:1px solid #18a689;
+	border-radius: 4px;
+}
+.releaseBtn:hover{
+	background-color: #18a689;
+    color: #FFF;
+}
+*/
+

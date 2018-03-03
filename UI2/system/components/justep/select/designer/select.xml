@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+
+	<element name="$UI/system/components/justep/select/select" tag-name="select" icon="select.gif" text="下拉列表" 
+		binding-component="$UI/system/components/justep/select/select" 
+		component-type="formControl"
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" />	
+			<property name="bind-labelRef" text="显示名引用" editor-ref="dataRef" />	
+
+			<group name="options">
+				<property name="autoLoad" path="@optionsAutoLoad" text="自动加载下拉" _text="自动加载options数据" default-value="true"  editor-ref="booleanList" data-type="boolean"/>
+				<property name="bind-options" path="@bind-options" text="下拉数据" required="true"  editor-ref="dataPropDlg" />
+				<property name="bind-optionsCaption" path="@bind-optionsCaption" text="默认提示"/>
+				<property name="bind-optionsValue" path="@bind-optionsValue" text="下拉值" editor-ref="dataRef" editor-parameter='{"isRelation":"true","data":"bind-options","hasLabel":"false"}'/>
+				<property name="bind-optionsLabel" path="@bind-optionsLabel" text="下拉显示名" editor-ref="dataRef" editor-parameter='{"isRelation":"true","data":"bind-options","hasLabel":"false"}'/>
+			</group>
+			
+			<property name="class"  text="class">
+				<editor-parameter><![CDATA[
+				{
+					"0base": {
+						label: "基础样式",
+						value: "form-control"
+					},	 
+					"2size": {
+						label: "尺寸样式",
+						value: "input-lg|input-sm",
+						require: false
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog"/>
+			<property name="tabindex" text="Tab键顺序" data-type="integer" />
+			<property name="accesskey" text="快捷键" />
+			<!-- 
+			<property name="readonly" text="只读" editor-ref="edit-readonly" default-value="false" data-type="boolean"/>
+			 -->
+			<property name="disabled" text="禁用" editor-ref="edit-disabled" default-value="false" data-type="boolean"/>
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['disabled','是否禁用']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'disabled',label:'是否禁用',type:'boolean'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>		 
+		<toolbar>	
+		</toolbar>
+
+		<events>  <!--组件事件-->		
+			<event name="onChange"  text="值变化后"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+			<template name="default"><![CDATA[ 
+				<select component="$UI/system/components/justep/select/select" bind-optionsCaption="请选择..." class="form-control"/> 
+		   ]]></template>
+		</templates>
+	</element>
+
+	<element name="$UI/system/components/justep/select/checkboxGroup" tag-name="span" icon="checkbox.gif" text="多选按钮组"
+		binding-component="$UI/system/components/justep/select/checkboxGroup" 
+        component-type="formControl"  design-view="web-designer" >
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" />	
+
+			<group name="itemset">
+				<property name="bind-itemset" path="@bind-itemset" text="选项数据" required="true"  editor-ref="dataPropDlg" is-id-ref="true"/>
+				<property name="bind-itemsetValue" path="@bind-itemsetValue" text="选项值" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+				<property name="bind-itemsetLabel" path="@bind-itemsetLabel" text="选项名" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+			</group>
+			
+			<property name="class"  text="class" >
+				<editor-parameter><![CDATA[
+				{
+					"0base": {
+						label: "基础样式",
+						value: "x-checkbox-group"
+					},	 
+					"1ext": {
+						label: "按钮样式",
+						value: "x-btn-checkbox",
+						require: false
+					},	 
+					"2color": {
+						label: "颜色样式",
+						value: "x-checkbox-primary|x-checkbox-success|x-checkbox-info|x-checkbox-warning|x-checkbox-danger|x-checkbox-red|x-checkbox-blue|x-checkbox-orange|x-checkbox-green|x-checkbox-yellow|x-checkbox-purple",
+						require: false
+					},	 
+					"3size": {
+						label: "尺寸样式",
+						value: "x-checkbox-group-lg|x-checkbox-group-sm|x-checkbox-group-xs",
+						require: false
+					},
+					"4icon": {
+						label: "排列方式",
+						value: "x-checkbox-group-vertical",
+						require: false
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog"/>
+			<property name="itemClass"  text="项class" >
+				<editor-parameter><![CDATA[
+				{
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="itemStyle" text="项样式" editor-ref="styleDialog"/>
+			<property name="tabindex" text="Tab键顺序" data-type="integer" />
+			<property name="accesskey" text="快捷键" />
+			<property name="readonly" text="只读" editor-ref="edit-readonly" default-value="false" data-type="boolean"/>
+			<property name="disabled" text="禁用" editor-ref="edit-disabled" default-value="false" data-type="boolean"/>
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['disabled','是否禁用'],['itemStyle','项上增加的样式'],['itemClass','项上增加的class']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'disabled',label:'是否禁用',type:'boolean'},
+				    {name:'itemStyle',label:'项上增加的样式',type:'string'},
+				    {name:'itemClass',label:'项上增加的class',type:'string'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>
+		<property-editors>
+		</property-editors>
+		
+		
+		<toolbar>			
+		</toolbar>
+		
+		<events>  <!--组件事件-->		
+		    <event name="onChange"  text="值变化后"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+			<template name="default"><![CDATA[ 
+				<span component="$UI/system/components/justep/select/checkboxGroup" class="x-checkbox-group"/>
+		   ]]></template>
+		</templates>
+	</element>
+	
+	<element name="$UI/system/components/justep/select/radioGroup" tag-name="span" icon="radio.gif" text="单选按钮组"
+		binding-component="$UI/system/components/justep/select/radioGroup" 
+        component-type="formControl"  design-view="web-designer" >
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" />	
+
+			<group name="itemset">
+				<property name="bind-itemset" path="@bind-itemset" text="选项数据"  required="true"  editor-ref="dataPropDlg" is-id-ref="true"/>
+				<property name="bind-itemsetValue" path="@bind-itemsetValue" text="选项值"  editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+				<property name="bind-itemsetLabel" path="@bind-itemsetLabel" text="选项名" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+			</group>
+			
+			<property name="class"  text="class" >
+				<editor-parameter><![CDATA[
+				{
+					"0base": {
+						label: "基础样式",
+						value: "x-radio-group"
+					},	 
+					"1ext": {
+						label: "按钮样式",
+						value: "x-btn-radio",
+						require: false
+					},	 
+					"2color": {
+						label: "颜色样式",
+						value: "x-radio-primary|x-radio-success|x-radio-info|x-radio-warning|x-radio-danger|x-radio-red|x-radio-blue|x-radio-orange|x-radio-green|x-radio-yellow|x-radio-purple",
+						require: false
+					},	 
+					"3size": {
+						label: "尺寸样式",
+						value: "x-radio-group-lg|x-radio-group-sm|x-radio-group-xs",
+						require: false
+					},
+					"4icon": {
+						label: "排列方式",
+						value: "x-radio-group-vertical",
+						require: false
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog"/>
+			<property name="itemClass"  text="项class" >
+				<editor-parameter><![CDATA[
+				{
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="itemStyle" text="项样式" editor-ref="styleDialog"/>
+			<property name="tabindex" text="Tab键顺序" data-type="integer" />
+			<property name="accesskey" text="快捷键" />
+			<property name="readonly" text="只读" editor-ref="edit-readonly" default-value="false" data-type="boolean"/>
+			<property name="disabled" text="禁用" editor-ref="edit-disabled" default-value="false" data-type="boolean"/>
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<property-editors>
+		</property-editors>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['disabled','是否禁用'],['itemStyle','项上增加的样式'],['itemClass','项上增加的class']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'disabled',label:'是否禁用',type:'boolean'},
+				    {name:'itemStyle',label:'项上增加的样式',type:'string'},
+				    {name:'itemClass',label:'项上增加的class',type:'string'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>		
+		
+		<toolbar>			
+		</toolbar>
+		
+		<events>  <!--组件事件-->		
+		    <event name="onChange"  text="值变化后"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+			<template name="default"><![CDATA[ 
+				<span component="$UI/system/components/justep/select/radioGroup" class="x-radio-group"/>
+		   ]]></template>
+		</templates>
+	</element>
+
+	<element name="$UI/system/components/justep/select/checkboxGroupPC" tag-name="div" icon="checkbox.gif" text="多选按钮组PC"
+		binding-component="$UI/system/components/justep/select/checkboxGroupPC" 
+        component-type="formControl"  design-view="web-designer" >
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" />	
+
+			<group name="itemset">
+				<property name="bind-itemset" path="@bind-itemset" text="选项数据" required="true"  editor-ref="dataPropDlg" is-id-ref="true"/>
+				<property name="bind-itemsetValue" path="@bind-itemsetValue" text="选项值" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+				<property name="bind-itemsetLabel" path="@bind-itemsetLabel" text="选项名" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+			</group>
+			
+			<property name="class"  text="class" >
+				<editor-parameter><![CDATA[
+				{
+					"0icon": {
+						label: "排列方式",
+						value: "form-inline",
+						require: false
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog"/>
+			<property name="itemClass"  text="项class" >
+				<editor-parameter><![CDATA[
+				{
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="itemStyle" text="项样式" editor-ref="styleDialog"/>
+			<property name="tabindex" text="Tab键顺序" data-type="integer" />
+			<property name="accesskey" text="快捷键" />
+			<property name="readonly" text="只读" editor-ref="edit-readonly" default-value="false" data-type="boolean"/>
+			<property name="disabled" text="禁用" editor-ref="edit-disabled" default-value="false" data-type="boolean"/>
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<property-editors>
+		</property-editors>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['disabled','是否禁用'],['itemStyle','项上增加的样式'],['itemClass','项上增加的class']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'disabled',label:'是否禁用',type:'boolean'},
+				    {name:'itemStyle',label:'项上增加的样式',type:'string'},
+				    {name:'itemClass',label:'项上增加的class',type:'string'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>		
+		
+		<toolbar>			
+		</toolbar>
+		
+		<events>  <!--组件事件-->		
+		    <event name="onChange"  text="值变化后"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+			<template name="default"><![CDATA[ 
+				<div component="$UI/system/components/justep/select/checkboxGroupPC"/>
+		   ]]></template>
+		</templates>
+	</element>
+	
+	<element name="$UI/system/components/justep/select/radioGroupPC" tag-name="div" icon="radio.gif" text="单选按钮组PC"
+		binding-component="$UI/system/components/justep/select/radioGroupPC" 
+        component-type="formControl"  design-view="web-designer" >
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" />	
+
+			<group name="itemset">
+				<property name="bind-itemset" path="@bind-itemset" text="选项数据" required="true"  editor-ref="dataPropDlg" is-id-ref="true"/>
+				<property name="bind-itemsetValue" path="@bind-itemsetValue" text="选项值" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+				<property name="bind-itemsetLabel" path="@bind-itemsetLabel" text="选项名" editor-ref="dataRef" editor-parameter='{"type":"foreachRef","data":"bind-itemset","hasLabel":"false"}'/>
+			</group>
+			
+			<property name="class"  text="class" >
+				<editor-parameter><![CDATA[
+				{
+					"0icon": {
+						label: "排列方式",
+						value: "form-inline",
+						require: false
+					}
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="style" text="样式" editor-ref="styleDialog"/>
+			<property name="itemClass"  text="项class" >
+				<editor-parameter><![CDATA[
+				{
+				}
+				]]></editor-parameter>
+			</property>
+			<property name="itemStyle" text="项样式" editor-ref="styleDialog"/>
+			<property name="tabindex" text="Tab键顺序" data-type="integer" />
+			<property name="accesskey" text="快捷键" />
+			<property name="readonly" text="只读" editor-ref="edit-readonly" default-value="false" data-type="boolean"/>
+			<property name="disabled" text="禁用" editor-ref="edit-disabled" default-value="false" data-type="boolean"/>
+			<include path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']"/>
+		</properties>
+		<property-editors>
+		</property-editors>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['disabled','是否禁用'],['itemStyle','项上增加的样式'],['itemClass','项上增加的class']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'disabled',label:'是否禁用',type:'boolean'},
+				    {name:'itemStyle',label:'项上增加的样式',type:'string'},
+				    {name:'itemClass',label:'项上增加的class',type:'string'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>		
+		
+		<toolbar>			
+		</toolbar>
+		
+		<events>  <!--组件事件-->		
+		    <event name="onChange"  text="值变化后"/>
+		    <include path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*"/>
+		</events>
+		
+		<templates>
+			<template name="default"><![CDATA[ 
+				<div component="$UI/system/components/justep/select/radioGroupPC"/>
+		   ]]></template>
+		</templates>
+	</element>
+	
+</elements>

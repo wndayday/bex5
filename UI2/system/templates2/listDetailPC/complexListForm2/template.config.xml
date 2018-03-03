@@ -1,0 +1,14 @@
+﻿<template text="主从列表" desc="表单（主表）+列表（从表）">
+	<images>
+		<image src="complex.png" />
+	</images>
+
+	<items file="template/complexListForm.w">
+		<item text="主数据" configPage="$UI/system/designer/wizard/configPages/mainData.w" />
+		<item text="主表视图" configPage="$UI/system/designer/wizard/configPages/formView.w" />
+		<item text="从数据" configPage="$UI/system/designer/wizard/configPages/detailData.w" />
+		<item text="从表视图" configPage="$UI/system/designer/wizard/configPages/detailListView.w" />
+		<item file="template/complexListForm.js" />
+		<item file="template/complexListForm.css" />
+	</items>
+</template>

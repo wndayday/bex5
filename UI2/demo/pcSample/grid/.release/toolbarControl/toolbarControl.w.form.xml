@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cu2URvi" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cu2URvi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/toolBar/toolBar,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cu2URvi" class="cu2URvi"/>  
+  <h4 xid="h41" class="center-block cu2URvi" __cid="cu2URvi">工具栏控制
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cu2URvi"> 
+      <i xid="i18" __cid="cu2URvi" class="cu2URvi"/>  
+      <span xid="span18" __cid="cu2URvi" class="cu2URvi">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cu2URvi"> 
+      <i xid="i19" __cid="cu2URvi" class="cu2URvi"/>  
+      <span xid="span19" __cid="cu2URvi" class="cu2URvi">源码</span>
+    </a>
+  </h4>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cu2URvi" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;source&quot;,&quot;direction&quot;:&quot;left-bottom&quot;}" __cid="cu2URvi"> 
+    <div class="x-popMenu-overlay cu2URvi" xid="div1" __cid="cu2URvi"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cu2URvi" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cu2URvi">
+      <li class="x-menu-item cu2URvi" xid="item1" __cid="cu2URvi"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="firstSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:firstSourceClick" data-config="{&quot;label&quot;:&quot;第一个工具栏源码&quot;}" __cid="cu2URvi"> 
+          <i xid="i20" __cid="cu2URvi" class="cu2URvi"/>  
+          <span xid="span20" __cid="cu2URvi" class="cu2URvi">第一个工具栏源码</span>
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cu2URvi" xid="divider1" __cid="cu2URvi"/>  
+      <li class="x-menu-item cu2URvi" xid="item2" __cid="cu2URvi"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="secondSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:secondSourceClick" data-config="{&quot;label&quot;:&quot;第二个工具栏源码&quot;}" __cid="cu2URvi"> 
+          <i xid="i21" __cid="cu2URvi" class="cu2URvi"/>  
+          <span xid="span21" __cid="cu2URvi" class="cu2URvi">第二个工具栏源码</span>
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cu2URvi" xid="divider2" __cid="cu2URvi"/>  
+      <li class="x-menu-item cu2URvi" xid="item3" __cid="cu2URvi"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="thirdSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:thirdSourceClick" data-config="{&quot;label&quot;:&quot;第三个工具栏源码&quot;}" __cid="cu2URvi"> 
+          <i xid="i22" __cid="cu2URvi" class="cu2URvi"/>  
+          <span xid="span22" __cid="cu2URvi" class="cu2URvi">第三个工具栏源码</span>
+        </a> 
+      </li>
+    </ul>
+  </div>
+  <h4 xid="h51" __cid="cu2URvi" class="cu2URvi">这里禁用了批量删除按钮，并隐藏了导入按钮。实际开发中，通过权限机制来控制输出相关的属性值即可。</h4>
+  <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cu2URvi" xid="firstToolBar" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cu2URvi">
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新增&quot;}" __cid="cu2URvi"> 
+      <i xid="i1" class="icon-android-add cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span1" __cid="cu2URvi" class="cu2URvi">新增</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;disabled&quot;:true,&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;批量删除&quot;}" __cid="cu2URvi"> 
+      <i xid="i2" class="icon-android-close cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span2" __cid="cu2URvi" class="cu2URvi">批量删除</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button3" bind-visible="false" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-down-right&quot;,&quot;label&quot;:&quot;导入&quot;}" __cid="cu2URvi"> 
+      <i xid="i3" class="icon-arrow-graph-down-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span3" __cid="cu2URvi" class="cu2URvi">导入</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-up-right&quot;,&quot;label&quot;:&quot;导出当前页&quot;}" __cid="cu2URvi"> 
+      <i xid="i4" class="icon-arrow-graph-up-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span4" __cid="cu2URvi" class="cu2URvi">导出当前页</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="exportAll" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-up-right&quot;,&quot;label&quot;:&quot;导出全部&quot;}" __cid="cu2URvi"> 
+      <i xid="i5" class="icon-arrow-graph-up-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span5" __cid="cu2URvi" class="cu2URvi">导出全部</span>
+    </a>
+  </div>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cu2URvi" xid="employeeGrid" data="employeeData" multiselect="true" showRowNumber="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column4&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;rownumbers&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cu2URvi"/>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="dynamicForbidden" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:dynamicForbiddenClick" data-config="{&quot;label&quot;:&quot;动态禁用按钮&quot;}" __cid="cu2URvi"> 
+    <i xid="i6" __cid="cu2URvi" class="cu2URvi"/>  
+    <span xid="span6" __cid="cu2URvi" class="cu2URvi">动态禁用按钮</span>
+  </a>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="dynamicEnable" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:dynamicEnableClick" data-config="{&quot;label&quot;:&quot;动态启用按钮&quot;}" __cid="cu2URvi"> 
+    <i xid="i7" __cid="cu2URvi" class="cu2URvi"/>  
+    <span xid="span7" __cid="cu2URvi" class="cu2URvi">动态启用按钮</span>
+  </a>
+  <h4 xid="h42" class="center-block cu2URvi" __cid="cu2URvi">这里控制工具栏靠右排列。</h4>  
+  <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar x-toolbar-spliter form-inline cu2URvi" xid="secondToolBar" style="height:53px;" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cu2URvi">
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cu2URvi" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-up-right&quot;,&quot;label&quot;:&quot;导出全部&quot;}" __cid="cu2URvi"> 
+      <i xid="i8" class="icon-arrow-graph-up-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span8" __cid="cu2URvi" class="cu2URvi">导出全部</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cu2URvi" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-up-right&quot;,&quot;label&quot;:&quot;导出当前页&quot;}" __cid="cu2URvi"> 
+      <i xid="i9" class="icon-arrow-graph-up-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span9" __cid="cu2URvi" class="cu2URvi">导出当前页</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cu2URvi" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-down-right&quot;,&quot;label&quot;:&quot;导入&quot;}" __cid="cu2URvi"> 
+      <i xid="i10" class="icon-arrow-graph-down-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span10" __cid="cu2URvi" class="cu2URvi">导入</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cu2URvi" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;批量删除&quot;}" __cid="cu2URvi"> 
+      <i xid="i11" class="icon-android-close cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span11" __cid="cu2URvi" class="cu2URvi">批量删除</span>
+    </a> 
+  </div>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cu2URvi" xid="grid1" data="employeeData" multiselect="true" showRowNumber="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column6&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column7&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column8&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;rownumbers&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cu2URvi"/>
+  <h4 xid="h43" class="center-block cu2URvi" __cid="cu2URvi">这里控制工具栏左右都有按钮</h4>
+  <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cu2URvi" xid="thirdToolBar" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cu2URvi">
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新增&quot;}" __cid="cu2URvi"> 
+      <i xid="i12" class="icon-android-add cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span12" __cid="cu2URvi" class="cu2URvi">新增</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="cu2URvi"> 
+      <i xid="i13" class="icon-android-close cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span13" __cid="cu2URvi" class="cu2URvi">删除</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-up-right&quot;,&quot;label&quot;:&quot;导出当前页&quot;}" __cid="cu2URvi"> 
+      <i xid="i14" class="icon-arrow-graph-up-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span14" __cid="cu2URvi" class="cu2URvi">导出当前页</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cu2URvi" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-up-right&quot;,&quot;label&quot;:&quot;导出全部&quot;}" __cid="cu2URvi"> 
+      <i xid="i15" class="icon-arrow-graph-up-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span15" __cid="cu2URvi" class="cu2URvi">导出全部</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cu2URvi" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-graph-down-right&quot;,&quot;label&quot;:&quot;导入&quot;}" __cid="cu2URvi"> 
+      <i xid="i16" class="icon-arrow-graph-down-right cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span16" __cid="cu2URvi" class="cu2URvi">导入</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cu2URvi" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;,&quot;label&quot;:&quot;查询&quot;}" __cid="cu2URvi"> 
+      <i xid="i17" class="icon-android-search cu2URvi" __cid="cu2URvi"/>  
+      <span xid="span17" __cid="cu2URvi" class="cu2URvi">查询</span>
+    </a>
+  </div>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cu2URvi" xid="grid2" data="employeeData" showRowNumber="true" multiselect="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column9&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column10&quot;},{&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column11&quot;},{&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column12&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;rownumbers&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cu2URvi"/>
+</div>

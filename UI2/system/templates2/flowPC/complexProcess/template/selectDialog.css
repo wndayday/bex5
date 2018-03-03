@@ -1,0 +1,9 @@
+/*按钮*/
+.x-dialog-button{ width:100px; margin:10px 0 0 10px; background-image:none; border:none; box-shadow:none; border-radius:3px;}
+.x-dialog-button[xid=okBtn]{ background-color:#686868; color:#fff;}
+.x-dialog-button[xid=cancelBtn]{ background-color:#d0d0d0; color:#fff;}
+
+
+/*页中样式*/
+.x-bordered{ background-color:#f4f4f4; border:1px solid #d1d1d1; border-radius:0;}
+

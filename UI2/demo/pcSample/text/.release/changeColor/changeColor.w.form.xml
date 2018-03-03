@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caqqUZr" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caqqUZr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.red.caqqUZr{color: rgb(255, 0, 0)} .yellow.caqqUZr{color: rgb(255, 255, 102)} .pink.caqqUZr{color: rgb(255, 51, 153)} .blue.caqqUZr{color: rgb(0, 255, 255)} .orange.caqqUZr{color: rgb(255, 153, 0)} .green.caqqUZr{color: rgb(0, 255, 0)} .x-row.caqqUZr{padding: 0px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caqqUZr" class="caqqUZr"></div>  
+  <div xid="div2" style="margin-left:20px;margin-top:20px;" __cid="caqqUZr" class="caqqUZr"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caqqUZr" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="caqqUZr"> 
+      <i xid="i5" __cid="caqqUZr" class="caqqUZr"/>  
+      <span xid="span7" __cid="caqqUZr" class="caqqUZr">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caqqUZr" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="caqqUZr"> 
+      <i xid="i5" __cid="caqqUZr" class="caqqUZr"/>  
+      <span xid="span7" __cid="caqqUZr" class="caqqUZr">源码</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group caqqUZr" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;1、单行变色&quot;}" __cid="caqqUZr"> 
+    <div class="x-control-group-title caqqUZr" xid="controlGroupTitle1" __cid="caqqUZr"> 
+      <span xid="span1" __cid="caqqUZr" class="caqqUZr">title</span> 
+    </div>  
+    <div xid="div1" bind-css="{'red': $model.colorData.val(&quot;colorID&quot;)==1,'yellow': $model.colorData.val(&quot;colorID&quot;)==2,'pink': $model.colorData.val(&quot;colorID&quot;)==3,'blue': $model.colorData.val(&quot;colorID&quot;)==4,'orange': $model.colorData.val(&quot;colorID&quot;)==5,'green': $model.colorData.val(&quot;colorID&quot;)==6}" __cid="caqqUZr" class="caqqUZr"> 
+      <label xid="label1" __cid="caqqUZr" class="caqqUZr">提醒：您有新的消息!</label> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caqqUZr" xid="startBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:startBtnClick" data-config="{&quot;label&quot;:&quot;开始&quot;}" __cid="caqqUZr"> 
+      <i xid="i1" __cid="caqqUZr" class="caqqUZr"/>  
+      <span xid="span2" __cid="caqqUZr" class="caqqUZr">开始</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caqqUZr" xid="endBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:endBtnClick" data-config="{&quot;label&quot;:&quot;结束&quot;}" __cid="caqqUZr"> 
+      <i xid="i2" __cid="caqqUZr" class="caqqUZr"/>  
+      <span xid="span3" __cid="caqqUZr" class="caqqUZr">结束</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group caqqUZr" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;2、多行变色&quot;}" __cid="caqqUZr"> 
+    <div class="x-control-group-title caqqUZr" xid="controlGroupTitle2" __cid="caqqUZr"> 
+      <span xid="span4" __cid="caqqUZr" class="caqqUZr">title</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caqqUZr" xid="multiLineStartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:multiLineStartBtnClick" data-config="{&quot;label&quot;:&quot;开始&quot;}" __cid="caqqUZr"> 
+      <i xid="i4" __cid="caqqUZr" class="caqqUZr"/>  
+      <span xid="span5" __cid="caqqUZr" class="caqqUZr">开始</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caqqUZr" xid="multLineEndBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:multLineEndBtnClick" data-config="{&quot;label&quot;:&quot;结束&quot;}" __cid="caqqUZr"> 
+      <i xid="i3" __cid="caqqUZr" class="caqqUZr"/>  
+      <span xid="span6" __cid="caqqUZr" class="caqqUZr">结束</span> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row caqqUZr" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caqqUZr"> 
+      <div class="x-col caqqUZr" xid="col28" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;" __cid="caqqUZr"> 
+        <label xid="label9" __cid="caqqUZr" class="caqqUZr">姓名</label> 
+      </div>  
+      <div class="x-col caqqUZr" xid="col29" style="border-width:1px 1px 1px 1px;border-top-style:solid;border-bottom-style:solid;" __cid="caqqUZr"> 
+        <label xid="label10" __cid="caqqUZr" class="caqqUZr">性别</label> 
+      </div>  
+      <div class="x-col caqqUZr" xid="col30" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;" __cid="caqqUZr"> 
+        <label xid="label11" __cid="caqqUZr" class="caqqUZr">年龄</label> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list caqqUZr" xid="list5" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;informationData&quot;}" __cid="caqqUZr"> 
+      <ul class="x-list-template hide caqqUZr" xid="listTemplateUl4" bind-foreach="{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element)}" __cid="caqqUZr"> 
+        <li xid="li4" __cid="caqqUZr" class="caqqUZr"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row caqqUZr" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="caqqUZr"> 
+            <div class="x-col caqqUZr" xid="col25" style="border-width:1px 1px 1px 1px;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;" __cid="caqqUZr"> 
+              <label xid="label6" bind-text="ref('name')" bind-css="{'red':  $model.multiLineData.val(&quot;colorID&quot;)==1,'yellow': $model.multiLineData.val(&quot;colorID&quot;)==2,'pink': $model.multiLineData.val(&quot;colorID&quot;)==3,'blue': $model.multiLineData.val(&quot;colorID&quot;)==4,'orange': $model.multiLineData.val(&quot;colorID&quot;)==5,'green': $model.multiLineData.val(&quot;colorID&quot;)==6}" __cid="caqqUZr" class="caqqUZr">label</label> 
+            </div>  
+            <div class="x-col caqqUZr" xid="col26" style="border-width:1px 1px 1px 1px;border-bottom-style:solid;" __cid="caqqUZr"> 
+              <label xid="label7" bind-text="ref('sex')" bind-css="{'red':  $model.multiLineData.val(&quot;colorID&quot;)==1,'yellow': $model.multiLineData.val(&quot;colorID&quot;)==2,'pink': $model.multiLineData.val(&quot;colorID&quot;)==3,'blue': $model.multiLineData.val(&quot;colorID&quot;)==4,'orange': $model.multiLineData.val(&quot;colorID&quot;)==5,'green': $model.multiLineData.val(&quot;colorID&quot;)==6}" __cid="caqqUZr" class="caqqUZr">label</label> 
+            </div>  
+            <div class="x-col caqqUZr" xid="col27" style="border-width:1px 1px 1px 1px;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;" __cid="caqqUZr"> 
+              <label xid="label8" bind-text="ref('age')" bind-css="{'red':  $model.multiLineData.val(&quot;colorID&quot;)==1,'yellow': $model.multiLineData.val(&quot;colorID&quot;)==2,'pink': $model.multiLineData.val(&quot;colorID&quot;)==3,'blue': $model.multiLineData.val(&quot;colorID&quot;)==4,'orange': $model.multiLineData.val(&quot;colorID&quot;)==5,'green': $model.multiLineData.val(&quot;colorID&quot;)==6}" __cid="caqqUZr" class="caqqUZr">label</label> 
+            </div> 
+          </div> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

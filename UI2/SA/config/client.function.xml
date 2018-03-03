@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+
+
+
+	<item display="solid" label="协同办公" iconClass="icon-android-note">
+
+
+
+
+		<item display="solid" label="多租户管理" device="pc">
+			<item label="租户管理" process="/SA/client/clientProcess" activity="mainActivity"
+				url="$UI/SA/client/mainActivity.a" device="pc"></item>
+			<item label="应用管理" process="/SA/client/clientProcess" activity="appActivity"
+				url="$UI/SA/client/appActivity.a" device="pc"></item>
+		</item>
+	</item>
+</root>

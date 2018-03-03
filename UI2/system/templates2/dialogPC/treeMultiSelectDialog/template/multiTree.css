@@ -1,0 +1,61 @@
+/*按钮*/
+.x-dialog-button{ width:100px; margin:10px 0 0 10px; background-image:none; border:none; box-shadow:none; border-radius:3px;}
+.x-dialog-button[xid=OKBtn]{ background-color:#686868; color:#fff;}
+.x-dialog-button[xid=cancelBtn]{ background-color:#d0d0d0; color:#fff;}
+
+/*黑色按钮*/
+.blackBtn span{ color:#626262;}
+.blackBtn i{ color:#767676;}
+
+/*页中样式*/
+.x-bordered{ background-color:#fff; border:1px solid #d1d1d1; border-radius:0;}
+
+/*搜索框*/
+input[xid=input1]{ box-shadow:none; border-radius:0px; border:1px solid #989898; background-color:#f4f4f4;}
+
+.x-checkbox{ margin-left:30px;}
+
+/*grid表格*/
+.x-grid-widget-content{ border-right:0; background-color:#fff;}
+
+.x-grid .x-grid-htable{ background-color:#d1d1d1; border-top:0px solid #d1d1d1; border-bottom:0; display:none;}
+.x-grid .x-grid-htable th{ background-image:none;}
+.x-grid .x-grid-btable{ border:0px solid #d1d1d1; width:auto!important;}
+
+.x-priority-secondary, .x-grid-widget-content .x-priority-secondary, .x-grid-widget-header .x-priority-secondary{ background-color:#fff;}
+
+.x-grid-btable .x-grid-widget-content.x-state-highlight, 
+.x-grid-btable .x-grid-widget-content .x-state-highlight, 
+.x-grid-btable .x-grid-widget-header .x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-state-highlight.x-state-hover{ background-color: #f2f2f2;}
+
+.x-grid-btable .x-grid-widget-content.x-state-hover,
+.x-grid-btable .x-grid-widget-content .x-state-hover,
+.x-grid-btable .x-grid-widget-header .x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-state-focus,
+.x-grid-btable .x-grid-widget-content .x-state-focus,
+.x-grid-btable .x-grid-widget-header .x-state-focus {
+  background: #f2f2f2;
+}
+.x-grid .x-grid-widget-header{ border:0;}
+.x-grid tr.jqgrow td.x-grid-editing{ padding:5px 4px;}/*
+.x-grid tr.jqgrow td.x-grid-editing .x-grid-editer, .x-grid tr.jqgrow td.x-grid-editing .x-grid-editer.x-gridSelect .x-gridSelect-input{ background:#9f9f9f; color:#fff;}
+*/
+.x-grid-widget-content.x-state-highlight .x-icon{ color:#222;}
+.x-grid-widget-content .x-icon{ color:#999;}
+
+/*table表格*/
+.table>tbody>tr:hover { background-color: #f2f2f2;}
+.table>tbody>tr.bg-info:hover{ background-color: #f2f2f2;}
+.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th{
+	background-color: #f2f2f2;
+}
+.table-hover>tbody>tr>td.active:hover, .table-hover>tbody>tr>th.active:hover, .table-hover>tbody>tr.active:hover>td, .table-hover>tbody>tr:hover>.active, .table-hover>tbody>tr.active:hover>th{
+	background-color: #f2f2f2;
+}
+
+.table>tbody>tr.bg-info{ background-color:transparent;}
+.table>tfoot{ display:none;}
+.table>tbody td .link{ text-decoration:underline;}

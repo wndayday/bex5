@@ -1,0 +1,28 @@
+/*按钮*/
+.x-dialog-button{ width:100px; margin:10px 0 0 10px; background-image:none; border:none; box-shadow:none; border-radius:3px;}
+.x-dialog-button[xid=OKBtn]{ background-color:#686868; color:#fff;}
+.x-dialog-button[xid=cancelBtn]{ background-color:#d0d0d0; color:#fff;}
+
+/*黑色按钮*/
+.blackBtn span{ color:#626262;}
+.blackBtn i{ color:#767676;}
+
+/*页中样式*/
+.x-bordered{ background-color:#fff; border:1px solid #d1d1d1; border-radius:0;}
+
+/*表格*/
+.table>tbody>tr:hover { background-color: #f2f2f2;}
+.table>tbody>tr.bg-info:hover{ background-color: #f2f2f2;}
+.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th{
+	background-color: #f2f2f2;
+}
+.table-hover>tbody>tr>td.active:hover, .table-hover>tbody>tr>th.active:hover, .table-hover>tbody>tr.active:hover>td, .table-hover>tbody>tr:hover>.active, .table-hover>tbody>tr.active:hover>th{
+	background-color: #f2f2f2;
+}
+
+.table>tbody>tr.bg-info{ background-color:transparent;}
+.table>tfoot{ display:none;}
+.table>tbody td .link{ text-decoration:underline;}
+
+/*搜索框*/
+input[xid=input1]{ box-shadow:none; border-radius:0px; border:1px solid #989898; background-color:#f4f4f4;}

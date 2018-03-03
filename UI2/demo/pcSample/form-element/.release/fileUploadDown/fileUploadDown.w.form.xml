@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cIvIz6f" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIvIz6f" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-upload-hide.cIvIz6f{margin: 0 !important; width: 0 !important; height: 0 !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cIvIz6f" class="cIvIz6f"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cIvIz6f" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cIvIz6f"> 
+    <div class="x-contents-content active cIvIz6f" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cIvIz6f"> 
+      <h4 xid="h41" __cid="cIvIz6f" class="cIvIz6f">文件上传下载 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  cIvIz6f" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsBtnClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cIvIz6f"> 
+          <i xid="i1" __cid="cIvIz6f" class="cIvIz6f"/>  
+          <span xid="span6" __cid="cIvIz6f" class="cIvIz6f">js</span>
+        </a>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIvIz6f" xid="sourceBtn" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cIvIz6f"> 
+          <i xid="i2" __cid="cIvIz6f" class="cIvIz6f"/>  
+          <span xid="span7" __cid="cIvIz6f" class="cIvIz6f">源码</span>
+        </a> 
+      </h4>
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvIz6f" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;1.文件上传下载&quot;}" __cid="cIvIz6f"> 
+        <div class="x-control-group-title cIvIz6f" xid="controlGroupTitle1" __cid="cIvIz6f"> 
+          <span xid="span1" __cid="cIvIz6f" class="cIvIz6f">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cIvIz6f" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cIvIz6f"> 
+          <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 cIvIz6f" xid="col1" style="height:auto;" __cid="cIvIz6f"> 
+            <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple2" data-bind="component:{ref:fileData.ref('fAttchment'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIvIz6f" class="cIvIz6f"> 
+              <div class="x-attachment cIvIz6f" xid="div12" __cid="cIvIz6f"> 
+                <div class="x-attachment-content x-card-border cIvIz6f" xid="div13" __cid="cIvIz6f"> 
+                  <div class="x-doc-process cIvIz6f" xid="div14" __cid="cIvIz6f"> 
+                    <div class="progress-bar x-doc-process-bar cIvIz6f" role="progressbar" style="width:0%;" xid="progressBar2" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div data-bind="foreach:$attachmentItems" xid="div15" __cid="cIvIz6f" class="cIvIz6f"> 
+                    <div class="x-attachment-cell cIvIz6f" xid="div16" __cid="cIvIz6f"> 
+                      <div class="x-attachment-item x-item-other cIvIz6f" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div17" __cid="cIvIz6f"> 
+                        <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIvIz6f" xid="a2" __cid="cIvIz6f"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div18" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-upload cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div19" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div20" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-remove cIvIz6f" data-bind="click:changeState.bind($object,'remove')" xid="div21" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div style="clear:both;" xid="div22" __cid="cIvIz6f" class="cIvIz6f"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvIz6f" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;2.控制不能下载(点击上传后不能下载)&quot;}" __cid="cIvIz6f"> 
+        <div class="x-control-group-title cIvIz6f" xid="controlGroupTitle2" __cid="cIvIz6f"> 
+          <span xid="span2" __cid="cIvIz6f" class="cIvIz6f">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cIvIz6f" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cIvIz6f"> 
+          <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 cIvIz6f" xid="col4" style="height:auto;" __cid="cIvIz6f"> 
+            <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple3" data-bind="component:{ref:fileData.ref('funUpload'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIvIz6f" class="cIvIz6f"> 
+              <div class="x-attachment cIvIz6f" xid="div25" __cid="cIvIz6f"> 
+                <div class="x-attachment-content x-card-border cIvIz6f" xid="div24" __cid="cIvIz6f"> 
+                  <div class="x-doc-process cIvIz6f" xid="div29" __cid="cIvIz6f"> 
+                    <div class="progress-bar x-doc-process-bar cIvIz6f" role="progressbar" style="width:0%;" xid="progressBar3" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div data-bind="foreach:$attachmentItems" xid="div28" __cid="cIvIz6f" class="cIvIz6f"> 
+                    <div class="x-attachment-cell cIvIz6f" xid="div27" __cid="cIvIz6f"> 
+                      <div class="x-attachment-item x-item-other cIvIz6f" xid="div26" data-bind="style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" __cid="cIvIz6f"> 
+                        <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIvIz6f" xid="a3" __cid="cIvIz6f"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div31" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-upload cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div30" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div23" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-remove cIvIz6f" data-bind="click:changeState.bind($object,'remove')" xid="div32" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div style="clear:both;" xid="div33" __cid="cIvIz6f" class="cIvIz6f"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvIz6f" xid="controlGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;3.控制上传文件类型(只允许上传.txt文件)&quot;}" __cid="cIvIz6f"> 
+        <div class="x-control-group-title cIvIz6f" xid="controlGroupTitle3" __cid="cIvIz6f"> 
+          <span xid="span3" __cid="cIvIz6f" class="cIvIz6f">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cIvIz6f" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cIvIz6f"> 
+          <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 cIvIz6f" xid="col5" style="height:auto;" __cid="cIvIz6f"> 
+            <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple" data-bind="component:{ref:fileData.ref('fFileType'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIvIz6f" class="cIvIz6f"> 
+              <div class="x-attachment cIvIz6f" xid="div36" __cid="cIvIz6f"> 
+                <div class="x-attachment-content x-card-border cIvIz6f" xid="div35" __cid="cIvIz6f"> 
+                  <div class="x-doc-process cIvIz6f" xid="div40" __cid="cIvIz6f"> 
+                    <div class="progress-bar x-doc-process-bar cIvIz6f" role="progressbar" style="width:0%;" xid="progressBar4" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div data-bind="foreach:$attachmentItems" xid="div39" __cid="cIvIz6f" class="cIvIz6f"> 
+                    <div class="x-attachment-cell cIvIz6f" xid="div38" __cid="cIvIz6f"> 
+                      <div class="x-attachment-item x-item-other cIvIz6f" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div37" __cid="cIvIz6f"> 
+                        <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIvIz6f" xid="a4" __cid="cIvIz6f"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div42" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-upload cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div41" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div34" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-remove cIvIz6f" data-bind="click:changeState.bind($object,'remove')" xid="div43" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div style="clear:both;" xid="div44" __cid="cIvIz6f" class="cIvIz6f"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvIz6f" xid="controlGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;4.控制文件上传大小(上传文件不能大于1kb)&quot;}" __cid="cIvIz6f"> 
+        <div class="x-control-group-title cIvIz6f" xid="controlGroupTitle4" __cid="cIvIz6f"> 
+          <span xid="span4" __cid="cIvIz6f" class="cIvIz6f">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cIvIz6f" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cIvIz6f"> 
+          <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 cIvIz6f" xid="col6" style="height:auto;" __cid="cIvIz6f"> 
+            <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimpleSize" data-bind="component:{ref:fileData.ref('fFileSize'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIvIz6f" class="cIvIz6f"> 
+              <div class="x-attachment cIvIz6f" xid="div47" __cid="cIvIz6f"> 
+                <div class="x-attachment-content x-card-border cIvIz6f" xid="div46" __cid="cIvIz6f"> 
+                  <div class="x-doc-process cIvIz6f" xid="div51" __cid="cIvIz6f"> 
+                    <div class="progress-bar x-doc-process-bar cIvIz6f" role="progressbar" style="width:0%;" xid="progressBar5" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div data-bind="foreach:$attachmentItems" xid="div50" __cid="cIvIz6f" class="cIvIz6f"> 
+                    <div class="x-attachment-cell cIvIz6f" xid="div49" __cid="cIvIz6f"> 
+                      <div class="x-attachment-item x-item-other cIvIz6f" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div48" __cid="cIvIz6f"> 
+                        <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIvIz6f" xid="a5" __cid="cIvIz6f"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div53" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-upload cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div52" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div45" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-remove cIvIz6f" data-bind="click:changeState.bind($object,'remove')" xid="div54" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div style="clear:both;" xid="div55" __cid="cIvIz6f" class="cIvIz6f"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvIz6f" xid="controlGroup5" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;5.控制上传文件个数(上传文件个数不能超过2个)&quot;}" __cid="cIvIz6f"> 
+        <div class="x-control-group-title cIvIz6f" xid="controlGroupTitle5" __cid="cIvIz6f"> 
+          <span xid="span5" __cid="cIvIz6f" class="cIvIz6f">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cIvIz6f" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cIvIz6f"> 
+          <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 cIvIz6f" xid="col7" style="height:auto;" __cid="cIvIz6f"> 
+            <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimpleNum" data-bind="component:{ref:fileData.ref('fFileNum'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIvIz6f" class="cIvIz6f"> 
+              <div class="x-attachment cIvIz6f" xid="div64" __cid="cIvIz6f"> 
+                <div class="x-attachment-content x-card-border cIvIz6f" xid="div63" __cid="cIvIz6f"> 
+                  <div class="x-doc-process cIvIz6f" xid="div58" __cid="cIvIz6f"> 
+                    <div class="progress-bar x-doc-process-bar cIvIz6f" role="progressbar" style="width:0%;" xid="progressBar6" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div data-bind="foreach:$attachmentItems" xid="div59" __cid="cIvIz6f" class="cIvIz6f"> 
+                    <div class="x-attachment-cell cIvIz6f" xid="div66" __cid="cIvIz6f"> 
+                      <div class="x-attachment-item x-item-other cIvIz6f" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div65" __cid="cIvIz6f"> 
+                        <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIvIz6f" xid="a6" __cid="cIvIz6f"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div56" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-upload cIvIz6f" data-bind="visible:$state.get() == 'upload'" xid="div57" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div class="x-attachment-cell cIvIz6f" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div61" __cid="cIvIz6f"> 
+                    <div class="x-attachment-item x-item-remove cIvIz6f" data-bind="click:changeState.bind($object,'remove')" xid="div60" __cid="cIvIz6f"/> 
+                  </div>  
+                  <div style="clear:both;" xid="div62" __cid="cIvIz6f" class="cIvIz6f"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

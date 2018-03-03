@@ -1,0 +1,198 @@
+
+.btn i{ font-size:16px;}
+
+.row{ margin:15px 0; }
+.row .col{ padding:0;}
+.row>span{ line-height:30px;}
+.row.o-tj{ padding:10px; background-color:#f1f1f1;}
+.row>.btn{ margin-left:10px;}
+
+.table{ border-top:1px solid #d5d5d5; border-bottom:1px solid #d5d5d5;}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{ padding:0;}
+.table-style{ text-align: center; vertical-align: middle;}
+.table > thead > tr > td.success, .table > tbody > tr > td.success, .table > tfoot > tr > td.success, .table > thead > tr > th.success, .table > tbody > tr > th.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > tbody > tr.success > td, .table > tfoot > tr.success > td, .table > thead > tr.success > th, .table > tbody > tr.success > th, .table > tfoot > tr.success > th{ background-color:#fcf3f2;}
+
+/*==============按钮================*/
+.btnbox{ background-image:none; border:0; border-radius:3px; box-shadow:none; text-shadow:none;}
+.blueBtn, .blueBtn:hover{ color:#fff; background-color:#4fc7c5;}
+.redBtn, .redBtn:hover{ color:#fff; background-color:#fc6e64;}
+.granBtn, .granBtn:hover{ color:#666; background-color:#ccc;}
+.groupBtn{ background-image:none;}
+/*===========================按钮end*******************/
+
+/*操作*/
+.o-operation .dropdown-toggle{ border-radius:5px; border:1px solid #d2d2d2; color:#444;}
+.o-operation .dropdown-menu>li>a{ padding:8px 20px;}
+
+/*统计文字*/
+.numberSpan{ color:#fc6e64;}
+
+.x-popOver .x-popOver-overlay{ background-color:#000;}
+
+/*管理分组弹出窗口＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.groupPopOver{}
+.groupPopOver .x-popOver-content{ width:50%; height:60%; border-radius:6px; margin:-20% -25%; background-color:#fff;  box-shadow:0 3px 9px rgba(0, 0, 0, 0.5);}
+.groupPopOver .pop-title{ padding:15px; border-bottom:1px solid #e5e5e5; min-height:16.42857143px;}
+
+.groupPopOver .x-popOver-content .x-row{ margin-top:15px;}
+.groupPopOver .x-popOver-content .btn[xid=newGroupBtn]{ margin-left:10px;}
+
+.groupPopOver .pop-bottom{ width:100%; position:absolute; bottom:0; left:0;}
+.groupPopOver .pop-bottom .btn{ margin-left:10px; padding:5px 30px;}
+
+.o-groutbtnList .btn{ margin-left:10px;}
+.groupSeclected{ background-image:none; border:0; border-radius:3px; box-shadow:none; text-shadow:none; color:#fff; background-color:#fc6e64;}
+
+/*群组筛选＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.user-labelChoose{ width: 320px; height: 36px; border: 1px solid #CCC; border-radius: 4px; margin-left: 10px;}
+.user-labelChoose .labelTitle{ width:75px; height:36px; line-height:36px; font-size: 15px; float: left; margin-left: 10px;}
+/*三角*/
+.user-labelChoose .caret-style{ width:15px; height:20px; line-height:20px; margin-top: 7px; float: left;}
+.user-labelChoose .caret{ display: inline-block; width: 0; height: 0; margin-left: 2px; vertical-align: middle; border-top: 4px dashed; border-top: 4px solid\9; border-right: 4px solid transparent; border-left: 4px solid transparent;}
+
+/*选取列表*/
+.user-labelChoose .labelSpan { width: 216px; float: left; height: 33px; line-height:33px; overflow-y: auto;}
+.user-labelChoose .labelSpan span{ margin-right:5px;}
+/*下拉区域*/
+.user-labelChoose .spanContent{	display:none; width:320px; margin-top:34px; padding-bottom:20px; border:1px solid #ccc; background-color:#fff; z-index:5; position:absolute; left:10px;}
+/*下拉列表*/
+.user-labelChoose .spanContent .spanContentlabel span { padding:5px; cursor: pointer;}
+.user-labelChoose .spanContent .spanContentlabel span:hover{ background-color:#fcf3f2;}
+/*收起*/
+.user-labelChoose .spanContent .caretTitle { position:absolute; bottom: 0; right:0; color: #CCC; cursor: pointer;}
+.user-labelChoose .spanContent .caretTitle .glyphicon{}
+
+/*
+.icon-size{
+	font-size: x-large;
+}
+
+.pop-center{
+    width: 84%;
+    margin: auto;
+    height: 210px;
+    margin-top: 5px;
+}
+.pop-title{
+    margin: auto;
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+}
+.pop-title h5{
+	float: left;
+    margin-left: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.pop-bottom{	
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    height: 45px;
+}
+.pop-center textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    text-indent: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: auto;
+    letter-spacing: 2px;
+    border: 1px solid #EEE;
+}
+.pop-bottom-span {
+    float: left;
+    padding-top: 12px;
+    margin-left: 31px;
+    color: #191212;
+    letter-spacing: 1px;
+}
+.delpop-title{
+	width: 95%;
+    margin: auto;
+    margin-top: 5px;
+    height: 30px;
+}
+.delpop-title-span{
+	 font-size: 15px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.delpop-center{
+	 width: 95%;
+    height: 28px;
+    margin: auto;
+    margin-top: 5px;
+}
+.delpop-center-div {
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.delpop-bottom{
+	 width: 95%;
+    height: 40px;
+    margin: auto;
+    margin-top: 17px;
+}
+
+.btn-manager-tags {
+    font-size: 14px;
+    margin-left: 8px;
+    color: #ac7805;
+    padding: 0px 2px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid;
+    position: absolute;
+    margin-top: 2px;
+    cursor: pointer;
+}*/
+
+
+
+
+/*
+.label-btn{
+	padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    background-color: rgb(79, 199, 197);
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.addLabel{
+	 border: 1px dashed rgb(79, 199, 197);
+    padding: 1px 15px;
+    font-size: 12px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 5px;
+    color: rgb(79, 199, 197);
+    cursor: pointer;
+    font-weight: normal;
+}
+.btnClass{
+	 background-color: #4fc7c5;
+    margin-right: 10px;
+    border-radius: 3px;
+    color:white;
+}
+.groupSeclected{
+	background-color: #ccc;
+}*/

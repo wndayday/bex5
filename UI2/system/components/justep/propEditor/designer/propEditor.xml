@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/propEditor/propEditor" tag-name="div" icon="propEditor.gif" text="属性编辑器"
+		binding-component="$UI/system/components/justep/propEditor/propEditor" 
+        component-type="formControl" 
+        design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号"  required="true"/>	
+			<property name="targetData" text="数据"  required="true"  editor-ref="dataPropDlg" />	
+			<property name="bind-ref" text="引用" editor-ref="dataRef" editor-parameter='{"hasLabel":"false"}'/>
+			<!-- 
+			<property name="data" text="关联的data"/>	
+			 -->
+ 
+			<property name="style" text="样式" editor-ref="styleDialog" />
+		</properties>
+
+		
+ 
+		<templates>
+		   <template name="default"><![CDATA[ 
+				<div component="$UI/system/components/justep/propEditor/propEditor" class="x-output"/>
+		   ]]></template>
+		</templates>
+	</element>
+	
+</elements>

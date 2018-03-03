@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element
+		name="$UI/system/components/justep/attachment/attachmentImageSimple"
+		tag-type="rich" tag-name="div" icon="img.gif" text="图片附件"
+		binding-component="$UI/system/components/justep/attachment/attachmentImageSimple"
+		display-property="xid" component-type="formControl" validator="ViewValidator"
+		design-view="web-designer">
+
+		<property-editors>
+			<property-editor name="actionUrlList" type="list">
+				<static-data
+					value="/baas/justep/attachment/simpleFileStore:/baas/justep/attachment/simpleFileStore,$UI/system/service/doc/common/simpleFileStore.j:$UI/system/service/doc/common/simpleFileStore.j" />
+			</property-editor>
+		</property-editors>
+
+
+		<property-editors>
+			<property-editor name="acceptList" type="list">
+				<static-data value="image/*{comma}doc/-:拍照,image/*:拍照、图库" />
+			</property-editor>
+		</property-editors>
+
+
+		<properties>
+			<property name="xid" text="编号" editor-discriptor-ref="" />
+			<property name="bind-ref" text="引用" editor-ref="dataRef" />
+			<property name="actionUrl" text="文件存储action" editor-ref="actionUrlList" />
+			<property name="compress" text="启用压缩" default-value="true"
+				editor-ref="booleanList" data-type="boolean" />
+			<property name="imageCut" text="剪裁图片" default-value="false"
+				editor-ref="booleanList" data-type="boolean" />
+			<property name="preSignMode" text="预签名模式" default-value="false"
+				editor-ref="booleanList" data-type="boolean" />
+			<property name="readonly" text="只读" default-value="false"
+				editor-ref="booleanList" data-type="boolean" />	
+			<include
+				path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']" />
+			<property name="class" text="class" />
+			<property name="style" text="样式" editor-ref="styleDialog">
+				<property name="width" text="高度" required="true" />
+				<property name="height" text="宽度" required="true" />
+			</property>
+		</properties>
+		<events>
+			<include
+				path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*" />
+		</events>
+
+		<templates>
+			<template name="default"><![CDATA[ 
+		        <div component="$UI/system/components/justep/attachment/attachmentImageSimple" actionUrl="/storage"
+		         preSignMode="true" style = 'height:120px;width:120px;' class = 'x-attachmentImageSimple img-thumbnail'> 
+		             <div class ='x-attachmentImageSimpleDiv'>
+		             <div class ='x-attachmentImageSimpleForeachDiv' data-bind="foreach:$attachmentItems"> 
+		                   <img class="x-autofill" bind-attr-src="$model.previewPicture.bind($model,$object)()" /> 
+		                </div> 
+		            </div>  
+		      </div> 
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

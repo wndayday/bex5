@@ -1,0 +1,13 @@
+/**
+	@name $UI/system/components/fragment/btnNavBar
+	@component 
+	@description
+	<xmp>
+		<b>使用场景</b>：可用于顶部导航，也可用于底部导航 ;
+		<b>使用方法</b>：拖入设计器中；可以配置样式来确定排列风格，如长宽高、颜色、字体字号；还可设置导航指向的页面等;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/

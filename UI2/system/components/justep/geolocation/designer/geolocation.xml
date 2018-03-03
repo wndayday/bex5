@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/geolocation/geolocation" tag-name="div" text="地理位置" icon="geolocation.png" display-property="xid" 
+			 binding-component="$UI/system/components/justep/geolocation/geolocation"
+			 parent-range="$UI/system/components/justep/window/window,$UI/system/components/justep/inVisibleCompContainer/inVisibleCompContainer"
+			 component-type="inVisibleComp"  >
+		<properties>
+			<property name="xid" text="编号" required="true" />
+		</properties>
+		<templates>
+		   <template name="default"><![CDATA[ 
+		     <div component="$UI/system/components/justep/geolocation/geolocation" >
+		     </div>
+		   ]]></template>
+		</templates>
+		<events>
+			<event name="onGetLocationSuccess" type="event" text="获取地理位置成功" parameters="event"
+				is-script="true" />
+			<event name="onGetLocationFail" type="event" text="获取地理位置失败" parameters="event"
+				is-script="true" />
+		</events>
+	</element>
+    
+</elements>

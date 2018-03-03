@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/justep/pagerBar/pagerBar
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：数据需要分页展示时;
+		<b>使用方法</b>：将组件放入设计器中，绑定需要分页展示数据的数据组件，可以控制每页展示多少条数据;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/	
+
+/**
+	@name $UI/system/components/justep/pagerBar/pagerBar#xid
+	@attribute 
+	@type string
+	@description 
+*/

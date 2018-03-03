@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<antlib> 
+  <taskdef name="Upload" classname="com.justep.tools.ant.task.app.UploadTask"/>  
+  <taskdef name="Pack" classname="com.justep.tools.ant.task.app.PackTask"/>  
+  <taskdef name="PackState" classname="com.justep.tools.ant.task.app.PackStateTask"/>
+  <taskdef name="Download" classname="com.justep.tools.ant.task.app.DownloadTask"/>  
+</antlib>

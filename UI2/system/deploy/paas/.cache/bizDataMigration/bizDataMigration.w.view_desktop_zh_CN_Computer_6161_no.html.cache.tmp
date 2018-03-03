@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJJ7Fri" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJJ7Fri" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/output/output,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cJJ7Fri" class="cJJ7Fri"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcamIbEz-iosstatusbar cJJ7Fri" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJJ7Fri"> 
+    <div class="x-panel-content cJJ7Fri" xid="content1" style="padding:20px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJJ7Fri"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJJ7Fri" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJJ7Fri"> 
+        <div class="x-col cJJ7Fri" xid="col1" __cid="cJJ7Fri"> 
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cJJ7Fri" xid="checkbox2" label="是否同步系统数据" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;是否同步系统数据&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cJJ7Fri"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cJJ7Fri" class="cJJ7Fri"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cJJ7Fri" class="cJJ7Fri">是否同步系统数据</label> 
+          </span> 
+        </div>  
+        <div class="x-col cJJ7Fri" xid="col2" __cid="cJJ7Fri"/>  
+        <div class="x-col cJJ7Fri" xid="col3" __cid="cJJ7Fri"/> 
+      </div>  
+      <table component="$model/UI2/system/components/justep/list/list" class="x-list table table-hover table-striped cJJ7Fri" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tableData&quot;}" __cid="cJJ7Fri"> 
+        <thead xid="thead1" __cid="cJJ7Fri" class="cJJ7Fri"> 
+          <tr xid="tr1" __cid="cJJ7Fri" class="cJJ7Fri"> 
+            <th xid="default1" __cid="cJJ7Fri" class="cJJ7Fri">数据对象</th>  
+            <th xid="default1" __cid="cJJ7Fri" class="cJJ7Fri">操作</th> 
+          </tr> 
+        </thead>  
+        <tbody class="x-list-template x-min-height hide cJJ7Fri" xid="listTemplate1" __cid="cJJ7Fri" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <tr xid="tr2" __cid="cJJ7Fri" class="cJJ7Fri" data-bind="css:{success:$object==$model.tableData.getCurrentRow()}"> 
+            <td xid="td1" __cid="cJJ7Fri" class="cJJ7Fri"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cJJ7Fri" xid="output1" data-bind="component:{ref:ref(&quot;label&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJJ7Fri"/> 
+            </td>  
+            <td xid="td1" __cid="cJJ7Fri" class="cJJ7Fri"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cJJ7Fri" xid="checkbox1" label="是否同步数据" checkedValue="true" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;true&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;是否同步数据&quot;}" data-bind="component:{ref:ref(&quot;isOrNotSync&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cJJ7Fri"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cJJ7Fri" class="cJJ7Fri"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cJJ7Fri" class="cJJ7Fri">是否同步数据</label> 
+              </span> 
+            </td> 
+          </tr> 
+        </tbody> 
+      </table>  
+      <p xid="p1" __cid="cJJ7Fri" class="cJJ7Fri" data-bind="visible:isOrNotShow">暂无数据。</p> 
+    </div>  
+    <div class="x-panel-bottom cJJ7Fri" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJJ7Fri"/>  
+    <style __cid="cJJ7Fri" class="cJJ7Fri">.x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamIbEz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%" class="no-js">  
+  <head xmlns=""> 
+    <meta charset="utf-8"/>  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes"/>  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>  
+    <script src="../../../../../v_57124a50a96a40ac95c0d234b8dafa8dl_zh_CNs_desktopd_pc/system/lib/base/modernizr-2.8.3.min.js"/>  
+    <script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>  
+    <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" &amp;&amp; (mode!="2") &amp;&amp; (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents &amp;&amp; x5AppAgents.length &gt; 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i &lt; version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i &lt;= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i&lt;items.length; i++){
+							if (mode == "3"){
+								if (items[i] &amp;&amp; (items[i].indexOf("v_") === 0) 
+										&amp;&amp; (items[i].indexOf("l_") !== -1)
+										&amp;&amp; (items[i].indexOf("s_") !== -1)
+										&amp;&amp; (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] &amp;&amp; (items[i].indexOf("v-")===0) &amp;&amp; (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&amp;" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&amp;url=" + path;
+						if (query)
+							url += "&amp;" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+									versionInfo.resourceInfo.isNewVersion = true;
+								};
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") &amp;&amp; window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (versionInfo.resourceInfo &amp;&amp; versionInfo.resourceInfo.version &amp;&amp; (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									if (query){
+										path = path + "?" + query;
+									}
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>  
+    <link rel="stylesheet" href="../../../../../v_8fe78b51db894b17b2e6af530fc2c226l_zh_CNs_desktopd_pc/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"/>
+    <link rel="stylesheet" href="../../../../../v_4c21a386299644f383ba98961b7f8ba7l_zh_CNs_desktopd_pc/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"/>
+  </head>  
+  <body xmlns="" style="width:100%;height:100%;margin: 0;"> 
+    <script intro="none"/>  
+    <div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block">
+      <div xid="window" class="window cZ7RbAn" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZ7RbAn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/window/window,">  
+        <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.content-wrapper.cZ7RbAn{padding-top: 0; margin-left: 0}</style>  
+        <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+        <div class="content-wrapper cZ7RbAn" __cid="cZ7RbAn"> 
+          <section class="content cZ7RbAn" __cid="cZ7RbAn"> 
+            <div class="row cZ7RbAn" __cid="cZ7RbAn"> 
+              <div class="col-md-3 col-sm-6 col-xs-12 cZ7RbAn" __cid="cZ7RbAn"> 
+                <div class="info-box cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon bg-aqua cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion ion-ios-gear-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">CPU Traffic</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">90
+                      <small __cid="cZ7RbAn" class="cZ7RbAn">%</small> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="col-md-3 col-sm-6 col-xs-12 cZ7RbAn" __cid="cZ7RbAn"> 
+                <div class="info-box cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon bg-red cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="fa fa-google-plus cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">Likes</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">41,410</span> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="clearfix visible-sm-block cZ7RbAn" __cid="cZ7RbAn"/>  
+              <div class="col-md-3 col-sm-6 col-xs-12 cZ7RbAn" __cid="cZ7RbAn"> 
+                <div class="info-box cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon bg-green cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion ion-ios-cart-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">Sales</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">760</span> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="col-md-3 col-sm-6 col-xs-12 cZ7RbAn" __cid="cZ7RbAn"> 
+                <div class="info-box cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon bg-yellow cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion ion-ios-people-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">New Members</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">2,000</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="row cZ7RbAn" __cid="cZ7RbAn"> 
+              <div class="col-md-8 cZ7RbAn" __cid="cZ7RbAn"> 
+                <div class="row cZ7RbAn" __cid="cZ7RbAn"> 
+                  <div class="col-md-6 cZ7RbAn" __cid="cZ7RbAn"> 
+                    <div class="box box-warning direct-chat direct-chat-warning cZ7RbAn" __cid="cZ7RbAn"> 
+                      <div class="box-header with-border cZ7RbAn" __cid="cZ7RbAn"> 
+                        <h3 class="box-title cZ7RbAn" __cid="cZ7RbAn">Direct Chat</h3>  
+                        <div class="box-tools pull-right cZ7RbAn" __cid="cZ7RbAn"> 
+                          <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow cZ7RbAn" __cid="cZ7RbAn">3</span>  
+                          <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="collapse" __cid="cZ7RbAn"> 
+                            <i class="fa fa-minus cZ7RbAn" __cid="cZ7RbAn"/> 
+                          </button>  
+                          <button type="button" class="btn btn-box-tool cZ7RbAn" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle" __cid="cZ7RbAn"> 
+                            <i class="fa fa-comments cZ7RbAn" __cid="cZ7RbAn"/> 
+                          </button>  
+                          <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="remove" __cid="cZ7RbAn"> 
+                            <i class="fa fa-times cZ7RbAn" __cid="cZ7RbAn"/> 
+                          </button> 
+                        </div> 
+                      </div>  
+                      <div class="box-body cZ7RbAn" __cid="cZ7RbAn"> 
+                        <div class="direct-chat-messages cZ7RbAn" __cid="cZ7RbAn"> 
+                          <div class="direct-chat-msg cZ7RbAn" __cid="cZ7RbAn"> 
+                            <div class="direct-chat-info clearfix cZ7RbAn" __cid="cZ7RbAn"> 
+                              <span class="direct-chat-name pull-left cZ7RbAn" __cid="cZ7RbAn">Alexander Pierce</span>  
+                              <span class="direct-chat-timestamp pull-right cZ7RbAn" __cid="cZ7RbAn">23 Jan 2:00 pm</span> 
+                            </div>  
+                            <img class="direct-chat-img cZ7RbAn" src="../../../../../v_f8f725df8c61498ca7d27b82d3b04ed7l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user1-128x128.jpg" alt="message user image" __cid="cZ7RbAn"/>  
+                            <div class="direct-chat-text cZ7RbAn" __cid="cZ7RbAn">Is this template really for free? That's unbelievable!</div> 
+                          </div>  
+                          <div class="direct-chat-msg right cZ7RbAn" __cid="cZ7RbAn"> 
+                            <div class="direct-chat-info clearfix cZ7RbAn" __cid="cZ7RbAn"> 
+                              <span class="direct-chat-name pull-right cZ7RbAn" __cid="cZ7RbAn">Sarah Bullock</span>  
+                              <span class="direct-chat-timestamp pull-left cZ7RbAn" __cid="cZ7RbAn">23 Jan 2:05 pm</span> 
+                            </div>  
+                            <img class="direct-chat-img cZ7RbAn" src="../../../../../v_8a495ddc0bea44c3b912c934fcf112f2l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user3-128x128.jpg" alt="message user image" __cid="cZ7RbAn"/>&gt;
+                            <div class="direct-chat-text cZ7RbAn" __cid="cZ7RbAn">You better believe it!</div> 
+                          </div>  
+                          <div class="direct-chat-msg cZ7RbAn" __cid="cZ7RbAn"> 
+                            <div class="direct-chat-info clearfix cZ7RbAn" __cid="cZ7RbAn"> 
+                              <span class="direct-chat-name pull-left cZ7RbAn" __cid="cZ7RbAn">Alexander Pierce</span>  
+                              <span class="direct-chat-timestamp pull-right cZ7RbAn" __cid="cZ7RbAn">23 Jan 5:37 pm</span> 
+                            </div>  
+                            <img class="direct-chat-img cZ7RbAn" src="../../../../../v_9c9c75b0ba684bba86176b6437f329e0l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user1-128x128.jpg" alt="message user image" __cid="cZ7RbAn"/>  
+                            <div class="direct-chat-text cZ7RbAn" __cid="cZ7RbAn">Working with AdminLTE on a great new app! Wanna join?</div> 
+                          </div>  
+                          <div class="direct-chat-msg right cZ7RbAn" __cid="cZ7RbAn"> 
+                            <div class="direct-chat-info clearfix cZ7RbAn" __cid="cZ7RbAn"> 
+                              <span class="direct-chat-name pull-right cZ7RbAn" __cid="cZ7RbAn">Sarah Bullock</span>  
+                              <span class="direct-chat-timestamp pull-left cZ7RbAn" __cid="cZ7RbAn">23 Jan 6:10 pm</span> 
+                            </div>  
+                            <img class="direct-chat-img cZ7RbAn" src="../../../../../v_0c0006aa35e3416f923ebfa668ddf861l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user3-128x128.jpg" alt="message user image" __cid="cZ7RbAn"/>  
+                            <div class="direct-chat-text cZ7RbAn" __cid="cZ7RbAn">I would love to.</div> 
+                          </div> 
+                        </div>  
+                        <div class="direct-chat-contacts cZ7RbAn" __cid="cZ7RbAn"> 
+                          <ul class="contacts-list cZ7RbAn" __cid="cZ7RbAn"> 
+                            <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="#" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                                <img class="contacts-list-img cZ7RbAn" src="../../../../../v_8cb10ea0763a41009a797d1fe2bd9b19l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user1-128x128.jpg" alt="User Image" __cid="cZ7RbAn"/>  
+                                <div class="contacts-list-info cZ7RbAn" __cid="cZ7RbAn"> 
+                                  <span class="contacts-list-name cZ7RbAn" __cid="cZ7RbAn">Count Dracula
+                                    <small class="contacts-list-date pull-right cZ7RbAn" __cid="cZ7RbAn">2/28/2015</small> 
+                                  </span>  
+                                  <span class="contacts-list-msg cZ7RbAn" __cid="cZ7RbAn">How have you been? I was...</span> 
+                                </div> 
+                              </a> 
+                            </li>  
+                            <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="#" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                                <img class="contacts-list-img cZ7RbAn" src="../../../../../v_19fce561650e45678decb277ea17f46al_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user7-128x128.jpg" alt="User Image" __cid="cZ7RbAn"/>  
+                                <div class="contacts-list-info cZ7RbAn" __cid="cZ7RbAn"> 
+                                  <span class="contacts-list-name cZ7RbAn" __cid="cZ7RbAn">Sarah Doe
+                                    <small class="contacts-list-date pull-right cZ7RbAn" __cid="cZ7RbAn">2/23/2015</small> 
+                                  </span>  
+                                  <span class="contacts-list-msg cZ7RbAn" __cid="cZ7RbAn">I will be waiting for...</span> 
+                                </div> 
+                              </a> 
+                            </li>  
+                            <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="#" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                                <img class="contacts-list-img cZ7RbAn" src="../../../../../v_bcd355a285b54cc19f864edf8d4f5780l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user3-128x128.jpg" alt="User Image" __cid="cZ7RbAn"/>  
+                                <div class="contacts-list-info cZ7RbAn" __cid="cZ7RbAn"> 
+                                  <span class="contacts-list-name cZ7RbAn" __cid="cZ7RbAn">Nadia Jolie
+                                    <small class="contacts-list-date pull-right cZ7RbAn" __cid="cZ7RbAn">2/20/2015</small> 
+                                  </span>  
+                                  <span class="contacts-list-msg cZ7RbAn" __cid="cZ7RbAn">I'll call you back at...</span> 
+                                </div> 
+                              </a> 
+                            </li>  
+                            <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="#" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                                <img class="contacts-list-img cZ7RbAn" src="../../../../../v_67ee1a7b515d4fa3be896a83da9a4e98l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user5-128x128.jpg" alt="User Image" __cid="cZ7RbAn"/>  
+                                <div class="contacts-list-info cZ7RbAn" __cid="cZ7RbAn"> 
+                                  <span class="contacts-list-name cZ7RbAn" __cid="cZ7RbAn">Nora S. Vans
+                                    <small class="contacts-list-date pull-right cZ7RbAn" __cid="cZ7RbAn">2/10/2015</small> 
+                                  </span>  
+                                  <span class="contacts-list-msg cZ7RbAn" __cid="cZ7RbAn">Where is your new...</span> 
+                                </div> 
+                              </a> 
+                            </li>  
+                            <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="#" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                                <img class="contacts-list-img cZ7RbAn" src="../../../../../v_051d0df2ef1f4a809892198b126f4397l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user6-128x128.jpg" alt="User Image" __cid="cZ7RbAn"/>  
+                                <div class="contacts-list-info cZ7RbAn" __cid="cZ7RbAn"> 
+                                  <span class="contacts-list-name cZ7RbAn" __cid="cZ7RbAn">John K.
+                                    <small class="contacts-list-date pull-right cZ7RbAn" __cid="cZ7RbAn">1/27/2015</small> 
+                                  </span>  
+                                  <span class="contacts-list-msg cZ7RbAn" __cid="cZ7RbAn">Can I take a look at...</span> 
+                                </div> 
+                              </a> 
+                            </li>  
+                            <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="#" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                                <img class="contacts-list-img cZ7RbAn" src="../../../../../v_f774b1f51f21404b891adad4126569c7l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user8-128x128.jpg" alt="User Image" __cid="cZ7RbAn"/>  
+                                <div class="contacts-list-info cZ7RbAn" __cid="cZ7RbAn"> 
+                                  <span class="contacts-list-name cZ7RbAn" __cid="cZ7RbAn">Kenneth M.
+                                    <small class="contacts-list-date pull-right cZ7RbAn" __cid="cZ7RbAn">1/4/2015</small> 
+                                  </span>  
+                                  <span class="contacts-list-msg cZ7RbAn" __cid="cZ7RbAn">Never mind I found...</span> 
+                                </div> 
+                              </a> 
+                            </li> 
+                          </ul> 
+                        </div> 
+                      </div>  
+                      <div class="box-footer cZ7RbAn" __cid="cZ7RbAn"> 
+                        <form action="#" method="post" __cid="cZ7RbAn" class="cZ7RbAn"> 
+                          <div class="input-group cZ7RbAn" __cid="cZ7RbAn"> 
+                            <input type="text" name="message" placeholder="Type Message ..." class="form-control cZ7RbAn" __cid="cZ7RbAn"/>  
+                            <span class="input-group-btn cZ7RbAn" __cid="cZ7RbAn"> 
+                              <button type="button" class="btn btn-warning btn-flat cZ7RbAn" __cid="cZ7RbAn">Send</button> 
+                            </span> 
+                          </div> 
+                        </form> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="col-md-6 cZ7RbAn" __cid="cZ7RbAn"> 
+                    <div class="box box-danger cZ7RbAn" __cid="cZ7RbAn"> 
+                      <div class="box-header with-border cZ7RbAn" __cid="cZ7RbAn"> 
+                        <h3 class="box-title cZ7RbAn" __cid="cZ7RbAn">Latest Members</h3>  
+                        <div class="box-tools pull-right cZ7RbAn" __cid="cZ7RbAn"> 
+                          <span class="label label-danger cZ7RbAn" __cid="cZ7RbAn">8 New Members</span>  
+                          <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="collapse" __cid="cZ7RbAn"> 
+                            <i class="fa fa-minus cZ7RbAn" __cid="cZ7RbAn"/> 
+                          </button>  
+                          <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="remove" __cid="cZ7RbAn"> 
+                            <i class="fa fa-times cZ7RbAn" __cid="cZ7RbAn"/> 
+                          </button> 
+                        </div> 
+                      </div>  
+                      <div class="box-body no-padding cZ7RbAn" __cid="cZ7RbAn"> 
+                        <ul class="users-list clearfix cZ7RbAn" __cid="cZ7RbAn"> 
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_85bfd784d92a440791b52c273e65e05el_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user1-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Alexander Pierce</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">Today</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_4db60d8c960348f0b927840be92e36fdl_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user8-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Norman</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">Yesterday</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_b8bb4de42e6944b3bfba248963c9b319l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user7-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Jane</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">12 Jan</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_be74a03f5be348608081b4a057e5df8fl_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user6-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">John</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">12 Jan</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_a1aa60c4288c441ca879e6083abc4a62l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user2-160x160.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Alexander</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">13 Jan</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_24ebf123472e444ea8bfc4dd81a384ael_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user5-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Sarah</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">14 Jan</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_5dd4f4b675154d369fd4448b8230199fl_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user4-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Nora</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">15 Jan</span> 
+                          </li>  
+                          <li __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <img src="../../../../../v_3fe09e5499e748458ec408c98a092859l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/user3-128x128.jpg" alt="User Image" __cid="cZ7RbAn" class="cZ7RbAn"/>  
+                            <a class="users-list-name cZ7RbAn" href="#" __cid="cZ7RbAn">Nadia</a>  
+                            <span class="users-list-date cZ7RbAn" __cid="cZ7RbAn">15 Jan</span> 
+                          </li> 
+                        </ul> 
+                      </div>  
+                      <div class="box-footer text-center cZ7RbAn" __cid="cZ7RbAn"> 
+                        <a href="javascript:void(0)" class="uppercase cZ7RbAn" __cid="cZ7RbAn">View All Users</a> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="box box-info cZ7RbAn" __cid="cZ7RbAn"> 
+                  <div class="box-header with-border cZ7RbAn" __cid="cZ7RbAn"> 
+                    <h3 class="box-title cZ7RbAn" __cid="cZ7RbAn">Latest Orders</h3>  
+                    <div class="box-tools pull-right cZ7RbAn" __cid="cZ7RbAn"> 
+                      <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="collapse" __cid="cZ7RbAn"> 
+                        <i class="fa fa-minus cZ7RbAn" __cid="cZ7RbAn"/> 
+                      </button>  
+                      <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="remove" __cid="cZ7RbAn"> 
+                        <i class="fa fa-times cZ7RbAn" __cid="cZ7RbAn"/> 
+                      </button> 
+                    </div> 
+                  </div>  
+                  <div class="box-body cZ7RbAn" __cid="cZ7RbAn"> 
+                    <div class="table-responsive cZ7RbAn" __cid="cZ7RbAn"> 
+                      <table class="table no-margin cZ7RbAn" __cid="cZ7RbAn"> 
+                        <thead __cid="cZ7RbAn" class="cZ7RbAn"> 
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <th __cid="cZ7RbAn" class="cZ7RbAn">Order ID</th>  
+                            <th __cid="cZ7RbAn" class="cZ7RbAn">Item</th>  
+                            <th __cid="cZ7RbAn" class="cZ7RbAn">Status</th>  
+                            <th __cid="cZ7RbAn" class="cZ7RbAn">Popularity</th> 
+                          </tr> 
+                        </thead>  
+                        <tbody __cid="cZ7RbAn" class="cZ7RbAn"> 
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_92d98391c57a4761998db31ca1c66b11l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR9842</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">Call of Duty IV</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-success cZ7RbAn" __cid="cZ7RbAn">Shipped</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#00a65a" data-height="20" __cid="cZ7RbAn">90,80,90,-70,61,-83,63</div> 
+                            </td> 
+                          </tr>  
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_a313782e87804e6dbda259ded4a50ed2l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR1848</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">Samsung Smart TV</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-warning cZ7RbAn" __cid="cZ7RbAn">Pending</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#f39c12" data-height="20" __cid="cZ7RbAn">90,80,-90,70,61,-83,68</div> 
+                            </td> 
+                          </tr>  
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_4757f2f10f8b42e5ac41a346b1cece73l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR7429</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">iPhone 6 Plus</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-danger cZ7RbAn" __cid="cZ7RbAn">Delivered</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#f56954" data-height="20" __cid="cZ7RbAn">90,-80,90,70,-61,83,63</div> 
+                            </td> 
+                          </tr>  
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_45f4ba8574664d578e48fa11c7ccc777l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR7429</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">Samsung Smart TV</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-info cZ7RbAn" __cid="cZ7RbAn">Processing</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#00c0ef" data-height="20" __cid="cZ7RbAn">90,80,-90,70,-61,83,63</div> 
+                            </td> 
+                          </tr>  
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_8af7158b14164ce9b0119d5a32c58bc7l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR1848</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">Samsung Smart TV</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-warning cZ7RbAn" __cid="cZ7RbAn">Pending</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#f39c12" data-height="20" __cid="cZ7RbAn">90,80,-90,70,61,-83,68</div> 
+                            </td> 
+                          </tr>  
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_f8296c81d7f0468eacd90d9eb4950b6bl_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR7429</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">iPhone 6 Plus</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-danger cZ7RbAn" __cid="cZ7RbAn">Delivered</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#f56954" data-height="20" __cid="cZ7RbAn">90,-80,90,70,-61,83,63</div> 
+                            </td> 
+                          </tr>  
+                          <tr __cid="cZ7RbAn" class="cZ7RbAn"> 
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <a href="../../../../../v_0ac3522ba8804dfe860b38fe5ce2f632l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/pages/examples/invoice.html" __cid="cZ7RbAn" class="cZ7RbAn">OR9842</a> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn">Call of Duty IV</td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <span class="label label-success cZ7RbAn" __cid="cZ7RbAn">Shipped</span> 
+                            </td>  
+                            <td __cid="cZ7RbAn" class="cZ7RbAn"> 
+                              <div class="sparkbar cZ7RbAn" data-color="#00a65a" data-height="20" __cid="cZ7RbAn">90,80,90,-70,61,-83,63</div> 
+                            </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> 
+                    </div> 
+                  </div>  
+                  <div class="box-footer clearfix cZ7RbAn" __cid="cZ7RbAn"> 
+                    <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left cZ7RbAn" __cid="cZ7RbAn">Place New Order</a>  
+                    <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right cZ7RbAn" __cid="cZ7RbAn">View All Orders</a> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="col-md-4 cZ7RbAn" __cid="cZ7RbAn"> 
+                <div class="info-box bg-yellow cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion ion-ios-pricetag-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">Inventory</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">5,200</span>  
+                    <div class="progress cZ7RbAn" __cid="cZ7RbAn"> 
+                      <div class="progress-bar cZ7RbAn" style="width: 50%" __cid="cZ7RbAn"/> 
+                    </div>  
+                    <span class="progress-description cZ7RbAn" __cid="cZ7RbAn">50% Increase in 30 Days</span> 
+                  </div> 
+                </div>  
+                <div class="info-box bg-green cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion ion-ios-heart-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">Mentions</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">92,050</span>  
+                    <div class="progress cZ7RbAn" __cid="cZ7RbAn"> 
+                      <div class="progress-bar cZ7RbAn" style="width: 20%" __cid="cZ7RbAn"/> 
+                    </div>  
+                    <span class="progress-description cZ7RbAn" __cid="cZ7RbAn">20% Increase in 30 Days</span> 
+                  </div> 
+                </div>  
+                <div class="info-box bg-red cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion ion-ios-cloud-download-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">Downloads</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">114,381</span>  
+                    <div class="progress cZ7RbAn" __cid="cZ7RbAn"> 
+                      <div class="progress-bar cZ7RbAn" style="width: 70%" __cid="cZ7RbAn"/> 
+                    </div>  
+                    <span class="progress-description cZ7RbAn" __cid="cZ7RbAn">70% Increase in 30 Days</span> 
+                  </div> 
+                </div>  
+                <div class="info-box bg-aqua cZ7RbAn" __cid="cZ7RbAn"> 
+                  <span class="info-box-icon cZ7RbAn" __cid="cZ7RbAn"> 
+                    <i class="ion-ios-chatbubble-outline cZ7RbAn" __cid="cZ7RbAn"/> 
+                  </span>  
+                  <div class="info-box-content cZ7RbAn" __cid="cZ7RbAn"> 
+                    <span class="info-box-text cZ7RbAn" __cid="cZ7RbAn">Direct Messages</span>  
+                    <span class="info-box-number cZ7RbAn" __cid="cZ7RbAn">163,921</span>  
+                    <div class="progress cZ7RbAn" __cid="cZ7RbAn"> 
+                      <div class="progress-bar cZ7RbAn" style="width: 40%" __cid="cZ7RbAn"/> 
+                    </div>  
+                    <span class="progress-description cZ7RbAn" __cid="cZ7RbAn">40% Increase in 30 Days</span> 
+                  </div> 
+                </div>  
+                <div class="box box-primary cZ7RbAn" __cid="cZ7RbAn"> 
+                  <div class="box-header with-border cZ7RbAn" __cid="cZ7RbAn"> 
+                    <h3 class="box-title cZ7RbAn" __cid="cZ7RbAn">Recently Added Products</h3>  
+                    <div class="box-tools pull-right cZ7RbAn" __cid="cZ7RbAn"> 
+                      <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="collapse" __cid="cZ7RbAn"> 
+                        <i class="fa fa-minus cZ7RbAn" __cid="cZ7RbAn"/> 
+                      </button>  
+                      <button type="button" class="btn btn-box-tool cZ7RbAn" data-widget="remove" __cid="cZ7RbAn"> 
+                        <i class="fa fa-times cZ7RbAn" __cid="cZ7RbAn"/> 
+                      </button> 
+                    </div> 
+                  </div>  
+                  <div class="box-body cZ7RbAn" __cid="cZ7RbAn"> 
+                    <ul class="products-list product-list-in-box cZ7RbAn" __cid="cZ7RbAn"> 
+                      <li class="item cZ7RbAn" __cid="cZ7RbAn"> 
+                        <div class="product-img cZ7RbAn" __cid="cZ7RbAn"> 
+                          <img src="../../../../../v_9f5675dfa69545038fdae5148c5bcd77l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/default-50x50.gif" alt="Product Image" __cid="cZ7RbAn" class="cZ7RbAn"/> 
+                        </div>  
+                        <div class="product-info cZ7RbAn" __cid="cZ7RbAn"> 
+                          <a href="javascript:void(0)" class="product-title cZ7RbAn" __cid="cZ7RbAn">Samsung TV
+                            <span class="label label-warning pull-right cZ7RbAn" __cid="cZ7RbAn">$1800</span> 
+                          </a>  
+                          <span class="product-description cZ7RbAn" __cid="cZ7RbAn">Samsung 32" 1080p 60Hz LED Smart HDTV.</span> 
+                        </div> 
+                      </li>  
+                      <li class="item cZ7RbAn" __cid="cZ7RbAn"> 
+                        <div class="product-img cZ7RbAn" __cid="cZ7RbAn"> 
+                          <img src="../../../../../v_5e88d73730304a1b98786ac5f17dbcb3l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/default-50x50.gif" alt="Product Image" __cid="cZ7RbAn" class="cZ7RbAn"/> 
+                        </div>  
+                        <div class="product-info cZ7RbAn" __cid="cZ7RbAn"> 
+                          <a href="javascript:void(0)" class="product-title cZ7RbAn" __cid="cZ7RbAn">Bicycle
+                            <span class="label label-info pull-right cZ7RbAn" __cid="cZ7RbAn">$700</span> 
+                          </a>  
+                          <span class="product-description cZ7RbAn" __cid="cZ7RbAn">26" Mongoose Dolomite Men's 7-speed, Navy Blue.</span> 
+                        </div> 
+                      </li>  
+                      <li class="item cZ7RbAn" __cid="cZ7RbAn"> 
+                        <div class="product-img cZ7RbAn" __cid="cZ7RbAn"> 
+                          <img src="../../../../../v_7ec06605630c45a581dfed3816350ac3l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/default-50x50.gif" alt="Product Image" __cid="cZ7RbAn" class="cZ7RbAn"/> 
+                        </div>  
+                        <div class="product-info cZ7RbAn" __cid="cZ7RbAn"> 
+                          <a href="javascript:void(0)" class="product-title cZ7RbAn" __cid="cZ7RbAn">Xbox One 
+                            <span class="label label-danger pull-right cZ7RbAn" __cid="cZ7RbAn">$350</span> 
+                          </a>  
+                          <span class="product-description cZ7RbAn" __cid="cZ7RbAn">Xbox One Console Bundle with Halo Master Chief Collection.</span> 
+                        </div> 
+                      </li>  
+                      <li class="item cZ7RbAn" __cid="cZ7RbAn"> 
+                        <div class="product-img cZ7RbAn" __cid="cZ7RbAn"> 
+                          <img src="../../../../../v_eb16596bd58a47d9bb859cd3a93064e0l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main/dist/img/default-50x50.gif" alt="Product Image" __cid="cZ7RbAn" class="cZ7RbAn"/> 
+                        </div>  
+                        <div class="product-info cZ7RbAn" __cid="cZ7RbAn"> 
+                          <a href="javascript:void(0)" class="product-title cZ7RbAn" __cid="cZ7RbAn">PlayStation 4
+                            <span class="label label-success pull-right cZ7RbAn" __cid="cZ7RbAn">$399</span> 
+                          </a>  
+                          <span class="product-description cZ7RbAn" __cid="cZ7RbAn">PlayStation 4 500GB Console (PS4)</span> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div>  
+                  <div class="box-footer text-center cZ7RbAn" __cid="cZ7RbAn"> 
+                    <a href="javascript:void(0)" class="uppercase cZ7RbAn" __cid="cZ7RbAn">View All Products</a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </section> 
+        </div> 
+      </div>
+    </div>  
+    <div id="downloadGCF" style="display:none;padding:50px;"> 
+      <span>您使用的浏览器需要下载插件才能使用,</span>  
+      <a id="downloadGCFLink" href="#">下载地址</a>  
+      <p>(安装后请重新打开浏览器)</p> 
+    </div>  
+    <script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() &amp;&amp; (browser.getVersion() &lt; 10) &amp;&amp; !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>  
+    <script id="_metaJS" src="../../../../../v_8611584c24df4feab652bb57df6fbc92l_zh_CNs_desktopd_pc/system/config/meta.js"> </script>  
+    <script id="_requireJS" src="../../../../../v_3c15c55b3d1547c5bdf92667387bc3c2l_zh_CNs_desktopd_pc/system/lib/require/require.2.1.10.js"> </script>  
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../../v_0c04f332abc848fda88858893bd41f0bl_zh_CNs_desktopd_pc/system/core.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../../v_d5b052d9115048168bf7982552205ca4l_zh_CNs_desktopd_pc/system/common.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../../v_1768946ecd7a455e889bb9938f394c0fl_zh_CNs_desktopd_pc/system/components/comp.min.js"></script>
+    <script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &amp;&amp;
+                                    !(node.attachEvent.toString &amp;&amp; node.attachEvent.toString().indexOf('[native code') &lt; 0) &amp;&amp;
+                                    !(typeof opera !== 'undefined' &amp;&amp; opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10.js";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&amp;&amp; (items[items.length-1].indexOf("l_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("s_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls &amp;&amp; urls.length&gt;0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i&lt;urls.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("&lt;script  src='" + url + "'/&gt;");
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles &amp;&amp; styles.length&gt;0){
+            				for (var i=0; i&lt;styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("&lt;link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/&gt;");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i&lt;items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] &amp;&amp; (items[i].indexOf("v_")===0)
+            								&amp;&amp; (items[i].indexOf("l_")!==-1)
+            								&amp;&amp; (items[i].indexOf("s_")!==-1)
+            								&amp;&amp; (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i&lt;loadeds.length; i++){
+    							if (loadeds[i] &amp;&amp; (loadeds[i].indexOf(newUrl)!==-1)){
+    								return true;
+    							}
+    						}
+            			}
+    					return false;
+            		},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i&lt;scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_67a374216cbd4a289c4a3161548fa141l_zh_CNs_desktopd_pc/portal/sample-pc3/base/main',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_67a374216cbd4a289c4a3161548fa141l_zh_CNs_desktopd_pc',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_67a374216cbd4a289c4a3161548fa141l_zh_CNs_desktopd_pc',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_67a374216cbd4a289c4a3161548fa141l_zh_CNs_desktopd_pc/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_67a374216cbd4a289c4a3161548fa141l_zh_CNs_desktopd_pc/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_67a374216cbd4a289c4a3161548fa141l_zh_CNs_desktopd_pc/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator &amp;&amp; navigator.splashscreen &amp;&amp; navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+						setTimeout(function(){
+							versionChecker.check();			
+						},1000);
+    	            }, false);
+    				var context = {};
+    				context.model = '$model/UI2/portal/sample-pc3/base/main/main.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow &amp;&amp; window.parent &amp;&amp; window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid &amp;&amp; pwindow 
+    						&amp;&amp; pwindow.__justep &amp;&amp; pwindow.__justep.windowOpeners
+    						&amp;&amp; pwindow.__justep.windowOpeners[ownerid]
+    						&amp;&amp; $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					$(window).unload(function(event){
+    						if(winOpener &amp;&amp; winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script> 
+  </body> 
+</html>

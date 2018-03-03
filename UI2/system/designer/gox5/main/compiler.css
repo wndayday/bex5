@@ -1,0 +1,14 @@
+.error{
+	color: #d9534f;
+}
+
+.x-btn-close {
+	display:none;
+}
+
+.compile-models {
+	display:none;
+}
+.success {
+	color:rgb(133,200,111);
+}

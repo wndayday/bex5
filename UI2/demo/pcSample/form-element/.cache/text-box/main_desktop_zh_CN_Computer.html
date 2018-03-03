@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%" class="no-js">  
+  <head xmlns=""> 
+    <meta charset="utf-8"/>  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes"/>  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>  
+    <script src="../../../../v_60e4dfa9a7f84595873b9db38cb2f408l_zh_CNs_desktopd_pc/system/lib/base/modernizr-2.8.3.min.js"/>  
+    <script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>  
+    <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" &amp;&amp; (mode!="2") &amp;&amp; (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents &amp;&amp; x5AppAgents.length &gt; 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i &lt; version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i &lt;= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i&lt;items.length; i++){
+							if (mode == "3"){
+								if (items[i] &amp;&amp; (items[i].indexOf("v_") === 0) 
+										&amp;&amp; (items[i].indexOf("l_") !== -1)
+										&amp;&amp; (items[i].indexOf("s_") !== -1)
+										&amp;&amp; (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] &amp;&amp; (items[i].indexOf("v-")===0) &amp;&amp; (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&amp;" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&amp;url=" + path;
+						if (query)
+							url += "&amp;" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+									versionInfo.resourceInfo.isNewVersion = true;
+								};
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") &amp;&amp; window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (versionInfo.resourceInfo &amp;&amp; versionInfo.resourceInfo.version &amp;&amp; (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									if (query){
+										path = path + "?" + query;
+									}
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>  
+    <link rel="stylesheet" href="../../../../v_056343614c6048e59e294cbfb1706fdcl_zh_CNs_desktopd_pc/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"/>
+    <link rel="stylesheet" href="../../../../v_b48a7e3a76a84b0ab952d775c28408d5l_zh_CNs_desktopd_pc/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"/>
+  </head>  
+  <body xmlns="" style="width:100%;height:100%;margin: 0;"> 
+    <script intro="none"/>  
+    <div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block">
+      <div xid="window" class="window cVNjuEn" component="$model/UI2/system/components/justep/window/window" design="device:pc;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVNjuEn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/form/form(bootstrap),">  
+        <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.hard.cVNjuEn{background-color: yellow} .middle.cVNjuEn{background-color: aqua} .easy.cVNjuEn{background-color: pink}</style>  
+        <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVNjuEn" class="cVNjuEn"/>  
+        <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cVNjuEn" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cVNjuEn"> 
+          <div class="x-contents-content active cVNjuEn" xid="content1" style="height:100%;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVNjuEn"> 
+            <h4 xid="h42" __cid="cVNjuEn" class="cVNjuEn">文本框
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVNjuEn" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsBtnClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cVNjuEn"> 
+                <i xid="i13" __cid="cVNjuEn" class="cVNjuEn"/>  
+                <span xid="span27" __cid="cVNjuEn" class="cVNjuEn">js</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  cVNjuEn" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cVNjuEn"> 
+                <i xid="i9" __cid="cVNjuEn" class="cVNjuEn"/>  
+                <span xid="span23" __cid="cVNjuEn" class="cVNjuEn">源码</span> 
+              </a> 
+            </h4>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;1.基本文本框&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle1" __cid="cVNjuEn"> 
+                <span xid="span5" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-6 cVNjuEn" xid="col21" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label1" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input1" style="width:419px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-6 cVNjuEn" xid="col22" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label3" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="password2" style="width:419px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;2.自定义宽度&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle3" __cid="cVNjuEn"> 
+                <span xid="span2" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-6 cVNjuEn" xid="col29" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label15 pull-left cVNjuEn" xid="labelInput9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="pull-left x-label cVNjuEn" xid="label15" style="width:45px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left x-edit cVNjuEn" xid="input10" style="width:90px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;3.显示水印&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle4" __cid="cVNjuEn"> 
+                <span xid="span3" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div class="form-horizontal container-fluid cVNjuEn" component="$model/UI2/system/components/bootstrap/form/form(bootstrap)" xid="div5" __cid="cVNjuEn"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cVNjuEn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVNjuEn"> 
+                  <div class="x-col x-col-fixed cVNjuEn" xid="col15" __cid="cVNjuEn"/> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row8" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col30" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label15 pull-left cVNjuEn" xid="labelInput10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="pull-left x-label cVNjuEn" xid="label16" style="width:45px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left x-edit cVNjuEn" xid="input11" style="width:30%;" data-bind="component:{ref:name.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入姓名&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-12 cVNjuEn" xid="col33" __cid="cVNjuEn"> 
+                  <span xid="span4" __cid="cVNjuEn" class="cVNjuEn">注意：当文本框启用了水印并且无输入时，那么在提交表单时使用表单的onsubmit事件会导致文本框的value值不为空。</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup5" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;4.可清除内容&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle5" __cid="cVNjuEn"> 
+                <span xid="span6" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row9" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-6 cVNjuEn" xid="col36" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label10 cVNjuEn" xid="labelEditBtn2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" style="width:60px;" xid="label23" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <div class="x-edit cVNjuEn" xid="div18" __cid="cVNjuEn"> 
+                      <div class="input-group cVNjuEn" xid="div19" __cid="cVNjuEn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control cVNjuEn" xid="textBox" data-bind="component:{ref:name.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cVNjuEn"/>  
+                        <span class="input-group-btn cVNjuEn" xid="span9" __cid="cVNjuEn"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cVNjuEn" xid="delBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.name.val(&quot;name&quot;) != &quot;&quot;" data-events="onClick:delBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;}" __cid="cVNjuEn"> 
+                            <i class="icon-android-close cVNjuEn" xid="i6" __cid="cVNjuEn"/> 
+                          </a> 
+                        </span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-6 cVNjuEn" xid="col37" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label10 cVNjuEn" xid="labelPassword2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label2" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="textPassword" style="width:200px;" type="password" data-bind="component:{ref:name.ref('password'),name:'$model/UI2/system/components/justep/input/password'}" __cid="cVNjuEn"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cVNjuEn" xid="delete" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.name.val(&quot;password&quot;) != &quot;&quot;" data-events="onClick:deleteClick" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVNjuEn"> 
+                        <i xid="i1" class="icon-android-close cVNjuEn" __cid="cVNjuEn"/>  
+                        <span xid="span1" __cid="cVNjuEn" class="cVNjuEn"/> 
+                      </a> 
+                    </input> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;5.限制输入字数&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle2" __cid="cVNjuEn"> 
+                <span xid="span7" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row10" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col42" __cid="cVNjuEn"> 
+                  <span xid="span8" __cid="cVNjuEn" class="cVNjuEn">限制输入个数的基本做法是使用maxlength。效果如下：</span> 
+                </div>  
+                <div class="col-sm-6 pull-left cVNjuEn" xid="col3" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label4" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input" style="width:419px;" data-bind="component:{ref:data.ref('input'),name:'$model/UI2/system/components/justep/input/input'},event:{keyup:$model._callModelFn.bind($model, 'inputKeyup')}" data-config="{&quot;maxLength&quot;:&quot;5&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col-sm-6 pull-left cVNjuEn" xid="col2" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label5" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="password" style="width:419px;" maxLength="5" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'},event:{keyup:$model._callModelFn.bind($model, 'passwordKeyup')}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col-sm-6 cVNjuEn" xid="col9" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cVNjuEn" xid="showNum" data-bind="component:{ref:data.ref('num'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVNjuEn"/> 
+                </div>  
+                <div class="col-sm-6 cVNjuEn" xid="col10" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cVNjuEn" xid="showPasswordNum" data-bind="component:{ref:numData.ref('num'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVNjuEn"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup6" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;6.限制输入类型&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle6" __cid="cVNjuEn"> 
+                <span xid="span16" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row11" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-5 cVNjuEn" xid="col43" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label11" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('example')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input5" style="width:419px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;String&quot;,&quot;placeHolder&quot;:&quot;请输入数字或字母&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-5 pull-left cVNjuEn" xid="col44" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label13" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('example')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input6" style="width:419px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keypress:$model._callModelFn.bind($model, 'input6Keypress')}" data-config="{&quot;dataType&quot;:&quot;Integer&quot;,&quot;placeHolder&quot;:&quot;请输入整数&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup7" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;7、密码框默认自动监测Caps键&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle7" __cid="cVNjuEn"> 
+                <span xid="span17" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row12" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col46" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label17" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="lock" style="width:419px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'},event:{keyup:$model._callModelFn.bind($model, 'lockKeyup')}" __cid="cVNjuEn"/>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-right cVNjuEn" xid="output3" data-bind="component:{ref:name.ref('lock'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup8" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;8、显示密码强度&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle8" __cid="cVNjuEn"> 
+                <span xid="span18" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row13" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col49" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label18" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="passwordStrength" style="width:419px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'},event:{keyup:$model._callModelFn.bind($model, 'passwordStrengthKeyup')}" __cid="cVNjuEn"/>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cVNjuEn" xid="strength" data-bind="component:{ref:name.ref('strength'),name:'$model/UI2/system/components/justep/output/output'},css:{'hard': name.val('strength')=='密码强','middle': name.val('strength')=='密码中','easy': name.val('strength')=='密码弱'}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup9" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;9、密码框设置初始值&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle9" __cid="cVNjuEn"> 
+                <span xid="span10" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row14" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col54" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label6" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="password5" style="width:419px;" type="password" data-bind="component:{ref:name.ref('init'),name:'$model/UI2/system/components/justep/input/password'}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup10" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;10、禁用/启用&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle10" __cid="cVNjuEn"> 
+                <span xid="span11" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row15" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col55" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label9" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="nameInput" style="width:419px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},disable:$model.enableData.val(&quot;disabled&quot;)==1,enable:$model.enableData.val(&quot;disabled&quot;)==0" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-12 cVNjuEn" xid="col56" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label10" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="passwordInput" style="width:419px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'},disable:$model.enableData.val(&quot;disabled&quot;)==1,enable:$model.enableData.val(&quot;disabled&quot;)==0" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-12 cVNjuEn" xid="col57" __cid="cVNjuEn"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVNjuEn" xid="enableBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:enableBtnClick" data-config="{&quot;label&quot;:&quot;启用&quot;}" __cid="cVNjuEn"> 
+                    <i xid="i3" __cid="cVNjuEn" class="cVNjuEn"/>  
+                    <span xid="span13" __cid="cVNjuEn" class="cVNjuEn">启用</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVNjuEn" xid="disableBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:disableBtnClick" data-config="{&quot;label&quot;:&quot;禁用&quot;}" __cid="cVNjuEn"> 
+                    <i xid="i4" __cid="cVNjuEn" class="cVNjuEn"/>  
+                    <span xid="span14" __cid="cVNjuEn" class="cVNjuEn">禁用</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup11" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;11、动态生成&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle11" __cid="cVNjuEn"> 
+                <span xid="span15" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row17" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-6 cVNjuEn" xid="insertInput" __cid="cVNjuEn"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVNjuEn" xid="addInput" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addInputClick" data-config="{&quot;label&quot;:&quot;点击增加输入框&quot;}" __cid="cVNjuEn"> 
+                    <i xid="i5" __cid="cVNjuEn" class="cVNjuEn"/>  
+                    <span xid="span19" __cid="cVNjuEn" class="cVNjuEn">点击增加输入框</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-6 cVNjuEn" xid="insertPassword" __cid="cVNjuEn"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVNjuEn" xid="addPassword" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addPasswordClick" data-config="{&quot;label&quot;:&quot;点击生成密码框&quot;}" __cid="cVNjuEn"> 
+                    <i xid="i7" __cid="cVNjuEn" class="cVNjuEn"/>  
+                    <span xid="span20" __cid="cVNjuEn" class="cVNjuEn">点击生成密码框</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup12" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;12.监听回车事件&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle12" __cid="cVNjuEn"> 
+                <span xid="span12" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row18" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-12 cVNjuEn" xid="col64" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput11" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label21" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('name')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="enter" style="width:255px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keypress:$model._callModelFn.bind($model, 'enterKeypress')}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-12 cVNjuEn" xid="col65" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelPassword11" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label22" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('password')"/>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cVNjuEn" xid="enterPassword" style="width:255px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'},event:{keypress:$model._callModelFn.bind($model, 'enterPasswordKeypress')}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-12 cVNjuEn" xid="col66" __cid="cVNjuEn"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cVNjuEn" xid="loginBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="cVNjuEn"> 
+                    <i xid="i2" __cid="cVNjuEn" class="cVNjuEn"/>  
+                    <span xid="span21" __cid="cVNjuEn" class="cVNjuEn">登录</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVNjuEn" xid="resetBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:resetBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="cVNjuEn"> 
+                    <i xid="i8" __cid="cVNjuEn" class="cVNjuEn"/>  
+                    <span xid="span22" __cid="cVNjuEn" class="cVNjuEn">重置</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cVNjuEn" xid="controlGroup13" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:true,&quot;title&quot;:&quot;13.选择日期&quot;}" __cid="cVNjuEn"> 
+              <div class="x-control-group-title cVNjuEn" xid="controlGroupTitle25" __cid="cVNjuEn"> 
+                <span xid="span51" __cid="cVNjuEn" class="cVNjuEn"/> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row cVNjuEn" xid="row27" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cVNjuEn"> 
+                <div class="col col-xs-3 cVNjuEn" xid="col50" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput20" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label40" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('date')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input17" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keypress:$model._callModelFn.bind($model, 'enterKeypress')}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-3 cVNjuEn" xid="col1" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput7" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label12" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('date')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input3" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keypress:$model._callModelFn.bind($model, 'enterKeypress')}" data-config="{&quot;dataType&quot;:&quot;DateTime&quot;,&quot;format&quot;:&quot;yyyy-MM-dd hh:mm&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-3 cVNjuEn" xid="col4" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput8" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label14" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('date')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input4" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keypress:$model._callModelFn.bind($model, 'enterKeypress')}" data-config="{&quot;dataType&quot;:&quot;Time&quot;,&quot;format&quot;:&quot; hh:mm&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div>  
+                <div class="col col-xs-3 cVNjuEn" xid="col7" __cid="cVNjuEn"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cVNjuEn" xid="labelInput12" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cVNjuEn"> 
+                    <label class="x-label cVNjuEn" xid="label19" style="width:56px;" __cid="cVNjuEn" data-bind="text:name.label('date')"/>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cVNjuEn" xid="input7" style="width:auto;" data-bind="component:{ref:name.ref('dataValue'),name:'$model/UI2/system/components/justep/input/input'},event:{keypress:$model._callModelFn.bind($model, 'enterKeypress')}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cVNjuEn"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div id="downloadGCF" style="display:none;padding:50px;"> 
+      <span>您使用的浏览器需要下载插件才能使用,</span>  
+      <a id="downloadGCFLink" href="#">下载地址</a>  
+      <p>(安装后请重新打开浏览器)</p> 
+    </div>  
+    <script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() &amp;&amp; (browser.getVersion() &lt; 10) &amp;&amp; !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>  
+    <script id="_metaJS" src="../../../../v_76d970a989f0426dba1147d6e3b3dc26l_zh_CNs_desktopd_pc/system/config/meta.js"> </script>  
+    <script id="_requireJS" src="../../../../v_e1ccc5c1dc924cdc93cc1d79cde7de79l_zh_CNs_desktopd_pc/system/lib/require/require.2.1.10.js"> </script>  
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../v_7c9b75aeb87f4650ae949d0ab68c185al_zh_CNs_desktopd_pc/system/core.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../v_c81e92c15e964af0aa0cac891ec86cb5l_zh_CNs_desktopd_pc/system/common.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../v_c0093e1a252449a79d1aeffc5493fcafl_zh_CNs_desktopd_pc/system/components/comp.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../../v_c01811d7dc5943dba8c88921ac8f3214l_zh_CNs_desktopd_pc/system/components/comp2.min.js"></script>
+    <script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &amp;&amp;
+                                    !(node.attachEvent.toString &amp;&amp; node.attachEvent.toString().indexOf('[native code') &lt; 0) &amp;&amp;
+                                    !(typeof opera !== 'undefined' &amp;&amp; opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10.js";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&amp;&amp; (items[items.length-1].indexOf("l_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("s_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls &amp;&amp; urls.length&gt;0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i&lt;urls.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("&lt;script  src='" + url + "'/&gt;");
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles &amp;&amp; styles.length&gt;0){
+            				for (var i=0; i&lt;styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("&lt;link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/&gt;");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i&lt;items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] &amp;&amp; (items[i].indexOf("v_")===0)
+            								&amp;&amp; (items[i].indexOf("l_")!==-1)
+            								&amp;&amp; (items[i].indexOf("s_")!==-1)
+            								&amp;&amp; (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i&lt;loadeds.length; i++){
+    							if (loadeds[i] &amp;&amp; (loadeds[i].indexOf(newUrl)!==-1)){
+    								return true;
+    							}
+    						}
+            			}
+    					return false;
+            		},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i&lt;scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_26d7754c844146b58f32506b0c624fe8l_zh_CNs_desktopd_pc/demo/pcSample/form-element',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_26d7754c844146b58f32506b0c624fe8l_zh_CNs_desktopd_pc',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_26d7754c844146b58f32506b0c624fe8l_zh_CNs_desktopd_pc',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_26d7754c844146b58f32506b0c624fe8l_zh_CNs_desktopd_pc/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_26d7754c844146b58f32506b0c624fe8l_zh_CNs_desktopd_pc/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_26d7754c844146b58f32506b0c624fe8l_zh_CNs_desktopd_pc/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator &amp;&amp; navigator.splashscreen &amp;&amp; navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+						setTimeout(function(){
+							versionChecker.check();			
+						},1000);
+    	            }, false);
+    				var context = {};
+    				context.model = '$model/UI2/demo/pcSample/form-element/text-box.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow &amp;&amp; window.parent &amp;&amp; window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid &amp;&amp; pwindow 
+    						&amp;&amp; pwindow.__justep &amp;&amp; pwindow.__justep.windowOpeners
+    						&amp;&amp; pwindow.__justep.windowOpeners[ownerid]
+    						&amp;&amp; $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					$(window).unload(function(event){
+    						if(winOpener &amp;&amp; winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script> 
+  </body> 
+</html>

@@ -1,0 +1,40 @@
+/**
+	@name $UI/system/components/bootstrap/alert/alert
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：页面需要提示信息时，只能提示无操作，例如提示数据已删除;
+		<b>使用方法</b>：添加alert，写上提示的信息;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/	
+
+/**
+	@name $UI/system/components/bootstrap/alert/alert#xid
+	@attribute 
+	@type string
+	@description 
+*/
+
+/**
+	@name $UI/system/components/bootstrap/alert/alert#autoHide
+	@attribute 
+	@type int
+	@description 在给定时间后自动隐藏, 单位是毫秒
+*/
+
+/**
+	@name $UI/system/components/bootstrap/alert/alert#show
+	@function
+	@description 显示提示
+*/
+
+/**
+	@name $UI/system/components/bootstrap/alert/alert#hide
+	@function
+	@description 隐藏提示
+*/

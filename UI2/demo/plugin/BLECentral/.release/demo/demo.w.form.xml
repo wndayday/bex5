@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/demo/plugin/template/demo.w" __id="id_1" design="device:m;" class="window window cInIRnu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cInIRnu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onModelConstruct:modelModelConstruct" __cid="cInIRnu" class="cInIRnu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar cInIRnu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cInIRnu"> 
+    <div class="x-panel-top cInIRnu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInIRnu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cInIRnu" xid="titleBar" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;BLECentral&quot;}" __cid="cInIRnu"> 
+        <div class="x-titlebar-left cInIRnu" __cid="cInIRnu"></div>  
+        <div class="x-titlebar-title cInIRnu" __cid="cInIRnu">插件的名字</div>  
+        <div class="x-titlebar-right  cInIRnu" __cid="cInIRnu">
+          <div class="empty cInIRnu" __cid="cInIRnu"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cInIRnu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInIRnu">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cInIRnu" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cInIRnu"> 
+        <div class="x-contents-content active cInIRnu" xid="infoContent" style="padding:10px;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cInIRnu">
+          <h3 xid="h31" style="text-align:center;" __cid="cInIRnu" class="cInIRnu">插件概述</h3>
+          <h4 xid="h41" __cid="cInIRnu" class="cInIRnu">介绍：</h4>
+          <p xid="p1" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge-and-replace" __cid="cInIRnu" class="cInIRnu">ID：cordova-plugin-ble-central</p>
+          <p xid="introduceP" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge-and-replace" __cid="cInIRnu" class="cInIRnu">低功耗蓝牙插件，将手机作为低功耗蓝牙中心设备，提供手机设备与低功耗蓝牙设备进行信息传输的能力。</p>
+          <div xid="div4" style="height:30px;" __cid="cInIRnu" class="cInIRnu"/>  
+          <h4 xid="h42" __cid="cInIRnu" class="cInIRnu">适用平台：</h4>  
+          <p xid="platformP" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge-and-replace" __cid="cInIRnu" class="cInIRnu">iOS,Android</p>  
+          <p xid="p1_3" xmlns:xui="http://www.justep.com/xui" xui:parent="infoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">注意：要使用此插件，手机设备必须是低功耗蓝牙设备，而且需要一个低功耗蓝牙外设才可以与手机进行数据交互。</p>
+        </div>  
+        <div class="x-contents-content cInIRnu" xid="demoContent" style="padding:10px;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cInIRnu"> 
+          <div style="height:20px;" xid="div1_3" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <div style="padding:20px;" xid="div2_3" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p1_1" __cid="cInIRnu" class="cInIRnu">扫描一段时间自动停止</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="scan" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanClick" data-config="{&quot;label&quot;:&quot;scan&quot;}" __cid="cInIRnu"> 
+              <i xid="i1_4" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span1_4" __cid="cInIRnu" class="cInIRnu">scan</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div3_3" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p2_1" __cid="cInIRnu" class="cInIRnu">开启持续扫描</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="startScan" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:startScanClick" data-config="{&quot;label&quot;:&quot;startScan&quot;}" __cid="cInIRnu"> 
+              <i xid="i2_4" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span2_4" __cid="cInIRnu" class="cInIRnu">startScan</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div4_3" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p3_1" __cid="cInIRnu" class="cInIRnu">停止扫描</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="stopScan" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:stopScanClick" data-config="{&quot;label&quot;:&quot;stopScan&quot;}" __cid="cInIRnu"> 
+              <i xid="i3_4" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span3_4" __cid="cInIRnu" class="cInIRnu">stopScan</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div5_3" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p4_1" __cid="cInIRnu" class="cInIRnu">连接外设</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="connect" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:connectClick" data-config="{&quot;label&quot;:&quot;connect&quot;}" __cid="cInIRnu"> 
+              <i xid="i4_4" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span4_4" __cid="cInIRnu" class="cInIRnu">connect</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div6_4" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p5_1" __cid="cInIRnu" class="cInIRnu">断开连接</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="disconnect" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:disconnectClick" data-config="{&quot;label&quot;:&quot;disconnect&quot;}" __cid="cInIRnu"> 
+              <i xid="i5_4" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span5_4" __cid="cInIRnu" class="cInIRnu">disconnect</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div1_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p6_1" __cid="cInIRnu" class="cInIRnu">读取特征信息</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="read" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:readClick" data-config="{&quot;label&quot;:&quot;read&quot;}" __cid="cInIRnu"> 
+              <i xid="i1_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span1_2" __cid="cInIRnu" class="cInIRnu">read</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div2_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p7_1" __cid="cInIRnu" class="cInIRnu">往特征信息中写入值</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="write" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:writeClick" data-config="{&quot;label&quot;:&quot;write&quot;}" __cid="cInIRnu"> 
+              <i xid="i2_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span2_2" __cid="cInIRnu" class="cInIRnu">write</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div3_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p9_1" __cid="cInIRnu" class="cInIRnu">往特征信息写入值（不关心是否成功）</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="writeWithoutResponse" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:writeWithoutResponseClick" data-config="{&quot;label&quot;:&quot;writeWithoutResponse&quot;}" __cid="cInIRnu"> 
+              <i xid="i3_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span3_2" __cid="cInIRnu" class="cInIRnu">writeWithoutResponse</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div4_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p8_1" __cid="cInIRnu" class="cInIRnu">开启通知，当特征值发生改变会回调</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="startNotification" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:startNotificationClick" data-config="{&quot;label&quot;:&quot;startNotification&quot;}" __cid="cInIRnu"> 
+              <i xid="i4_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span4_2" __cid="cInIRnu" class="cInIRnu">startNotification</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div5_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p11_1" __cid="cInIRnu" class="cInIRnu">取消通知</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="stopNotification" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:stopNotificationClick" data-config="{&quot;label&quot;:&quot;stopNotification&quot;}" __cid="cInIRnu"> 
+              <i xid="i5_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span5_2" __cid="cInIRnu" class="cInIRnu">stopNotification</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div6_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p18_1" __cid="cInIRnu" class="cInIRnu">判断是否连接</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="isConnected" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:isConnectedClick" data-config="{&quot;label&quot;:&quot;isConnected&quot;}" __cid="cInIRnu"> 
+              <i xid="i6_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span6_2" __cid="cInIRnu" class="cInIRnu">isConnected</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div7_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p12_1" __cid="cInIRnu" class="cInIRnu">判断蓝牙是否可用</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="isEnabled" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:isEnabledClick" data-config="{&quot;label&quot;:&quot;isEnabled&quot;}" __cid="cInIRnu"> 
+              <i xid="i7_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span7_2" __cid="cInIRnu" class="cInIRnu">isEnabled</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div10_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p15_1" __cid="cInIRnu" class="cInIRnu">显示蓝牙设置只支持Android</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="showBluetoothSettings" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showBluetoothSettingsClick" data-config="{&quot;label&quot;:&quot;showBluetoothSettings&quot;}" __cid="cInIRnu"> 
+              <i xid="i10_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span10_2" __cid="cInIRnu" class="cInIRnu">showBluetoothSettings</span> 
+            </a> 
+          </div>
+          <div style="padding:20px;" xid="div11_1" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"> 
+            <p xid="p16_1" __cid="cInIRnu" class="cInIRnu">启用蓝牙（只支持Android）</p>  
+            <a class="btn btn-default cInIRnu" component="$model/UI2/system/components/justep/button/button" style="width:100%;" xid="enable" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:enableClick" data-config="{&quot;label&quot;:&quot;enable&quot;}" __cid="cInIRnu"> 
+              <i xid="i11_2" __cid="cInIRnu" class="cInIRnu"/>  
+              <span xid="span11_2" __cid="cInIRnu" class="cInIRnu">enable</span> 
+            </a> 
+          </div>
+        </div>  
+        <div class="x-contents-content cInIRnu" xid="codeContent" style="padding:10px" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cInIRnu">
+          <div style="height:10px;" xid="div6_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p2_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">扫描一段时间自动停止，如果第一个参数不传入的话就会默认扫描所有的设备，每扫描到一个设备就会调用成功回调将设备的信息返回。在此demo中，每发现一个可用设备就会记录设备id，但只会保留最后一个被发现设备的id，如果第一个参数传入，则会根据传入数组中的id去扫描设备。</p>
+          <div xid="scanClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p3_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">开启持续扫描，效果同scan，只是会持续扫描，直到调用stopScan 接口</p>
+          <div xid="startScanClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p4_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">停止扫描</p>
+          <div xid="stopScanClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p5_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">连接外设，需要传入设备id，本demo中保存的设备id是最后一个被发现的设备id,所以连接的设备是最后一个被发现的设备</p>
+          <div xid="connectClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p6_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">断开连接</p>
+          <div xid="disconnectClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p7_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">读取特征信息，每个蓝牙有多个可读写的服务，在此只是选择了第一个只读的服务，并且读取其特征信息，需要传入设备的id，要读取的服务的id，以及特征的id，并且返回值为ArrayBuffer类型，在此demo，转换为字符串显示</p>
+          <div xid="readClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p8_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">往特征信息中写入数据，在此只是选取第一个可写服务，并且写入数据，数据的类型同样为ArrayBuffer</p>
+          <div xid="writeClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p9_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">往特征信息中写入数据（不关心是否写入成功）</p>
+          <div xid="writeWithoutResponseClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p10_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">监听特征值的改变</p>
+          <div xid="startNotificationClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p11_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">取消监听特征值</p>
+          <div xid="stopNotificationClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p12_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">判断是否连接</p>
+          <div xid="isConnectedClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p13_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">判断蓝牙是否可用</p>
+          <div xid="isEnabledClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p16_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">显示蓝牙设置（支持Android）</p>
+          <div xid="showBluetoothSettingsClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+          <p xid="p17_3" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu">启动蓝牙（支持android）</p>
+          <div xid="enableClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cInIRnu" class="cInIRnu"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cInIRnu" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cInIRnu">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card  cInIRnu" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cInIRnu">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cInIRnu" xid="info" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;info&quot;,&quot;target&quot;:&quot;infoContent&quot;}" __cid="cInIRnu"> 
+          <i xid="i1" __cid="cInIRnu" class="cInIRnu"/>  
+          <span xid="span1" __cid="cInIRnu" class="cInIRnu">info</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cInIRnu" xid="demo" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;demo&quot;,&quot;target&quot;:&quot;demoContent&quot;}" __cid="cInIRnu"> 
+          <i xid="i2" __cid="cInIRnu" class="cInIRnu"/>  
+          <span xid="span2" __cid="cInIRnu" class="cInIRnu">demo</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cInIRnu" xid="code" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;code&quot;,&quot;target&quot;:&quot;codeContent&quot;}" __cid="cInIRnu"> 
+          <i xid="i3" __cid="cInIRnu" class="cInIRnu"/>  
+          <span xid="span3" __cid="cInIRnu" class="cInIRnu">code</span>
+        </a>
+      </div>
+    </div>
+    <style __cid="cInIRnu" class="cInIRnu">.x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb0acd3be5ea246e19c7238bffb90370f-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

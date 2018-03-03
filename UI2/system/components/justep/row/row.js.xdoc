@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/justep/row/row
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description 
+	<xmp>
+		<b>使用场景</b>：在指定的位置需要放一行图文时;
+		<b>使用方法</b>：拖入设计器，将需要图文上下翻滚的组件内容放到滚动视图组件中;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/row/row#xid
+	@attribute 
+	@type string
+	@description 
+*/	

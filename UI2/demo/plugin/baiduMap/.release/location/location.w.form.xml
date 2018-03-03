@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/demo/plugin/template/demo.w" __id="id_1" design="device:m;" class="window window cJFv6Rr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJFv6Rr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>null .baiduMap-top.cJFv6Rr{} .baiduMap-content.cJFv6Rr{bottom: 300px !important} .baiduMap-bottom.cJFv6Rr{height: 300px !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad" __cid="cJFv6Rr" class="cJFv6Rr"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJFv6Rr-iosstatusbar cJFv6Rr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJFv6Rr"> 
+    <div class="x-panel-top cJFv6Rr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJFv6Rr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJFv6Rr" xid="titleBar" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;定位功能&quot;}" __cid="cJFv6Rr"> 
+        <div class="x-titlebar-left cJFv6Rr" __cid="cJFv6Rr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cJFv6Rr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cJFv6Rr"> 
+            <i xid="i6" class="icon-chevron-left cJFv6Rr" __cid="cJFv6Rr"/>  
+            <span xid="span6" __cid="cJFv6Rr" class="cJFv6Rr"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cJFv6Rr" __cid="cJFv6Rr">插件的名字</div>  
+        <div class="x-titlebar-right  cJFv6Rr" __cid="cJFv6Rr">
+          <div class="empty cJFv6Rr" __cid="cJFv6Rr"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJFv6Rr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJFv6Rr">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cJFv6Rr" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cJFv6Rr"> 
+        <div class="x-contents-content active cJFv6Rr" xid="demoContent" style="padding:10px;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJFv6Rr"> 
+          <div class="x-panel x-full pcJFv6Rr-iosstatusbar cJFv6Rr" component="$model/UI2/system/components/justep/panel/panel" xid="panel1_8" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJFv6Rr"> 
+            <div class="x-panel-content baiduMap-content cJFv6Rr" xid="content1_8" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJFv6Rr"> 
+              <div style="padding:10px" xid="div1_8" __cid="cJFv6Rr" class="cJFv6Rr"> 
+                <a class="btn btn-default cJFv6Rr" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="showCurrent" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showCurrentClick" data-config="{&quot;label&quot;:&quot;显示当前位置&quot;}" __cid="cJFv6Rr"> 
+                  <i xid="i1_8" __cid="cJFv6Rr" class="cJFv6Rr"/>  
+                  <span xid="span1_8" __cid="cJFv6Rr" class="cJFv6Rr">显示当前位置</span> 
+                </a>  
+                <a class="btn btn-default cJFv6Rr" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="setFollow" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:setFollowClick" data-config="{&quot;label&quot;:&quot;使用跟随&quot;}" __cid="cJFv6Rr"> 
+                  <i xid="i2_8" __cid="cJFv6Rr" class="cJFv6Rr"/>  
+                  <span xid="span2_8" __cid="cJFv6Rr" class="cJFv6Rr">使用跟随</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div2_8" __cid="cJFv6Rr" class="cJFv6Rr"> 
+                <a class="btn btn-default cJFv6Rr" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="setCompass" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:setCompassClick" data-config="{&quot;label&quot;:&quot;使用罗盘&quot;}" __cid="cJFv6Rr"> 
+                  <i xid="i3_8" __cid="cJFv6Rr" class="cJFv6Rr"/>  
+                  <span xid="span3_8" __cid="cJFv6Rr" class="cJFv6Rr">使用罗盘</span> 
+                </a> 
+              </div> 
+            </div>  
+            <div class="x-panel-bottom baiduMap-bottom cJFv6Rr" xid="bottom1_8" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJFv6Rr"/>  
+            <style __cid="cJFv6Rr" class="cJFv6Rr">.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>
+        </div>  
+        <div class="x-contents-content cJFv6Rr" xid="codeContent" style="padding:10px" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJFv6Rr">
+          <div style="height:20px;" xid="div1_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr"/>
+          <p xid="p1_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr">显示当前位置</p>
+          <div xid="showCurrentClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr"/>
+          <p xid="p2_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr">设置为跟随模式</p>
+          <div xid="setFollowClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr"/>
+          <p xid="p3_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr">设置为罗盘模式</p>
+          <div xid="setCompassClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cJFv6Rr" class="cJFv6Rr"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cJFv6Rr" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJFv6Rr">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card  cJFv6Rr" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cJFv6Rr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cJFv6Rr" xid="demo" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:demoClick" data-config="{&quot;label&quot;:&quot;demo&quot;,&quot;target&quot;:&quot;demoContent&quot;}" __cid="cJFv6Rr"> 
+          <i xid="i2" __cid="cJFv6Rr" class="cJFv6Rr"/>  
+          <span xid="span2" __cid="cJFv6Rr" class="cJFv6Rr">demo</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cJFv6Rr" xid="code" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:codeClick" data-config="{&quot;label&quot;:&quot;code&quot;,&quot;target&quot;:&quot;codeContent&quot;}" __cid="cJFv6Rr"> 
+          <i xid="i3" __cid="cJFv6Rr" class="cJFv6Rr"/>  
+          <span xid="span3" __cid="cJFv6Rr" class="cJFv6Rr">code</span>
+        </a>
+      </div>
+    </div>
+    <style __cid="cJFv6Rr" class="cJFv6Rr">.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJFv6Rr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

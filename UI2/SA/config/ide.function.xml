@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<item display="solid" label="定制开发">
+		<item label="定制开发" process="/SA/ide/process/ide/ideProcess"
+			activity="devActivity" url="$UI/SA/ide/process/ide/devActivity.a"></item>
+		<item label="发布到服务器" process="/SA/ide/process/ide/ideProcess"
+			activity="deployActivity" url="$UI/SA/ide/process/ide/deployActivity.a"></item>
+		
+	</item>
+</root>

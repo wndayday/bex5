@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cyq6JNj" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyq6JNj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.o-marginLeft.cyq6JNj{margin-left: 15px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyq6JNj" class="cyq6JNj"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMbm6nu-iosstatusbar cyq6JNj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyq6JNj"> 
+    <div class="x-panel-content cyq6JNj" xid="content1" style="width:80%;height:80%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyq6JNj"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyq6JNj" xid="labelInput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyq6JNj"> 
+        <label class="x-label cyq6JNj" xid="label5" style="text-align:right;" __cid="cyq6JNj">姓名：</label>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyq6JNj" xid="nameInput" style="height:34px;width:200px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cyq6JNj"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyq6JNj" xid="labelRadioGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyq6JNj"> 
+        <label class="x-label cyq6JNj" xid="label1" style="text-align:right;" __cid="cyq6JNj">性别：</label>  
+        <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radios x-edit cyq6JNj" xid="radioGroup" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:sexData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cyq6JNj"> 
+          <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cyq6JNj" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('sType'),value:ref('sType')}" __cid="cyq6JNj">  
+            <input type="radio" __cid="cyq6JNj" class="cyq6JNj"/>  
+            <label __cid="cyq6JNj" class="cyq6JNj"/> 
+          </span> 
+        </span> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyq6JNj" xid="labelInput7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyq6JNj"> 
+        <label class="x-label cyq6JNj" xid="label7" style="text-align:right;" __cid="cyq6JNj">年龄：</label>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyq6JNj" xid="ageInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;2&quot;,&quot;pattern&quot;:&quot;[0-9]&quot;,&quot;placeHolder&quot;:&quot;年龄必须小于100&quot;}" __cid="cyq6JNj"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyq6JNj" xid="labelInput8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyq6JNj"> 
+        <label class="x-label cyq6JNj" xid="label8" style="text-align:right;" __cid="cyq6JNj">地址：</label>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cyq6JNj" xid="addressInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cyq6JNj"/> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cyq6JNj" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyq6JNj"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default pull-right o-marginLeft cyq6JNj" xid="resetButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:resetButtonClick" data-config="{&quot;label&quot;:&quot;清空&quot;}" __cid="cyq6JNj"> 
+        <i xid="i2" __cid="cyq6JNj" class="cyq6JNj"/>  
+        <span xid="span2" __cid="cyq6JNj" class="cyq6JNj">清空</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-info pull-right cyq6JNj" xid="OKButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:OKButtonClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cyq6JNj"> 
+        <i xid="i1" __cid="cyq6JNj" class="cyq6JNj"/>  
+        <span xid="span1" __cid="cyq6JNj" class="cyq6JNj">确定</span> 
+      </a> 
+    </div>  
+    <style __cid="cyq6JNj" class="cyq6JNj">.x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMbm6nu-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowsReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cyq6JNj" class="cyq6JNj"/> 
+</div>

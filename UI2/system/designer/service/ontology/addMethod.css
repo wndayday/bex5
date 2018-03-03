@@ -1,0 +1,188 @@
+.relativeDiv {
+	position: relative;
+}
+
+.liStyle {
+	float: left;
+	width: 60px;
+	height: 30px;
+	padding: 5px;
+	background: -webkit-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -o-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -moz-linear-gradient(#F2F2F2, #D1D1D1);
+	background: linear-gradient(#F2F2F2, #D1D1D1);
+	border: 1px solid #888;
+	margin-top: 5px;
+}
+
+.bottomBtn {
+	color: #666;
+	background: -webkit-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -o-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -moz-linear-gradient(#F2F2F2, #D1D1D1);
+	background: linear-gradient(#F2F2F2, #D1D1D1);
+	border: 1px solid #888;
+	height: 30px;
+	line-height: 10px;
+	border-radius: 5px;
+}
+
+.liClick {
+	height: 31px;
+	background: #fff;
+	border-bottom: 0;
+}
+
+.ul1Style {
+	/*z-index:100;*/
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+
+.conDivStyle {
+	position: absolute;
+	top: 46px;
+	left: 0px;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+	width: 100%;
+	margin-top: -12px;
+	height: 93%;
+	background-color: #fff;
+	border: 1px solid #888;
+}
+
+.topButtonGroup {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.topButtonGroup>.btn>i {
+	padding: 3px;
+	margin-top: -5px;
+}
+
+.topButtonGroup>.btn>span {
+	color: #666;
+}
+
+.spanDivstyle {
+	height: 20px;
+	background-color: #fff;
+	text-align: center;
+	margin-top: -15px;
+	margin-left: 15px;
+	dispaly: inline-block;
+}
+
+.inputStyle {
+	border: 1px solid #888;
+	margin-bottom: 5px;
+}
+
+.likeBlueDiv {
+	border: 1px solid #D5DFE5;
+	border-radius: 10px;
+	padding: 5px;
+	position: relative;
+}
+
+.sunDiv {
+	/*position:absolute;
+	top:46px;
+	left:5px;
+	right:5px;*/
+	padding-bottom: 12px;
+	border: 1px solid #888;
+	border-radius: 5px;
+}
+
+.x-dialog-overlay.x-dialog-overlay-visible {
+	opacity: 0;
+}
+
+.x-dialog>.x-dialog-body {
+	padding: 0px;
+}
+
+.x-list>thead>tr>th {
+	padding: 5px 10px 5px;
+	border-left: 1px solid #888;
+	background: -webkit-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -o-linear-gradient(#F2F2F2, #D1D1D1);
+	background: -moz-linear-gradient(#F2F2F2, #D1D1D1);
+	background: linear-gradient(#F2F2F2, #D1D1D1);
+}
+
+.form-control {
+	padding: 0;
+	border: 0;
+	height: 30px;
+}
+
+.x-output {
+	padding: 0;
+	border: 0;
+	height: 30px;
+	line-height: 30px;
+}
+
+.x-list-template>tr {
+	border-bottom: 1px solid #eee;
+}
+
+.x-list-template>tr>td {
+	padding-left: 10px;
+	border-left: 1px solid #eee;
+}
+
+.hide {
+	display: none;
+}
+
+.smallBtn {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #F2F2F2;
+	color: #888;
+	margin-top: 5px;
+	width: 20px;
+}
+
+.blueBack {
+	background-color: #AFD3F6;
+}
+
+.canNotUse {
+	disabled: true;
+	color: #ddd;
+}
+
+.propDiv {
+	margin: 10px 0 35px 0;
+	padding: 20px 10px 20px 20px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.modifyDiv{
+	margin-right:10px;
+}
+
+.resultDiv{
+	margin:15px 0;
+	display:flex;
+	align-items:center;
+	width:100%;
+}
+
+.orderByDiv{
+	margin:10px 0;
+	display:flex;
+	align-items: center;
+}

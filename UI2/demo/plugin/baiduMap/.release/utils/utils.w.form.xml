@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/demo/plugin/template/demo.w" __id="id_1" design="device:m;" class="window window crA3UZv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crA3UZv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>null .baiduMap-top.crA3UZv{} .baiduMap-content.crA3UZv{bottom: 300px !important} .baiduMap-bottom.crA3UZv{height: 300px !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad" __cid="crA3UZv" class="crA3UZv"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrA3UZv-iosstatusbar crA3UZv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crA3UZv"> 
+    <div class="x-panel-top crA3UZv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crA3UZv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar crA3UZv" xid="titleBar" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;计算转换&quot;}" __cid="crA3UZv"> 
+        <div class="x-titlebar-left crA3UZv" __cid="crA3UZv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon crA3UZv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="crA3UZv"> 
+            <i xid="i6" class="icon-chevron-left crA3UZv" __cid="crA3UZv"/>  
+            <span xid="span6" __cid="crA3UZv" class="crA3UZv"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title crA3UZv" __cid="crA3UZv">插件的名字</div>  
+        <div class="x-titlebar-right  crA3UZv" __cid="crA3UZv">
+          <div class="empty crA3UZv" __cid="crA3UZv"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content crA3UZv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crA3UZv">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full crA3UZv" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="crA3UZv"> 
+        <div class="x-contents-content active crA3UZv" xid="demoContent" style="padding:10px;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="crA3UZv"> 
+          <div class="x-panel x-full pcrA3UZv-iosstatusbar crA3UZv" component="$model/UI2/system/components/justep/panel/panel" xid="panel1_4" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crA3UZv"> 
+            <div class="x-panel-content baiduMap-content crA3UZv" xid="content1_4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crA3UZv"> 
+              <div style="padding:10px" xid="div1_4" __cid="crA3UZv" class="crA3UZv"> 
+                <a class="btn btn-default crA3UZv" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="getNameByCoor" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getNameByCoorClick" data-config="{&quot;label&quot;:&quot;根据坐标获取地名&quot;}" __cid="crA3UZv"> 
+                  <i xid="i1_4" __cid="crA3UZv" class="crA3UZv"/>  
+                  <span xid="span1_4" __cid="crA3UZv" class="crA3UZv">根据坐标获取地名</span> 
+                </a>  
+                <a class="btn btn-default crA3UZv" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="getCoorByName" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getCoorByNameClick" data-config="{&quot;label&quot;:&quot;根据地名获取坐标&quot;}" __cid="crA3UZv"> 
+                  <i xid="i2_4" __cid="crA3UZv" class="crA3UZv"/>  
+                  <span xid="span2_4" __cid="crA3UZv" class="crA3UZv">根据地名获取坐标</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div2_4" __cid="crA3UZv" class="crA3UZv"> 
+                <a class="btn btn-default crA3UZv" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="getRealDis" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getRealDisClick" data-config="{&quot;label&quot;:&quot;计算实际距离&quot;}" __cid="crA3UZv"> 
+                  <i xid="i3_4" __cid="crA3UZv" class="crA3UZv"/>  
+                  <span xid="span3_4" __cid="crA3UZv" class="crA3UZv">计算实际距离</span> 
+                </a>  
+                <a class="btn btn-default crA3UZv" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="transCoor" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:transCoorClick" data-config="{&quot;label&quot;:&quot;转换坐标&quot;}" __cid="crA3UZv"> 
+                  <i xid="i4_4" __cid="crA3UZv" class="crA3UZv"/>  
+                  <span xid="span4_4" __cid="crA3UZv" class="crA3UZv">转换坐标</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div3_4" __cid="crA3UZv" class="crA3UZv"/>  
+              <div xid="div4_4" __cid="crA3UZv" class="crA3UZv"/> 
+            </div>  
+            <div class="x-panel-bottom baiduMap-bottom crA3UZv" xid="bottom1_4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crA3UZv"/>  
+            <style __cid="crA3UZv" class="crA3UZv">.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>
+        </div>  
+        <div class="x-contents-content crA3UZv" xid="codeContent" style="padding:10px" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="crA3UZv">
+          <div style="height:20px;" xid="div1_3" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv"/>
+          <p xid="p1_3" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv">根据经纬度获取地名</p>
+          <div xid="getNameByCoorClick" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv"/>
+          <p xid="p2_3" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv">根据地名获取经纬度</p>
+          <div xid="getCoorByNameClick" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv"/>
+          <p xid="p3_3" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv">获取地图上两点间的实际距离</p>
+          <div xid="getRealDisClick" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv"/>
+          <p xid="p4_3" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv">将其他坐标转换为百度坐标</p>
+          <div xid="transCoorClick" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv"/>
+          <p xid="p5_3" xui:parent="codeContent" xui:update-mode="insert" __cid="crA3UZv" class="crA3UZv"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom crA3UZv" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crA3UZv">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card  crA3UZv" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="crA3UZv"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top crA3UZv" xid="demo" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:demoClick" data-config="{&quot;label&quot;:&quot;demo&quot;,&quot;target&quot;:&quot;demoContent&quot;}" __cid="crA3UZv"> 
+          <i xid="i2" __cid="crA3UZv" class="crA3UZv"/>  
+          <span xid="span2" __cid="crA3UZv" class="crA3UZv">demo</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top crA3UZv" xid="code" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:codeClick" data-config="{&quot;label&quot;:&quot;code&quot;,&quot;target&quot;:&quot;codeContent&quot;}" __cid="crA3UZv"> 
+          <i xid="i3" __cid="crA3UZv" class="crA3UZv"/>  
+          <span xid="span3" __cid="crA3UZv" class="crA3UZv">code</span>
+        </a>
+      </div>
+    </div>
+    <style __cid="crA3UZv" class="crA3UZv">.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrA3UZv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

@@ -1,0 +1,13 @@
+/**
+	@name $UI/system/components/fragment/gridList
+	@component 
+	@description
+	<xmp>
+		<b>使用场景</b>：动态列表+栅格布局
+		<b>使用方法</b>：拖入设计器中；设置内部动态列表组件数据属性后选中栅格模板后设置占行属性，可在栅格模板中放入需要展现的组件;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/

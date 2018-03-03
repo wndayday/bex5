@@ -1,0 +1,282 @@
+.o-nopadding{ padding-left:0; padding-right:0;}
+.o-nomargin{ margin:0;}
+
+.x-panel-content{ overflow:hidden}
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown > .dropdown-toggle > i.glyphicon-menu-down{ margin-left:5px;}
+
+.o-okBtn{ background-image:none; text-shadow:none; background-color:#4fc7c5; color:#fff;}/*确定按钮*/
+
+/*首页*/
+.text-red{ color:#fc6e64;}
+.text-blue{ color:#5eccf1;}
+.text-cyan{ color:#4fc7c5;}
+.text-gray{ color:#999;}
+.text-black{ color:#333;}
+
+.o-main .o-imgHead{ width:80px; height:80px; border-radius:40px; border:3px solid #e9ecf1;}
+.o-main .o-box{ margin:10px 0 30px 0;}
+.o-main .o-moveBtn{margin-top:-3px; font-size:18px;}
+.o-main .o-separat{ padding-left:15px;}
+
+.o-main .panel-group .panel{ border-radius:0; border:0; box-shadow:none;}
+.o-main .panel-group .panel .panel-heading{ background:none; background-color:#fbfbfb; }
+.o-main .panel-group .panel .panel-heading .panel-title{ line-height:19px; font-size:12px;}
+
+.o-main .panel-group .panel .panel-body{ padding:20px 0; }
+.o-main .panel-group .panel .panel-body a.btn{ margin:0 15px 0 0; padding:3px 20px; border-radius:3px; color:#fff; background-color:#42cb85;}
+.o-main .panel-group .panel .panel-body a{ margin:0 5px;}
+
+.o-main .o-projectTitle{ width:96px; height:162px; padding:28px 0 0 15px; color:#fff; background-color:#4fc7c5;}
+.o-main .o-projectTitle p{ color:#eee; font-style:italic;}
+.o-main .o-projectContent{ height:162px; padding:28px 0 0 138px; background-color:#fff;}
+
+/*当前目录样式*/
+.page-sidebar .page-sidebar-menu > li, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li{ border-bottom:1px solid #22282e;}
+.page-sidebar-menu li.func-open > a{ background: #36404c; color: #c3c6cb; color:#ab585d;}
+.page-sidebar-menu li.func-open > a i{ color:#ab585d;}
+
+.dropdown-menu .divider{ margin:0;}
+.dropdown-menu>li>a{ padding:12px 20px;}
+.dropdown-menu>li>a:hover{ background-image:none; display:block;}
+
+
+/*页面关闭按钮*/
+.page-content-close a i{ color:#fa6b60; font-size:20px;}
+
+/*弹出框********************/
+/*弹出框标题*/
+.x-dialog-title-text{ font-size:14px; font-weight:bolder;}
+/*弹出框按钮 */
+.x-dialog-button.btn{  padding:6px 28px; border:0; border-radius:3px;}
+.x-dialog-button[xid=OKBtn], .x-dialog-button[xid=finishBtn], .x-dialog-button[xid=nextBtn]{ background-image:none; text-shadow:none; background-color:#4fc7c5; color:#fff;}
+.x-dialog-button[xid=cancelBtn], .x-dialog-button[xid=cancelBtn1], .x-dialog-button[xid=backBtn]{ background-color:#ccc; color:#666;}
+.page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-menu{ margin-top:5px;}
+
+/*确认对话框****************/
+.modal-dialog .modal-title{ font-size:14px; font-weight:bolder;}
+.modal-dialog .modal-footer{border-top:0;}
+.modal-dialog .btn{ padding:6px 28px; border:0; border-radius:3px;}
+.modal-dialog .btn.ok{ background-image:none; text-shadow:none; background-color:#4fc7c5; color:#fff;}
+.modal-dialog .btn.cancel{ background-color:#ccc; color:#666; margin-left:15px;}
+.modal-dialog .btn.upload{ padding:3px 10px; background-color:#fff; border:1px solid #d1d1d1; color:#666; margin-left:15px;}
+/*删除确认对话框****************/
+.x-modal{ width:598px !important; margin-left:-15%; text-align:left; top:107px;}
+.x-modal .x-modal-inner{ }
+.x-modal .x-modal-inner .x-modal-title{ margin:0 -15px 15px -15px; padding:0 0 15px 15px; text-align:left; font-size:14px; /*font-weight:normal;*/ border-bottom:1px solid #e5e5e5;}
+.x-modal .x-modal-buttons{ height:auto; text-align:right; padding:10px 15px 5px 15px; border:0;}
+span[type='OKCancel'] .x-modal-button.OK, span[type='OKCancel'] .x-modal-button.Cancel, span[type='Prompt'] .x-modal-button.OK, span[type='Prompt'] .x-modal-button.Cancel, span[type='YesNo'] .x-modal-button.Yes, span[type='YesNo'] .x-modal-button.No{
+	width:auto;	border-radius:3px;
+}
+.x-modal .x-modal-button{ height:auto; line-height:normal; padding:6px 28px; border:0; border-radius:3px;}
+.x-modal .x-modal-button.Yes, .x-modal .x-modal-button.OK{ background-image:none; text-shadow:none; background-color:#4fc7c5; color:#fff;}
+.x-modal .x-modal-button.No, .x-modal .x-modal-button.Cancel{ background-color:#ccc; color:#666; margin-left:15px;}
+
+/*用户头像*/ 
+.x-blob-img{ width:100%; height:150px; }
+
+/*工具按钮****************/
+.x-toolbar{ padding:15px 0;}
+.x-toolbar .btn{ background-color: #4fc7c5; margin-right:10px; border-radius:3px;}
+.x-toolbar .btn i, .x-toolbar .btn span{ color:#fff;}
+
+.x-bottombar .btn{ background-color: #4fc7c5; margin-right:10px; border-radius:3px;}
+.x-bottombar .btn i, .x-bottombar .btn span{ color:#fff;}
+
+/*table表格样式－无选中样式****************/
+.col.col-xs-3 .table.dataTable{ border-top:0;}
+.table.dataTable{ border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; margin-top:0 !important; margin-bottom:0 !important;}
+.table.dataTable>thead>tr{ background-color: #fff;}
+.table.dataTable>tbody>tr:nth-of-type(odd) { background-color:#fafafa;}
+.table.dataTable>tbody>tr.bg-info:nth-of-type(odd) { background-color:#fafafa;}
+.table.dataTable>tbody>tr:hover { background-color: #fcf3f2;}
+.table.dataTable>tbody>tr.bg-info:hover{ background-color: #fcf3f2;}
+.table.dataTable>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th
+	{
+	background-color: transparent;
+}
+.table-hover>tbody>tr>td.active:hover, .table-hover>tbody>tr>th.active:hover, .table-hover>tbody>tr.active:hover>td, .table-hover>tbody>tr:hover>.active, .table-hover>tbody>tr.active:hover>th{
+	background-color: #fcf3f2;
+}
+
+.table.dataTable>tbody>tr.bg-info{ background-color:transparent;}
+.table.dataTable>tfoot{ display:none;}
+.table.dataTable>tbody td .link{ text-decoration:underline;}
+
+/*table表格样式－有选中样式，无斑马线**/
+.tableActive.dataTable>tbody>tr:nth-of-type(odd) { background-color:transparent}
+.tableActive.dataTable>tbody>tr.bg-info:nth-of-type(odd) { background-color:#fcf3f2;}
+.tableActive.dataTable>tbody>tr:hover { background-color: #fcf3f2;}
+.tableActive.dataTable>tbody>tr.bg-info:hover{ background-color:#fcf3f2;}
+
+.tableActive.dataTable>thead>tr>td.active,.tableActive>tbody>tr>td.active,.tableActive>tfoot>tr>td.active,.tableActive>thead>tr>th.active,.tableActive>tbody>tr>th.active,.tableActive>tfoot>tr>th.active,.tableActive>thead>tr.active>td,.tableActive>tbody>tr.active>td,.tableActive>tfoot>tr.active>td,.tableActive>thead>tr.active>th,.tableActive>tbody>tr.active>th,.tableActive>tfoot>tr.active>th
+	{
+	background-color: #fcf3f2;
+}
+.tableActive.table-hover>tbody>tr>td.active:hover, .tableActive.table-hover>tbody>tr>th.active:hover, .tableActive.table-hover>tbody>tr.active:hover>td, .tableActive.table-hover>tbody>tr:hover>.active, .table-hover>tbody>tr.active:hover>th{
+	background-color: #fcf3f2;
+}
+
+.tableActive.dataTable>tbody>tr.bg-info{ background-color:#fcf3f2;}
+
+/*table表格样式－有选中样式，有斑马线**/
+.tableActive1.dataTable>tbody>tr.bg-info:nth-of-type(odd) { background-color:#fcf3f2;}
+.tableActive1.dataTable>tbody>tr:hover { background-color: #fcf3f2;}
+.tableActive1.dataTable>tbody>tr.bg-info:hover{ background-color:#fcf3f2;}
+
+.tableActive1.dataTable>thead>tr>td.active, .tableActive1>tbody>tr>td.active, .tableActive1>tfoot>tr>td.active, .tableActive1>thead>tr>th.active,.tableActive1>tbody>tr>th.active, .tableActive1>tfoot>tr>th.active, .tableActive1>thead>tr.active>td, .tableActive1>tbody>tr.active>td,.tableActive1>tfoot>tr.active>td, .tableActive1>thead>tr.active>th, .tableActive1>tbody>tr.active>th, .tableActive1>tfoot>tr.active>th
+	{
+	background-color: #fcf3f2;
+}
+.tableActive1.table-hover>tbody>tr>td.active:hover, .tableActive1.table-hover>tbody>tr>th.active:hover, .tableActive1.table-hover>tbody>tr.active:hover>td, .tableActive1.table-hover>tbody>tr:hover>.active, .tableActive1.table-hover>tbody>tr.active:hover>th{
+	background-color: #fcf3f2;
+}
+
+.tableActive1.dataTable>tbody>tr.bg-info{ background-color:#fcf3f2;}
+
+
+/*grid表格样式****************/
+.x-grid .x-grid-htable{ border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1;}
+.x-grid .x-grid-btable{ border-bottom:1px solid #e1e1e1;}
+
+.x-priority-secondary, .x-grid-widget-content .x-priority-secondary, .x-grid-widget-header .x-priority-secondary{ background-color:#fafafa;}
+
+.x-grid-btable .x-grid-widget-content.x-state-highlight, 
+.x-grid-btable .x-grid-widget-content .x-state-highlight, 
+.x-grid-btable .x-grid-widget-header .x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-state-highlight.x-state-hover{ background-color: #fcf3f2;}
+
+.x-grid-btable .x-grid-widget-content.x-state-hover,
+.x-grid-btable .x-grid-widget-content .x-state-hover,
+.x-grid-btable .x-grid-widget-header .x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-state-focus,
+.x-grid-btable .x-grid-widget-content .x-state-focus,
+.x-grid-btable .x-grid-widget-header .x-state-focus {
+  background: #fcf3f2;
+}
+
+/*分页****************/
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+	background-color:#93a5ba;
+	border-color:#93a5ba;
+	color:#fff;
+}
+.pagination>li>a,.pagination>li>span{ color:#666;}
+.x-pagerbar .row>div:first-child{ padding-left:0;}
+.x-pagerbar .row>div:last-child{ padding-right:0;}
+
+/*左右结构****************/
+.col.col-xs-3{ padding-left:0; padding-top:15px;}
+.col.col-xs-9{ padding-right:0;}
+
+/*提示信息默认样式修改*/
+.alert-info { background-color: #c5d0dd; border-color: #93a5ba; color: #36404c;}
+.alert-info .alert-link { color: #36404c;}
+.alert-info {
+	background-image: -webkit-linear-gradient(top, #e1e8f0 0, #c4d0dd 100%);
+	background-image: -o-linear-gradient(top, #e1e8f0 0, #c4d0dd 100%);
+	background-image: linear-gradient(to bottom, #e1e8f0 0, #c4d0dd 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1e8f0',
+		endColorstr='#c4d0dd', GradientType=0);
+	border-color: #93a5ba
+}
+
+/*登录页*************************/
+.o-effect .page-header{ margin:0; padding:15px;}
+.o-effect .page-body{ padding:30px; background-color:#36404c;}
+
+.page-login .page-body{ height:438px; padding-top:50px; padding-left:400px; background:#36404c url(../img/loginBg.jpg) no-repeat center top;}
+/*表单*/
+.page-login .page-body .form-container{ max-width:360px; margin:0 auto; padding:0 15px;}
+.page-login .page-body .input-group-addon{ font-size:20px; border-radius:3px 0 0 3px; border:0; background-color:#fff;}
+.page-login .page-body .input-group { margin-bottom:10px;}
+.page-login .page-body .input-group .form-control{ height:40px; border:0; background-color:#fff; border-radius:0 3px 3px 0;}
+.page-login .page-body .input-group .form-control:focus{ background-color:#faffbd; box-shadow:none;}
+/*多选框*/
+.page-login .x-checkbox{ color:#959fa8;}
+/*按钮*/
+.btn[xid=login]{ border-radius:3px; line-height:26px; margin-top:20px; color:#fff; font-size:14px; background-color:#5ecaf1;}
+.btn[xid=registerBtn]{ color:#de6f76;}
+.btn[xid=resetPasswd]{ color:#959fa8;}
+/*==============按钮================*/
+.btnbox{ background-image:none; border:0; border-radius:3px; box-shadow:none; text-shadow:none;}
+.blueBtn, .blueBtn:hover{ color:#fff; background-color:#4fc7c5;}
+.redBtn, .redBtn:hover{ color:#fff; background-color:#fc6e64;}
+.granBtn, .granBtn:hover{ color:#666; background-color:#ccc;}
+.groupBtn{ background-image:none;}
+/*===========================按钮end*******************/
+
+/*注册页**************************/
+.page-register .form-horizontal{ width:50%; padding:0 5%; background-color:#fff; border-radius:5px}
+
+/*找回密码*/
+.page-reset .form-horizontal{ width:50%; margin:0 auto; padding:0 5%; background-color:#fff; border-radius:5px}
+
+/*项目管理************************************/
+/*表格中的按钮样式*/
+.table.dataTable .redBtn{ color:#e17871; cursor:pointer;}
+.table.dataTable .moreBtn{ color:#5ecaf1; cursor:pointer}
+.table.dataTable i.redBtn, .table.dataTable i.moreBtn{ font-size:10px;}
+.table.dataTable .o-spacing{ margin-left:15px;}
+
+/*更多操作下拉框*/
+.x-popOver .x-popOver-content{overflow:visible;}
+.o-moreOperation{ width:100%; height:1px; }
+.o-moreOperation>div{ width:128px; padding:10px 0; background-color:#36404c; position:relative; top:0; left:50%;}
+.o-moreOperation>div>i{ position:absolute; top:-10px; left:45%; color:#36404c;}
+.o-moreOperation>div .btn{ color:#96a0aa;}
+.o-moreOperation>div .btn:hover{ background-color:#2b3541; color:#fff;}
+.o-moreOperation>div .btn-icon-left, .btn-previous{
+	-webkit-justify-content:flex-start;	justify-content:flex-start;
+}
+
+/*创建项目-服务信息*/
+.o-createProject-serviceInfo.panel{ border:0; -webkit-box-shadow:none; box-shadow:none;}
+.o-createProject-serviceInfo .panel-heading{ background:none; padding-left:0;}
+.o-createProject-serviceInfo .panel-title{ font-size:14px; font-weight:bold;}
+.o-createProject-serviceInfo .panel-heading+.panel-collapse>.panel-body, .o-createProject-serviceInfo .panel-heading+.panel-collapse>.list-group{ border-top:0;}
+
+
+/*日志弹出窗*/
+.o-showLogo{ height:80%; width:80%; overflow:hidden; padding:0 2px; background:white; border-radius:4px; top:15%; left:20%; bottom:20%}
+.o-showLogo .o-logoTitle{ height:50px; line-height:50px; font-size:14px; font-weight:bolder; border-bottom:2px solid #eee;}
+.o-showLogo .o-logoTitle span{ margin-left:15px;}
+.o-showLogo .o-logoTitle .btn{ margin-top:7px; color:#ccc;}
+.o-showLogo div[xid=tabs1]{ margin:15px;}
+.o-showLogo .tab-content pre{ border:0; background:#fff;}
+
+/*充值管理*/
+.o-topup .o-box{ border:1px dashed #ccc; background-color:#f1f1f1;}
+
+/*个人信息*/
+
+.o-userinfo img{ width:100px; height:100px; border:2px solid #ddd; margin-right:50px;}
+.o-userinfo .media-body>div{ margin:5px 0 5px 15px;}
+
+.o-userinfo .nav{ border:0; margin-bottom:10px;}
+.o-userinfo .nav>li>a{ border:0; border-radius:0; padding:0; margin-right:10px; padding:0 33px; line-height:32px; background-color:#d9dee4; color:#666;}
+.o-userinfo .nav>li.active>a:hover{ border:0; background-color:#4fc7c5; color:#fff; }
+.o-userinfo .nav>li.active>a{ background-color:#4fc7c5; color:#fff;}
+
+/*list组件当前行背景*/
+.o-listCurrent{ background-color:#fcf3f2;}
+
+/*app制作模板管理－文件上传*/
+.o-upload{ margin-bottom:5px;}
+.o-upload input{ vertical-align:middle; margin:0; padding:0}
+.o-upload .txt{ width:180px; height:27px; margin-left:-4px; color:#999; background-color:#efefef; border:1px solid #efefef;}
+.o-upload .browseBtn{ padding:0 10px; height:27px; background-color:#FFF; border:1px solid #ccc; border-radius:3px;}
+.o-upload .upBtn{  background-color:#5ecaf1; border:1px solid #5ecaf1; color:#fff;}
+.o-upload .file{ width:78px; height:27px; position:absolute; top:0; left:15px; z-index:99; filter:alpha(opacity:0);opacity:0;}/* cursor:pointer;*/
+
+#x-default-overlay.x-default-overlay-open{
+	    visibility: hidden;
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cjIjuAr" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjIjuAr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/tabs/tab,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/tabs/tabs,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjIjuAr" class="cjIjuAr"></div>  
+  <h4 xid="h41" __cid="cjIjuAr" class="cjIjuAr">主从表格
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjIjuAr" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cjIjuAr"> 
+      <i xid="i1" __cid="cjIjuAr" class="cjIjuAr"/>  
+      <span xid="span1" __cid="cjIjuAr" class="cjIjuAr">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjIjuAr" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cjIjuAr"> 
+      <i xid="i2" __cid="cjIjuAr" class="cjIjuAr"/>  
+      <span xid="span2" __cid="cjIjuAr" class="cjIjuAr">源码</span>
+    </a>
+  </h4>
+  <div component="$model/UI2/system/components/bootstrap/tabs/tabs" xid="tabs3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/tabs/tabs'}" __cid="cjIjuAr" class="cjIjuAr"> 
+    <ul class="nav nav-tabs cjIjuAr" xid="ul2" __cid="cjIjuAr"> 
+      <li class="active cjIjuAr" xid="li4" component="$model/UI2/system/components/bootstrap/tabs/tab" data-bind="component:{name:'$model/UI2/system/components/bootstrap/tabs/tab'}" __cid="cjIjuAr"> 
+        <a content="masterContent" xid="tabItem4" __cid="cjIjuAr" class="cjIjuAr">主表</a>
+      </li>  
+      <li role="presentation" xid="li5" component="$model/UI2/system/components/bootstrap/tabs/tab" data-bind="component:{name:'$model/UI2/system/components/bootstrap/tabs/tab'}" __cid="cjIjuAr" class="cjIjuAr"> 
+        <a content="detailContent" xid="tabItem5" __cid="cjIjuAr" class="cjIjuAr">从表</a>
+      </li> 
+    </ul>  
+    <div class="tab-content cjIjuAr" xid="div2" __cid="cjIjuAr"> 
+      <div class="tab-pane active cjIjuAr" xid="masterContent" __cid="cjIjuAr">
+        <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" xid="userGrid" data="userData" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;fName&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;name&quot;:&quot;fPhoneNumber&quot;,&quot;width&quot;:&quot;200&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;fAddress&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;orderCount&quot;,&quot;xid&quot;:&quot;column4&quot;}],&quot;data&quot;:&quot;userData&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cjIjuAr" class="cjIjuAr"/>
+      </div>  
+      <div class="tab-pane cjIjuAr" xid="detailContent" __cid="cjIjuAr">
+        <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" xid="orderGrid" data="orderData" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;fUserName&quot;,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column8&quot;},{&quot;name&quot;:&quot;fCreateTime&quot;,&quot;width&quot;:&quot;200&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;name&quot;:&quot;fContent&quot;,&quot;xid&quot;:&quot;column6&quot;},{&quot;name&quot;:&quot;fPhoneNumber&quot;,&quot;width&quot;:&quot;150&quot;,&quot;xid&quot;:&quot;column9&quot;},{&quot;name&quot;:&quot;fAddress&quot;,&quot;xid&quot;:&quot;column10&quot;}],&quot;data&quot;:&quot;orderData&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cjIjuAr" class="cjIjuAr"/>
+      </div>
+    </div> 
+  </div> 
+</div>

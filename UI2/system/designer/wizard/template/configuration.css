@@ -1,0 +1,13 @@
+@import url("../../../components/designerCommon/css/common.css");
+
+
+/*左边*/
+.nav-container{ height:100%; padding:0px; background-color:#49566c; color:#fff}
+.nav-container ul li a{ color:#fff;}
+.nav-container ul li:hover a{ color:#333;}
+
+/*当前行*/
+.currentRow{ background-color:#eee!important; color:#333!important;}
+
+/*右边*/
+.composeParent{ padding-top:15px;}

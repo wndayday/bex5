@@ -1,0 +1,30 @@
+/**
+	@name $UI/system/components/justep/geolocation/geolocation
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：大部分APP上都具备的组件，用来定位用户所在位置 ;
+		<b>使用方法</b>：拖入设计器中需要获取用户地理位置的页面，可设置获取用户位置成功后做什么，不成功又做什么;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/geolocation/geolocation#openLocationInBaiduMap
+	@operation
+	@see $UI/system/components/justep/geolocation/geolocation#openLocationInBaiduMap
+	@description 在百度地图中显示当前位置
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/geolocation/geolocation#getLocation
+	@operation
+	@see $UI/system/components/justep/geolocation/geolocation#getLocation
+	@description 获取地理位置信息
+	@returns {void}
+*/

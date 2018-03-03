@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7BVNnq" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7BVNnq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c7BVNnq" class="c7BVNnq"></div>  
+  <div xid="div2" style="margin-left:20px;margin-top:20px;" __cid="c7BVNnq" class="c7BVNnq"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7BVNnq" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="c7BVNnq"> 
+      <i xid="i5" __cid="c7BVNnq" class="c7BVNnq"/>  
+      <span xid="span7" __cid="c7BVNnq" class="c7BVNnq">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7BVNnq" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="c7BVNnq"> 
+      <i xid="i5" __cid="c7BVNnq" class="c7BVNnq"/>  
+      <span xid="span7" __cid="c7BVNnq" class="c7BVNnq">源码</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c7BVNnq" xid="controlGroup1" style="height:123px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;1、普通滚动&quot;}" __cid="c7BVNnq"> 
+    <div class="x-control-group-title c7BVNnq" xid="controlGroupTitle1" __cid="c7BVNnq"> 
+      <span xid="span1" __cid="c7BVNnq" class="c7BVNnq">title</span> 
+    </div>  
+    <div xid="div6" style="position:absolute;border-width:1px 1px 1px 1px;overflow:auto;overflow-x:hidden;overflow-y:hidden;height:20px;width:450px;left:2px;top:110px;" __cid="c7BVNnq" class="c7BVNnq"> 
+      <div style="position:absolute;height:20px;width:90px;left:0px;top:0px;" xid="rollDiv" __cid="c7BVNnq" class="c7BVNnq"> 
+        <label xid="label1" style="width:87px;font-size:medium;" __cid="c7BVNnq" class="c7BVNnq">滚动文字</label> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c7BVNnq" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;2、上下滚动&quot;}" __cid="c7BVNnq"> 
+    <div class="x-control-group-title c7BVNnq" xid="controlGroupTitle2" __cid="c7BVNnq"> 
+      <span xid="span3" __cid="c7BVNnq" class="c7BVNnq">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list c7BVNnq" xid="newsList" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;overflow:auto;overflow-y:hidden;height:75px;" bind-mouseover="newsListMouseover" bind-mouseleave="newsListMouseleave" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newData&quot;}" __cid="c7BVNnq"> 
+      <ul class="x-list-template hide c7BVNnq" xid="newsUl" style="position:relative;" bind-foreach="{data:$model.foreach_newsList($element),afterRender:$model.foreach_afterRender_newsList.bind($model,$element)}" __cid="c7BVNnq"> 
+        <li xid="li1" __cid="c7BVNnq" class="c7BVNnq"> 
+          <label xid="label2" bind-text="ref('new')" __cid="c7BVNnq" class="c7BVNnq">label</label> 
+        </li> 
+      </ul> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c7BVNnq" xid="controlGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;3、自定义可见条数&quot;}" __cid="c7BVNnq"> 
+    <div class="x-control-group-title c7BVNnq" xid="controlGroupTitle4" __cid="c7BVNnq"> 
+      <span xid="span6" __cid="c7BVNnq" class="c7BVNnq">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list c7BVNnq" xid="customList" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;overflow:auto;overflow-y:hidden;height:25px;" bind-mouseover="customListMouseover" bind-mouseleave="customListMouseleave" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;customData&quot;}" __cid="c7BVNnq"> 
+      <ul class="x-list-template hide c7BVNnq" xid="customUl" style="position:relative;" bind-foreach="{data:$model.foreach_customList($element),afterRender:$model.foreach_afterRender_customList.bind($model,$element)}" __cid="c7BVNnq"> 
+        <li xid="li3" __cid="c7BVNnq" class="c7BVNnq"> 
+          <label xid="label4" bind-text="ref('customNew')" __cid="c7BVNnq" class="c7BVNnq">label</label> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

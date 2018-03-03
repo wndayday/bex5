@@ -1,0 +1,19 @@
+.x-functree-icon{
+	width: 20px;
+}
+
+.x-closeFuncBtn{
+	font-size: 20px;
+}
+
+.x-datetime-icon,.x-tabs-icon{
+	margin-right:4px;
+}
+
+.main-sidebar li.psm > a > .psm:before {
+  font-size: 16px;
+}
+
+.closeAll{
+    margin-left: 8px;
+}

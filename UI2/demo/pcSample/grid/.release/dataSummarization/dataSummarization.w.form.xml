@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cnEjMZf" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnEjMZf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cnEjMZf" class="cnEjMZf"></div>  
+  <h4 xid="h41" __cid="cnEjMZf" class="cnEjMZf">数据汇总 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cnEjMZf" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="cnEjMZf"> 
+      <i xid="i1" __cid="cnEjMZf" class="cnEjMZf"/>  
+      <span xid="span1" __cid="cnEjMZf" class="cnEjMZf">JS</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cnEjMZf" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cnEjMZf"> 
+      <i xid="i2" __cid="cnEjMZf" class="cnEjMZf"/>  
+      <span xid="span2" __cid="cnEjMZf" class="cnEjMZf">源码</span>
+    </a>
+  </h4>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cnEjMZf" xid="gradeGrid" data="gradeData" showRowNumber="true" useFooter="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;footerData&quot;:&quot;\&quot;总分：\&quot;+$model.gradeData.sum(\&quot;chinese\&quot;)&quot;,&quot;name&quot;:&quot;chinese&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;footerData&quot;:&quot;\&quot;平均分：\&quot;+ $model.gradeData.avg(\&quot;math\&quot;)&quot;,&quot;name&quot;:&quot;math&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;footerData&quot;:&quot;\&quot;最大分：\&quot;+ $model.gradeData.max(\&quot;english\&quot;)&quot;,&quot;name&quot;:&quot;english&quot;,&quot;xid&quot;:&quot;column4&quot;}],&quot;data&quot;:&quot;gradeData&quot;,&quot;footerrow&quot;:true,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;rownumbers&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="cnEjMZf"/> 
+</div>

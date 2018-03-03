@@ -1,0 +1,11 @@
+/**
+	@name $UI/system/components/justep/attachment/attachmentImage
+	@model UI2
+	@component
+	@extends $UI/system/components/justep/attachment/attachment
+	@description
+	<xmp>
+		<b>使用场景</b>：简单的用来在上传下载图片;
+		<b>使用方法</b>：添加attachment组件，指定要上传或下载图片的路径，可以规定上传、下载、修改、删除等操作;
+	</xmp>
+*/

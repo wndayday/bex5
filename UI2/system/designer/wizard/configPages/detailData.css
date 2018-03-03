@@ -1,0 +1,6 @@
+.form-horizontal .form-group {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.template-detail-output-control { text-overflow: ellipsis; overflow: hidden;}

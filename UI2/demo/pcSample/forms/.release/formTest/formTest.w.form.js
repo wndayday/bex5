@@ -1,0 +1,42 @@
+define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/bootstrap/form/form');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/controlGroup/controlGroup');
+require('$model/UI2/system/components/justep/input/input');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/justep/select/radioGroup');
+require('$model/UI2/system/components/justep/menu/menu');
+require('$model/UI2/system/components/justep/select/checkboxGroup');
+require('$model/UI2/system/components/justep/textarea/textarea');
+require('$model/UI2/system/components/justep/dataTables/dataTables');
+require('$model/UI2/system/components/justep/button/checkbox');
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/select/select');
+require('$model/UI2/system/components/justep/output/output');
+require('$model/UI2/system/components/justep/popMenu/popMenu');
+require('$model/UI2/system/components/justep/button/radio');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+require('$model/UI2/system/components/justep/button/buttonGroup');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/demo/pcSample/forms/formTest'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cFJ7vye';
+	this._flag_='64de553ff13251e986ef2285c4a5ff5a';
+	this.callParent(contextUrl);
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":false,"defCols":{"Hobby":{"define":"Hobby","label":"爱好：","name":"Hobby","relation":"Hobby","rules":{"required":{"message":"爱好不能为空","params":{"expr":"true"}}},"type":"String"},"QQ":{"define":"QQ","label":"QQ：","name":"QQ","relation":"QQ","type":"String"},"address":{"define":"address","label":"IP地址：","name":"address","relation":"address","type":"String"},"age":{"define":"age","label":"年龄：","name":"age","relation":"age","rules":{"required":{"message":"年龄不能为空","params":{"expr":"true"}}},"type":"String"},"col12":{"define":"col12","label":"正负小数：","name":"col12","relation":"col12","type":"String"},"col13":{"define":"col13","label":"正负整数与小数:","name":"col13","relation":"col13","type":"String"},"col20":{"define":"col20","label":"自动提示框：","name":"col20","relation":"col20","type":"String"},"date":{"define":"date","label":"日期控件：","name":"date","relation":"date","rules":{"date":true},"type":"Date"},"desc":{"define":"desc","label":"文本域：","name":"desc","relation":"desc","type":"String"},"email":{"define":"email","label":"电子邮件：","name":"email","relation":"email","rules":{"required":{"message":"邮箱不能为空","params":{"expr":"true"}}},"type":"String"},"hintSelect":{"define":"hintSelect","label":"提示下拉框：","name":"hintSelect","relation":"hintSelect","type":"String"},"name":{"define":"name","label":"姓名：","name":"name","relation":"name","rules":{"required":{"message":"姓名不能为空","params":{"expr":"true"}}},"type":"String"},"num":{"define":"num","label":"数字进步器：","name":"num","relation":"num","rules":{"integer":true},"type":"Integer"},"pass":{"define":"pass","label":"密码;","name":"pass","relation":"pass","rules":{"required":{"message":"密码不能为空","params":{"expr":"true"}}},"type":"String"},"postcode":{"define":"postcode","label":"邮政编码:","name":"postcode","relation":"postcode","type":"String"},"radioSelect":{"define":"radioSelect","label":"单选下拉框：","name":"radioSelect","relation":"radioSelect","type":"String"},"select":{"define":"select","label":"双向选择器：","name":"select","relation":"select","type":"String"},"sex":{"define":"sex","label":"性别：","name":"sex","relation":"sex","rules":{"required":{"message":"性别不能为空","params":{"expr":"true"}}},"type":"String"},"tel":{"define":"tel","label":"手机号码：","name":"tel","relation":"tel","type":"String"},"truePwd":{"define":"truePwd","label":"确认密码：","name":"truePwd","relation":"truePwd","rules":{"required":{"message":"确认密码不能为空","params":{"expr":"true"}}},"type":"String"},"uName":{"define":"uName","label":"用户名:","name":"uName","relation":"uName","rules":{"constraint":{"message":"用户名格式不正确","params":{"expr":"/^\\w{5,15}$/.test( $model.userData.val(\"uName\"))"}},"required":{"message":"用户名不能为空","params":{"expr":"true"}}},"type":"String"}},"directDelete":false,"events":{"onCustomSave":"userDataCustomSave","onValueChange":"dataValueChange"},"idColumn":"uName","initData":"[{\"uName\":\"\",\"radioSelect\":\"\",\"hintSelect\":\"\",\"num\":1}]","limit":20,"xid":"userData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":false,"confirmRefresh":false,"defCols":{"emp":{"define":"emp","label":"员工","name":"emp","relation":"emp","type":"String"}},"directDelete":false,"events":{},"idColumn":"emp","initData":"[{\"emp\":\"员工1\"},{\"emp\":\"员工2\"},{\"emp\":\"员工3\"},{\"emp\":\"员工4\"}]","limit":20,"xid":"empData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":false,"confirmRefresh":false,"defCols":{"emp":{"define":"emp","label":"员工","name":"emp","relation":"emp","type":"String"}},"directDelete":false,"events":{},"idColumn":"emp","limit":20,"xid":"addEmp"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"hobby":{"define":"hobby","label":"爱好","name":"hobby","relation":"hobby","type":"String"}},"directDelete":false,"events":{},"idColumn":"hobby","initData":"[{\"hobby\":\"打羽毛球\"},{\"hobby\":\"打篮球\"}]","limit":20,"xid":"hobbyData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"sex":{"define":"sex","label":"性别","name":"sex","relation":"sex","type":"String"}},"directDelete":false,"events":{},"idColumn":"sex","initData":"[{\"sex\":\"男\"},{\"sex\":\"女\"}]","limit":20,"xid":"sexData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"address":{"define":"address","label":"地址","name":"address","relation":"address","type":"String"}},"directDelete":false,"events":{},"idColumn":"address","initData":"[{\"address\":\"北京\"},{\"address\":\"天津\"},{\"address\":\"上海\"},{\"address\":\"河南\"},{\"address\":\"河北\"}]","limit":20,"xid":"selectData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"address":{"define":"address","label":"地址","name":"address","relation":"address","type":"String"}},"directDelete":false,"events":{},"idColumn":"address","initData":"[{\"address\":\"北京\"},{\"address\":\"天津\"},{\"address\":\"上海\"},{\"address\":\"河南\"},{\"address\":\"河北\"}]","limit":20,"xid":"hintData"});
+ var justep = require('$UI/system/lib/justep');if(!this['__justep__']) this['__justep__'] = {};if(!this['__justep__'].selectOptionsAfterRender)	this['__justep__'].selectOptionsAfterRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._addDefaultOption();	};if(!this['__justep__'].selectOptionsBeforeRender)	this['__justep__'].selectOptionsBeforeRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._optionsBeforeRender();	};
+}}); 
+return __result;});

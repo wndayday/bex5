@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/bootstrap/scrollSpy/scrollSpy
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：滚动监听，用于随鼠标滚动切换导航标签等;
+		<b>使用方法</b>：暂无;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/	
+
+/**
+	@name $UI/system/components/justep/bar/bar#xid
+	@attribute 
+	@type string
+	@description 
+*/

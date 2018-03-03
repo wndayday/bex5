@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/bootstrap/navs/navs
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：类似标签页切换的标签;
+		<b>使用方法</b>：添加navs组件，可以添加标签;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/	
+
+/**
+	@name $UI/system/components/boostrap/navs/navs#xid
+	@attribute 
+	@type string
+	@description 
+*/

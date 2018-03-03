@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7Bviqm" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7Bviqm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.fieldset1.c7Bviqm{margin-top: 20px} .fieldset1.c7Bviqm a.c7Bviqm{margin-left: 20px} .form.c7Bviqm{border: 1px rgb(204, 204, 204) solid; width: 300px} .x-row.c7Bviqm{width: 60%} .form-control.c7Bviqm{width: 60%} .form-horizontal.c7Bviqm{margin-top: 20px} .btn-group.c7Bviqm a.c7Bviqm{margin-left: 8px; margin-top: 5px; margin-bottom: 5px} .div.c7Bviqm{border: 1px rgb(204, 204, 204) solid; width: 200px} .btns.c7Bviqm{margin-left: 50px} .emp.c7Bviqm{cursor: pointer; margin-top: -15px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c7Bviqm" class="c7Bviqm"></div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" style="left:128px;top:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="c7Bviqm" class="c7Bviqm">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Bviqm" __cid="c7Bviqm"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Bviqm" __cid="c7Bviqm">
+      <xhtml:div class="x-modal-inner c7Bviqm" __cid="c7Bviqm">
+        <xhtml:div class="x-modal-title c7Bviqm" __cid="c7Bviqm"></xhtml:div>
+        <xhtml:div class="x-modal-text c7Bviqm" __cid="c7Bviqm"></xhtml:div>
+        <xhtml:input class="x-modal-prompt-input c7Bviqm" type="text" __cid="c7Bviqm"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons c7Bviqm" __cid="c7Bviqm">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK c7Bviqm" value="ok" __cid="c7Bviqm">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes c7Bviqm" value="yes" __cid="c7Bviqm">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No c7Bviqm" value="no" __cid="c7Bviqm">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel c7Bviqm" value="cancel" __cid="c7Bviqm">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="eiectDialog" style="left:244px;top:31px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;height&quot;:&quot;45%&quot;,&quot;src&quot;:&quot;$model/UI2/demo/sample/forms/ejectForm.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;width&quot;:&quot;30%&quot;}" __cid="c7Bviqm" class="c7Bviqm">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7Bviqm" __cid="c7Bviqm"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7Bviqm" style="display:none;" __cid="c7Bviqm">
+      <xhtml:div class="x-dialog-title c7Bviqm" __cid="c7Bviqm">
+        <xhtml:button class="close c7Bviqm" __cid="c7Bviqm">
+          <xhtml:span __cid="c7Bviqm" class="c7Bviqm">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c7Bviqm" __cid="c7Bviqm"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c7Bviqm" __cid="c7Bviqm"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c7Bviqm" xid="controlGroup" style="width:99%;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;表单拆分&quot;}" __cid="c7Bviqm"> 
+    <div class="x-control-group-title c7Bviqm" xid="controlGroupTitle2" __cid="c7Bviqm"> 
+      <span xid="span6" __cid="c7Bviqm" class="c7Bviqm">表单拆分</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="c7Bviqm"> 
+      <i xid="i29" __cid="c7Bviqm" class="c7Bviqm"/>  
+      <span xid="span31" __cid="c7Bviqm" class="c7Bviqm">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="c7Bviqm"> 
+      <i xid="i16" __cid="c7Bviqm" class="c7Bviqm"/>  
+      <span xid="span19" __cid="c7Bviqm" class="c7Bviqm">源码</span> 
+    </a>  
+    <div class="form-horizontal container-fluid c7Bviqm" component="$model/UI2/system/components/bootstrap/form/form" xid="form2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c7Bviqm"> 
+      <fieldset xid="fieldset6" class="fieldset6 c7Bviqm" __cid="c7Bviqm"> 
+        <legend xid="default11" __cid="c7Bviqm" class="c7Bviqm">导航模式</legend>  
+        <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs c7Bviqm" xid="tabs1" style="height:150px;margin-left:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="c7Bviqm"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar c7Bviqm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Bviqm"> 
+            <div class="x-panel-top c7Bviqm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Bviqm"> 
+              <ul class="nav nav-tabs c7Bviqm" xid="navs1" __cid="c7Bviqm"> 
+                <li class="active c7Bviqm" xid="li2" __cid="c7Bviqm"> 
+                  <a content="tabContent_1" xid="tabItem1" bind-disable="true" __cid="c7Bviqm" class="c7Bviqm">步骤一</a> 
+                </li>  
+                <li xid="li3" __cid="c7Bviqm" class="c7Bviqm"> 
+                  <a content="tabContent1" xid="tabItem2" __cid="c7Bviqm" class="c7Bviqm">步骤二</a> 
+                </li>  
+                <li xid="li4" __cid="c7Bviqm" class="c7Bviqm"> 
+                  <a content="tabContent2" xid="tabItem3" __cid="c7Bviqm" class="c7Bviqm">步骤三</a> 
+                </li>  
+                <li xid="li5" __cid="c7Bviqm" class="c7Bviqm"> 
+                  <a content="tabContent3" xid="tabItem4" __cid="c7Bviqm" class="c7Bviqm">步骤四</a> 
+                </li> 
+              </ul> 
+            </div>  
+            <div class="x-panel-content c7Bviqm" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Bviqm"> 
+              <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents c7Bviqm" xid="contents1" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="c7Bviqm"> 
+                <div class="x-contents-content active active c7Bviqm" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bviqm"> 
+                  <h4 xid="h42" __cid="c7Bviqm" class="c7Bviqm">步骤一的内容</h4>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="nextBut" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'tabs1.setActiveTab', args: {xid: 'li3'}}" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="c7Bviqm"> 
+                    <i xid="i5" __cid="c7Bviqm" class="c7Bviqm"/>  
+                    <span xid="span7" __cid="c7Bviqm" class="c7Bviqm">下一步</span> 
+                  </a> 
+                </div>  
+                <div class="x-contents-content c7Bviqm" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bviqm"> 
+                  <h4 xid="h41" __cid="c7Bviqm" class="c7Bviqm">步骤二的内容</h4>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'tabs1.setActiveTab', args: {xid: 'li2'}}" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="c7Bviqm"> 
+                    <i xid="i2" __cid="c7Bviqm" class="c7Bviqm"/>  
+                    <span xid="span2" __cid="c7Bviqm" class="c7Bviqm">上一步</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'tabs1.setActiveTab', args: {xid: 'li4'}}" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="c7Bviqm"> 
+                    <i xid="i6" __cid="c7Bviqm" class="c7Bviqm"/>  
+                    <span xid="span8" __cid="c7Bviqm" class="c7Bviqm">下一步</span> 
+                  </a> 
+                </div>  
+                <div class="x-contents-content c7Bviqm" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bviqm"> 
+                  <h4 xid="h43" __cid="c7Bviqm" class="c7Bviqm">步骤三的内容</h4>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'tabs1.setActiveTab', args: {xid: 'li3'}}" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="c7Bviqm"> 
+                    <i xid="i8" __cid="c7Bviqm" class="c7Bviqm"/>  
+                    <span xid="span10" __cid="c7Bviqm" class="c7Bviqm">上一步</span> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'tabs1.setActiveTab', args: {xid: 'li5'}}" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="c7Bviqm"> 
+                    <i xid="i7" __cid="c7Bviqm" class="c7Bviqm"/>  
+                    <span xid="span9" __cid="c7Bviqm" class="c7Bviqm">下一步</span> 
+                  </a> 
+                </div>  
+                <div class="x-contents-content c7Bviqm" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bviqm"> 
+                  <h4 xid="h44" __cid="c7Bviqm" class="c7Bviqm">步骤四的内容</h4>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'tabs1.setActiveTab', args: {xid: 'li4'}}" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="c7Bviqm"> 
+                    <i xid="i10" __cid="c7Bviqm" class="c7Bviqm"/>  
+                    <span xid="span12" __cid="c7Bviqm" class="c7Bviqm">上一步</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <style __cid="c7Bviqm" class="c7Bviqm">.x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb674f2b5450142af8b3a992d8a2be22b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+          </div> 
+        </div> 
+      </fieldset> 
+    </div>  
+    <div class="form-horizontal container-fluid c7Bviqm" component="$model/UI2/system/components/bootstrap/form/form" xid="form5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c7Bviqm"> 
+      <fieldset xid="fieldset1" class="fieldset1 c7Bviqm" __cid="c7Bviqm"> 
+        <legend xid="default1" __cid="c7Bviqm" class="c7Bviqm">无导航模式</legend>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="findBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:findBtnClick" data-config="{&quot;label&quot;:&quot;点击查看表单&quot;}" __cid="c7Bviqm"> 
+          <i xid="i1" __cid="c7Bviqm" class="c7Bviqm"/>  
+          <span xid="span1" __cid="c7Bviqm" class="c7Bviqm">点击查看表单</span> 
+        </a> 
+      </fieldset> 
+    </div>  
+    <div class="form-horizontal container-fluid c7Bviqm" component="$model/UI2/system/components/bootstrap/form/form" xid="form4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c7Bviqm"> 
+      <fieldset xid="fieldset5" __cid="c7Bviqm" class="c7Bviqm"> 
+        <legend xid="default9" __cid="c7Bviqm" class="c7Bviqm">软键盘控件</legend>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col9" __cid="c7Bviqm"> 
+            <label xid="label3" class="pull-right c7Bviqm" __cid="c7Bviqm">数量：</label> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col10" __cid="c7Bviqm"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left c7Bviqm" xid="num" style="width:200px;" bind-focus="numFocus" data-bind="component:{ref:numData.ref('num'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Bviqm"/>  
+            <div xid="showdiv" class="div c7Bviqm" style="display:none;" __cid="c7Bviqm"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group c7Bviqm" xid="buttonGroup1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c7Bviqm"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;1&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i28" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span29" __cid="c7Bviqm" class="c7Bviqm">1</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;2&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i27" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span30" __cid="c7Bviqm" class="c7Bviqm">2</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;3&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i4" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span4" __cid="c7Bviqm" class="c7Bviqm">3</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="closeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeBtnClick" data-config="{&quot;label&quot;:&quot;关闭&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i26" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span5" __cid="c7Bviqm" class="c7Bviqm">关闭</span> 
+                </a> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group c7Bviqm" xid="buttonGroup2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c7Bviqm"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;4&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i17" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span25" __cid="c7Bviqm" class="c7Bviqm">4</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;5&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i23" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span26" __cid="c7Bviqm" class="c7Bviqm">5</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;6&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i24" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span27" __cid="c7Bviqm" class="c7Bviqm">6</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="clearBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clearBtnClick" data-config="{&quot;label&quot;:&quot;清空&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i25" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span28" __cid="c7Bviqm" class="c7Bviqm">清空</span> 
+                </a> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group c7Bviqm" xid="buttonGroup3" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c7Bviqm"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;7&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i22" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span20" __cid="c7Bviqm" class="c7Bviqm">7</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;8&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i21" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span24" __cid="c7Bviqm" class="c7Bviqm">8</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;9&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i20" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span22" __cid="c7Bviqm" class="c7Bviqm">9</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Bviqm" xid="deleBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleBtnClick" data-config="{&quot;label&quot;:&quot;回删&quot;}" __cid="c7Bviqm"> 
+                  <i xid="i19" __cid="c7Bviqm" class="c7Bviqm"/>  
+                  <span xid="span21" __cid="c7Bviqm" class="c7Bviqm">回删</span> 
+                </a> 
+              </div>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btns c7Bviqm" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showNum" data-config="{&quot;label&quot;:&quot;0&quot;}" __cid="c7Bviqm"> 
+                <i xid="i18" __cid="c7Bviqm" class="c7Bviqm"/>  
+                <span xid="span23" __cid="c7Bviqm" class="c7Bviqm">0</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </fieldset> 
+    </div>  
+    <div class="form-horizontal container-fluid c7Bviqm" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c7Bviqm"> 
+      <fieldset xid="fieldset2" __cid="c7Bviqm" class="c7Bviqm"> 
+        <legend xid="default3" __cid="c7Bviqm" class="c7Bviqm">为元素动态添加并触发验证</legend>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col1" __cid="c7Bviqm"> 
+            <label xid="label1" class="pull-right c7Bviqm" bind-text="uData.label('name')" __cid="c7Bviqm">label</label> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col2" __cid="c7Bviqm"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Bviqm" xid="nameInput" data-bind="component:{ref:uData.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Bviqm"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col6" __cid="c7Bviqm"> 
+            <label xid="label6" class="pull-right c7Bviqm" bind-text="uData.label('check')" __cid="c7Bviqm">label</label> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col13" __cid="c7Bviqm"> 
+            <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c7Bviqm" xid="checkbox" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:checkboxChange" __cid="c7Bviqm">
+              <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="c7Bviqm" class="c7Bviqm"/>
+              <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="c7Bviqm" class="c7Bviqm"/>
+            </span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col15" __cid="c7Bviqm"> 
+            <label xid="label7" class="pull-right c7Bviqm" bind-text="uData.label('email')" __cid="c7Bviqm">label</label> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col16" __cid="c7Bviqm"> 
+            <span xid="email" class="pull-right c7Bviqm" style="width:38%;" __cid="c7Bviqm"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Bviqm" xid="input2" data-bind="component:{ref:uData.ref('email'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Bviqm"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col18" __cid="c7Bviqm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label pull-right c7Bviqm" xid="subBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="c7Bviqm"> 
+              <i xid="i9" __cid="c7Bviqm" class="c7Bviqm"/>  
+              <span xid="span11" __cid="c7Bviqm" class="c7Bviqm">提交</span> 
+            </a> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col19" __cid="c7Bviqm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="regBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="c7Bviqm"> 
+              <i xid="i11" __cid="c7Bviqm" class="c7Bviqm"/>  
+              <span xid="span13" __cid="c7Bviqm" class="c7Bviqm">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </fieldset> 
+    </div>  
+    <div class="form-horizontal container-fluid c7Bviqm" component="$model/UI2/system/components/bootstrap/form/form" xid="form3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c7Bviqm"> 
+      <fieldset xid="fieldset4" __cid="c7Bviqm" class="c7Bviqm"> 
+        <legend xid="default8" __cid="c7Bviqm" class="c7Bviqm">不允许输入admin,不允许为空</legend>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col17" __cid="c7Bviqm"> 
+            <label xid="label8" class="pull-right c7Bviqm" __cid="c7Bviqm">用户名：</label> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col3" __cid="c7Bviqm"> 
+            <span xid="span14" class="pull-right c7Bviqm" style="width:38%;" __cid="c7Bviqm"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Bviqm" xid="username" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Bviqm"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col14" __cid="c7Bviqm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label pull-right c7Bviqm" xid="subm" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="c7Bviqm"> 
+              <i xid="i14" __cid="c7Bviqm" class="c7Bviqm"/>  
+              <span xid="span18" __cid="c7Bviqm" class="c7Bviqm">提交</span> 
+            </a> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col20" __cid="c7Bviqm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="regest" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regestClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="c7Bviqm"> 
+              <i xid="i15" __cid="c7Bviqm" class="c7Bviqm"/>  
+              <span xid="span17" __cid="c7Bviqm" class="c7Bviqm">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </fieldset> 
+    </div>  
+    <div class="form-horizontal container-fluid c7Bviqm" component="$model/UI2/system/components/bootstrap/form/form" xid="form6" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="c7Bviqm"> 
+      <fieldset xid="fieldset3" __cid="c7Bviqm" class="c7Bviqm"> 
+        <legend xid="default7" __cid="c7Bviqm" class="c7Bviqm">不允许输入小于50的数</legend>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col28" __cid="c7Bviqm"> 
+            <label xid="label9" class="pull-right c7Bviqm" __cid="c7Bviqm">金额：</label> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col27" __cid="c7Bviqm"> 
+            <span xid="monspan" class="pull-right c7Bviqm" style="width:38%;" __cid="c7Bviqm"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Bviqm" xid="money" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c7Bviqm"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Bviqm" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Bviqm"> 
+          <div class="x-col c7Bviqm" xid="col26" __cid="c7Bviqm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label pull-right c7Bviqm" xid="subButt" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subButtClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="c7Bviqm"> 
+              <i xid="i12" __cid="c7Bviqm" class="c7Bviqm"/>  
+              <span xid="span15" __cid="c7Bviqm" class="c7Bviqm">提交</span> 
+            </a> 
+          </div>  
+          <div class="x-col c7Bviqm" xid="col24" __cid="c7Bviqm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Bviqm" xid="reg" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="c7Bviqm"> 
+              <i xid="i13" __cid="c7Bviqm" class="c7Bviqm"/>  
+              <span xid="span16" __cid="c7Bviqm" class="c7Bviqm">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </fieldset> 
+    </div> 
+  </div> 
+</div>

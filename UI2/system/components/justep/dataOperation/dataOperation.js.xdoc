@@ -1,0 +1,166 @@
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation
+	@component 
+	@extends $UI/system/lib/base/modelComponent
+	@model UI2
+	@description data操作扩展组件
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#setValue
+	@function
+ 	@param {object} msg <b>[required]</b>消息
+ 	@param {string} flag 消息标识,指定发送给和messageFlag属性匹配的shell组件
+	@description data赋值
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#setValue
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#setValue
+	@description 为数据赋值
+	@param data组件：选择需要赋值的数据集（必填）
+	@param 列：选择需要赋值的列（必填）
+	@param 值：为选择的列赋值（必填）
+	@param 行，缺省当前行：所要赋值的行对象，不写时默认当前行
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#allSetValue
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#allSetValue
+	@description 数据所有行赋值
+	@param data组件：选择需要赋值的数据集（必填）
+	@param 列：选择需要赋值的列（必填）
+	@param 值：为选择的列赋值（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#refreshByGET
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#refreshByGET
+	@description 请求data数据
+	@param url:选择请求数据所在的地址(必填)，例如http://127.0.0.1:8080/baas/justep/account/queryAccount
+	@param 同步请求，默认异步：设置请求方式
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#saveData
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#saveData
+	@description 保存数据
+	@param 数据：选择所要保存的数据集（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#saveReturn
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#saveReturn
+	@description 保存并返回数据
+	@param 数据：选择所要保存的数据集（必填）
+	@param 返回数据过滤：设置返回数据的过滤条件；
+		例如：getID()==$model.bizData.getCurrentRowID
+		返回的为当前行
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#deleteData
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#deleteData
+	@description 删除数据
+	@param 数据：选择所要删除的数据集（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#openWindowDialog
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#openWindowDialog
+	@description 打开对话框
+	@param 页URL：下拉选择要打开的对话框页面（必填）
+	@param 参数：为对话框页面中的参数赋值，需在对话框页面中的‘页面参数设置’中添加参数
+	@param 数据对象：选择对话框中返回的参数所要保存的数据集
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#openPage
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#openPage
+	@description 打开页面
+	@param 页URL：下拉选择要打开页面（必填）
+	@param 参数：为打开页面中的参数赋值，需在打开页面中的‘页面参数设置’中添加参数
+	@param 数据对象：选择打开页面中返回的参数所要保存的数据集
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#close
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#close
+	@description 关闭页面
+	@param 页URL：下拉选择要关闭页面（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#openWebPage
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#openWebPage
+	@description 打开外部页面
+	@param 网页地址：输入网址（必填）
+	@param 打开模式：选择网页的打开方式
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#setCSS
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#setCSS
+	@description 为指定组件设置样式
+	@param 展现组件：选择需要设置样式的组件（必填）
+	@param 样式:编辑样式（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#addClass
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#addClass
+	@description 为指定组件添加Class
+	@param 展现组件：选择要添加Class的组件（必填）
+	@param 样式class：编辑添加class的表达式，需先给展现组件添加自定义样式（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#removeClass
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#removeClass
+	@description 指定组件移除Class
+	@param 展现组件:选择要移除Class的组件（必填）
+	@param 样式class:编辑移除class的表达式，需先给展现组件添加自定义样式（必填）
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/dataOperation/dataOperation#toggleClass
+	@operation
+	@see $UI/system/components/justep/dataOperation/dataOperation#toggleClass
+	@description 指定组件切换Class；；
+	@param 展现组件：选择要切换Class的组件（必填）
+	@param 样式class：编辑切换class的表达式，需先给展现组件添加自定义样式（必填）
+	@returns {void}
+*/

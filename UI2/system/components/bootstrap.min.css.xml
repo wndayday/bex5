@@ -1,0 +1,13 @@
+<root>
+	<config>
+		<file>bootstrap/lib/css/bootstrap.css</file>
+		<file>bootstrap/lib/css/bootstrap-theme.css</file>
+		
+		<output name="bootstrap.min.css" skin="desktop,superhero,slate,united,yeti,compact"/>
+	</config>
+	<config>
+		<file>bootstrap/lib/css/bootstrap.min.flatly.css</file>
+		
+		<output name="bootstrap.min.flatly.css"/>
+	</config>
+</root>

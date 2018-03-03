@@ -1,0 +1,45 @@
+/**
+	@name $UI/system/components/justep/labelEdit/labelEdit
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：标签和内容的组合，例如注册信息填写的单项;
+		<b>使用方法</b>：添加labelEdit组件，设置标签，并添加需要的输入或输出组件;
+	</xmp>
+	@example
+	<xmp>
+		LabelEdit组件是复合组件包含Label和Edit两部分，分别使用class:x-label和class:x-edit表示；
+		相关衍生组件有：
+			labelInput
+			labelPassword
+			labelRange
+			labelOutput
+			labelSelect
+			labelTextarea
+			labelRadioGroup
+			labelCheckboxGroup
+			labelToggle			
+	</xmp>*/
+
+/**
+	@name $UI/system/components/justep/labelEdit/labelEdit#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+/**
+	@name $UI/system/components/justep/labelEdit/labelEdit#class
+	@attribute 
+	@type string
+	@description 组件class
+	@example
+	<xmp>
+		基础样式: x-label-edit(必须)
+		排列方式: x-label-top、x-label-bottom、x-label-right
+		Label占比: x-label5、x-label10、x-label15、x-label20、x-label30、x-label35、x-label40、x-label45、x-label50、x-label55、x-label60
+	</xmp>
+*/
+

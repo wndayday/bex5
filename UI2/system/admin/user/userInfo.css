@@ -1,0 +1,11 @@
+.label-style{
+	text-align: center;
+}
+/*==============按钮================*/
+.btnbox{ background-image:none; border:0; border-radius:3px; box-shadow:none; text-shadow:none;}
+.blueBtn, .blueBtn:hover{ color:#fff; background-color:#4fc7c5;}
+.redBtn, .redBtn:hover{ color:#fff; background-color:#fc6e64;}
+.granBtn, .granBtn:hover{ color:#666; background-color:#ccc;}
+/*===========================按钮end*******************/
+
+.x-panel-bottom .btn{ padding:5px 30px; margin-left:10px;}

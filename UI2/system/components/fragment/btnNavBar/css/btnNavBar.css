@@ -1,0 +1,56 @@
+/*分隔线样式*/
+.x-btnNavBar-vl{
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top: -10px;
+	height: 20px;
+	width: 2px;
+	background-size: 100% auto;
+}
+
+.x-btnNavBar-vlLight .x-btnNavBar-vl{
+	color:lightgray;
+}
+
+.x-btnNavBar-vlLight .x-btnNavBar-vl:after{
+	content: "|";
+}
+
+.x-btnNavBar-vlDark .x-btnNavBar-vl{
+	color:gray;
+}
+
+.x-btnNavBar-vlDark .x-btnNavBar-vl:after{
+	content: "|";
+}
+
+/*使用js赋值*/
+.x-btnNavBar-vlImage .x-btnNavBar-vl{
+	 
+}
+/*第一条竖线不显示*/
+.x-btnNavBar > .btn:first-child > .x-btnNavBar-vl{
+	display: none;
+}
+/*都加底部border*/
+.x-btnNavBar.btn-group .btn{
+	border-bottom: 2px solid transparent;
+}
+/*选中样式*/
+.x-btnNavBar-ulWhite .btn.active{
+	border-bottom: 2px solid white;
+}
+
+.x-btnNavBar-ulOrange .btn.active{
+	border-bottom: 2px solid orange;
+}
+
+.x-btnNavBar-ulRed .btn.active{
+	border-bottom: 2px solid red;
+}
+/*使用js赋值*/
+.x-btnNavBar-ulImage .btn.active{
+	
+}
+

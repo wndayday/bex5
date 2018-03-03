@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNNfQfu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNNfQfu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/bizData,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cNNfQfu" class="cNNfQfu"></div>  
+  <div class="x-panel-top cNNfQfu" xid="top1" __cid="cNNfQfu"> 
+    <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cNNfQfu" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;fileEditor&quot;}" __cid="cNNfQfu"> 
+      <div class="x-titlebar-left cNNfQfu" xid="div1" __cid="cNNfQfu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNNfQfu" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backMain" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cNNfQfu"> 
+          <i xid="i2" class="icon-chevron-left cNNfQfu" __cid="cNNfQfu"/>  
+          <span xid="span2" __cid="cNNfQfu" class="cNNfQfu"/> 
+        </a> 
+      </div>  
+      <div class="x-titlebar-title cNNfQfu" xid="div2" __cid="cNNfQfu">fileEditor</div>  
+      <div class="x-titlebar-right  cNNfQfu" xid="div3" __cid="cNNfQfu">
+        <div class="empty cNNfQfu" __cid="cNNfQfu"/>
+      </div> 
+    </div> 
+  </div>  
+  <div class="x-panel-content x-flex x-flex-column cNNfQfu" xid="content2" __cid="cNNfQfu"> 
+    <h3 __cid="cNNfQfu" class="cNNfQfu">fileEditor</h3>  
+    <p __cid="cNNfQfu" class="cNNfQfu">fileEditor文件编辑组件</p> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" actionUrl="/baas/justep/attachment/simpleFileStore" xid="attachmentSimple" data-bind="component:{ref:bizData.ref('sDescription'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-events="onEdit:attachmentSimpleEdit;onEditError:attachmentSimpleEditError" __cid="cNNfQfu" class="cNNfQfu"> 
+    <div class="x-attachment cNNfQfu" xid="div15" __cid="cNNfQfu"> 
+      <div class="x-attachment-content x-card-border cNNfQfu" xid="div16" __cid="cNNfQfu"> 
+        <div class="x-doc-process cNNfQfu" xid="div17" __cid="cNNfQfu"> 
+          <div class="progress-bar x-doc-process-bar cNNfQfu" role="progressbar" style="width:0%;" xid="progressBar2" __cid="cNNfQfu"/>
+        </div>  
+        <div data-bind="foreach:$attachmentItems" xid="div18" __cid="cNNfQfu" class="cNNfQfu"> 
+          <div class="x-attachment-cell cNNfQfu" xid="div19" __cid="cNNfQfu"> 
+            <div class="x-attachment-item x-item-other cNNfQfu" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div20" title="点击打开文件" __cid="cNNfQfu"> 
+              <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cNNfQfu" xid="a2" __cid="cNNfQfu"/>
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-attachment-cell cNNfQfu" data-bind="visible:$state.get() == 'upload'" xid="div21" __cid="cNNfQfu"> 
+          <div class="x-attachment-item x-item-upload cNNfQfu" data-bind="visible:$state.get() == 'upload'" xid="div22" __cid="cNNfQfu"/>
+        </div>  
+        <div class="x-attachment-cell cNNfQfu" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div23" __cid="cNNfQfu"> 
+          <div class="x-attachment-item x-item-remove cNNfQfu" data-bind="click:changeState.bind($object,'remove')" xid="div24" __cid="cNNfQfu"/>
+        </div>  
+        <div style="clear:both;" xid="div25" __cid="cNNfQfu" class="cNNfQfu"/>
+      </div> 
+    </div> 
+  </div>  
+  <input component="$model/UI2/system/components/justep/input/input" class="form-control cNNfQfu" xid="input2" data-bind="component:{ref:$model.bizData.ref(&quot;sDescription&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNNfQfu"/>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNNfQfu" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;bizData.save&quot;}" data-config="{&quot;label&quot;:&quot;保存&quot;}" __cid="cNNfQfu"> 
+    <i xid="i1" __cid="cNNfQfu" class="cNNfQfu"/>  
+    <span xid="span1" __cid="cNNfQfu" class="cNNfQfu">保存</span>
+  </a> 
+</div>

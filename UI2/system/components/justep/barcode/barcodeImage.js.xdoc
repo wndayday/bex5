@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/justep/barcode/barcodeImage
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：在页面生成条形码或者二维码;
+		<b>使用方法</b>：添加barcodeImage组件，绑定要转为条形码或二维码的数据，设置编码类型;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/	
+
+/**
+	@name $UI/system/components/justep/bar/bar#xid
+	@attribute 
+	@type string
+	@description 
+*/

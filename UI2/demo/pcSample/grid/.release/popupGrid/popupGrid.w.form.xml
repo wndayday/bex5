@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cVR7BFj" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVR7BFj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVR7BFj" class="cVR7BFj"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;height&quot;:&quot;50%&quot;,&quot;showTitle&quot;:true,&quot;status&quot;:&quot;normal&quot;,&quot;width&quot;:&quot;50%&quot;}" __cid="cVR7BFj" class="cVR7BFj">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVR7BFj" __cid="cVR7BFj"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVR7BFj" style="display:none;" showTitle="true" __cid="cVR7BFj">
+      <xhtml:div class="x-dialog-title cVR7BFj" __cid="cVR7BFj">
+        <xhtml:button class="close cVR7BFj" __cid="cVR7BFj">
+          <xhtml:span __cid="cVR7BFj" class="cVR7BFj">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cVR7BFj" __cid="cVR7BFj"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cVR7BFj" __cid="cVR7BFj"/>
+    </xhtml:div>
+  </span>
+  <h4 xid="h42" __cid="cVR7BFj" class="cVR7BFj">弹窗中的表格
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVR7BFj" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cVR7BFj"> 
+      <i xid="i2" __cid="cVR7BFj" class="cVR7BFj"/>  
+      <span xid="span2" __cid="cVR7BFj" class="cVR7BFj">js</span>
+    </a> 
+  </h4>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVR7BFj" xid="check" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:checkClick" data-config="{&quot;label&quot;:&quot;查看效果&quot;}" __cid="cVR7BFj"> 
+    <i xid="i1" __cid="cVR7BFj" class="cVR7BFj"/>  
+    <span xid="span1" __cid="cVR7BFj" class="cVR7BFj">查看效果</span>
+  </a> 
+</div>

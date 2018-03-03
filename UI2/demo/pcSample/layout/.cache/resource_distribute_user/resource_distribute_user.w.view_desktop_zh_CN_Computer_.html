@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciyaEnq" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciyaEnq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-state-default.ciyaEnq, .x-grid-widget-content.ciyaEnq .x-state-default.ciyaEnq, .x-grid-widget-header.ciyaEnq .x-state-default.ciyaEnq{background-image: linear-gradient(to bottom, rgb(44, 144, 230) 0%, rgb(255, 255, 255) 100%); display: none} .x-control-group.ciyaEnq{padding: 0} .icon-chevron-left.ciyaEnq{margin-right: 8px} .btn1.ciyaEnq{margin-top: 60px} .x-output.ciyaEnq{padding-left: 35px} .list-group-item.ciyaEnq{padding: 2px} .div3.ciyaEnq{overflow: scroll; overflow-x: hidden} .div6.ciyaEnq{overflow: hidden} .col1.ciyaEnq{border: 1px solid rgb(218, 241, 248)} .label5.ciyaEnq{margin-top: 170px} .label4.ciyaEnq{margin-top: 7px} .btn2.ciyaEnq{margin-left: 15px} .window.ciyaEnq{overflow: hidden} .x-titlebar.ciyaEnq{background-color: rgb(47, 164, 231)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciyaEnq" class="ciyaEnq"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbyqiim-iosstatusbar ciyaEnq" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciyaEnq"> 
+    <div class="x-panel-top ciyaEnq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciyaEnq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciyaEnq" xid="titleBar1" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;分配权限展示&quot;}" __cid="ciyaEnq"> 
+        <div class="x-titlebar-title ciyaEnq" xid="title1" __cid="ciyaEnq">分配权限展示</div>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciyaEnq" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;JS&quot;}" __cid="ciyaEnq"> 
+          <i xid="i8" __cid="ciyaEnq" class="ciyaEnq"/>  
+          <span xid="span22" __cid="ciyaEnq" class="ciyaEnq">JS</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciyaEnq" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:isVisible" data-events="onClick:showSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="ciyaEnq"> 
+          <i xid="i9" __cid="ciyaEnq" class="ciyaEnq"/>  
+          <span xid="span23" __cid="ciyaEnq" class="ciyaEnq">源码</span> 
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ciyaEnq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciyaEnq"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciyaEnq" xid="row1" style="width:750px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciyaEnq"> 
+        <div class="col1 x-col x-col-fixed x-col-center ciyaEnq" xid="col1" style="width:auto;height:45px;" __cid="ciyaEnq"> 
+          <label xid="label3" style="width:75px;" __cid="ciyaEnq" class="ciyaEnq">选择用户1:</label> 
+        </div>  
+        <div class="x-col col1 ciyaEnq" xid="col3" style="height:45px;" __cid="ciyaEnq"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left ciyaEnq" xid="input1" style="width:150px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入用户&quot;}" __cid="ciyaEnq"/>  
+          <span xid="span6" class="pull-left ciyaEnq" __cid="ciyaEnq">（用户数量大时使用这种方式）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciyaEnq" xid="row3" style="width:750px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciyaEnq"> 
+        <div class="col1 x-col x-col-fixed x-col-center ciyaEnq" xid="col7" style="width:auto;height:45px;" __cid="ciyaEnq"> 
+          <label xid="label4" style="width:75px;" class="label4 ciyaEnq" __cid="ciyaEnq">选择用户2:</label> 
+        </div>  
+        <div class="x-col col1 ciyaEnq" xid="col9" style="height:45px;" __cid="ciyaEnq"> 
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control pull-left ciyaEnq" xid="select1" style="width:150px;" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:userData.datas,optionsValue:'fName',optionsCaption:'请选择',optionsText:'fName',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="ciyaEnq"/>  
+          <span xid="span1" class="pull-left ciyaEnq" __cid="ciyaEnq">（用户数量小时使用这种方式）</span> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciyaEnq" xid="row4" style="width:750px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciyaEnq"> 
+        <div class="col1 x-col x-col-fixed x-col-center ciyaEnq" xid="col10" style="width:auto;height:362px;" __cid="ciyaEnq"> 
+          <label xid="label5" style="width:75px;" class="label5 ciyaEnq" __cid="ciyaEnq">分配权限:</label> 
+        </div>  
+        <div class="x-col col1 ciyaEnq" xid="col12" __cid="ciyaEnq"> 
+          <div xid="div6" style="width:auto;height:350px;" class="div6 ciyaEnq" __cid="ciyaEnq"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row ciyaEnq" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciyaEnq"> 
+              <div class="x-col x-col-fixed ciyaEnq" xid="col16" style="width:auto;" __cid="ciyaEnq"> 
+                <div xid="div1" style="width:230px;height:350px;" __cid="ciyaEnq" class="ciyaEnq"> 
+                  <label xid="label1" __cid="ciyaEnq" class="ciyaEnq">未分配资源</label>  
+                  <div xid="div2" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#DAF1F8 #DAF1F8 #DAF1F8 #DAF1F8;height:300px;" __cid="ciyaEnq" class="ciyaEnq"> 
+                    <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="false" class="x-grid-no-bordered ciyaEnq" xid="resource" data="resourceData" appearance="treeGrid" data-config="{&quot;altRows&quot;:false,&quot;appearance&quot;:&quot;treeGrid&quot;,&quot;colModel&quot;:[{&quot;name&quot;:&quot;fName&quot;,&quot;sortable&quot;:false,&quot;width&quot;:&quot;205&quot;,&quot;xid&quot;:&quot;column6&quot;}],&quot;data&quot;:&quot;resourceData&quot;,&quot;height&quot;:&quot;296&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;227&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onRowDblClick:resourceRowDblClick" __cid="ciyaEnq"></table> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col x-col-fixed x-col-center ciyaEnq" xid="col2" style="width:80px;" __cid="ciyaEnq"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right ciyaEnq" xid="all" style="background-color:#EEEEEE;width:70px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:allClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;全部&quot;}" __cid="ciyaEnq"> 
+                  <i xid="i1" class="icon-chevron-right ciyaEnq" __cid="ciyaEnq"/>  
+                  <span xid="span2" __cid="ciyaEnq" class="ciyaEnq">全部</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn1 btn btn-link ciyaEnq" xid="clear" style="background-color:#EEEEEE;width:70px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clearClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;清空&quot;}" __cid="ciyaEnq"> 
+                  <i xid="i2" class="icon-chevron-left ciyaEnq" __cid="ciyaEnq"/>  
+                  <span xid="span3" __cid="ciyaEnq" class="ciyaEnq">清空</span> 
+                </a> 
+              </div>  
+              <div class="x-col x-col-fixed ciyaEnq" xid="col17" style="width:auto;" __cid="ciyaEnq"> 
+                <div xid="div4" style="width:230px;height:350px;" __cid="ciyaEnq" class="ciyaEnq"> 
+                  <label xid="label2" __cid="ciyaEnq" class="ciyaEnq">已分配资源</label>  
+                  <div xid="div3" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;border-color:#DAF1F8 #DAF1F8 #DAF1F8 #DAF1F8;height:300px;" class="div3 ciyaEnq" __cid="ciyaEnq"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards ciyaEnq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;selectData&quot;}" __cid="ciyaEnq"> 
+                      <ul class="x-list-template x-min-height list-group hide ciyaEnq" xid="listTemplateUl1" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" __cid="ciyaEnq" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                        <li xid="li1" class="x-min-height list-group-item ciyaEnq" componentname="li(html)" id="undefined_li1" style="height:36px;" __cid="ciyaEnq"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output ciyaEnq" xid="select" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'},event:{dblclick:$model._callModelFn.bind($model, 'selectDblclick')}" __cid="ciyaEnq"/> 
+                        </li> 
+                      </ul> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ciyaEnq" xid="row5" style="width:750px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciyaEnq"> 
+        <div class="x-col col1 ciyaEnq" xid="col15" __cid="ciyaEnq"> 
+          <div xid="div5" style="height:42px;width:180px;" class="center-block ciyaEnq" __cid="ciyaEnq"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciyaEnq" xid="button3" style="width:70px;background-color:#D9D9D9;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clearClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="ciyaEnq"> 
+              <i xid="i3" __cid="ciyaEnq" class="ciyaEnq"/>  
+              <span xid="span4" __cid="ciyaEnq" class="ciyaEnq">确定</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn2 btn btn-link ciyaEnq" xid="button4" style="width:70px;background-color:#D9D9D9;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:clearClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="ciyaEnq"> 
+              <i xid="i4" __cid="ciyaEnq" class="ciyaEnq"/>  
+              <span xid="span5" __cid="ciyaEnq" class="ciyaEnq">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ciyaEnq" class="ciyaEnq">.x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbyqiim-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,12 @@
+/* .newFunctionPermissionBtn, */
+
+.btn.btn-link.newDataPermissionBtn,
+.btn.btn-link.newFunctionPermissionBtn
+{
+	background:#fff;
+}
+
+.btn.btn-link.newFunctionPermissionBtn:hover,
+.btn.btn-link.newDataPermissionBtn:hover{
+	background:#e2e2e2;
+}

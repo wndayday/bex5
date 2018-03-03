@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/justep/request/request
+	@component 
+	@extends $UI/system/lib/base/modelComponent
+	@model UI2
+	@description 服务请求组件
+	<xmp>
+		<b>使用场景</b>：页面中发送请求；
+		<b>使用方法</b>：拖入设计器中，可设置请求相关参数；
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/request/request#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+
+

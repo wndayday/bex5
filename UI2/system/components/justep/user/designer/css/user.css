@@ -1,0 +1,6 @@
+.x-user{
+	z-index:1000;
+	width:24px;
+	height:24px;
+	background: transparent url(../img/user.png) no-repeat;
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cqMvaYr" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqMvaYr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.left.cqMvaYr{margin-left: 5px} .top.cqMvaYr{padding-top: 5px} .button.cqMvaYr{margin-left: 5px; height: 22px; margin-top: 5px} .button.cqMvaYr:HOVER{color: red} .width.cqMvaYr{width: 70px} .li.cqMvaYr{width: 45px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqMvaYr" class="cqMvaYr"></div>  
+  <h4 xid="h41" __cid="cqMvaYr" class="cqMvaYr">文件条件选择 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqMvaYr" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsBtnClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cqMvaYr"> 
+      <i xid="i2" __cid="cqMvaYr" class="cqMvaYr"/>  
+      <span xid="span2" __cid="cqMvaYr" class="cqMvaYr">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  cqMvaYr" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cqMvaYr"> 
+      <i xid="i2" __cid="cqMvaYr" class="cqMvaYr"/>  
+      <span xid="span1" __cid="cqMvaYr" class="cqMvaYr">源码</span>
+    </a>
+  </h4>
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cqMvaYr" xid="row1" bind-visible="!!flowFilter.val(&quot;flow&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqMvaYr"> 
+    <div class="x-col cqMvaYr" xid="col1" __cid="cqMvaYr"> 
+      <label xid="label4" class="pull-left top width cqMvaYr" __cid="cqMvaYr">资金流向:</label>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list pull-left cqMvaYr" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;flowFilter&quot;}" __cid="cqMvaYr"> 
+        <ul class="x-list-template x-min-height hide cqMvaYr" xid="listTemplateUl2" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cqMvaYr"> 
+          <li xid="li7" class="x-min-height pull-left cqMvaYr" componentname="li(html)" id="undefined_li7" __cid="cqMvaYr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right pull-left button cqMvaYr" xid="flowBtn" style="border-style:ridge ridge ridge ridge;border-width:1px 1px 1px 1px;border-color:#0080FF #0080FF #0080FF #0080FF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:flowBtnClick" data-config="{&quot;icon&quot;:&quot;icon-close-round&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqMvaYr"> 
+              <i xid="i3" class="icon-close-round cqMvaYr" __cid="cqMvaYr"/>  
+              <span xid="span3" bind-text="ref('flow')" __cid="cqMvaYr" class="cqMvaYr"/> 
+            </a> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cqMvaYr" xid="row2" bind-visible="!!accountFilter.val(&quot;account&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqMvaYr"> 
+    <div class="x-col cqMvaYr" xid="col4" __cid="cqMvaYr"> 
+      <label xid="label3" class="pull-left top width cqMvaYr" __cid="cqMvaYr">账户:</label>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list pull-left cqMvaYr" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;accountFilter&quot;}" __cid="cqMvaYr"> 
+        <ul class="x-list-template x-min-height hide cqMvaYr" xid="listTemplateUl3" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl3" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="cqMvaYr"> 
+          <li xid="li8" class="pull-left cqMvaYr" __cid="cqMvaYr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right button btn-sm cqMvaYr" xid="accountBtn" style="border-style:ridge ridge ridge ridge;border-width:1px 1px 1px 1px;border-color:#0080FF #0080FF #0080FF #0080FF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:accountBtnClick" data-config="{&quot;icon&quot;:&quot;icon-close-round&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqMvaYr"> 
+              <i xid="i4" class="icon-close-round cqMvaYr" __cid="cqMvaYr"/>  
+              <span xid="span4" bind-text="ref('account')" __cid="cqMvaYr" class="cqMvaYr"/> 
+            </a> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cqMvaYr" xid="row3" bind-visible="!!tyeFilter.val(&quot;type&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqMvaYr"> 
+    <div class="x-col cqMvaYr" xid="col7" __cid="cqMvaYr"> 
+      <label xid="label5" class="pull-left top width cqMvaYr" __cid="cqMvaYr">类型:</label>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list pull-left cqMvaYr" xid="list5" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tyeFilter&quot;}" __cid="cqMvaYr"> 
+        <ul class="x-list-template x-min-height hide cqMvaYr" xid="listTemplateUl5" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl5" bind-foreach="{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element)}" __cid="cqMvaYr"> 
+          <li xid="li10" class="pull-left x-min-height cqMvaYr" componentname="li(html)" id="undefined_li10" __cid="cqMvaYr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right button btn-sm cqMvaYr" xid="typeBtn" style="border-style:ridge ridge ridge ridge;border-width:1px 1px 1px 1px;border-color:#0080FF #0080FF #0080FF #0080FF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:typeBtnClick" data-config="{&quot;icon&quot;:&quot;icon-close-round&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqMvaYr"> 
+              <i xid="i7" class="icon-close-round cqMvaYr" __cid="cqMvaYr"/>  
+              <span xid="span7" bind-text="ref('type')" __cid="cqMvaYr" class="cqMvaYr"/> 
+            </a> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cqMvaYr" xid="row4" bind-visible="!!date.val(&quot;date&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqMvaYr"> 
+    <div class="x-col cqMvaYr" xid="col10" __cid="cqMvaYr"> 
+      <label xid="label6" class="pull-left top cqMvaYr" __cid="cqMvaYr">起止日期:</label>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cqMvaYr" xid="list6" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;date&quot;}" __cid="cqMvaYr"> 
+        <ul class="x-list-template hide cqMvaYr" xid="listTemplateUl6" bind-foreach="{data:$model.foreach_list6($element),afterRender:$model.foreach_afterRender_list6.bind($model,$element)}" __cid="cqMvaYr"> 
+          <li xid="li11" __cid="cqMvaYr" class="cqMvaYr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right button btn-sm cqMvaYr" xid="dateBtn" style="border-style:ridge ridge ridge ridge;border-width:1px 1px 1px 1px;border-color:#0080FF #0080FF #0080FF #0080FF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:dateBtnClick" data-config="{&quot;icon&quot;:&quot;icon-close-round&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqMvaYr"> 
+              <i xid="i9" class="icon-close-round cqMvaYr" __cid="cqMvaYr"/>  
+              <span xid="span9" bind-text="ref('date')" __cid="cqMvaYr" class="cqMvaYr"/> 
+            </a> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row cqMvaYr" xid="row5" bind-visible="!!keyData.val(&quot;keyword&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqMvaYr"> 
+    <div class="x-col cqMvaYr" xid="col13" __cid="cqMvaYr"> 
+      <label xid="label7" class="pull-left top width cqMvaYr" __cid="cqMvaYr">关键词:</label>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cqMvaYr" xid="list7" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;keyData&quot;}" __cid="cqMvaYr"> 
+        <ul class="x-list-template hide cqMvaYr" xid="listTemplateUl7" bind-foreach="{data:$model.foreach_list7($element),afterRender:$model.foreach_afterRender_list7.bind($model,$element)}" __cid="cqMvaYr"> 
+          <li xid="li12" __cid="cqMvaYr" class="cqMvaYr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right button btn-sm cqMvaYr" xid="keyBtn" style="border-style:ridge ridge ridge ridge;border-width:1px 1px 1px 1px;border-color:#0080FF #0080FF #0080FF #0080FF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:keyBtnClick" data-config="{&quot;icon&quot;:&quot;icon-close-round&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqMvaYr"> 
+              <i xid="i11" class="icon-close-round cqMvaYr" __cid="cqMvaYr"/>  
+              <span xid="span11" bind-text="ref('keyword')" __cid="cqMvaYr" class="cqMvaYr"/> 
+            </a> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cqMvaYr" xid="tabs1" style="height:116px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cqMvaYr"> 
+    <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar cqMvaYr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqMvaYr"> 
+      <div class="x-panel-top cqMvaYr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqMvaYr"> 
+        <ul class="nav nav-tabs cqMvaYr" xid="navs1" __cid="cqMvaYr"> 
+          <li class="active cqMvaYr" xid="li1" __cid="cqMvaYr"> 
+            <a content="tabContent_1" xid="tabItem1" __cid="cqMvaYr" class="cqMvaYr">资金流向</a> 
+          </li>  
+          <li xid="li2" __cid="cqMvaYr" class="cqMvaYr"> 
+            <a content="tabContent1" xid="tabItem2" __cid="cqMvaYr" class="cqMvaYr">账户</a> 
+          </li>  
+          <li xid="li3" __cid="cqMvaYr" class="cqMvaYr"> 
+            <a content="tabContent2" xid="tabItem3" __cid="cqMvaYr" class="cqMvaYr">类型</a> 
+          </li>  
+          <li xid="li4" __cid="cqMvaYr" class="cqMvaYr"> 
+            <a content="tabContent3" xid="tabItem4" __cid="cqMvaYr" class="cqMvaYr">起止日期</a> 
+          </li>  
+          <li xid="li5" __cid="cqMvaYr" class="cqMvaYr"> 
+            <a content="tabContent4" xid="tabItem5" __cid="cqMvaYr" class="cqMvaYr">关键词</a> 
+          </li> 
+        </ul> 
+      </div>  
+      <div class="x-panel-content cqMvaYr" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqMvaYr"> 
+        <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cqMvaYr" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cqMvaYr"> 
+          <div class="x-contents-content active active cqMvaYr" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqMvaYr"> 
+            <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group x-checkbox-group-xs cqMvaYr" xid="checkboxGroup1" bind-foreach="{data:flowData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:flowDefault.ref('flow'),name:'$model/UI2/system/components/justep/select/checkboxGroup'}" __cid="cqMvaYr">
+              <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cqMvaYr" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('flow'),value:ref('flow')}" __cid="cqMvaYr">
+                <xhtml:input type="checkbox" __cid="cqMvaYr" class="cqMvaYr"/>
+                <xhtml:label __cid="cqMvaYr" class="cqMvaYr"/>
+              </xhtml:span>
+            </span> 
+          </div>  
+          <div class="x-contents-content cqMvaYr" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqMvaYr"> 
+            <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group x-checkbox-group-xs cqMvaYr" xid="checkboxGroup2" bind-foreach="{data:accountData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:accountDefault.ref('account'),name:'$model/UI2/system/components/justep/select/checkboxGroup'}" __cid="cqMvaYr">
+              <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cqMvaYr" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('account'),value:ref('account')}" __cid="cqMvaYr">
+                <xhtml:input type="checkbox" __cid="cqMvaYr" class="cqMvaYr"/>
+                <xhtml:label __cid="cqMvaYr" class="cqMvaYr"/>
+              </xhtml:span>
+            </span> 
+          </div>  
+          <div class="x-contents-content cqMvaYr" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqMvaYr"> 
+            <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group x-checkbox-group-xs cqMvaYr" xid="checkboxGroup4" bind-foreach="{data:typeData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:typeDefault.ref('type'),name:'$model/UI2/system/components/justep/select/checkboxGroup'}" __cid="cqMvaYr">
+              <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cqMvaYr" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('type'),value:ref('type')}" __cid="cqMvaYr">
+                <xhtml:input type="checkbox" __cid="cqMvaYr" class="cqMvaYr"/>
+                <xhtml:label __cid="cqMvaYr" class="cqMvaYr"/>
+              </xhtml:span>
+            </span> 
+          </div>  
+          <div class="x-contents-content cqMvaYr" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqMvaYr"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqMvaYr" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqMvaYr"> 
+              <div class="x-col x-col-90 cqMvaYr" xid="col17" __cid="cqMvaYr"> 
+                <label xid="label1" class="pull-left top cqMvaYr" __cid="cqMvaYr">起止日期:</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left left cqMvaYr" xid="start" style="width:129px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cqMvaYr"/>  
+                <label xid="label2" class="pull-left top cqMvaYr" __cid="cqMvaYr">-</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left left cqMvaYr" xid="end" style="width:129px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;}" __cid="cqMvaYr"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqMvaYr" xid="button" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:buttonClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cqMvaYr"> 
+                  <i xid="i8" __cid="cqMvaYr" class="cqMvaYr"/>  
+                  <span xid="span8" __cid="cqMvaYr" class="cqMvaYr">确定</span> 
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-contents-content cqMvaYr" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqMvaYr"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cqMvaYr" xid="row7" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cqMvaYr"> 
+              <div class="col col-xs-4 cqMvaYr" xid="col19" __cid="cqMvaYr"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control  pull-left left cqMvaYr" xid="keyWord" style="width:114px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cqMvaYr"/>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-left cqMvaYr" xid="sure" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sureClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cqMvaYr"> 
+                  <i xid="i10" __cid="cqMvaYr" class="cqMvaYr"/>  
+                  <span xid="span10" __cid="cqMvaYr" class="cqMvaYr">确定</span> 
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <style __cid="cqMvaYr" class="cqMvaYr">.x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6f3552bf5b254b8b894de6cc6311936e-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+    </div> 
+  </div>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" rowActiveClass="active" class="table table-hover table-striped cqMvaYr" xid="dataTables" data="data" showRowNumber="false" multiSelect="true" data-config="{&quot;columns&quot;:[{&quot;sName&quot;:&quot;tID&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;sName&quot;:&quot;tName&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;sName&quot;:&quot;tSex&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;sName&quot;:&quot;tAge&quot;,&quot;xid&quot;:&quot;column8&quot;}],&quot;data&quot;:&quot;data&quot;,&quot;flexibleWidth&quot;:true,&quot;multiSelect&quot;:true,&quot;rowActiveClass&quot;:&quot;active&quot;,&quot;showRowNumber&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowCheckedAll:dataTablesRowCheckedAll;onRowClick:dataTablesRowClick" __cid="cqMvaYr"/> 
+</div>

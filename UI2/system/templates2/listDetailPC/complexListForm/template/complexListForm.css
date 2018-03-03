@@ -1,0 +1,42 @@
+/*黑色按钮*/
+.blackBtn span{ color:#626262;}
+.blackBtn i{ color:#767676;}
+
+/*搜索框*/
+input[xid=input1]{ box-shadow:none; border-radius:0px; border:1px solid #989898; background-color:#f4f4f4;}
+
+/*页中样式*/
+.x-bordered{ background-color:#f4f4f4; border:1px solid #d1d1d1; border-radius:0;}
+
+/*操作栏*/
+.x-toolbar.x-toolbar-spliter{ border:0;}
+
+/*grid表格*/
+.x-grid-widget-content{ background-color:#fff;}
+
+.x-grid .x-grid-htable{ background-color:#d1d1d1; border:1px solid #d1d1d1; border-bottom:0;}
+.x-grid .x-grid-htable th{ background-image:none;}
+.x-grid .x-grid-btable{ width:100%!important; border:1px solid #d1d1d1; border-top:0;}
+
+.x-priority-secondary, .x-grid-widget-content .x-priority-secondary, .x-grid-widget-header .x-priority-secondary{ background-color:#fff;}
+
+.x-grid-btable .x-grid-widget-content.x-state-highlight, 
+.x-grid-btable .x-grid-widget-content .x-state-highlight, 
+.x-grid-btable .x-grid-widget-header .x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-priority-secondary.x-state-highlight,
+.x-grid-btable .x-grid-widget-content.x-state-highlight.x-state-hover{ background-color: #f2f2f2;}
+
+.x-grid-btable .x-grid-widget-content.x-state-hover,
+.x-grid-btable .x-grid-widget-content .x-state-hover,
+.x-grid-btable .x-grid-widget-header .x-state-hover,
+.x-grid-btable .x-grid-widget-content.x-state-focus,
+.x-grid-btable .x-grid-widget-content .x-state-focus,
+.x-grid-btable .x-grid-widget-header .x-state-focus {
+  background: #f2f2f2;
+}
+.x-grid .x-grid-widget-header{ border:0;}
+.x-grid tr.jqgrow td.x-grid-editing{ padding:5px 4px;}/*
+.x-grid tr.jqgrow td.x-grid-editing .x-grid-editer, .x-grid tr.jqgrow td.x-grid-editing .x-grid-editer.x-gridSelect .x-gridSelect-input{ padding:8px 4px; background:#9f9f9f; color:#fff;}
+*/
+

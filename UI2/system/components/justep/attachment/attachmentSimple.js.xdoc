@@ -1,0 +1,26 @@
+/**
+	@name $UI/system/components/justep/attachment/attachmentSimple
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：上传文件 ;
+		<b>使用方法</b>：拖入设计器中需要的位置；设置绑定的数据;
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/attachment/attachmentSimple#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+/**
+	@name $UI/system/components/justep/attachment/attachmentSimple#bind-ref
+	@attribute 
+	@type string
+	@description 数据引用
+*/
+

@@ -1,0 +1,38 @@
+/**
+	@name $UI/system/components/justep/scan/scan
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：通常情况下用来扫描二维码及条形码；如扫一扫支付，扫一扫加好友，扫一扫跳转界面等 ;
+		<b>使用方法</b>：拖入设计器中指定的APP界面位置，可以设置扫描成功做什么，扫描失败做什么;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/scan/scan#openScanResultAsFile
+	@operation
+	@see $UI/system/components/justep/scan/scan#openScanResultAsFile
+	@description 作为文件打开扫一扫的结果(app)
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/scan/scan#openScanResultAsUrl
+	@operation
+	@see $UI/system/components/justep/scan/scan#openScanResultAsUrl
+	@description 在浏览器中打开扫一扫的结果(app)
+	@returns {void}
+*/
+
+/**
+	@name $UI/system/components/justep/scan/scan#scanQRCode
+	@operation
+	@see $UI/system/components/justep/scan/scan#scanQRCode
+	@description 扫一扫(app)
+	@returns {void}
+*/

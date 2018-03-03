@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/keyNavigator/keyNavigator"
+		tag-type="rich" tag-name="div" icon="keyNavigator.png" text="按键导航"
+		binding-component="$UI/system/components/justep/keyNavigator/keyNavigator"
+		component-type="inVisibleComp"
+		parent-range="$UI/system/components/justep/window/window,$UI/system/components/justep/inVisibleCompContainer/inVisibleCompContainer">
+		<properties>
+			<property name="xid" text="编号" required="false" />
+			<property name="selector" text="焦点选择器" data-type="string" />
+			<property name="defaultFocus" text="默认焦点" data-type="string"
+				editor-ref="chooseComponent-editor" />
+			<property name="keepSourceGroupXids" text="保留焦点" data-type="string" />
+			<property name="class" text="class" editor-ref="classSelector"></property>
+			<property name="style" text="样式" editor-ref="styleDialog" />
+			<include
+				path="$UI/system/components/designerCommon/commonConfig.xml#//common-properties/group[@name='bind']" />
+		</properties>
+		<property-editors>
+			<property-editor name="chooseComponent-editor" type="dialog"
+				url="$UI/system/designer/webIde/editors/compSelector/compSelector.w"
+				editor-parameter="{width:800,height:600}">
+				<dialog-page class-name="chooseComponent" />
+			</property-editor>
+		</property-editors>
+		<toolbar>
+		</toolbar>
+		<events>
+			<event name="reachEndDown" type="event" text="达到下边界" parameters="event" is-script="true" />
+			<event name="reachEndUp" type="event" text="达到上边界" parameters="event" is-script="true" />
+			<event name="reachEndLeft" type="event" text="达到左边界" parameters="event" is-script="true" />
+			<event name="reachEndRight" type="event" text="达到右边界" parameters="event" is-script="true" />
+			<include
+				path="$UI/system/components/designerCommon/commonConfig.xml#//html-evens/*" />
+		</events>
+		<templates>
+			<template name="default"><![CDATA[ 
+		   <div component="$UI/system/components/justep/keyNavigator/keyNavigator" /> 
+		   ]]></template>
+		</templates>
+
+	</element>
+</elements>

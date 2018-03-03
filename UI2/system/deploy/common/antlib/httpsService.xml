@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="x5 app mananger">
+   
+	<property environment="env" />
+	
+	<target name="ipaServiceStart" description="启动ipa https服务">
+		<exec dir="@ipaServerHome@" executable="@nodeBin@/node.exe"  failonerror="true">
+		    <arg value="@ipaServerHome@/shutdown.js" />
+        </exec>
+        <exec dir="@ipaServerHome@" executable="@ipaServerHome@/startup.bat"  failonerror="true">
+            <arg value="-i" />
+            <arg value="@ip@" />
+            <arg value="-d" />
+            <arg value="@dictory@" />
+	    </exec>
+	</target>
+	<target name="ipaServiceStartMac" description="启动ipa https服务">
+		<chmod dir="@ipaServerHome@" perm="ugo+rx" includes="**/*.sh" />
+		<exec dir="@ipaServerHome@" executable="@nodeBin@/node"  failonerror="true">
+		    <arg value="@ipaServerHome@/shutdown.js" />
+        </exec>
+        <exec dir="@ipaServerHome@" executable="./startup.sh"  failonerror="true">
+            <arg value="-i" />
+            <arg value="@ip@" />
+            <arg value="-d" />
+            <arg value="@dictory@" />
+	    </exec>
+	</target>
+	
+</project>

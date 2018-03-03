@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cAv2iYj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAv2iYj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/bizData,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cAv2iYj" class="cAv2iYj"></div>  
+  <div class="x-panel-top cAv2iYj" xid="top1" __cid="cAv2iYj"> 
+    <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cAv2iYj" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;fileEditor&quot;}" __cid="cAv2iYj"> 
+      <div class="x-titlebar-left cAv2iYj" xid="div1" __cid="cAv2iYj"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cAv2iYj" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backMain" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cAv2iYj"> 
+          <i xid="i2" class="icon-chevron-left cAv2iYj" __cid="cAv2iYj"/>  
+          <span xid="span2" __cid="cAv2iYj" class="cAv2iYj"/> 
+        </a> 
+      </div>  
+      <div class="x-titlebar-title cAv2iYj" xid="div2" __cid="cAv2iYj">fileEditor</div>  
+      <div class="x-titlebar-right  cAv2iYj" xid="div3" __cid="cAv2iYj">
+        <div class="empty cAv2iYj" __cid="cAv2iYj"/>
+      </div> 
+    </div> 
+  </div>  
+  <div class="x-panel-content x-flex x-flex-column cAv2iYj" xid="content2" __cid="cAv2iYj"> 
+    <h3 __cid="cAv2iYj" class="cAv2iYj">fileEditor</h3>  
+    <p __cid="cAv2iYj" class="cAv2iYj">fileEditor文件编辑组件</p> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" actionUrl="/baas/justep/attachment/simpleFileStore" xid="attachmentSimple" data-bind="component:{ref:bizData.ref('sDescription'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-events="onEdit:attachmentSimpleEdit;onAfterFileOpen:attachmentSimpleAfterFileOpen;onAfterEdit:attachmentSimpleAfterEdit;onBeforeFileOpen:attachmentSimpleBeforeFileOpen;onEditError:attachmentSimpleEditError" __cid="cAv2iYj" class="cAv2iYj"> 
+    <div class="x-attachment cAv2iYj" xid="div15" __cid="cAv2iYj"> 
+      <div class="x-attachment-content x-card-border cAv2iYj" xid="div16" __cid="cAv2iYj"> 
+        <div class="x-doc-process cAv2iYj" xid="div17" __cid="cAv2iYj"> 
+          <div class="progress-bar x-doc-process-bar cAv2iYj" role="progressbar" style="width:0%;" xid="progressBar2" __cid="cAv2iYj"/>
+        </div>  
+        <div data-bind="foreach:$attachmentItems" xid="div18" __cid="cAv2iYj" class="cAv2iYj"> 
+          <div class="x-attachment-cell cAv2iYj" xid="div19" __cid="cAv2iYj"> 
+            <div class="x-attachment-item x-item-other cAv2iYj" data-bind="click:$model.editFile.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div20" title="点击打开文件" __cid="cAv2iYj"> 
+              <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cAv2iYj" xid="a2" __cid="cAv2iYj"/>
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-attachment-cell cAv2iYj" data-bind="visible:$state.get() == 'upload'" xid="div21" __cid="cAv2iYj"> 
+          <div class="x-attachment-item x-item-upload cAv2iYj" data-bind="visible:$state.get() == 'upload'" xid="div22" __cid="cAv2iYj"/>
+        </div>  
+        <div class="x-attachment-cell cAv2iYj" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div23" __cid="cAv2iYj"> 
+          <div class="x-attachment-item x-item-remove cAv2iYj" data-bind="click:changeState.bind($object,'remove')" xid="div24" __cid="cAv2iYj"/>
+        </div>  
+        <div style="clear:both;" xid="div25" __cid="cAv2iYj" class="cAv2iYj"/>
+      </div> 
+    </div> 
+  </div>  
+  <input component="$model/UI2/system/components/justep/input/input" class="form-control cAv2iYj" xid="input2" data-bind="component:{ref:$model.bizData.ref(&quot;sDescription&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cAv2iYj"/>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cAv2iYj" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;bizData.save&quot;}" data-config="{&quot;label&quot;:&quot;保存&quot;}" __cid="cAv2iYj"> 
+    <i xid="i1" __cid="cAv2iYj" class="cAv2iYj"/>  
+    <span xid="span1" __cid="cAv2iYj" class="cAv2iYj">保存</span>
+  </a> 
+</div>

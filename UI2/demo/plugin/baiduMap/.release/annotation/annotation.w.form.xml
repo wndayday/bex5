@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/demo/plugin/template/demo.w" __id="id_1" design="device:m;" class="window window cEfauqm" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEfauqm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>null .baiduMap-top.cEfauqm{} .baiduMap-content.cEfauqm{bottom: 300px !important} .baiduMap-bottom.cEfauqm{height: 300px !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onModelConstruct:modelModelConstruct;onInactive:modelInactive;onLoad:modelLoad" __cid="cEfauqm" class="cEfauqm"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEfauqm-iosstatusbar cEfauqm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEfauqm"> 
+    <div class="x-panel-top cEfauqm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfauqm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEfauqm" xid="titleBar" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;覆盖物展示&quot;}" __cid="cEfauqm"> 
+        <div class="x-titlebar-left cEfauqm" __cid="cEfauqm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cEfauqm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cEfauqm"> 
+            <i xid="i6" class="icon-chevron-left cEfauqm" __cid="cEfauqm"/>  
+            <span xid="span6" __cid="cEfauqm" class="cEfauqm"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cEfauqm" __cid="cEfauqm">插件的名字</div>  
+        <div class="x-titlebar-right  cEfauqm" __cid="cEfauqm">
+          <div class="empty cEfauqm" __cid="cEfauqm"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEfauqm" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfauqm">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cEfauqm" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cEfauqm"> 
+        <div class="x-contents-content active cEfauqm" xid="demoContent" style="padding:10px;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cEfauqm"> 
+          <div class="x-panel x-full pcEfauqm-iosstatusbar cEfauqm" component="$model/UI2/system/components/justep/panel/panel" xid="panel2_8" xmlns:xui="http://www.justep.com/xui" xui:parent="demoContent" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEfauqm"> 
+            <div class="x-panel-content baiduMap-content cEfauqm" xid="content2_8" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfauqm"> 
+              <div style="padding:10px" xid="div1_8" xui:parent="demoContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"> 
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="addAnnotation" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addAnnotationClick" data-config="{&quot;label&quot;:&quot;添加大头针&quot;}" __cid="cEfauqm"> 
+                  <i xid="i1_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span1_8" __cid="cEfauqm" class="cEfauqm">添加大头针</span> 
+                </a>  
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="updateAnnoCoor" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:updateAnnoCoorClick" data-config="{&quot;label&quot;:&quot;调整大头针经纬度&quot;}" __cid="cEfauqm"> 
+                  <i xid="i1_4" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span1_4" __cid="cEfauqm" class="cEfauqm">调整大头针经纬度</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div5_2" __cid="cEfauqm" class="cEfauqm"> 
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="getAnnoCoor" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getAnnoCoorClick" data-config="{&quot;label&quot;:&quot;获取大头针经纬度&quot;}" __cid="cEfauqm"> 
+                  <i xid="i2_4" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span2_4" __cid="cEfauqm" class="cEfauqm">获取大头针经纬度</span> 
+                </a>  
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="removeAnno" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeAnnoClick" data-config="{&quot;label&quot;:&quot;移除大头针&quot;}" __cid="cEfauqm"> 
+                  <i xid="i2_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span2_8" __cid="cEfauqm" class="cEfauqm">移除大头针</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div1_2" __cid="cEfauqm" class="cEfauqm"> 
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="isExist" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:isExistClick" data-config="{&quot;label&quot;:&quot;判断是否存在&quot;}" __cid="cEfauqm"> 
+                  <i xid="i3_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span3_8" __cid="cEfauqm" class="cEfauqm">判断是否存在</span> 
+                </a>  
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="removeAllAnno" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeAllAnnoClick" data-config="{&quot;label&quot;:&quot;移除所有大头针&quot;}" __cid="cEfauqm"> 
+                  <i xid="i4_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span4_8" __cid="cEfauqm" class="cEfauqm">移除所有大头针</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div2_2" __cid="cEfauqm" class="cEfauqm"> 
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="addCircle" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addCircleClick" data-config="{&quot;label&quot;:&quot;添加圆&quot;}" __cid="cEfauqm"> 
+                  <i xid="i5_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span5_8" __cid="cEfauqm" class="cEfauqm">添加圆</span> 
+                </a>  
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="addLine" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addLineClick" data-config="{&quot;label&quot;:&quot;添加折线&quot;}" __cid="cEfauqm"> 
+                  <i xid="i6_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span6_8" __cid="cEfauqm" class="cEfauqm">添加折线</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div3_2" __cid="cEfauqm" class="cEfauqm"> 
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="addPolygon" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addPolygonClick" data-config="{&quot;label&quot;:&quot;添加多边形&quot;}" __cid="cEfauqm"> 
+                  <i xid="i7_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span7_8" __cid="cEfauqm" class="cEfauqm">添加多边形</span> 
+                </a>  
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="addArc" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addArcClick" data-config="{&quot;label&quot;:&quot;添加弧&quot;}" __cid="cEfauqm"> 
+                  <i xid="i8_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span8_8" __cid="cEfauqm" class="cEfauqm">添加弧</span> 
+                </a> 
+              </div>  
+              <div style="padding:10px" xid="div4_2" __cid="cEfauqm" class="cEfauqm"> 
+                <a class="btn btn-default cEfauqm" component="$model/UI2/system/components/justep/button/button" style="width:45%;" xid="removeOverlay" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:removeOverlayClick" data-config="{&quot;label&quot;:&quot;移除图形&quot;}" __cid="cEfauqm"> 
+                  <i xid="i9_8" __cid="cEfauqm" class="cEfauqm"/>  
+                  <span xid="span9_8" __cid="cEfauqm" class="cEfauqm">移除图形</span> 
+                </a> 
+              </div>  
+              <div xid="div6_2" __cid="cEfauqm" class="cEfauqm"/> 
+            </div>  
+            <div class="x-panel-bottom baiduMap-bottom cEfauqm" xid="bottom2_8" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfauqm"></div>  
+            <style __cid="cEfauqm" class="cEfauqm">.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>
+        </div>  
+        <div class="x-contents-content cEfauqm" xid="codeContent" style="padding:10px" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cEfauqm">
+          <div style="height:20px;" xid="div1_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p1_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">添加标注</p>
+          <div xid="addAnnotationClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p3_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">更新标注的经纬度</p>
+          <div xid="updateAnnoCoorClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p4_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">获取标注的经纬度</p>
+          <div xid="getAnnoCoorClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p5_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">判判断标注是否存在</p>
+          <div xid="isExistClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p6_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">移除指定标注</p>
+          <div xid="removeAnnoClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p7_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">移除所有标注</p>
+          <div xid="removeAllAnnoClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p8_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">添加圆形</p>
+          <div xid="addCircleClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p9_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">添加弧形</p>
+          <div xid="addArcClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p10_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">添加折线</p>
+          <div xid="addLineClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p11_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">添加多边形</p>
+          <div xid="addPolygonClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+          <p xid="p12_15" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm">移除指定图形</p>
+          <div xid="removeOverlayClick" xui:parent="codeContent" xui:update-mode="insert" __cid="cEfauqm" class="cEfauqm"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cEfauqm" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfauqm">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card  cEfauqm" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cEfauqm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cEfauqm" xid="demo" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:demoClick" data-config="{&quot;label&quot;:&quot;demo&quot;,&quot;target&quot;:&quot;demoContent&quot;}" __cid="cEfauqm"> 
+          <i xid="i2" __cid="cEfauqm" class="cEfauqm"/>  
+          <span xid="span2" __cid="cEfauqm" class="cEfauqm">demo</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cEfauqm" xid="code" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:codeClick" data-config="{&quot;label&quot;:&quot;code&quot;,&quot;target&quot;:&quot;codeContent&quot;}" __cid="cEfauqm"> 
+          <i xid="i3" __cid="cEfauqm" class="cEfauqm"/>  
+          <span xid="span3" __cid="cEfauqm" class="cEfauqm">code</span>
+        </a>
+      </div>
+    </div>
+    <style __cid="cEfauqm" class="cEfauqm">.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEfauqm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

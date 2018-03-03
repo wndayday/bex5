@@ -1,0 +1,12 @@
+/**
+	@name $UI/system/components/bootstrap/inputGroup/inputGroup
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description 
+	<xmp>
+		<b>使用场景</b>：添加多行输入框组;
+		<b>使用方法</b>：添加inputGroup组件,可以添加多个输入框，并且可以给输入框添加文字或按钮的前后缀;
+	</xmp>
+*/
+

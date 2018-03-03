@@ -1,0 +1,223 @@
+================================
+一、推送核心
+1.  推给谁(支持多种设备ios, android, weixin, qq, email, 短信)？ 
+      按设备标识、按标签、按地理位置、按组织
+2.  推什么？
+     文本、富文本（图片、声音、网址等等）
+3.  什么时候推？
+     实时、定时
+4.  推送方式是什么？
+     通知，消息
+5.  推送管理
+     定时推送的取消等等
+6.  推送查询统计
+
+二、推送REST API
+1. 推送消息到指定设备
+url:  [post]/push/terminal
+params: 
+	terminal_ids: 终端标识列表, 使用","分隔;
+	msg_type: 0表示消息, 1表示通知;
+	msg: 消息内容(参考消息格式)
+	push_time: 定期推送时间(绝对日期时间);
+	expires_time: 消息过期时间的相对时间, 从调用API的时间开始算起, 单位为秒
+return:
+	status: 0表示失败, 1表示成功
+	msg_id: 该条消息的id
+	error_code: 失败原因的编码
+	error: 失败原因
+
+2. 推送广播消息
+url: [post]/push/all
+params:
+	msg_type: 0表示消息, 1表示通知;
+	msg: 消息内容(参考消息格式)
+	push_time: 定期推送时间(绝对日期时间);
+	expires_time: 消息过期时间的相对时间, 从调用API的时间开始算起, 单位为秒
+return:
+	status: 0表示失败, 1表示成功
+	msg_id: 该条消息的id
+	error_code: 失败原因的编码
+	error: 失败原因
+
+3. 推送组播消息
+url: [post]/push/tags
+params:
+	tags: tag名称列表, 使用","分隔
+	msg_type: 0表示消息, 1表示通知;
+	msg: 消息内容(参考消息格式)
+	push_time: 定期推送时间(绝对日期时间);
+	expires_time: 消息过期时间的相对时间, 从调用API的时间开始算起, 单位为秒
+return:
+	status: 0表示失败, 1表示成功
+	msg_id: 该条消息的id
+	error_code: 失败原因的编码
+	error: 失败原因
+	
+4. 推送组织消息
+url: [post]/push/org
+params:
+	orgs: 组织标识列表, 使用","分隔, "*"表示所有组织
+	terminal_types: 设备类型列表, 如ios, andorid, weixin, 使用","分隔, "*"表示所有设备, 默认是所有设备
+	msg_type: 0表示消息, 1表示通知;
+	msg: 消息内容(参考消息格式)
+	push_time: 定期推送时间(绝对日期时间);
+	expires_time: 消息过期时间的相对时间, 从调用API的时间开始算起, 单位为秒
+return:
+	status: 0表示失败, 1表示成功
+	msg_id: 该条消息的id
+	error_code: 失败原因的编码
+	error: 失败原因
+	
+5. 查询消息的发送状态
+url: [post]/manager/query_msg_status
+params: 
+	msg_id: 消息标识
+return: 
+	total_num: 结果数量
+	data: [
+		{
+			msg_id: 消息标识
+			status: 0已发送, 1未发送, 2正在发送, 3失败
+			send_time: 消息实际推送时间
+		}
+	]
+	
+6. 查询标签发送记录
+url: [post]/manager/query_tag_msgs
+params: 
+	tag: 标签名称
+	start: 游标开始
+	limit: 记录数
+	range_start: 开始时间
+	range_end: 结束时间
+return: 
+	total_num: 结果数量
+	data: [
+		{
+			msg_id: 消息标识
+			msg: 消息内容
+			msg_type: 消息类型
+			status: 0已发送, 1未发送, 2正在发送, 3失败
+			send_time: 消息实际推送时间
+		}
+	]
+	
+7. 查询标签列表
+url: [post]/manager/query_tags
+params: 
+	start: 游标开始
+	limit: 记录数
+return:
+	total_num:
+	data: [
+		{
+			id:
+			tag:
+			info:
+			create_time:
+		}
+	]
+	
+8. 创建标签
+url: [post]/manager/create_tag
+params:
+	tag: 标签名称
+	info: 描述信息
+return:
+	status: 0失败, 1成功
+	error_code:
+	error:
+	
+9. 删除标签
+url: [post]/manager/del_tag
+params:
+	tag: 标签名称
+return:
+	status: 0失败, 1成功
+	error_code:
+	error:
+	
+10. 添加设备到标签组
+url: [post]/manager/terminal_add_tag
+params:
+	tag:
+	terminal_ids: 
+return:
+	status: 0失败, 1成功
+	error_code:
+	error:
+
+11. 将设备从标签组中删除
+url: [post]/manager/terminal_del_tag
+params:
+	tag:
+	terminal_ids: 
+return:
+	status: 0失败, 1成功
+	error_code:
+	error:
+	
+12. 查询标签组的设备数
+url: [post]/manager/terminal_num_with_tag
+params:
+	tag
+return:
+	num:	
+	
+	
+
+6. 查询定时任务列表(未执行)
+url: [post]/manager/query_timers
+params: 
+	start: 指定返回记录的起始索引位置, 默认为0
+	limit: 返回的记录条数
+return: 
+	total_num: 结果数量
+	data: [
+		{
+			msg_id: 消息标识
+			msg: 消息内容
+			msg_type: 消息类型
+			status: 0已发送, 1未发送, 2正在发送, 3失败
+			send_time: 消息实际推送时间
+		}
+	]
+
+7. 取消定时任务
+url: [post]/manager/cancel_timer
+params: 
+	msg_id: 消息标识
+return:
+	status: 0失败, 1成功
+	error_code:
+	error:
+
+	
+======推送服务API==========
+一. 推送API
+	1. 建立连接
+	2. 断开连接
+	3. 推送消息
+	4. 事件或回调: 消息到达
+	5. 事件或回调：失去连接
+
+二. 针对不同平台的SDK
+	1. push sdk for X5 App(js)
+
+	2. push sdk for android/ios native(java/object c)
+
+	3. push sdk for js
+	
+	4. push sdk for Java
+		
+		
+三. 消息推送的能力
+	1. 消息结构：
+		消息内容, 终端, 消息过期时间(相对或绝对), 定期推送时间, 接收者检索条件
+	2. 终端（通道）的增删改查能力；
+	3. 定时推送
+	4. 推送记录管理
+	5. 推送状态查看和取消
+	6. 定时推送任务查询和取消
+	7. 推送结果查询

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cbMBrQb" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbMBrQb" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/output/output,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cbMBrQb" class="cbMBrQb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYzq2En-iosstatusbar cbMBrQb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbMBrQb"> 
+    <div class="x-panel-content cbMBrQb" xid="content1" style="padding:20px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbMBrQb"> 
+      <table component="$model/UI2/system/components/justep/list/list" class="x-list table table-hover table-striped cbMBrQb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tableData&quot;}" __cid="cbMBrQb"> 
+        <thead xid="thead1" __cid="cbMBrQb" class="cbMBrQb"> 
+          <tr xid="tr1" __cid="cbMBrQb" class="cbMBrQb"> 
+            <th xid="default1" __cid="cbMBrQb" class="cbMBrQb">数据对象</th>  
+            <th xid="default1" __cid="cbMBrQb" class="cbMBrQb">操作</th> 
+          </tr> 
+        </thead>  
+        <tbody class="x-list-template x-min-height hide cbMBrQb" xid="listTemplate1" __cid="cbMBrQb" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <tr xid="tr2" __cid="cbMBrQb" class="cbMBrQb" data-bind="css:{success:$object==$model.tableData.getCurrentRow()}"> 
+            <td xid="td1" __cid="cbMBrQb" class="cbMBrQb"> 
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cbMBrQb" xid="output1" data-bind="component:{ref:ref(&quot;label&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cbMBrQb"/> 
+            </td>  
+            <td xid="td1" __cid="cbMBrQb" class="cbMBrQb"> 
+              <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cbMBrQb" xid="checkbox1" label="是否同步数据" checkedValue="true" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;true&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;是否同步数据&quot;}" data-bind="component:{ref:ref(&quot;isOrNotSync&quot;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cbMBrQb"> 
+                <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cbMBrQb" class="cbMBrQb"></input>  
+                <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cbMBrQb" class="cbMBrQb">是否同步数据</label> 
+              </span> 
+            </td> 
+          </tr> 
+        </tbody> 
+      </table>  
+      <p xid="p1" __cid="cbMBrQb" class="cbMBrQb" data-bind="visible:isOrNotShow">暂无数据。</p> 
+    </div>  
+    <div class="x-panel-bottom cbMBrQb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbMBrQb"/>  
+    <style __cid="cbMBrQb" class="cbMBrQb">.x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYzq2En-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

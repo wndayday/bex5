@@ -1,0 +1,14 @@
+/**
+	@name $UI/system/components/justep/labelEdit/labelToggle
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：带标签的开关按钮，如是否显示头像、是否接收消息、是否自动更新等是与否的情况下使用;
+		<b>使用方法</b>：拖入设计器中，分别设置开与关各自触发的动作;
+	</xmp>
+	
+*/
+
+

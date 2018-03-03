@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNRnuYb" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNRnuYb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.row.cNRnuYb .col.cNRnuYb{height: 46px; line-height: 46px; border-top: 1px solid rgb(223, 223, 223)} .row.cNRnuYb .col.cNRnuYb:last-child{border-bottom: 1px solid rgb(223, 223, 223)} .row.cNRnuYb .col.cNRnuYb .form-control.cNRnuYb{margin-top: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cNRnuYb" class="cNRnuYb"></div>  
+  <h4 xid="h41" __cid="cNRnuYb" class="cNRnuYb">表单-view模式表单
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNRnuYb" xid="showJSButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJSButtonClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cNRnuYb"> 
+      <i xid="i3" __cid="cNRnuYb" class="cNRnuYb"/>  
+      <span xid="span3" __cid="cNRnuYb" class="cNRnuYb">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNRnuYb" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cNRnuYb"> 
+      <i xid="i4" __cid="cNRnuYb" class="cNRnuYb"/>  
+      <span xid="span4" __cid="cNRnuYb" class="cNRnuYb">源码</span> 
+    </a> 
+  </h4>  
+  <h4 xid="h42" class="panel-body bg-primary text-center cNRnuYb" __cid="cNRnuYb">详细信息</h4>  
+  <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNRnuYb" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNRnuYb"> 
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col33" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup14" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col34" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel14" __cid="cNRnuYb">姓名：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col35" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input14" data-bind="component:{ref:$model.data.ref(&quot;tName&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col36" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup15" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col37" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel15" __cid="cNRnuYb">性别：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col38" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input15" data-bind="component:{ref:$model.data.ref(&quot;tSex&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col39" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup16" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col40" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel16" __cid="cNRnuYb">籍贯：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col41" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input16" data-bind="component:{ref:$model.data.ref(&quot;tNative&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col48" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup18" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col47" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel17" __cid="cNRnuYb">民族：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col46" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input19" data-bind="component:{ref:$model.data.ref(&quot;tNation&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col45" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup17" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col44" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel18" __cid="cNRnuYb">年龄：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col43" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input18" data-bind="component:{ref:$model.data.ref(&quot;tAge&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col42" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup19" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col49" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel19" __cid="cNRnuYb">职业：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col50" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input17" data-bind="component:{ref:$model.data.ref(&quot;tJob&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col66" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup24" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col65" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel23" __cid="cNRnuYb">学历：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col64" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input25" data-bind="component:{ref:$model.data.ref(&quot;tDegree&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col63" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup23" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col62" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel24" __cid="cNRnuYb">手机：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col61" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input24" data-bind="component:{ref:$model.data.ref(&quot;tPhone&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4 col-spliter-right cNRnuYb" xid="col60" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup25" __cid="cNRnuYb"> 
+        <div class="col-sm-4 text-right cNRnuYb" xid="col67" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel25" __cid="cNRnuYb">邮箱：</label> 
+        </div>  
+        <div class="col-sm-8 cNRnuYb" xid="col68" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input23" data-bind="component:{ref:$model.data.ref(&quot;tEmail&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 cNRnuYb" xid="col71" __cid="cNRnuYb"> 
+      <div class="form-group cNRnuYb" xid="formGroup26" __cid="cNRnuYb"> 
+        <div class="col-sm-2 text-center cNRnuYb" xid="col70" __cid="cNRnuYb"> 
+          <label class="control-label cNRnuYb" xid="controlLabel26" __cid="cNRnuYb">详细地址：</label> 
+        </div>  
+        <div class="col-sm-9 cNRnuYb" xid="col69" __cid="cNRnuYb"> 
+          <input class="form-control cNRnuYb" component="$model/UI2/system/components/justep/input/input" xid="input26" data-bind="component:{ref:$model.data.ref(&quot;tAddress&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNRnuYb"/> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

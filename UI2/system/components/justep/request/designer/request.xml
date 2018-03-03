@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<elements>
+	<element name="$UI/system/components/justep/request/request"
+		tag-name="div" icon="request.png" text="服务请求"
+		binding-component="$UI/system/components/justep/request/request"
+		design-view="web-designer" component-type="inVisibleComp"
+		parent-range="$UI/system/components/justep/window/window,$UI/system/components/justep/inVisibleCompContainer/inVisibleCompContainer" d_resiable="false" resizable="false">
+		<properties>
+			<property name="xid" text="编号" required="true" />
+			<property name="url" text="请求地址" required="true" />
+			<property name="type" text="请求类型" default-value="GET" editor-ref="requestType"/>
+			<property name="dataType" text="返回数据类型" default-value="json" editor-ref="requestDataType"/>
+			<property name="contentType" text="请求数据类型" default-value="application/x-www-form-urlencoded" editor-ref="requestContentType"/>
+			<property name="dataExpr" text="发送数据" editor-ref="jSExpressionEditor"/>
+			<property name="headersExpr" text="请求头" editor-ref="jSExpressionEditor"/>
+			<property name="async" text="异步" default-value="true" editor-ref="booleanList" data-type="boolean"/>
+			<property name="cache" text="缓存" editor-ref="booleanList" data-type="boolean"/>
+			<property name="processData" text="数据处理" default-value="true" editor-ref="booleanList" data-type="boolean" />
+			<property name="timeout" text="超时(毫秒)" data-type="integer"/>
+		</properties>
+		<events>
+			<event name="onBeforeRequest" text="请求前"/>
+			<event name="onSuccess" text="请求成功"/>
+			<event name="onError" text="请求失败"/>
+		</events>
+		<toolbar>			
+		</toolbar>
+		<property-editors><!--属性编辑器描述，可通过下拉列表或者弹出对话框来设置属性值，不这是默认问普通的文本输入框。 -->
+			<property-editor name="requestType" type="list">
+				<static-data value="GET,POST,PUT,DELETE"></static-data>
+			</property-editor>
+			<property-editor name="requestDataType" type="list">
+				<static-data value="json,xml,html,text,script,jsonp"></static-data>
+			</property-editor>
+			<property-editor name="requestContentType" type="list">
+				<static-data value="application/x-www-form-urlencoded,application/json,application/xml"></static-data>
+			</property-editor>
+		</property-editors>
+		<templates>
+			<template name="default"><![CDATA[ 
+			<div component="$UI/system/components/justep/request/request" class="hide">
+			</div>
+	  ]]></template>
+		</templates>
+	</element>
+</elements>

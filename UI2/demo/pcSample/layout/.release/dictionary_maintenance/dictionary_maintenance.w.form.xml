@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cABfANz" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cABfANz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/pagerBar/pagerBar,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/pagination/pagination,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/dataTables/dataTables,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.div.cABfANz{margin: 10px; margin-left: 20px; background-image: url($model/UI2/demo/pcSample/layout/img/1.jpg)} .li.cABfANz{margin-left: 10px} .btn.cABfANz{margin-left: 10px} .x-label-edit.cABfANz{margin-left: 15px; margin-right: 15px} .x-control-group.cABfANz{padding: 0; margin: 10px} .icon-android-close.cABfANz{font-size: 150%} .x-dialog.x-dialog-normal.cABfANz .x-dialog-body.cABfANz{padding: 0} .x-control-group.cABfANz{margin: 0; padding: 0} .icon-android-close.cABfANz{color: white} .btn-group.cABfANz{padding-left: 15px; margin: 0; border: 1px solid rgb(64, 164, 202); border-left: 0; border-right: 0; border-top: 0} thead.cABfANz{background-color: rgb(119, 187, 227)} .x-control-group-title.cABfANz{margin: 0} table.dataTable.cABfANz{margin-top: 0 !important; margin-bottom: 0 !important}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cABfANz" class="cABfANz"></div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cABfANz" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;字典列表&quot;}" __cid="cABfANz"> 
+    <div class="x-control-group-title cABfANz" xid="controlGroupTitle1" style="height:45px;" __cid="cABfANz"> 
+      <span xid="span1" __cid="cABfANz" class="cABfANz">title</span>
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cABfANz" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showjsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cABfANz"> 
+        <i xid="i9" __cid="cABfANz" class="cABfANz"/>  
+        <span xid="span11" __cid="cABfANz" class="cABfANz">js</span>
+      </a>
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cABfANz" xid="sourceBtn" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cABfANz"> 
+        <i xid="i8" __cid="cABfANz" class="cABfANz"/>  
+        <span xid="span10" __cid="cABfANz" class="cABfANz">源码</span>
+      </a>
+    </div>  
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list cABfANz" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dictionaryData&quot;}" __cid="cABfANz"> 
+      <ul class="x-list-template hide cABfANz" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cABfANz"> 
+        <li xid="li1" style="height:auto;width:294px;" class="pull-left li cABfANz" __cid="cABfANz">
+          <div xid="div1" style="height:163px;width:291px;" class="div cABfANz" __cid="cABfANz">
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cABfANz" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cABfANz"> 
+              <label class="x-label cABfANz" xid="label1" bind-text="label('fName')+':'" __cid="cABfANz"/>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cABfANz" xid="output1" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cABfANz"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cABfANz" xid="labelOutput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cABfANz"> 
+              <label class="x-label cABfANz" xid="label2" bind-text="label('fDescribe')+':'" __cid="cABfANz"/>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cABfANz" xid="output2" data-bind="component:{ref:ref('fDescribe'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cABfANz"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cABfANz" xid="labelOutput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cABfANz"> 
+              <label class="x-label cABfANz" xid="label3" bind-text="label('fType')+':'" __cid="cABfANz"/>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cABfANz" xid="output3" data-bind="component:{ref:ref('fType'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cABfANz"/>
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cABfANz" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.show'}" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;基本维护&quot;}" __cid="cABfANz"> 
+              <i xid="i1" class="icon-edit cABfANz" __cid="cABfANz"/>  
+              <span xid="span2" __cid="cABfANz" class="cABfANz">基本维护</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cABfANz" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'dataMaintenance.show'}" data-config="{&quot;icon&quot;:&quot;icon-android-note&quot;,&quot;label&quot;:&quot;数据维护&quot;}" __cid="cABfANz"> 
+              <i xid="i2" class="icon-android-note cABfANz" __cid="cABfANz"/>  
+              <span xid="span3" __cid="cABfANz" class="cABfANz">数据维护</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm cABfANz" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-trash-a&quot;,&quot;label&quot;:&quot;删除字典&quot;}" __cid="cABfANz"> 
+              <i xid="i3" class="icon-trash-a cABfANz" __cid="cABfANz"/>  
+              <span xid="span4" __cid="cABfANz" class="cABfANz">删除字典</span>
+            </a>
+          </div>
+        </li>
+      </ul> 
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cABfANz" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="cABfANz"> 
+    <div class="x-popOver-overlay cABfANz" xid="div2" __cid="cABfANz"/>  
+    <div class="x-popOver-content cABfANz" xid="div3" style="height:163px;width:291px;" __cid="cABfANz">
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cABfANz" xid="controlGroup2" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;基本信息维护&quot;}" __cid="cABfANz"> 
+        <div class="x-control-group-title cABfANz" xid="controlGroupTitle2" style="height:40px;background-color:#A7DFEB;" __cid="cABfANz"> 
+          <span xid="span5" __cid="cABfANz" class="cABfANz">title
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cABfANz" xid="button4" style="height:28px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cABfANz"> 
+              <i xid="i4" class="icon-android-close cABfANz" __cid="cABfANz"/>  
+              <span xid="span6" __cid="cABfANz" class="cABfANz"/>
+            </a>
+          </span>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon pull-right cABfANz" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cABfANz"> 
+            <i xid="i7" class="icon-android-close cABfANz" __cid="cABfANz"/>  
+            <span xid="span9" __cid="cABfANz" class="cABfANz"/>
+          </a>
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cABfANz" xid="labelInput1" style="width:241px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cABfANz"> 
+          <label class="x-label cABfANz" xid="label4" bind-text="dictionaryData.label('fName')+':'" __cid="cABfANz"/>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cABfANz" xid="input1" data-bind="component:{ref:dictionaryData.ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cABfANz"/>
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cABfANz" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cABfANz"> 
+          <label class="x-label cABfANz" xid="label5" bind-text="dictionaryData.label('fDescribe')+':'" __cid="cABfANz"/>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cABfANz" xid="input2" data-bind="component:{ref:dictionaryData.ref('fDescribe'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cABfANz"/>
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cABfANz" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cABfANz"> 
+          <label class="x-label cABfANz" xid="label6" bind-text="dictionaryData.label('fType')+':'" __cid="cABfANz"/>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cABfANz" xid="input3" data-bind="component:{ref:dictionaryData.ref('fType'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cABfANz"/>
+        </div>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cABfANz" xid="button5" style="background-color:#F0F0F0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cABfANz"> 
+          <i xid="i5" __cid="cABfANz" class="cABfANz"/>  
+          <span xid="span7" __cid="cABfANz" class="cABfANz">确定</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cABfANz" xid="button6" style="background-color:#F0F0F0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cABfANz"> 
+          <i xid="i6" __cid="cABfANz" class="cABfANz"/>  
+          <span xid="span8" __cid="cABfANz" class="cABfANz">取消</span>
+        </a> 
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cABfANz" xid="dataMaintenance" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="cABfANz"> 
+    <div class="x-popOver-overlay cABfANz" xid="div6" __cid="cABfANz"/>  
+    <div class="x-popOver-content cABfANz" xid="div7" style="height:80%;width:80%;" __cid="cABfANz">
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class=" x-control-group cABfANz" xid="controlGroup4" style="width:100%;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;数据维护&quot;}" __cid="cABfANz"> 
+        <div class="x-control-group-title cABfANz" xid="controlGroupTitle4" style="background-color:#298CC7;height:44px;" __cid="cABfANz"> 
+          <span xid="span22" __cid="cABfANz" class="cABfANz">title</span>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cABfANz" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'dataMaintenance.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cABfANz"> 
+            <i xid="i18" class="icon-android-close cABfANz" __cid="cABfANz"/>  
+            <span xid="span20" __cid="cABfANz" class="cABfANz"/>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cABfANz" xid="button11" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showDataMaintenanceSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cABfANz"> 
+            <i xid="i10" __cid="cABfANz" class="cABfANz"/>  
+            <span xid="span12" __cid="cABfANz" class="cABfANz">源码</span>
+          </a>
+        </div>  
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group cABfANz" xid="buttonGroup1" style="width:100%;background-color:#77BBE3;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cABfANz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link text-warning btn1 cABfANz" xid="add" style="width:80px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;新增&quot;}" __cid="cABfANz"> 
+            <i xid="i17" class="icon-android-add cABfANz" __cid="cABfANz"/>  
+            <span xid="span21" __cid="cABfANz" class="cABfANz">新增</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link text-warning btn1 cABfANz" xid="edit" style="width:80px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;修改&quot;}" __cid="cABfANz"> 
+            <i xid="i16" class="icon-edit cABfANz" __cid="cABfANz"/>  
+            <span xid="span18" __cid="cABfANz" class="cABfANz">修改</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link text-warning btn1 cABfANz" xid="delete" style="width:80px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-trash-b&quot;,&quot;label&quot;:&quot;删除&quot;}" __cid="cABfANz"> 
+            <i xid="i15" class="icon-trash-b cABfANz" __cid="cABfANz"/>  
+            <span xid="span19" __cid="cABfANz" class="cABfANz">删除</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link text-warning btn1 cABfANz" xid="save" style="width:80px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;保存&quot;}" __cid="cABfANz"> 
+            <i xid="i14" class="icon-android-checkmark cABfANz" __cid="cABfANz"/>  
+            <span xid="span17" __cid="cABfANz" class="cABfANz">保存</span>
+          </a> 
+        </div>  
+        <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" rowActiveClass="active" class="table table-hover table-striped cABfANz" xid="dataTables3" data="recordData" ordering="false" data-config="{&quot;columns&quot;:[{&quot;sName&quot;:&quot;fID&quot;,&quot;xid&quot;:&quot;column10&quot;},{&quot;sName&quot;:&quot;fValue&quot;,&quot;xid&quot;:&quot;column11&quot;},{&quot;sName&quot;:&quot;fName&quot;,&quot;xid&quot;:&quot;column12&quot;},{&quot;sName&quot;:&quot;fRemark&quot;,&quot;xid&quot;:&quot;column13&quot;},{&quot;sName&quot;:&quot;fOrder&quot;,&quot;xid&quot;:&quot;column14&quot;}],&quot;data&quot;:&quot;recordData&quot;,&quot;flexibleWidth&quot;:true,&quot;ordering&quot;:false,&quot;rowActiveClass&quot;:&quot;active&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" __cid="cABfANz"/>  
+        <div component="$model/UI2/system/components/justep/pagerBar/pagerBar" class="x-pagerbar container-fluid cABfANz" xid="pagerBar2" data-bind="component:{name:'$model/UI2/system/components/justep/pagerBar/pagerBar'}" data-config="{&quot;data&quot;:&quot;recordData&quot;}" __cid="cABfANz"> 
+          <div class="row cABfANz" xid="div9" __cid="cABfANz"> 
+            <div class="col-sm-3 cABfANz" xid="div10" __cid="cABfANz"> 
+              <div class="x-pagerbar-length cABfANz" xid="div11" __cid="cABfANz"> 
+                <label component="$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect" class="x-pagerlimitselect cABfANz" xid="pagerLimitSelect2" data-bind="component:{name:'$model/UI2/system/components/justep/pagerLimitSelect/pagerLimitSelect'}" data-config="{&quot;data&quot;:&quot;recordData&quot;}" __cid="cABfANz"> 
+                  <span xid="span13" __cid="cABfANz" class="cABfANz">显示</span>  
+                  <select component="$model/UI2/system/components/justep/select/select" class="form-control input-sm cABfANz" xid="select2" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" __cid="cABfANz"> 
+                    <option value="10" xid="default6" __cid="cABfANz" class="cABfANz">10</option>  
+                    <option value="20" xid="default7" __cid="cABfANz" class="cABfANz">20</option>  
+                    <option value="50" xid="default8" __cid="cABfANz" class="cABfANz">50</option>  
+                    <option value="100" xid="default9" __cid="cABfANz" class="cABfANz">100</option>
+                  </select>  
+                  <span xid="span14" __cid="cABfANz" class="cABfANz">条</span>
+                </label> 
+              </div> 
+            </div>  
+            <div class="col-sm-3 cABfANz" xid="div12" __cid="cABfANz"> 
+              <div class="x-pagerbar-info cABfANz" xid="div13" __cid="cABfANz">当前显示0条，共0条</div>
+            </div>  
+            <div class="col-sm-6 cABfANz" xid="div14" __cid="cABfANz"> 
+              <div class="x-pagerbar-pagination cABfANz" xid="div15" __cid="cABfANz"> 
+                <ul class="pagination cABfANz" component="$model/UI2/system/components/bootstrap/pagination/pagination" xid="pagination2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/pagination/pagination'}" data-config="{&quot;data&quot;:&quot;recordData&quot;}" __cid="cABfANz"> 
+                  <li class="prev cABfANz" xid="li3" __cid="cABfANz"> 
+                    <a href="#" xid="a3" __cid="cABfANz" class="cABfANz"> 
+                      <span aria-hidden="true" xid="span15" __cid="cABfANz" class="cABfANz">«</span>  
+                      <span class="sr-only cABfANz" xid="span16" __cid="cABfANz">Previous</span>
+                    </a> 
+                  </li>  
+                  <li class="next cABfANz" xid="li4" __cid="cABfANz"> 
+                    <a href="#" xid="a4" __cid="cABfANz" class="cABfANz"> 
+                      <span aria-hidden="true" xid="span17" __cid="cABfANz" class="cABfANz">»</span>  
+                      <span class="sr-only cABfANz" xid="span18" __cid="cABfANz">Next</span>
+                    </a> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+  </div>
+</div>

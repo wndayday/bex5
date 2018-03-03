@@ -1,0 +1,69 @@
+define(function(require) {
+	var $ = require("jquery");
+	var justep = require("$UI/system/lib/justep");
+	require("./jquery.iframe");
+	var biz = require('$UI/system/lib/biz');
+	
+	var Model = function() {
+		this.iframePromise = null;
+		this.iframe = null;
+		this.callParent();
+	};
+	
+	Model.prototype.modelLoad = function(event){
+		if(justep.Browser.isIOS) $(this.getRootNode()).css({overflow:'auto'});//ios特殊支持,其他系统内部滚动条
+		//创建iframe打开UI的功能
+		var self = this;
+		var context = this.getContext();
+		var url = context.getRequestParameter("iframeFunc");
+		if(url){
+			//hcr 放为是外部系统，不需要添加参数
+			if ((url.indexOf("http://")!=0) && (url.indexOf("https://")!=0)){ 
+				url = decodeURIComponent(url);
+				var urlObj = new justep.URL(url);
+				if(!urlObj.getParam('language')) urlObj.setParam('language',context.getLanguage());  
+				if(!urlObj.getParam('bsessionid')) urlObj.setParam('bsessionid',context.getBSessionID());  
+				if(!urlObj.getParam('process')) urlObj.setParam('process',context.getProcess());  
+				if(!urlObj.getParam('activity')) urlObj.setParam('activity',context.getActivity());  
+				if(!urlObj.getParam('executor')) urlObj.setParam('executor',context.getExecutor());  
+				if(!urlObj.getParam('executeContext')) urlObj.setParam('executeContext',context.getExecuteContext());  
+				url = urlObj.toString();		
+			}
+			var dtd = $.Deferred();
+			this.iframePromise = dtd.promise();
+			var frame = $('<iframe frameBorder=0 class="portal-frame"></iframe>');
+			this.iframe = frame[0];
+			$(this.getRootNode()).append(frame);
+			frame.src(require.toUrl(url), function(iframe, duration){
+				dtd.resolve({
+					iframe:this
+				});				
+				//增加5.2.7门户接口
+				try{
+					this.contentWindow.WindowProxy = {
+							close: function(){
+								justep.Shell.closePage();
+							},
+							addSubPage: function(){},
+							removeSubPage: function(){}
+					};
+				}catch(err){/*跨域屏蔽错误*/};
+			});
+		}
+	};
+	
+	Model.prototype.modelActive = function(event){
+		if(this.iframePromise){
+			this.iframePromise.then(function(data){
+				var iframe = data.iframe;
+				try{
+					//兼容5.2.7触发页面中的tabActive
+					if($.isFunction(iframe.contentWindow.tabActive))
+						iframe.contentWindow.tabActive();
+				}catch(err){/*跨域屏蔽错误*/};
+			});
+		}
+	};
+	
+	return Model;
+});

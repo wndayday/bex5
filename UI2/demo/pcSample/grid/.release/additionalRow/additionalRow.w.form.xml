@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cqIzm2q" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqIzm2q" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqIzm2q" class="cqIzm2q"/>  
+  <h3 xid="h31" __cid="cqIzm2q" class="cqIzm2q">表格跨列附加行
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqIzm2q" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cqIzm2q"> 
+      <i xid="i1" __cid="cqIzm2q" class="cqIzm2q"/>  
+      <span xid="span1" __cid="cqIzm2q" class="cqIzm2q">js</span>
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cqIzm2q" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cqIzm2q"> 
+      <i xid="i2" __cid="cqIzm2q" class="cqIzm2q"/>  
+      <span xid="span2" __cid="cqIzm2q" class="cqIzm2q">源码</span>
+    </a>
+  </h3>
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cqIzm2q" xid="bankGrid" data="bankData" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;hidden&quot;:true,&quot;name&quot;:&quot;id&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;name&quot;:&quot;bank&quot;,&quot;xid&quot;:&quot;column2&quot;},{&quot;name&quot;:&quot;creditCard&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;name&quot;:&quot;billingDate&quot;,&quot;xid&quot;:&quot;column4&quot;},{&quot;name&quot;:&quot;repaymentDate&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;name&quot;:&quot;cash&quot;,&quot;xid&quot;:&quot;column6&quot;}],&quot;data&quot;:&quot;bankData&quot;,&quot;height&quot;:&quot;auto&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:bankGridCellRender;onReload:bankGridReload" __cid="cqIzm2q"/> 
+</div>

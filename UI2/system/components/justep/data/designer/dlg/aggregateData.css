@@ -1,0 +1,24 @@
+li > .btn-default{
+	background-color:transparent;
+	color:black;
+}
+li:first > .btn-default{
+	background-color:#3399f3;
+	color:#fff ;
+}
+
+.success{
+	background-color:#3399f3 !important;
+	color:#fff !important;
+	
+}
+.promptStyle{
+	padding:8px;
+	width:160px;
+	height:120px;
+	border:dashed 1px blue;
+	background-color:yellow;
+	position:absolute;
+	visibility: hidden;
+	left:550px;
+}

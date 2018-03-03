@@ -1,0 +1,14 @@
+/**
+	@name $UI/system/components/bootstrap/media/media
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：页面需要呈现图文混排的效果;
+		<b>使用方法</b>：添加media组件，指定要展示的图片和描述文字;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/

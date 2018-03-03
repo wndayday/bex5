@@ -1,0 +1,12 @@
+/**
+	@name $UI/system/components/justep/toolBar/toolBar
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@extendurl 
+	@description
+	<xmp>
+		<b>使用场景</b>：在页面上集中添加一系列的操作，例如数据组件的添加、删除、查找、刷新等;
+		<b>使用方法</b>：添加toolBar组件，并给toolBar组件添加常用的操作;
+	</xmp>
+	@model UI2
+*/	

@@ -1,0 +1,8 @@
+.x-request-designer{
+	z-index:1000;
+	width:24px;
+	height:24px;
+	position: absolute;
+	background: transparent url(../img/request.png) no-repeat;
+}
+

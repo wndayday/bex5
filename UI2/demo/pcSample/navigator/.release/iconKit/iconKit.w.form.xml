@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ceMBzIj" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceMBzIj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceMBzIj" class="ceMBzIj"></div>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right ceMBzIj" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="ceMBzIj"> 
+    <i xid="ii29" __cid="ceMBzIj" class="ceMBzIj"/>  
+    <span xid="span900" __cid="ceMBzIj" class="ceMBzIj">源码</span> 
+  </a>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right ceMBzIj" xid="js" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="ceMBzIj"> 
+    <i xid="i2" __cid="ceMBzIj" class="ceMBzIj"/>  
+    <span xid="span2" __cid="ceMBzIj" class="ceMBzIj">js</span> 
+  </a>  
+  <div xid="div3" style="margin-top:50px;text-align:justify;border-width:1px;border-color:#00FFFF;overflow:scroll;overflow-x:hidden;height:363px;width:321px;color:#F3F3F3;background-color:#F3F3F3;" class="pull-right bg-info ceMBzIj" bind-visible=" $model.statusData.val(&quot;status&quot;)==1" __cid="ceMBzIj"> 
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceMBzIj" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceMBzIj"> 
+      <div class="x-col x-col-fixed ceMBzIj" xid="col1" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/center.jpg" alt="" xid="image1" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div>  
+      <div class="x-col x-col-fixed ceMBzIj" xid="col2" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/favorite.jpg" alt="" xid="image2" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div>  
+      <div class="x-col x-col-fixed ceMBzIj" xid="col3" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/search.jpg" alt="" xid="image3" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceMBzIj" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceMBzIj"> 
+      <div class="x-col x-col-fixed ceMBzIj" xid="col4" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/doc.jpg" alt="" xid="image4" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div>  
+      <div class="x-col x-col-fixed ceMBzIj" xid="col5" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/help.jpg" alt="" xid="image5" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div>  
+      <div class="x-col x-col-fixed ceMBzIj" xid="col6" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/store.jpg" alt="" xid="image6" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceMBzIj" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceMBzIj"> 
+      <div class="x-col x-col-fixed ceMBzIj" xid="col7" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/adnexa.jpg" alt="" xid="image7" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div>  
+      <div class="x-col x-col-fixed ceMBzIj" xid="col8" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/message.jpg" alt="" xid="image8" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div>  
+      <div class="x-col x-col-fixed ceMBzIj" xid="col9" style="width:auto;" __cid="ceMBzIj"> 
+        <img src="$model/UI2/demo/pcSample/navigator/img/recycle.jpg" alt="" xid="image9" __cid="ceMBzIj" class="ceMBzIj"/> 
+      </div> 
+    </div> 
+  </div>  
+  <div xid="kitDiv" style="margin-top: 50px; height:150px;width:25px;padding-top:20px;background-color:#3366FF;color:#FFFFFF;" class="pull-right bg-info center-block ceMBzIj" align="center" bind-click="kitDivClick" __cid="ceMBzIj"> 
+    <a xid="a1" style="width:10px;color:#FFFFFF;" __cid="ceMBzIj" class="ceMBzIj">便捷工具箱</a> 
+  </div> 
+</div>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czua2Av" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czua2Av" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-dialog.x-dialog-normal.czua2Av .x-dialog-body.czua2Av{padding: 0} .div.czua2Av{background: url($model/UI2/demo/pcSample/layout/img/1.jpg)} .hr.czua2Av{margin: 3px 0; border-top: 1px solid rgb(130, 128, 128)} .image.czua2Av{margin-left: 4px} .div2.czua2Av{margin-left: 30px; padding-top: 50px} .div3.czua2Av{margin-left: 30px; padding-top: 80px} .div4.czua2Av{margin-top: 20px} .x-label-edit.czua2Av{margin-left: 30px} .label1.czua2Av{margin: 10px 0 0 10px} .x-output.czua2Av{margin-top: 10px; padding: 0 0 0 10px} .btn1.czua2Av{background-color: rgb(140, 172, 221)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czua2Av" class="czua2Av"></div>  
+  <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar clearfix center-block czua2Av" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;操作用户信息&quot;}" __cid="czua2Av"> 
+    <div class="x-titlebar-left czua2Av" xid="left2" __cid="czua2Av"/>  
+    <div class="x-titlebar-title czua2Av" xid="title2" __cid="czua2Av">操作用户信息</div>  
+    <div class="x-titlebar-right  czua2Av" xid="right2" __cid="czua2Av">
+      <div class="empty czua2Av" __cid="czua2Av"/>
+    </div>
+  </div>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czua2Av" xid="open" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.show'}" data-config="{&quot;label&quot;:&quot;打开用户信息&quot;}" __cid="czua2Av"> 
+    <i xid="i1" __cid="czua2Av" class="czua2Av"/>  
+    <span xid="span1" __cid="czua2Av" class="czua2Av">打开用户信息</span>
+  </a>  
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czua2Av" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="czua2Av"> 
+    <i xid="i2" __cid="czua2Av" class="czua2Av"/>  
+    <span xid="span3" __cid="czua2Av" class="czua2Av">js</span>
+  </a>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czua2Av" xid="sourceBtn" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="czua2Av"> 
+    <i xid="i3" __cid="czua2Av" class="czua2Av"/>  
+    <span xid="span4" __cid="czua2Av" class="czua2Av">源码</span>
+  </a>
+  <div xid="div1" style="height:30px;" class="div1 czua2Av" __cid="czua2Av">
+    <span xid="span2" __cid="czua2Av" class="czua2Av">可用于首页弹出用户信息进行编辑。</span>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver czua2Av" xid="popOver1" style="height:auto;width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="czua2Av"> 
+    <div class="x-popOver-overlay czua2Av" xid="div2" __cid="czua2Av"/>  
+    <div class="x-popOver-content czua2Av" xid="div3" __cid="czua2Av">
+      <div xid="div4" style="height:320px;width:380px;" class="div czua2Av" __cid="czua2Av"> 
+        <div xid="div8" style="height:auto;width:110px;" class="pull-left div2 czua2Av" __cid="czua2Av"> 
+          <label xid="label3" __cid="czua2Av" class="czua2Av">用户信息</label>  
+          <hr xid="hr1" class="hr czua2Av" style="width:100%;" __cid="czua2Av"/>  
+          <img src="$model/UI2/demo/pcSample/layout/img/2.jpg" alt="" xid="image1" style="height:145px;width:100px;" class="image czua2Av" __cid="czua2Av"/>
+        </div>  
+        <div xid="div9" class="pull-right div3 czua2Av" style="height:220px;width:210px;" __cid="czua2Av"> 
+          <label xid="label9" bind-text="userData.label('fUserName')+':'" style="width:60px;height:20px;" class="pull-left label1 czua2Av" __cid="czua2Av">label</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left czua2Av" xid="output5" style="width:85px;" data-bind="component:{ref:userData.ref('fUserName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czua2Av"/>  
+          <label xid="label10" bind-text="userData.label('fPassword')+':'" style="width:60px;height:20px;" class="pull-left label1 czua2Av" __cid="czua2Av">label</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left input5 czua2Av" xid="input5" style="width:85px;height:30px;" bind-visible=" $model.statusData.val(&quot;edit&quot;)==1" data-bind="component:{ref:userData.ref('fPassword'),name:'$model/UI2/system/components/justep/input/input'}" __cid="czua2Av"/>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left czua2Av" xid="output6" style="width:85px;" bind-visible=" $model.statusData.val(&quot;edit&quot;) ==0" data-bind="component:{ref:userData.ref('fPassword'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czua2Av"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right czua2Av" xid="edit" bind-visible=" $model.statusData.val(&quot;edit&quot;) ==0" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:editClick" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="czua2Av"> 
+            <i xid="i8" class="icon-edit czua2Av" __cid="czua2Av"/>  
+            <span xid="span8" __cid="czua2Av" class="czua2Av"/>
+          </a>  
+          <label xid="label11" bind-text="userData.label('fName')+':'" style="width:60px;height:20px;" class="pull-left label1 czua2Av" __cid="czua2Av">label</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left czua2Av" xid="output7" style="width:85px;" data-bind="component:{ref:userData.ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czua2Av"/>  
+          <label xid="label12" bind-text="userData.label('fRemark')+':'" style="width:60px;height:20px;" class="pull-left label1 czua2Av" __cid="czua2Av">label</label>  
+          <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left czua2Av" xid="output8" style="width:85px;" data-bind="component:{ref:userData.ref('fRemark'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czua2Av"/>
+        </div>  
+        <div xid="div12" style="height:46px;width:214px;" class="pull-right div4 czua2Av" __cid="czua2Av"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn1 btn btn-link czua2Av" xid="sure" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sureClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="czua2Av"> 
+            <i xid="i14" __cid="czua2Av" class="czua2Av"/>  
+            <span xid="span14" __cid="czua2Av" class="czua2Av">确定</span>
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn1 btn btn-link czua2Av" xid="cancel" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="czua2Av"> 
+            <i xid="i15" __cid="czua2Av" class="czua2Av"/>  
+            <span xid="span15" __cid="czua2Av" class="czua2Av">取消</span>
+          </a> 
+        </div> 
+      </div>
+    </div>
+  </div> 
+</div>

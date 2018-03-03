@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crmm2Yf" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crmm2Yf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-col.crmm2Yf{border: 1px rgb(204, 204, 204) solid} .form-control.crmm2Yf{width: 50%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="crmm2Yf" class="crmm2Yf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group crmm2Yf" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;同步编辑&quot;}" __cid="crmm2Yf"> 
+    <div class="x-control-group-title crmm2Yf" xid="controlGroupTitle1" __cid="crmm2Yf"> 
+      <span xid="span1" __cid="crmm2Yf" class="crmm2Yf">同步编辑</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crmm2Yf" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="crmm2Yf"> 
+      <i xid="i2" __cid="crmm2Yf" class="crmm2Yf"/>  
+      <span xid="span3" __cid="crmm2Yf" class="crmm2Yf">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crmm2Yf" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="crmm2Yf"> 
+      <i xid="i4" __cid="crmm2Yf" class="crmm2Yf"/>  
+      <span xid="span4" __cid="crmm2Yf" class="crmm2Yf">源码</span> 
+    </a>  
+    <div class="form-horizontal container-fluid crmm2Yf" component="$model/UI2/system/components/bootstrap/form/form" xid="form2" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="crmm2Yf"> 
+      <fieldset xid="fieldset1" class="css1 crmm2Yf" __cid="crmm2Yf"> 
+        <legend xid="default11" __cid="crmm2Yf" class="crmm2Yf">基本使用</legend>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center crmm2Yf" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"/>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col32" __cid="crmm2Yf"> 
+            <label xid="label15" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('uName')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col34" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input1" data-bind="component:{ref:userData.ref('uName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col29" __cid="crmm2Yf"> 
+            <label xid="label3" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('name')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col28" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input2" data-bind="component:{ref:userData.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col22" __cid="crmm2Yf"> 
+            <label xid="label12" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('pass')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col21" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input3" data-bind="component:{ref:userData.ref('pass'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col23" __cid="crmm2Yf"> 
+            <label xid="label11" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('truePwd')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col19" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input4" data-bind="component:{ref:userData.ref('truePwd'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col26" __cid="crmm2Yf"> 
+            <label xid="label10" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('Hobby')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col25" __cid="crmm2Yf"> 
+            <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group crmm2Yf" xid="checkboxGroup1" data-bind="component:{ref:userData.ref('Hobby'),name:'$model/UI2/system/components/justep/select/checkboxGroup'},foreach:{data:hobbyData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="crmm2Yf"> 
+              <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox crmm2Yf" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('hobby'),value:ref('hobby')}" __cid="crmm2Yf">  
+                <input type="checkbox" __cid="crmm2Yf" class="crmm2Yf"/>  
+                <label __cid="crmm2Yf" class="crmm2Yf"/> 
+              </span> 
+            </span> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col27" __cid="crmm2Yf"> 
+            <label xid="label3" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('sex')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col20" __cid="crmm2Yf"> 
+            <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group crmm2Yf" xid="radioGroup1" data-bind="component:{ref:userData.ref('sex'),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:sexData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="crmm2Yf"> 
+              <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio crmm2Yf" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('sex'),value:ref('sex')}" __cid="crmm2Yf">  
+                <input type="radio" __cid="crmm2Yf" class="crmm2Yf"/>  
+                <label __cid="crmm2Yf" class="crmm2Yf"/> 
+              </span> 
+            </span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col20" __cid="crmm2Yf"> 
+            <label xid="label14" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('age')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col21" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input5" data-bind="component:{ref:userData.ref('age'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col19" __cid="crmm2Yf"> 
+            <label xid="label13" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('email')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col24" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input6" data-bind="component:{ref:userData.ref('email'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col24" __cid="crmm2Yf"> 
+            <label xid="label10" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('tel')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col25" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input7" data-bind="component:{ref:userData.ref('tel'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col23" __cid="crmm2Yf"> 
+            <label xid="label11" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('postcode')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col22" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input8" data-bind="component:{ref:userData.ref('postcode'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col28" __cid="crmm2Yf"> 
+            <label xid="label12" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('QQ')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col29" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input9" data-bind="component:{ref:userData.ref('QQ'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col27" __cid="crmm2Yf"> 
+            <label xid="label13" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('address')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col26" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input10" data-bind="component:{ref:userData.ref('address'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col32" __cid="crmm2Yf"> 
+            <label xid="label14" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('col12')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col33" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input11" data-bind="component:{ref:userData.ref('col12'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div>  
+          <div class="x-col x-col-20 crmm2Yf" xid="col31" __cid="crmm2Yf"> 
+            <label xid="label15" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('col13')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col30" __cid="crmm2Yf"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control crmm2Yf" xid="input12" data-bind="component:{ref:userData.ref('col13'),name:'$model/UI2/system/components/justep/input/input'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col x-col-20 crmm2Yf" xid="col59" __cid="crmm2Yf"> 
+            <label xid="label28" class="pull-right crmm2Yf" __cid="crmm2Yf" data-bind="text:userData.label('desc')">label</label> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col58" __cid="crmm2Yf"> 
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control crmm2Yf" xid="textarea2" data-bind="component:{ref:userData.ref('desc'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="crmm2Yf"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row crmm2Yf" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crmm2Yf"> 
+          <div class="x-col crmm2Yf" xid="col60" __cid="crmm2Yf"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right crmm2Yf" xid="submit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="crmm2Yf"> 
+              <i xid="i3" __cid="crmm2Yf" class="crmm2Yf"/>  
+              <span xid="span26" __cid="crmm2Yf" class="crmm2Yf">提交</span> 
+            </a> 
+          </div>  
+          <div class="x-col crmm2Yf" xid="col61" __cid="crmm2Yf"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link crmm2Yf" xid="regestBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regestBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="crmm2Yf"> 
+              <i xid="i3" __cid="crmm2Yf" class="crmm2Yf"/>  
+              <span xid="span27" __cid="crmm2Yf" class="crmm2Yf">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </fieldset> 
+    </div> 
+  </div> 
+</div>

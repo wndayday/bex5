@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7F7zEf" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7F7zEf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.window.c7F7zEf{overflow-y: hidden}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c7F7zEf" class="c7F7zEf"/>  
+  <xhtml:table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered c7F7zEf" xid="employGrid" data="employeeData" style="border-color:#FF9900;" showRowNumber="true" multiselect="true" data-config="{&quot;altRows&quot;:true,&quot;colModel&quot;:[{&quot;disableEditorDisplay&quot;:false,&quot;editable&quot;:false,&quot;multiRowEditor&quot;:false,&quot;name&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column11&quot;},{&quot;disableEditorDisplay&quot;:false,&quot;editable&quot;:false,&quot;multiRowEditor&quot;:false,&quot;name&quot;:&quot;sex&quot;,&quot;xid&quot;:&quot;column12&quot;},{&quot;disableEditorDisplay&quot;:false,&quot;editable&quot;:false,&quot;multiRowEditor&quot;:false,&quot;name&quot;:&quot;dept&quot;,&quot;xid&quot;:&quot;column13&quot;},{&quot;disableEditorDisplay&quot;:false,&quot;editable&quot;:false,&quot;multiRowEditor&quot;:false,&quot;name&quot;:&quot;enducation&quot;,&quot;xid&quot;:&quot;column14&quot;}],&quot;data&quot;:&quot;employeeData&quot;,&quot;editors&quot;:&quot;0D911C503C8B483AB1006530A04E5476&quot;,&quot;height&quot;:&quot;300&quot;,&quot;hiddenCaptionbar&quot;:true,&quot;multiselect&quot;:true,&quot;rownumbers&quot;:true,&quot;width&quot;:&quot;100%&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" __cid="c7F7zEf"/>  
+  <div component="$model/UI2/system/components/justep/row/row" class="x-row c7F7zEf" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7F7zEf"> 
+    <div class="x-col c7F7zEf" xid="col4" __cid="c7F7zEf"/>  
+    <div class="x-col c7F7zEf" xid="col3" __cid="c7F7zEf">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link center-block c7F7zEf" xid="back" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backClick" data-config="{&quot;label&quot;:&quot;返回&quot;}" __cid="c7F7zEf"> 
+        <i xid="i1" __cid="c7F7zEf" class="c7F7zEf"/>  
+        <span xid="span1" __cid="c7F7zEf" class="c7F7zEf">返回</span>
+      </a>
+    </div>
+    <div class="x-col c7F7zEf" xid="col5" __cid="c7F7zEf"/>
+  </div>
+  <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" xid="0D911C503C8B483AB1006530A04E5476" class="x-grid-editors c7F7zEf" bind-with="comp('employGrid').getCellEditorsBindingObject()" __cid="c7F7zEf">
+    <xhtml:div xid="editor7" col="name" __cid="c7F7zEf" class="c7F7zEf"> 
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin c7F7zEf" xid="input6" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true}" __cid="c7F7zEf"/>
+    </xhtml:div>
+    <xhtml:div xid="editor8" col="sex" __cid="c7F7zEf" class="c7F7zEf"> 
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin c7F7zEf" xid="input7" data-bind="component:{ref:ref('sex'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true}" __cid="c7F7zEf"/>
+    </xhtml:div>
+    <xhtml:div xid="editor9" col="dept" __cid="c7F7zEf" class="c7F7zEf"> 
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin c7F7zEf" xid="input8" data-bind="component:{ref:ref('dept'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true}" __cid="c7F7zEf"/>
+    </xhtml:div>
+    <xhtml:div xid="editor10" col="enducation" __cid="c7F7zEf" class="c7F7zEf"> 
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin c7F7zEf" xid="input9" data-bind="component:{ref:ref('enducation'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;disabled&quot;:true}" __cid="c7F7zEf"/>
+    </xhtml:div>
+  </xhtml:div>
+</div>

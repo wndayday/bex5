@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/timer/timer"  tag-name="span" icon="timer_icon.png" text="计时器"
+		binding-component="$UI/system/components/justep/timer/timer" resizable="false"
+		component-type="inVisibleComp" parent-range="$UI/system/components/justep/window/window,$UI/system/components/justep/inVisibleCompContainer/inVisibleCompContainer"
+		design-view="web-designer">
+		<properties>
+			<property name="xid" text="编号" required="true" />
+			<property name="enabled" text="激活" editor-ref="booleanList" readonly="true" default-value="true"/>
+			<property name="interval" text="间隔(毫秒)" default-value="1000" data-type="integer"/>
+			<property name="times" text="次数" editor-ref="timesList" default-value="0" data-type="integer"/>
+		</properties>
+		<!-- api接口参数配置  -->
+		<functions>
+			<function name="get">
+				<param name="name" editor="dropListEditor"  editor-parameter="{options:[['enabled','是否激活'],['interval','触发间隔'],['times','触发次数']]}" />
+			</function>
+			<function name="set">
+				<param name="arg" editor="jsonEditor" >
+				<![CDATA[ 
+				    {
+				    columns:[
+				    {name:'enabled',label:'是否激活',type:'boolean'},
+				    {name:'interval',label:'触发间隔',type:'integer'},
+				    {name:'times',label:'触发次数',type:'integer'}
+				    ]}
+				]]>
+				</param>
+			</function>
+		</functions>			
+		<property-editors>
+			<property-editor name="timesList" type="list">
+				<static-data value="0:无限"></static-data>
+			</property-editor>
+		</property-editors>
+		
+		<events>
+			<event name="onTimer" />
+			<event name="onStop" />
+		</events>
+		<templates>
+			<template name="default"><![CDATA[ 
+				<span component="$UI/system/components/justep/timer/timer"/> 
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

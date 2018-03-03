@@ -1,0 +1,9 @@
+/*黑色按钮*/
+.blackBtn span{ color:#626262;}
+.blackBtn i{ color:#767676;}
+
+/*页中样式*/
+.x-bordered{ background-color:#f4f4f4; border:1px solid #d1d1d1; border-radius:0;}
+
+/*操作栏*/
+.x-toolbar.x-toolbar-spliter{ border:0;}

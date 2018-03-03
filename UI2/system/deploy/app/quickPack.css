@@ -1,0 +1,14 @@
+.x-row, .x-col{ padding-left:0;}
+
+.iconImage{ width:80px; cursor:pointer; background-color:#ff6969; border-radius:8px;}
+/*欢迎图片*/
+.splashPortImage{ display:block; width:118px; height:200px; line-height:200px; background-color:#f4f4f4; border-radius:6px;}
+.splashLandImage{ display:block; width:200px; height:118px; line-height:118px; background-color:#f4f4f4; border-radius:6px; margin-top:35px;}
+
+/*平台图标*/
+.ptImg{ width:60px; cursor:pointer;}
+
+/*文本框*/
+.form-control{ box-shadow:none; border-color:#cfcfcf; background-color:#f4f4f4; border-radius:3px;}
+.form-control[xid=serverURL]{ border-radius:3px 0 0 3px; border-right:0;}
+.btn[xid=selectIPButton]{text-shadow:none; border-radius:0 3px 3px 0; background-color:#f4f4f4; color:#999; border:1px solid #cfcfcf; border-left:0;}

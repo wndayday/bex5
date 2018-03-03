@@ -1,0 +1,31 @@
+.xui-model{
+	border:1px dotted;
+	width:120px;
+	min-height:100px;
+	z-index:1800;
+	padding-top:20px;
+	background:#EEE8AA;
+}
+
+.xui-model-close{
+	width:38px !important;
+	height:32px !important;
+	min-height:32px !important;
+}
+
+.xui-model-close>*{
+	display:none !important;
+}
+
+.xui-model-title{
+	height:20px;
+	font: bold 13px arial;
+	width:100%;
+	padding-left:16px;position:absolute;top:2px;left:0;
+	background:url(../img/model.jpg) no-repeat 3px 0px;
+	border-bottom:1px solid #ddd;
+}
+
+.xui-model-close>.xui-model-title{
+	display:block !important;
+}

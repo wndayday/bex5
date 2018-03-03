@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/scan/scan" tag-name="div" text="扫一扫" icon="scan.png" display-property="xid" 
+			 binding-component="$UI/system/components/justep/scan/scan"
+			 parent-range="$UI/system/components/justep/window/window,$UI/system/components/justep/inVisibleCompContainer/inVisibleCompContainer"
+			 component-type="inVisibleComp"   ><!-- inVisibleComp表示不可视组件 -->
+			 
+		<properties>
+			<property name="xid" text="编号" required="true" />
+		</properties>
+		
+		<templates>
+		   <template name="default"><![CDATA[ 
+		     <div component="$UI/system/components/justep/scan/scan" style="width:0;height:0;">
+		     </div>
+		   ]]></template>
+		</templates>
+		<events>
+			<event name="onScanQRCodeSuccess" type="event" text="扫描成功" parameters="event"
+				is-script="true" />
+			<event name="onScanQRCodeFail" type="event" text="扫描失败" parameters="event"
+				is-script="true" />
+		</events>
+	</element>
+    
+</elements>

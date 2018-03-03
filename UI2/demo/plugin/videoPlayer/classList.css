@@ -1,0 +1,36 @@
+.hw-noPadding{
+	padding:0;
+}
+.hw-time{
+	font-size:12px;
+	color:#fff;
+	opacity:0.5;
+	background-color:black;
+	position:absolute;
+	bottom:5px;
+	right:15px;
+}
+
+.hw-txtTitle{
+	font-weight:bold;
+}
+
+.hw-describe{
+	font-size:12px;
+}
+
+.hw-image{
+	width:130px;
+	height:75px;
+}
+
+.hw-topBtn>.active {
+    color: #FF8700;
+    border-bottom:2px solid #FF8700;
+}
+
+.hw-sideBtn>.active {
+    color: #FFF;
+    background:#FF8700;
+}
+

@@ -1,0 +1,27 @@
+/**
+	@name $UI/system/components/bootstrap/tabs/tabs
+	@component 
+	@extends BindComponent
+	@extendurl $UI/system/lib/base/bindComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：实现点击页签切换不同内容的标签页;
+		<b>使用方法</b>：添加tabs组件，在tabs上右键添加内容页，在content中添加要展示的内容;
+	</xmp>
+	@model UI2
+*/	
+
+/**
+	@name Tabs#xid
+	@attribute 
+	@type string
+	@description 
+*/
+
+/**
+	@name Tabs#setActiveTab
+	@function
+	@description 激活页签
+	@param {Object} 目标页签的xid或者dom节点
+*/
+

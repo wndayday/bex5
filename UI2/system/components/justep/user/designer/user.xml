@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element name="$UI/system/components/justep/user/user" tag-name="span" icon="user.png" text="用户"
+		binding-component="$UI/system/components/justep/user/user"
+		component-type="inVisibleComp"  parent-range="$UI/system/components/justep/window/window,$UI/system/components/justep/inVisibleCompContainer/inVisibleCompContainer"
+		 resizable="false" >
+		<properties>
+			<property name="xid" text="编号" required="true" />
+
+			<property name="autoLogin" text="自动登录" editor-ref="booleanList" readonly="true"/>
+			<property name="appPath" text="应用路径"/>
+		</properties>
+		
+		<property-editors>
+		</property-editors>
+		
+		<events>
+			<event name="onLogin" parameters="event" text="登录成功"/>
+			<event name="onLogout" parameters="event" text="注销"/>
+		</events>
+		
+		<toolbar>
+		</toolbar>
+		<templates>
+			<template name="default"><![CDATA[ 
+			<span component="$UI/system/components/justep/user/user" autoLogin="true">
+				<div autoLoad="true" component="$UI/system/components/justep/data/data" idColumn="id" label="登录者数据">
+					<column name="id" type="String" label="ID"></column>
+					<column name="name" type="String" label="名称"></column>
+					<column name="phone" type="String" label="电话"></column>
+					<column name="email" type="String"  label="电子邮箱"></column>
+					<column name="isLogined" type="Boolean" label="是否登录"></column>
+					<data>[{"isLogined":false}]</data>
+					<rule>
+						<readonly><expr>true</expr></readonly>
+					</rule>
+				</div>
+			</span>
+		   ]]></template>
+		</templates>
+	</element>
+</elements>

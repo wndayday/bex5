@@ -1,0 +1,6 @@
+.x-geolocation{
+	z-index:1000;
+	width:51px;
+	height:51px;
+	background: transparent url(./img/geolocation.png);
+}

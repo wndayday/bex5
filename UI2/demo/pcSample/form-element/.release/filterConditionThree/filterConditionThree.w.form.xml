@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cmeUz6n" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmeUz6n" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.pass.cmeUz6n:HOVER{color: red} .css.cmeUz6n{margin-right: 30px; margin-top: 10px} .labe.cmeUz6n{padding-top: 20px} .color.cmeUz6n{color: green} .black.cmeUz6n{color: black} .padd.cmeUz6n{padding-right: 39px} .li.cmeUz6n{width: 45px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmeUz6n" class="cmeUz6n"></div>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cmeUz6n" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cmeUz6n"> 
+    <div class="x-contents-content active cmeUz6n" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmeUz6n"> 
+      <h4 xid="h42" __cid="cmeUz6n" class="cmeUz6n">基本使用 （多选）
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmeUz6n" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsBtnClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cmeUz6n"> 
+          <i xid="i2" __cid="cmeUz6n" class="cmeUz6n"/>  
+          <span xid="span3" __cid="cmeUz6n" class="cmeUz6n">js</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmeUz6n" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cmeUz6n"> 
+          <i xid="i3" __cid="cmeUz6n" class="cmeUz6n"/>  
+          <span xid="span4" __cid="cmeUz6n" class="cmeUz6n">源码</span>
+        </a>
+      </h4>
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cmeUz6n" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="cmeUz6n"> 
+        <div class="x-control-group-title cmeUz6n" xid="controlGroupTitle1" __cid="cmeUz6n"> 
+          <span xid="span1" __cid="cmeUz6n" class="cmeUz6n">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-10 x-col-center cmeUz6n" xid="col10" __cid="cmeUz6n"> 
+            <label xid="label5" class="labe cmeUz6n" __cid="cmeUz6n">您已选择</label> 
+          </div>  
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col9" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeUz6n" xid="list6" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;checkData&quot;}" __cid="cmeUz6n"> 
+              <ul class="x-list-template hide cmeUz6n" xid="listTemplateUl6" bind-foreach="{data:$model.foreach_list6($element),afterRender:$model.foreach_afterRender_list6.bind($model,$element)}" __cid="cmeUz6n"> 
+                <li xid="li6" class="pull-left cmeUz6n" __cid="cmeUz6n"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-right pull-left text-primary css cmeUz6n" xid="btn" style="border-style:ridge ridge ridge ridge;border-width:1px 1px 1px 1px;border-color:#FF0000 #FF0000 #FF0000 #FF0000;color:#000040;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-close-empty&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmeUz6n"> 
+                    <i xid="i1" class="icon-ios7-close-empty cmeUz6n" __cid="cmeUz6n"/>  
+                    <span xid="span2" bind-text="ref('checked')" class="li cmeUz6n" __cid="cmeUz6n"/> 
+                  </a> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-10 x-col-center cmeUz6n" xid="col28" __cid="cmeUz6n"> 
+            <label xid="label11" __cid="cmeUz6n" class="cmeUz6n">认购期限</label> 
+          </div>  
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col29" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeUz6n" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;deadlineData&quot;}" __cid="cmeUz6n"> 
+              <ul class="x-list-template hide cmeUz6n" xid="listTemplateUl3" style="height:31px;" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="cmeUz6n"> 
+                <li xid="li3" class="pull-left cmeUz6n" __cid="cmeUz6n"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output pass deadline cmeUz6n" xid="deadlineOutput" style="width:70px;" bind-click="deadlineOutputClick" data-bind="component:{ref:ref('deadline'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmeUz6n"/> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-10 x-col-center cmeUz6n" xid="col2" __cid="cmeUz6n"> 
+            <label xid="label1" __cid="cmeUz6n" class="cmeUz6n">产品类型</label> 
+          </div>  
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col1" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeUz6n" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;deadlineData&quot;}" __cid="cmeUz6n"> 
+              <ul class="x-list-template hide cmeUz6n" xid="listTemplateUl1" style="height:31px;" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cmeUz6n"> 
+                <li xid="li1" class="pull-left cmeUz6n" __cid="cmeUz6n"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output pass type cmeUz6n" xid="typeOutput" style="width:70px;" bind-click="typeOutputClick" data-bind="component:{ref:ref('productType'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmeUz6n"/> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-10 x-col-center cmeUz6n" xid="col4" __cid="cmeUz6n"> 
+            <label xid="label2" __cid="cmeUz6n" class="cmeUz6n">起购金额</label> 
+          </div>  
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col3" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeUz6n" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;deadlineData&quot;}" __cid="cmeUz6n"> 
+              <ul class="x-list-template hide cmeUz6n" xid="listTemplateUl2" style="height:31px;" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cmeUz6n"> 
+                <li xid="li2" class="pull-left cmeUz6n" __cid="cmeUz6n"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output pass amount padd cmeUz6n" xid="amountOutput" style="width:auto;" bind-click="amountOutputClick" data-bind="component:{ref:ref('amount'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmeUz6n"/> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-10 x-col-center cmeUz6n" xid="col6" __cid="cmeUz6n"> 
+            <label xid="label3" __cid="cmeUz6n" class="cmeUz6n">理财期限</label> 
+          </div>  
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col5" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeUz6n" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;deadlineData&quot;}" __cid="cmeUz6n"> 
+              <ul class="x-list-template hide cmeUz6n" xid="listTemplateUl4" style="height:31px;" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="cmeUz6n"> 
+                <li xid="li4" class="pull-left cmeUz6n" __cid="cmeUz6n"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output pass financialperiod padd cmeUz6n" xid="financialperiodOutput" style="width:auto;" bind-click="financialperiodOutputClick" data-bind="component:{ref:ref('financialperiod'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmeUz6n"/> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-10 x-col-center cmeUz6n" xid="col8" __cid="cmeUz6n"> 
+            <label xid="label4" style="width:auto;" __cid="cmeUz6n" class="cmeUz6n">内测年收益</label> 
+          </div>  
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col7" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cmeUz6n" xid="list5" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;deadlineData&quot;}" __cid="cmeUz6n"> 
+              <ul class="x-list-template hide cmeUz6n" xid="listTemplateUl5" style="height:31px;" bind-foreach="{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element)}" __cid="cmeUz6n"> 
+                <li xid="li5" class="pull-left cmeUz6n" __cid="cmeUz6n"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output pass earnings padd cmeUz6n" xid="earningsOutput" style="width:auto;" bind-click="earningsOutputClick" data-bind="component:{ref:ref('earnings'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cmeUz6n"/> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cmeUz6n" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmeUz6n"> 
+          <div class="x-col x-col-fixed x-col-center cmeUz6n" xid="col11" __cid="cmeUz6n"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cmeUz6n" xid="labelTextarea1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cmeUz6n"> 
+              <label class="x-label cmeUz6n" xid="label7" style="width:56px;" bind-text="checkData.label('checked')" __cid="cmeUz6n"/>  
+              <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cmeUz6n" xid="textarea1" bind-text=" $model.dataEach(event)" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cmeUz6n"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

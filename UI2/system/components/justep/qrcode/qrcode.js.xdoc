@@ -1,0 +1,50 @@
+/**
+	@name $UI/system/components/justep/qrcode/qrcode
+	@component 
+	@extends $UI/system/lib/base/bindComponent
+	@model UI2
+	@description 
+	<xmp>
+		<b>使用场景</b>：需要显示二维码的情况下都可以使用;
+		<b>使用方法</b>：拖入设计器中，通过设置“文本”属性，显示固定值；通过设置“引用”属性，显示动态值
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/qrcode/qrcode#xid
+	@attribute 
+	@type string
+	@description 组件标示
+*/
+
+/**
+	@name $UI/system/components/justep/qrcode/qrcode#text
+	@attribute 
+	@property
+	@type string
+	@description 设置二维码显示的内容，当bind-ref没有定义时有效
+*/
+
+/**
+	@name $UI/system/components/justep/qrcode/qrcode#bind-ref
+	@attribute 
+	@type string
+	@description qrcode组件引用的数据
+*/
+
+/**
+	@name $UI/system/components/justep/qrcode/qrcode#colorDark
+	@attribute
+	@property 
+	@type string
+	@description 前景色
+*/
+
+/**
+	@name $UI/system/components/justep/qrcode/qrcode#colorLight
+	@attribute
+	@property 
+	@type string
+	@description 背景色
+*/
+

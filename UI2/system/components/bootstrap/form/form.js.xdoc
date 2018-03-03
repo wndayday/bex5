@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/bootstrap/form/form
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description
+	<xmp>
+		<b>使用场景</b>：向服务器提交内容，登录、注册;
+		<b>使用方法</b>：添加from标签，在form下添加要向服务器传送的内容;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/	
+
+/**
+	@name $UI/system/components/bootstrap/pagination/pagination#xid
+	@attribute 
+	@type string
+	@description 
+*/

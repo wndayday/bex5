@@ -1,0 +1,15 @@
+.x-popOver .x-popOver-content {
+	min-width: 60px;
+	min-height: 30px;
+	background: white;
+}
+
+.x-popOver-dialog{
+	z-index:1000;
+	width:24px;
+	height:24px;
+	background-position: center;
+	border:1px solid green;
+	background-image: url(./img/popOver.png);
+	background-repeat: no-repeat;
+}

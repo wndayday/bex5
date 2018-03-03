@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfQNJr2" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfQNJr2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-col.cfQNJr2{border: 1px rgb(204, 204, 204) solid} .form-control.cfQNJr2{width: 50%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cfQNJr2" class="cfQNJr2"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cfQNJr2" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;动态创建表单并赋值&quot;}" __cid="cfQNJr2"> 
+    <div class="x-control-group-title cfQNJr2" xid="controlGroupTitle1" __cid="cfQNJr2"> 
+      <span xid="span1" __cid="cfQNJr2" class="cfQNJr2">动态创建表单并赋值</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfQNJr2" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cfQNJr2"> 
+      <i xid="i5" __cid="cfQNJr2" class="cfQNJr2"/>  
+      <span xid="span5" __cid="cfQNJr2" class="cfQNJr2">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfQNJr2" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cfQNJr2"> 
+      <i xid="i4" __cid="cfQNJr2" class="cfQNJr2"/>  
+      <span xid="span4" __cid="cfQNJr2" class="cfQNJr2">源码</span> 
+    </a>  
+    <div class="form-horizontal container-fluid cfQNJr2" component="$model/UI2/system/components/bootstrap/form/form" xid="form2" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cfQNJr2"> 
+      <fieldset xid="fieldset1" class="css1 cfQNJr2" __cid="cfQNJr2"> 
+        <legend xid="default11" __cid="cfQNJr2" class="cfQNJr2">基本使用</legend>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col32" __cid="cfQNJr2"> 
+            <label xid="label15" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('uName')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col34" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" placeholder="请输入用户名admin或tom" class="form-control cfQNJr2" xid="name" data-bind="component:{ref:userData.ref('uName'),name:'$model/UI2/system/components/justep/input/input'},event:{blur:$model._callModelFn.bind($model, 'nameBlur')}" __cid="cfQNJr2"/> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col29" __cid="cfQNJr2"> 
+            <label xid="label3" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('name')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col28" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input6" data-bind="component:{ref:userData.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col22" __cid="cfQNJr2"> 
+            <label xid="label12" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('pass')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col21" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input7" data-bind="component:{ref:userData.ref('pass'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col23" __cid="cfQNJr2"> 
+            <label xid="label11" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('truePwd')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col19" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input8" data-bind="component:{ref:userData.ref('truePwd'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col26" __cid="cfQNJr2"> 
+            <label xid="label10" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('Hobby')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col25" __cid="cfQNJr2"> 
+            <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group cfQNJr2" xid="checkboxGroup1" data-bind="component:{ref:userData.ref('Hobby'),name:'$model/UI2/system/components/justep/select/checkboxGroup'},foreach:{data:hobbyData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cfQNJr2"> 
+              <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cfQNJr2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('hobby'),value:ref('hobby')}" __cid="cfQNJr2">  
+                <input type="checkbox" __cid="cfQNJr2" class="cfQNJr2"/>  
+                <label __cid="cfQNJr2" class="cfQNJr2"/> 
+              </span> 
+            </span> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col27" __cid="cfQNJr2"> 
+            <label xid="label3" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('sex')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col20" __cid="cfQNJr2"> 
+            <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group cfQNJr2" xid="radioGroup1" data-bind="component:{ref:userData.ref('sex'),name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:sexData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cfQNJr2"> 
+              <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cfQNJr2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('sex'),value:ref('sex')}" __cid="cfQNJr2">  
+                <input type="radio" __cid="cfQNJr2" class="cfQNJr2"/>  
+                <label __cid="cfQNJr2" class="cfQNJr2"/> 
+              </span> 
+            </span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col20" __cid="cfQNJr2"> 
+            <label xid="label14" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('age')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col21" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input1" data-bind="component:{ref:userData.ref('age'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col19" __cid="cfQNJr2"> 
+            <label xid="label13" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('email')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col24" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input2" data-bind="component:{ref:userData.ref('email'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col24" __cid="cfQNJr2"> 
+            <label xid="label10" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('tel')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col25" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input3" data-bind="component:{ref:userData.ref('tel'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col23" __cid="cfQNJr2"> 
+            <label xid="label11" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('postcode')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col22" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input5" data-bind="component:{ref:userData.ref('postcode'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col28" __cid="cfQNJr2"> 
+            <label xid="label12" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('QQ')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col29" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input9" data-bind="component:{ref:userData.ref('QQ'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col27" __cid="cfQNJr2"> 
+            <label xid="label13" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('address')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col26" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input10" data-bind="component:{ref:userData.ref('address'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col32" __cid="cfQNJr2"> 
+            <label xid="label14" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('col12')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col33" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input11" data-bind="component:{ref:userData.ref('col12'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div>  
+          <div class="x-col x-col-20 cfQNJr2" xid="col31" __cid="cfQNJr2"> 
+            <label xid="label15" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('col13')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col30" __cid="cfQNJr2"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfQNJr2" xid="input12" data-bind="component:{ref:userData.ref('col13'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col x-col-20 cfQNJr2" xid="col59" __cid="cfQNJr2"> 
+            <label xid="label28" class="pull-right cfQNJr2" __cid="cfQNJr2" data-bind="text:userData.label('desc')">label</label> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col58" __cid="cfQNJr2"> 
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cfQNJr2" xid="textarea2" data-bind="component:{ref:userData.ref('desc'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cfQNJr2"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cfQNJr2" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfQNJr2"> 
+          <div class="x-col cfQNJr2" xid="col60" __cid="cfQNJr2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cfQNJr2" xid="submitBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cfQNJr2"> 
+              <i xid="i3" __cid="cfQNJr2" class="cfQNJr2"/>  
+              <span xid="span26" __cid="cfQNJr2" class="cfQNJr2">提交</span> 
+            </a> 
+          </div>  
+          <div class="x-col cfQNJr2" xid="col61" __cid="cfQNJr2"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfQNJr2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regestBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="cfQNJr2"> 
+              <i xid="i3" __cid="cfQNJr2" class="cfQNJr2"/>  
+              <span xid="span27" __cid="cfQNJr2" class="cfQNJr2">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </fieldset> 
+    </div> 
+  </div> 
+</div>

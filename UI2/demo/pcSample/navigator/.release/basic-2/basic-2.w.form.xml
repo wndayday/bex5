@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cBzYFJn" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBzYFJn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.blue.cBzYFJn{background-color: rgb(60, 60, 255)} .btn-group.cBzYFJn .btn.active.cBzYFJn{background-color: rgb(60, 60, 255); color: white} .nav-pills.cBzYFJn &gt; li.active.cBzYFJn &gt; a.cBzYFJn, .nav-pills.cBzYFJn &gt; li.active.cBzYFJn &gt; a.cBzYFJn:hover, .nav-pills.cBzYFJn &gt; li.active.cBzYFJn &gt; a.cBzYFJn:focus{color: black; background-color: rgb(223, 243, 120)} .nav-tabs.cBzYFJn &gt; li.active.cBzYFJn &gt; a.cBzYFJn, .nav-tabs.cBzYFJn &gt; li.active.cBzYFJn &gt; a.cBzYFJn:hover, .nav-tabs.cBzYFJn &gt; li.active.cBzYFJn &gt; a.cBzYFJn:focus{background-color: rgb(223, 243, 120); color: black} .btn.active.cBzYFJn{background-color: rgb(223, 243, 120); color: black} .x-panel.cBzYFJn .x-panel-top.cBzYFJn{background-color: rgb(0, 101, 202)} a.cBzYFJn{color: white} .x-panel.c3yIbeq.cBzYFJn .x-panel-top.c3yIbeq.cBzYFJn{background-color: rgb(0, 101, 202); height: 40px} .btn.cBzYFJn{margin-top: 0px} .nav.cBzYFJn &gt; li.cBzYFJn &gt; a.cBzYFJn:hover, .nav.cBzYFJn &gt; li.cBzYFJn &gt; a.cBzYFJn:focus{background-color: rgb(0, 101, 202); border: 0px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cBzYFJn" class="cBzYFJn"></div>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="js" style="color:#337AB7;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cBzYFJn"> 
+    <i xid="i1" __cid="cBzYFJn" class="cBzYFJn"/>  
+    <span xid="span2" __cid="cBzYFJn" class="cBzYFJn">js</span> 
+  </a>
+  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="source" style="color:#337AB7;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cBzYFJn"> 
+    <i xid="ii29" __cid="cBzYFJn" class="cBzYFJn"/>  
+    <span xid="span900" __cid="cBzYFJn" class="cBzYFJn">源码</span> 
+  </a>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup1" style="height:259px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;1、非iframe模式-基本使用&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle1" __cid="cBzYFJn"> 
+      <span xid="span1" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs7" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar cBzYFJn" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs5" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li40" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem45" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li41" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent19" xid="tabItem46" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="li42" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent20" xid="tabItem47" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li>  
+            <li xid="li43" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent21" xid="tabItem48" __cid="cBzYFJn" class="cBzYFJn">选项4</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content12" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents5" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col3" __cid="cBzYFJn"> 
+                  <span xid="span8" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col2" __cid="cBzYFJn"> 
+                  <span xid="span9" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content15" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col6" __cid="cBzYFJn"> 
+                  <span xid="span10" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col4" __cid="cBzYFJn"> 
+                  <span xid="span11" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content20" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col8" __cid="cBzYFJn"> 
+                  <span xid="span12" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col7" __cid="cBzYFJn"> 
+                  <span xid="span13" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content21" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col11" __cid="cBzYFJn"> 
+                  <span xid="span14" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col10" __cid="cBzYFJn"> 
+                  <span xid="span15" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa6e0fb55f1964ab39849b7f817c37eb5-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;2、非iframe模式-设定初始选中索引&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle3" __cid="cBzYFJn"> 
+      <span xid="span32" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs13" style="height:293px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar cBzYFJn" xid="panel7" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top7" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs6" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li47" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem50" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li46" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent19" xid="tabItem52" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="li45" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent20" xid="tabItem51" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li>  
+            <li xid="li44" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent21" xid="tabItem49" __cid="cBzYFJn" class="cBzYFJn">选项4</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content23" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents8" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content25" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row14" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col15" __cid="cBzYFJn"> 
+                  <span xid="span22" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row15" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col16" __cid="cBzYFJn"> 
+                  <span xid="span23" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content22" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col14" __cid="cBzYFJn"> 
+                  <span xid="span18" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col12" __cid="cBzYFJn"> 
+                  <span xid="span17" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content26" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col17" __cid="cBzYFJn"> 
+                  <span xid="span16" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row19" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col13" __cid="cBzYFJn"> 
+                  <span xid="span21" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content24" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col19" __cid="cBzYFJn"> 
+                  <span xid="span20" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col18" __cid="cBzYFJn"> 
+                  <span xid="span19" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf9ae5e8f45964a95854c29ea9384b788-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup3" style="height:758px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;3、非iframe模式-禁止点击并由外部控制索引&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle4" __cid="cBzYFJn"> 
+      <span xid="span34" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row26" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+      <div class="x-col cBzYFJn" xid="col26" __cid="cBzYFJn"> 
+        <span xid="span35" __cid="cBzYFJn" class="cBzYFJn">禁用全部选项卡：</span> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="checkTabs" style="height:276px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar cBzYFJn" xid="panel19" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top19" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs18" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li62" bind-disable="true" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem67" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li63" bind-disable="true" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent29" xid="tabItem68" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="li64" bind-disable="true" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent30" xid="tabItem69" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li>  
+            <li xid="li65" bind-disable="true" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent31" xid="tabItem70" __cid="cBzYFJn" class="cBzYFJn">选项4</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content70" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents20" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row28" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col28" __cid="cBzYFJn"> 
+                  <span xid="span38" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row27" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col27" __cid="cBzYFJn"> 
+                  <span xid="span39" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div class="x-contents-content active cBzYFJn" xid="content74" __cid="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content71" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row30" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col30" __cid="cBzYFJn"> 
+                  <span xid="span40" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row29" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col29" __cid="cBzYFJn"> 
+                  <span xid="span41" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div class="x-contents-content active cBzYFJn" xid="content75" __cid="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content72" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row32" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col32" __cid="cBzYFJn"> 
+                  <span xid="span42" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row31" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col31" __cid="cBzYFJn"> 
+                  <span xid="span43" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div class="x-contents-content active cBzYFJn" xid="content76" __cid="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content73" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row34" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col34" __cid="cBzYFJn"> 
+                  <span xid="span44" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row33" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col33" __cid="cBzYFJn"> 
+                  <span xid="span45" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p2a1a63c4a9b94221a78f42e32844da32-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="checkBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:checkBtnClick" data-config="{&quot;label&quot;:&quot;改变索引&quot;}" __cid="cBzYFJn"> 
+      <i xid="i9" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span37" __cid="cBzYFJn" class="cBzYFJn">改变索引</span> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row43" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+      <div class="x-col cBzYFJn" xid="col43" __cid="cBzYFJn"> 
+        <span xid="span55" __cid="cBzYFJn" class="cBzYFJn">禁用部分选项卡：</span> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs19" style="height:276px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p247c639b24f24c878215c24756f19b0c-iosstatusbar cBzYFJn" xid="panel20" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top20" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs19" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li68" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem74" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li67" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent29" xid="tabItem72" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="optionsThree" bind-disable=" $model.statusData.val(&quot;edit&quot;)==0" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent30" xid="tabItem73" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li>  
+            <li xid="li69" bind-disable="true" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent31" xid="tabItem71" __cid="cBzYFJn" class="cBzYFJn">选项4</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content79" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents21" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content85" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row36" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col37" __cid="cBzYFJn"> 
+                  <span xid="span54" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row35" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col35" __cid="cBzYFJn"> 
+                  <span xid="span53" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content80" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row38" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col38" __cid="cBzYFJn"> 
+                  <span xid="span50" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row37" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col36" __cid="cBzYFJn"> 
+                  <span xid="span51" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div class="x-contents-content active cBzYFJn" xid="content84" __cid="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content81" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row41" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col40" __cid="cBzYFJn"> 
+                  <span xid="span48" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row42" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col39" __cid="cBzYFJn"> 
+                  <span xid="span49" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div class="x-contents-content active cBzYFJn" xid="content78" __cid="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content82" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row39" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col41" __cid="cBzYFJn"> 
+                  <span xid="span46" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row40" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col42" __cid="cBzYFJn"> 
+                  <span xid="span47" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p247c639b24f24c878215c24756f19b0c-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionThreeBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:optionThreeBtnClick" data-config="{&quot;label&quot;:&quot;启用\&quot;步骤3\&quot;&quot;}" __cid="cBzYFJn"> 
+      <i xid="i10" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span57" __cid="cBzYFJn" class="cBzYFJn">启用"步骤3"</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionThreeUnBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:optionThreeUnBtnClick" data-config="{&quot;label&quot;:&quot;禁用\&quot;步骤3\&quot;&quot;}" __cid="cBzYFJn"> 
+      <i xid="i11" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span58" __cid="cBzYFJn" class="cBzYFJn">禁用"步骤3"</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup4" style="height:357px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;4、iframe模式-基本使用&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle2" __cid="cBzYFJn"> 
+      <span xid="span52" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs2" style="height:285px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar cBzYFJn" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-pills cBzYFJn" xid="navs2" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li4" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem4" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li5" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent3" xid="tabItem5" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content13" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents7" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe4" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content14" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe5" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p9f7ee85c73cb4b4f8bc4873b16edd624-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup5" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;5、iframe模式-设定初始选中索引&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle5" __cid="cBzYFJn"> 
+      <span xid="span56" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs4" style="height:285px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar cBzYFJn" xid="panel6" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-pills cBzYFJn" xid="navs4" __cid="cBzYFJn"> 
+            <li xid="li8" class="active cBzYFJn" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem7" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li7" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent3" xid="tabItem8" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content18" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents9" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content19" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe7" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content17" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe6" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pa0e94dd668d74cd8999a0e7bcc15ab00-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup6" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;6、iframe模式-禁止点击并由外部控制索引&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle7" __cid="cBzYFJn"> 
+      <span xid="span75" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row50" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+      <div class="x-col cBzYFJn" xid="col66" __cid="cBzYFJn"> 
+        <span xid="span76" __cid="cBzYFJn" class="cBzYFJn">禁用全部选项卡：</span> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="iframeCheckTabs" style="height:231px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pd5586d0aa8b74139841f27a0b96736da-iosstatusbar cBzYFJn" xid="panel9" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top9" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs7" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li9" bind-disable="true" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem15" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li10" bind-disable="true" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent6" xid="tabItem16" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="li11" bind-disable="true" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent7" xid="tabItem17" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content27" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents12" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe14" style="height:167px;width:364px;" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content28" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe15" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content29" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe3.w" xid="iframe16" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pd5586d0aa8b74139841f27a0b96736da-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="checkIframeBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:checkIframeBtnClick" data-config="{&quot;label&quot;:&quot;改变索引&quot;}" __cid="cBzYFJn"> 
+      <i xid="i19" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span77" __cid="cBzYFJn" class="cBzYFJn">改变索引</span> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row51" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+      <div class="x-col cBzYFJn" xid="col69" __cid="cBzYFJn"> 
+        <span xid="span78" __cid="cBzYFJn" class="cBzYFJn">禁用部分选项卡：</span> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs8" style="height:231px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar cBzYFJn" xid="panel10" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top10" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs8" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li20" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem19" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li18" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent6" xid="tabItem20" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="li19" bind-disable=" $model.iframeStatusData.val(&quot;edit&quot;)==0" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent7" xid="tabItem18" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content31" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents13" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content33" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe17" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content32" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe18" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content30" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe3.w" xid="iframe19" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pee09695626ce47f593e35bbaeda1f6dc-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="startBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:startBtnClick" data-config="{&quot;label&quot;:&quot;启用\&quot;步骤3\&quot;&quot;}" __cid="cBzYFJn"> 
+      <i xid="i20" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span79" __cid="cBzYFJn" class="cBzYFJn">启用"步骤3"</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid=" forbiddenBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick: forbiddenBtnClick" data-config="{&quot;label&quot;:&quot;禁用\&quot;步骤3\&quot;&quot;}" __cid="cBzYFJn"> 
+      <i xid="i21" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span80" __cid="cBzYFJn" class="cBzYFJn">禁用"步骤3"</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup7" style="height:297px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;7、iframe模式-切换标签式出现进度条&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle8" __cid="cBzYFJn"> 
+      <span xid="span81" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs9" style="height:285px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pbd13b7653fd74611839c887c7f30f03d-iosstatusbar cBzYFJn" xid="panel11" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top11" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-pills cBzYFJn" xid="navs9" __cid="cBzYFJn"> 
+            <li xid="progressBarLi1" class="active cBzYFJn" bind-click="progressBarLi1Click" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem21" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="progressBarLi2" bind-click="progressBarLi2Click" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent3" xid="tabItem22" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content36" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents14" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content35" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe20" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content34" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe21" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pbd13b7653fd74611839c887c7f30f03d-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup8" style="height:297px;top:300px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;8、选项卡点击事件&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle10" __cid="cBzYFJn"> 
+      <span xid="span85" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs11" style="height:285px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar cBzYFJn" xid="panel13" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top13" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-pills cBzYFJn" xid="navs11" __cid="cBzYFJn"> 
+            <li xid="optionOne" class="active cBzYFJn" bind-click="optionOneClick" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem25" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="optionTwo" bind-click="optionTwoClick" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent3" xid="tabItem26" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content42" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents16" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content40" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe24" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content41" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe25" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p369cbc0cbb3147fbbbcc43d570863337-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup9" style="height:376px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;9、获取当前选中索引&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle11" __cid="cBzYFJn"> 
+      <span xid="span86" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs12" style="height:285px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pb320987ba129458f9d49f47709945b19-iosstatusbar cBzYFJn" xid="panel14" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top14" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-pills cBzYFJn" xid="navs12" __cid="cBzYFJn"> 
+            <li xid="li28" class="active cBzYFJn" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem27" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li27" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent3" xid="tabItem28" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content44" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="options" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="option1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe26" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="option2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe27" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pb320987ba129458f9d49f47709945b19-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="getIndexBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getIndexBtnClick" data-config="{&quot;label&quot;:&quot;获取当前索引&quot;}" __cid="cBzYFJn"> 
+      <i xid="i23" __cid="cBzYFJn" class="cBzYFJn"/>  
+      <span xid="span87" __cid="cBzYFJn" class="cBzYFJn">获取当前索引</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup10" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;10、鼠标移入切换标签&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle12" __cid="cBzYFJn"> 
+      <span xid="span88" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="mouseOverTabs" style="height:231px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar cBzYFJn" xid="panel15" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top15" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs13" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="menuOption1" bind-mouseover="menuOption1Mouseover" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem31" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="menuOption2" bind-mouseover="menuOption2Mouseover" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent6" xid="tabItem29" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="menuOption3" bind-mouseover="menuOption3Mouseover" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent7" xid="tabItem30" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content46" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents18" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content48" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe28" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content49" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe29" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content47" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe3.w" xid="iframe30" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p84e1671bb6e4408090b93dc0c96926e0-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup11" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;11、单内容区域模式&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle13" __cid="cBzYFJn"> 
+      <span xid="span89" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs14" style="height:231px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar cBzYFJn" xid="panel16" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top16" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs14" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li34" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem33" __cid="cBzYFJn" class="cBzYFJn">选项1</a> 
+            </li>  
+            <li xid="li32" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent6" xid="tabItem34" __cid="cBzYFJn" class="cBzYFJn">选项2</a> 
+            </li>  
+            <li xid="li33" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent7" xid="tabItem32" __cid="cBzYFJn" class="cBzYFJn">选项3</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content51" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents19" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content53" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe1.w" xid="iframe31" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content52" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe2.w" xid="iframe32" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content50" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <iframe src="$model/UI2/demo/pcSample/navigator/iframe/iframe3.w" xid="iframe33" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pdbebc68767ec4573a03ec2b6f327ab0a-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup12" style="height:349px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;12、单选项模式&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle6" __cid="cBzYFJn"> 
+      <span xid="span2" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs1" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar cBzYFJn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <ul class="nav nav-tabs cBzYFJn" xid="navs1" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li1" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem1" __cid="cBzYFJn" class="cBzYFJn">基础信息</a> 
+            </li>  
+            <li xid="li2" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem1" __cid="cBzYFJn" class="cBzYFJn">二级标题内容部分</a> 
+            </li>  
+            <li xid="li2" class="pull-right cBzYFJn" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem1" __cid="cBzYFJn" class="cBzYFJn">更多...</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col1" __cid="cBzYFJn"> 
+                  <span xid="span4" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col5" __cid="cBzYFJn"> 
+                  <span xid="span3" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p64b4a05161de4e7eb16deaf4aff8da19-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup13" style="height:259px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;13、含有标题&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle9" __cid="cBzYFJn"> 
+      <span xid="span29" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs3" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar cBzYFJn" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-left cBzYFJn" xid="button1" style="color:#000000;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;信息录入&quot;}" __cid="cBzYFJn"> 
+            <i xid="i1" __cid="cBzYFJn" class="cBzYFJn"/>  
+            <span xid="span30" __cid="cBzYFJn" class="cBzYFJn">信息录入</span> 
+          </a>  
+          <ul class="nav nav-tabs pull-right cBzYFJn" xid="navs3" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li13" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem3" __cid="cBzYFJn" class="cBzYFJn">基础信息</a> 
+            </li>  
+            <li xid="li12" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent19" xid="tabItem9" __cid="cBzYFJn" class="cBzYFJn">体貌特征</a> 
+            </li>  
+            <li xid="li6" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent20" xid="tabItem6" __cid="cBzYFJn" class="cBzYFJn">交通工具</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row21" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col22" __cid="cBzYFJn"> 
+                  <span xid="span27" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row22" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col23" __cid="cBzYFJn"> 
+                  <span xid="span28" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col21" __cid="cBzYFJn"> 
+                  <span xid="span7" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row20" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col9" __cid="cBzYFJn"> 
+                  <span xid="span6" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row25" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col24" __cid="cBzYFJn"> 
+                  <span xid="span5" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row44" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col20" __cid="cBzYFJn"> 
+                  <span xid="span26" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf75c5f491b444f5eb5d7938ca58d893e-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup14" style="height:363px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;14、标题含有图标&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle14" __cid="cBzYFJn"> 
+      <span xid="span60" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs5" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p52a93695ac4f43f082384186ceafbb4a-iosstatusbar cBzYFJn" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-left cBzYFJn" xid="button2" style="color:#000000;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-compose&quot;,&quot;label&quot;:&quot;信息录入&quot;}" __cid="cBzYFJn"> 
+            <i xid="i2" class="icon-compose cBzYFJn" style="font-size:medium;color:#FF8040;" __cid="cBzYFJn"/>  
+            <span xid="span59" __cid="cBzYFJn" class="cBzYFJn">信息录入</span> 
+          </a>  
+          <ul class="nav nav-tabs pull-right cBzYFJn" xid="navs10" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li15" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem10" __cid="cBzYFJn" class="cBzYFJn">基础信息</a> 
+            </li>  
+            <li xid="li14" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent19" xid="tabItem12" __cid="cBzYFJn" class="cBzYFJn">体貌特征</a> 
+            </li>  
+            <li xid="li16" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent20" xid="tabItem11" __cid="cBzYFJn" class="cBzYFJn">交通工具</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content9" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content10" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row47" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col47" __cid="cBzYFJn"> 
+                  <span xid="span63" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row49" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col46" __cid="cBzYFJn"> 
+                  <span xid="span61" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content8" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row52" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col50" __cid="cBzYFJn"> 
+                  <span xid="span33" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row48" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col45" __cid="cBzYFJn"> 
+                  <span xid="span31" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content11" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row45" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col48" __cid="cBzYFJn"> 
+                  <span xid="span36" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row46" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col49" __cid="cBzYFJn"> 
+                  <span xid="span62" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p52a93695ac4f43f082384186ceafbb4a-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup15" style="height:308px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;15、与box1合用&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle21" __cid="cBzYFJn"> 
+      <span xid="span136" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cBzYFJn" xid="tabs6" style="height:252px;" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" __cid="cBzYFJn"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel p6e485519b9f34cd685889907994baece-iosstatusbar cBzYFJn" xid="panel8" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBzYFJn"> 
+        <div class="x-panel-top cBzYFJn" xid="top8" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-left cBzYFJn" xid="button3" style="color:#000000;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;信息录入&quot;}" __cid="cBzYFJn"> 
+            <i xid="i18" __cid="cBzYFJn" class="cBzYFJn"/>  
+            <span xid="span135" __cid="cBzYFJn" class="cBzYFJn">信息录入</span> 
+          </a>  
+          <ul class="nav nav-tabs pull-right cBzYFJn" xid="navs15" __cid="cBzYFJn"> 
+            <li class="active cBzYFJn" xid="li22" __cid="cBzYFJn"> 
+              <a content="tabContent_1" xid="tabItem13" __cid="cBzYFJn" class="cBzYFJn">基础信息</a> 
+            </li>  
+            <li xid="li21" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent19" xid="tabItem23" __cid="cBzYFJn" class="cBzYFJn">体貌特征</a> 
+            </li>  
+            <li xid="li17" __cid="cBzYFJn" class="cBzYFJn"> 
+              <a content="tabContent20" xid="tabItem14" __cid="cBzYFJn" class="cBzYFJn">交通工具</a> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="x-panel-content cBzYFJn" xid="content37" style="border-style:solid solid solid solid;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBzYFJn"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents22" style="border-width:2px;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+            <div class="x-contents-content active active cBzYFJn" xid="content38" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row94" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col93" __cid="cBzYFJn"> 
+                  <span xid="span139" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row96" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col92" __cid="cBzYFJn"> 
+                  <span xid="span137" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content16" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row92" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col90" __cid="cBzYFJn"> 
+                  <span xid="span133" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row95" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col91" __cid="cBzYFJn"> 
+                  <span xid="span132" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cBzYFJn" xid="content39" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row93" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col94" __cid="cBzYFJn"> 
+                  <span xid="span134" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row97" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+                <div class="x-col cBzYFJn" xid="col89" __cid="cBzYFJn"> 
+                  <span xid="span138" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cBzYFJn" class="cBzYFJn">.x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6e485519b9f34cd685889907994baece-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup16" style="height:344px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;16、tab过多左右滚动&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle19" __cid="cBzYFJn"> 
+      <span xid="span113" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row79" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+      <div class="x-col cBzYFJn" xid="col51" __cid="cBzYFJn"> 
+        <span xid="span114" __cid="cBzYFJn" class="cBzYFJn">非iframe模式</span> 
+      </div> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-left cBzYFJn" xid="scrollLeftBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scrollLeftBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cBzYFJn"> 
+      <i xid="i24" class="icon-chevron-left cBzYFJn" __cid="cBzYFJn"/>  
+      <span xid="span64" __cid="cBzYFJn" class="cBzYFJn"/> 
+    </a>  
+    <div xid="div1" name="aa" style="background-color:#0065CA;overflow:auto;overflow-x:hidden;white-space:nowrap;width:303px;height:35px;" class="pull-left cBzYFJn" __cid="cBzYFJn"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项1&quot;,&quot;target&quot;:&quot;optonContent1&quot;}" __cid="cBzYFJn"> 
+        <i xid="i8" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span119" __cid="cBzYFJn" class="cBzYFJn">选项1</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项2&quot;,&quot;target&quot;:&quot;optonContent2&quot;}" __cid="cBzYFJn"> 
+        <i xid="i7" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span119" __cid="cBzYFJn" class="cBzYFJn">选项2</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项3&quot;,&quot;target&quot;:&quot;optonContent3&quot;}" __cid="cBzYFJn"> 
+        <i xid="i3" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span120" __cid="cBzYFJn" class="cBzYFJn">选项3</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项4&quot;,&quot;target&quot;:&quot;optonContent4&quot;}" __cid="cBzYFJn"> 
+        <i xid="i4" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span117" __cid="cBzYFJn" class="cBzYFJn">选项4</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项5&quot;,&quot;target&quot;:&quot;optonContent5&quot;}" __cid="cBzYFJn"> 
+        <i xid="i5" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span118" __cid="cBzYFJn" class="cBzYFJn">选项5</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项6&quot;,&quot;target&quot;:&quot;optonContent6&quot;}" __cid="cBzYFJn"> 
+        <i xid="i6" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span115" __cid="cBzYFJn" class="cBzYFJn">选项6</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项7&quot;,&quot;target&quot;:&quot;optonContent7&quot;}" __cid="cBzYFJn"> 
+        <i xid="i7" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span116" __cid="cBzYFJn" class="cBzYFJn">选项7</span> 
+      </a> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-left cBzYFJn" xid="scrollRightBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scrollRightBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cBzYFJn"> 
+      <i xid="i25" class="icon-chevron-right cBzYFJn" __cid="cBzYFJn"/>  
+      <span xid="span73" __cid="cBzYFJn" class="cBzYFJn"/> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cBzYFJn" xid="contents15" style="height:192px;top:5790px" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cBzYFJn"> 
+      <div class="x-contents-content active cBzYFJn" xid="optonContent1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row91" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col80" __cid="cBzYFJn"> 
+            <span xid="span24" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row81" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col79" __cid="cBzYFJn"> 
+            <span xid="span25" __cid="cBzYFJn" class="cBzYFJn">内容1</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row80" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col82" __cid="cBzYFJn"> 
+            <span xid="span128" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row84" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col77" __cid="cBzYFJn"> 
+            <span xid="span129" __cid="cBzYFJn" class="cBzYFJn">内容2</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row83" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col83" __cid="cBzYFJn"> 
+            <span xid="span127" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row85" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col78" __cid="cBzYFJn"> 
+            <span xid="span126" __cid="cBzYFJn" class="cBzYFJn">内容3</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row23" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col84" __cid="cBzYFJn"> 
+            <span xid="span125" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row24" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col81" __cid="cBzYFJn"> 
+            <span xid="span123" __cid="cBzYFJn" class="cBzYFJn">内容4</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row82" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col44" __cid="cBzYFJn"> 
+            <span xid="span124" __cid="cBzYFJn" class="cBzYFJn">内容5</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row87" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col25" __cid="cBzYFJn"> 
+            <span xid="span122" __cid="cBzYFJn" class="cBzYFJn">内容5</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row86" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col86" __cid="cBzYFJn"> 
+            <span xid="span121" __cid="cBzYFJn" class="cBzYFJn">内容6</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row89" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col88" __cid="cBzYFJn"> 
+            <span xid="span131" __cid="cBzYFJn" class="cBzYFJn">内容6</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row88" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col85" __cid="cBzYFJn"> 
+            <span xid="span67" __cid="cBzYFJn" class="cBzYFJn">内容7</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cBzYFJn" xid="row90" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cBzYFJn"> 
+          <div class="x-col cBzYFJn" xid="col87" __cid="cBzYFJn"> 
+            <span xid="span130" __cid="cBzYFJn" class="cBzYFJn">内容7</span> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBzYFJn" xid="controlGroup17" style="height:800px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;iframe模式&quot;}" __cid="cBzYFJn"> 
+    <div class="x-control-group-title cBzYFJn" xid="controlGroupTitle20" __cid="cBzYFJn"> 
+      <span xid="span65" __cid="cBzYFJn" class="cBzYFJn">title</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-left cBzYFJn" xid="iframeScrollLeftBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:iframeScrollLeftBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cBzYFJn"> 
+      <i xid="i26" class="icon-chevron-left cBzYFJn" __cid="cBzYFJn"/>  
+      <span xid="span74" __cid="cBzYFJn" class="cBzYFJn"/> 
+    </a>  
+    <div name="bb" xid="div4" style="overflow:auto;overflow-x:hidden;white-space:nowrap;background-color:#0065CA;width:300px;height:35px;" class="pull-left cBzYFJn" __cid="cBzYFJn"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项1&quot;,&quot;target&quot;:&quot;optonContent8&quot;}" __cid="cBzYFJn"> 
+        <i xid="i17" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span71" __cid="cBzYFJn" class="cBzYFJn">选项1</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项2&quot;,&quot;target&quot;:&quot;optonContent9&quot;}" __cid="cBzYFJn"> 
+        <i xid="i16" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span71" __cid="cBzYFJn" class="cBzYFJn">选项2</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项3&quot;,&quot;target&quot;:&quot;optonContent10&quot;}" __cid="cBzYFJn"> 
+        <i xid="i15" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span72" __cid="cBzYFJn" class="cBzYFJn">选项3</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项4&quot;,&quot;target&quot;:&quot;optonContent11&quot;}" __cid="cBzYFJn"> 
+        <i xid="i14" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span69" __cid="cBzYFJn" class="cBzYFJn">选项4</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项5&quot;,&quot;target&quot;:&quot;optonContent12&quot;}" __cid="cBzYFJn"> 
+        <i xid="i13" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span70" __cid="cBzYFJn" class="cBzYFJn">选项5</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项6&quot;,&quot;target&quot;:&quot;optonContent13&quot;}" __cid="cBzYFJn"> 
+        <i xid="i12" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span66" __cid="cBzYFJn" class="cBzYFJn">选项6</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="optionBtn14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;选项7&quot;,&quot;target&quot;:&quot;optonContent14&quot;}" __cid="cBzYFJn"> 
+        <i xid="i12" __cid="cBzYFJn" class="cBzYFJn"/>  
+        <span xid="span68" __cid="cBzYFJn" class="cBzYFJn">选项7</span> 
+      </a> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-left cBzYFJn" xid="iframeScrollRightBtn" style="color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:iframeScrollRightBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cBzYFJn"> 
+      <i xid="i27" class="icon-chevron-right cBzYFJn" __cid="cBzYFJn"/>  
+      <span xid="span82" __cid="cBzYFJn" class="cBzYFJn"/> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cBzYFJn" xid="contents17" style="width:100%;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:12,&quot;slidable&quot;:true}" __cid="cBzYFJn"> 
+      <div class="x-contents-content cBzYFJn" xid="optonContent8" style="width:100%;height:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <iframe xid="iframe12" frameborder="0px" src="https://www.baidu.com" style="height:100%;width:100%;" height="100%" width="100%" scrolling="no" __cid="cBzYFJn" class="cBzYFJn"/> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent9" style="width:100%;height:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"> 
+        <iframe src="https://www.baidu.com" xid="iframe1" height="100%" width="100%" frameborder="0px" __cid="cBzYFJn" class="cBzYFJn"/> 
+      </div>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent10" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"/>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent11" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"/>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent12" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"/>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent13" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"/>  
+      <div class="x-contents-content cBzYFJn" xid="optonContent14" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cBzYFJn"/> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cBzYFJn" xid="loadPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;dismissible&quot;:true}" __cid="cBzYFJn"> 
+    <div class="x-popOver-overlay cBzYFJn" xid="div5" __cid="cBzYFJn"/>  
+    <div class="x-popOver-content cBzYFJn" xid="div6" style="border-style:double double double double;border-width:medium medium medium medium;" __cid="cBzYFJn"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBzYFJn" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;正在加载&quot;}" __cid="cBzYFJn"> 
+        <i xid="i22" class="icon-loading-a cBzYFJn" __cid="cBzYFJn"/>  
+        <span xid="span83" __cid="cBzYFJn" class="cBzYFJn">正在加载</span> 
+      </a> 
+    </div> 
+  </div> 
+</div>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciayeEn" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciayeEn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-col.ciayeEn{} .form-control.ciayeEn{width: 50%; margin-top: -5px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciayeEn" class="ciayeEn"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group ciayeEn" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;大量的表单元素&quot;}" __cid="ciayeEn"> 
+    <div class="x-control-group-title ciayeEn" xid="controlGroupTitle1" __cid="ciayeEn"> 
+      <span xid="span1" __cid="ciayeEn" class="ciayeEn">大量的表单元素</span> 
+    </div>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciayeEn" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="ciayeEn"> 
+      <i xid="i4" __cid="ciayeEn" class="ciayeEn"/>  
+      <span xid="span6" __cid="ciayeEn" class="ciayeEn">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciayeEn" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="ciayeEn"> 
+      <i xid="i4" __cid="ciayeEn" class="ciayeEn"/>  
+      <span xid="span5" __cid="ciayeEn" class="ciayeEn">源码</span> 
+    </a>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col1" __cid="ciayeEn"> 
+        <label xid="label1" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col2" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input" data-bind="component:{ref:userData.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col3" __cid="ciayeEn"> 
+        <label xid="label2" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col4" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input3" data-bind="component:{ref:userData.ref('pass'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col6" __cid="ciayeEn"> 
+        <label xid="label3" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col10" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input5" data-bind="component:{ref:userData.ref('col3'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col7" __cid="ciayeEn"> 
+        <label xid="label4" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col5" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input4" data-bind="component:{ref:userData.ref('col4'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col12" __cid="ciayeEn"> 
+        <label xid="label5" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col14" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input7" data-bind="component:{ref:userData.ref('col5'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col13" __cid="ciayeEn"> 
+        <label xid="label6" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col11" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input6" data-bind="component:{ref:userData.ref('col6'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col16" __cid="ciayeEn"> 
+        <label xid="label7" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col18" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input9" data-bind="component:{ref:userData.ref('col7'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col17" __cid="ciayeEn"> 
+        <label xid="label8" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col15" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input8" data-bind="component:{ref:userData.ref('col8'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col20" __cid="ciayeEn"> 
+        <label xid="label9" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col22" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input11" data-bind="component:{ref:userData.ref('col9'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col21" __cid="ciayeEn"> 
+        <label xid="label10" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col19" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input10" data-bind="component:{ref:userData.ref('col10'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col24" __cid="ciayeEn"> 
+        <label xid="label11" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col26" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input13" data-bind="component:{ref:userData.ref('col11'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col25" __cid="ciayeEn"> 
+        <label xid="label12" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col23" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input12" data-bind="component:{ref:userData.ref('col12'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col28" __cid="ciayeEn"> 
+        <label xid="label13" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col30" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input15" data-bind="component:{ref:userData.ref('col13'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col29" __cid="ciayeEn"> 
+        <label xid="label14" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col27" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input14" data-bind="component:{ref:userData.ref('col14'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col32" __cid="ciayeEn"> 
+        <label xid="label15" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col34" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input17" data-bind="component:{ref:userData.ref('col15'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col33" __cid="ciayeEn"> 
+        <label xid="label16" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col31" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input16" data-bind="component:{ref:userData.ref('col16'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col36" __cid="ciayeEn"> 
+        <label xid="label17" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col38" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input19" data-bind="component:{ref:userData.ref('col17'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col37" __cid="ciayeEn"> 
+        <label xid="label18" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col35" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input18" data-bind="component:{ref:userData.ref('col18'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col40" __cid="ciayeEn"> 
+        <label xid="label19" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col42" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input21" data-bind="component:{ref:userData.ref('col19'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col41" __cid="ciayeEn"> 
+        <label xid="label20" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col39" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input20" data-bind="component:{ref:userData.ref('col20'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col45" __cid="ciayeEn"> 
+        <label xid="label22" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('name')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col44" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input23" data-bind="component:{ref:userData.ref('col21'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div>  
+      <div class="x-col x-col-10 ciayeEn" xid="col46" __cid="ciayeEn"> 
+        <label xid="label21" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('pass')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col43" __cid="ciayeEn"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciayeEn" xid="input22" data-bind="component:{ref:userData.ref('col22'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col x-col-10 ciayeEn" xid="col49" __cid="ciayeEn"> 
+        <label xid="label24" class="pull-right ciayeEn" __cid="ciayeEn" data-bind="text:userData.label('address')">label</label> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col48" __cid="ciayeEn"> 
+        <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control ciayeEn" xid="textarea1" style="height:100px;" data-bind="component:{ref:userData.ref('address'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="ciayeEn"/> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ciayeEn" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciayeEn"> 
+      <div class="x-col ciayeEn" xid="col8" __cid="ciayeEn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right ciayeEn" xid="subBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="ciayeEn"> 
+          <i xid="i1" __cid="ciayeEn" class="ciayeEn"/>  
+          <span xid="span2" __cid="ciayeEn" class="ciayeEn">提交</span> 
+        </a> 
+      </div>  
+      <div class="x-col ciayeEn" xid="col9" __cid="ciayeEn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ciayeEn" xid="regestBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regestBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="ciayeEn"> 
+          <i xid="i2" __cid="ciayeEn" class="ciayeEn"/>  
+          <span xid="span3" __cid="ciayeEn" class="ciayeEn">重置</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div> 
+</div>

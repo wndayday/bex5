@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfaYre2" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfaYre2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cfaYre2" class="cfaYre2"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cfaYre2" xid="controlGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;1、表单的禁用&quot;}" __cid="cfaYre2"> 
+    <div class="x-control-group-title cfaYre2" xid="controlGroupTitle4" style="background-color:white;" __cid="cfaYre2"/>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfaYre2" xid="showJs" style="margin-left:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cfaYre2"> 
+      <i xid="i7" __cid="cfaYre2" class="cfaYre2"/>  
+      <span xid="span7" __cid="cfaYre2" class="cfaYre2">js</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfaYre2" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cfaYre2"> 
+      <i xid="i6" __cid="cfaYre2" class="cfaYre2"/>  
+      <span xid="span6" __cid="cfaYre2" class="cfaYre2">源码</span> 
+    </a>  
+    <a style="position:absolute;z-index:100;margin-left:350px;margin-top:-50px;color:#000000;" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfaYre2" xid="showBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showBtnClick" data-config="{&quot;label&quot;:&quot;禁用表单&quot;}" __cid="cfaYre2"> 
+      <i xid="i5" __cid="cfaYre2" class="cfaYre2"/>  
+      <span xid="span5" __cid="cfaYre2" class="cfaYre2">禁用表单</span> 
+    </a>  
+    <form action="@justepContextPath@/v_56d63c28afcb4c07b643572ba730311bl_zh_CNs_desktopd_pc/demo/pcSample/forms/post" method="" xid="form1" class="form cfaYre2" style="margin-left:25px;width:500px" __cid="cfaYre2"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfaYre2" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfaYre2"> 
+        <label class="x-label cfaYre2" xid="label6" __cid="cfaYre2" data-bind="text:$model.userData.label(&quot;userName&quot;)"/>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaYre2" xid="input4" data-bind="component:{ref:$model.userData.ref(&quot;userName&quot;),name:'$model/UI2/system/components/justep/input/input'},enable:flag" __cid="cfaYre2"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfaYre2" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfaYre2"> 
+        <label class="x-label cfaYre2" xid="label7" __cid="cfaYre2" data-bind="text:$model.userData.label(&quot;password&quot;)"/>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaYre2" xid="input5" data-bind="component:{ref:$model.userData.ref(&quot;password&quot;),name:'$model/UI2/system/components/justep/input/input'},enable:flag" __cid="cfaYre2"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfaYre2" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfaYre2"> 
+        <label class="x-label cfaYre2" xid="label8" __cid="cfaYre2" data-bind="text:$model.userData.label(&quot;family&quot;)"/>  
+        <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cfaYre2" xid="select1" data-bind="component:{ref:$model.userData.ref(&quot;family&quot;),name:'$model/UI2/system/components/justep/select/select'},enable:flag,options:familyData.datas,optionsValue:'family',optionsText:'family',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cfaYre2"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfaYre2" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfaYre2"> 
+        <label class="x-label cfaYre2" xid="label9" __cid="cfaYre2" data-bind="text:$model.userData.label(&quot;address&quot;)"/>  
+        <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cfaYre2" xid="textarea1" data-bind="component:{ref:$model.userData.ref(&quot;address&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'},enable:flag" __cid="cfaYre2"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaYre2" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaYre2"> 
+        <div class="x-col cfaYre2" xid="col3" __cid="cfaYre2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cfaYre2" xid="subBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:flag" data-events="onClick:subBtnClick" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cfaYre2"> 
+            <i xid="i2" __cid="cfaYre2" class="cfaYre2"/>  
+            <span xid="span2" __cid="cfaYre2" class="cfaYre2">提交</span> 
+          </a> 
+        </div>  
+        <div class="x-col cfaYre2" xid="col4" __cid="cfaYre2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfaYre2" xid="clearBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:flag" data-events="onClick:clearBtnClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="cfaYre2"> 
+            <i xid="i3" __cid="cfaYre2" class="cfaYre2"/>  
+            <span xid="span3" __cid="cfaYre2" class="cfaYre2">重置</span> 
+          </a> 
+        </div> 
+      </div> 
+    </form> 
+  </div> 
+</div>

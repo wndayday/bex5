@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<project name="x5 app mananger">
+
+	<!-- 系统环境变量 -->
+	<property environment="env" />
+
+	<!-- 基础环境变量 -->
+	<condition property="exe" value=".exe" else="">
+		<os family="windows" />
+	</condition>
+
+	<condition property="bat" value=".bat" else=".sh">
+		<os family="windows" />
+	</condition>
+
+	<property name="justepHome" value="@justepHome@" />
+	<property name="antLibDir" value="@antLibDir@" />
+	<property name="nativeDir" value="@nativeDir@" />
+	<property name="filePath" value="@filePath@" />
+	<property name="filename" value="@filename@" />
+ 	
+	<condition property="uiServerDir" value="${justepHome}/../tomcat/webapps/x5" else="${justepHome}/runtime/UIServer">
+		<equals arg1="@webIDE@" arg2="true" />
+	</condition>
+
+	<condition property="tomcatLib" value="${justepHome}/../tomcat/lib" else="${justepHome}/apache-tomcat/lib">
+		<equals arg1="@webIDE@" arg2="true" />
+	</condition>
+<!--
+	<condition property="uiServerDir" value="${justepHome}/runtime/UIServer" else="${justepHome}/runtime/UIServer">
+		<equals arg1="@webIDE@" arg2="true" />
+	</condition>
+
+	<condition property="tomcatLib" value="${justepHome}/apache-tomcat/lib" else="${justepHome}/apache-tomcat/lib">
+		<equals arg1="@webIDE@" arg2="true" />
+	</condition>
+-->
+
+	<property name="session" value="@session@" />
+
+	<!-- 应用基本信息 app.project -->
+	<property name="appID" value="@appID@" />
+	<property name="projectName" value="@projectName@" />
+	<property name="edit" value="@edit@" />
+
+	<property name="mode" value="@mode@" />
+	<property name="webPath" value="@webPath@" />
+	<property name="indexURL" value="@indexURL@" />
+	<property name="hash" value="@hash@" />
+
+	<!-- 应用基本信息 config.xml -->
+	<property name="appName" value="@appName@" />
+	<property name="version" value="@version@" />
+
+	<!-- 开发者信息 app.project、config.xml -->
+
+	<!-- 新相关 app.project -->
+
+	<!-- 打包相关设置 -->
+	<property name="platform" value="@platform@" />
+	<property name="includeUIRes" value="@includeUIRes@" />
+	<property name="compileUI" value="@compileUI@" />
+	
+	<!-- 此处写死了云环境的路径, 不合适, 导致只能运行在云环境中 -->
+	<property name="uixBuilder" value="/uix-web/release" />
+	<property name="uixDebugPath" value="/usr/local/x5/dist/.debug/main" />
+	<!-- 
+	<property name="uixBuilder" value="C:/x5/WX/WeX5_5982/tools/uix-web/release-cloud" />
+	<property name="uixDebugPath" value="C:/x5/WX/WeX5_5982/dist/a1/.debug" />
+	-->
+	
+	<property name="releaseMode" value="@releaseMode@" />
+	<property name="useProxyBuilderServer" value="@useProxyBuilderServer@" />
+	<property name="proxyBuilderServer" value="@proxyBuilderServer@" />
+	<property name="outputSrc" value="@outputSrc@" />
+	<property name="outputProjectName" value="@outputProjectName@" />
+
+	<!-- 编辑运行时信息 -->
+
+	<!-- 打包运行时信息 -->
+	<property name="appBuilderServer" value="@appBuilderServer@" />
+	<property name="webIDE" value="@webIDE@" />
+
+	<!-- 部署时信息 -->
+	<property name="paasSession" value="@paasSession@" />
+	<property name="paasDistFiles" value="@paasDistFiles@" />
+	<property name="paasServiceID" value="@paasServiceID@" />
+	<property name="paasType" value="@paasType@" />
+	<property name="paasToken" value="@paasToken@" />
+	<property name="paasConsoleURL" value="@paasConsoleURL@" />
+	<property name="compileBaaS" value="@compileBaaS@" />
+
+	<condition property="baasName" value=".php" else="">
+		<equals arg1="@baasType@" arg2="3" />
+	</condition>
+
+	<condition property="isWebIDE">
+		<equals arg1="@webIDE@" arg2="true" />
+	</condition>
+
+	<property name="targetDir" value="${nativeDir}/${projectName}" />
+	<property name="paasDeployDir" value="${targetDir}/dist/paas" />
+	<property file="${targetDir}/build.properties" />
+	<property name="buildDir" value="${targetDir}/build" />
+	<property name="buildSrcDir" value="${buildDir}/src" />
+	<property name="buildProject" value="${buildDir}/project" />
+	<property name="buildWWWDir" value="${buildDir}/www" />
+	<property name="buildPluginsDir" value="${buildDir}/plugins" />
+
+	<!-- app-builder用法 -->
+	<property name="app" value="@appInString@" />
+	<property name="appPath" value="${nativeDir}/${projectName}" />
+
+	<condition property="envPath" value="${env.windir}:${env.windir}/system32:${env.Path}" else="${env.PATH}">
+		<os family="windows" />
+	</condition>
+
+	<path id="antClasspath">
+		<fileset dir="${antLibDir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="${antLibDir}/task" />
+	</path>
+	<typedef resource="com/justep/tools/ant/task/antlib.xml" classpathref="antClasspath" />
+	<condition property="compileBaaSNeeded">
+		<equals arg1="${compileBaaS}" arg2="true" />
+	</condition>
+
+	<condition property="compileUINeeded">
+		<equals arg1="${compileUI}" arg2="true" />
+	</condition>
+	<condition property="isUIX" value="">
+		<and>
+			<equals arg1="@uiMode@" arg2="UIX" />
+			<isset property="compileUINeeded" />
+		</and>
+	</condition>
+	<condition property="isUI2" value="">
+		<and>
+			<not>
+				<equals arg1="@uiMode@" arg2="UIX" />
+			</not>
+			<isset property="compileUINeeded" />
+		</and>
+	</condition>	
+
+	<condition property="compressTarNeeded-baas">
+		<contains string="${paasDistFiles}" substring="baas.java.tar.gz">
+		</contains>
+	</condition>
+	<condition property="compressTarNeeded-baas-php">
+		<contains string="${paasDistFiles}" substring="baas.php.tar.gz">
+		</contains>
+	</condition>
+	<condition property="compressTarNeeded-sql">
+		<contains string="${paasDistFiles}" substring="sql.tar.gz">
+		</contains>
+	</condition>
+	<condition property="compressTarNeeded-data">
+		<contains string="${paasDistFiles}" substring="data.tar.gz">
+		</contains>
+	</condition>
+	<condition property="compressTarNeeded-www-version">
+		<and>
+			<contains string="${paasDistFiles}" substring="www.tar.gz">
+			</contains>
+			<contains string="${hash}" substring="version">
+			</contains>
+		</and>
+	</condition>
+	<condition property="compressTarNeeded-www-hash">
+		<and>
+			<contains string="${paasDistFiles}" substring="www.tar.gz">
+			</contains>
+			<contains string="${hash}" substring="md5">
+			</contains>
+		</and>
+	</condition>
+	<condition property="compressTarNeeded-ui2">
+		<contains string="${paasDistFiles}" substring="model.tar.gz">
+		</contains>
+	</condition>
+	<condition property="compressTarNeeded-app">
+		<contains string="${paasDistFiles}" substring="app.tar.gz">
+		</contains>
+	</condition>
+	<condition property="compressTarNeeded-service">
+		<contains string="${paasDistFiles}" substring="service.tar.gz">
+		</contains>
+	</condition>
+
+	<target name="quickApp" depends="init, prepareApp, compileUI, saveLastPackConfig, packUseAppBuilderServer" description="快速打包">
+	</target>
+
+	<target name="createApp" depends="init" description="新建应用">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="app"></arg>
+			<arg value="--target=createApp"></arg>
+			<arg value="--app=${app}"></arg>
+			<arg value="--nativeDir=${nativeDir}"></arg>
+			<arg value="${nativeDir}/templates/normal"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+
+	<target name="editApp" depends="init" description="编辑应用">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="app"></arg>
+			<arg value="--target=editApp"></arg>
+			<arg value="--app=${app}"></arg>
+			<arg value="--nativeDir=${nativeDir}"></arg>
+			<arg value="${nativeDir}/templates/normal"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+
+	<target name="prepareApp" depends="init" description="新建/编辑应用">
+		<condition property="appOption" value="editApp" else="createApp">
+			<equals arg1="${edit}" arg2="true" />
+		</condition>
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="app"></arg>
+			<arg value="--target=${appOption}"></arg>
+			<arg value="--app=${app}"></arg>
+			<arg value="--nativeDir=${nativeDir}"></arg>
+			<arg value="${nativeDir}/templates/normal"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+	
+	
+	<target name="compileUI2" if="isUI2" depends="init" description="编译UI2资源">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="compileUI"></arg>
+			<arg value="--appPath=${appPath}"></arg>
+			<arg value="--uiServerDir=${uiServerDir}"></arg>
+			<arg value="${targetDir}"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>	
+	<target name="compileUIX" if="isUIX" depends="init" description="编译UIX资源">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="compileUIX"></arg>
+			<arg value="--appPath=${appPath}"></arg>
+			<arg value="--uiServerDir=${uiServerDir}"></arg>
+			<arg value="--uixBuilder=${uixBuilder}"></arg>
+			<arg value="--uixDebugPath=${uixDebugPath}"></arg>
+			<arg value="--uixReleasePath=${uixDebugPath}/../.release"></arg>
+			<arg value="${targetDir}"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+	
+	<target name="compileUI" if="compileUINeeded" depends="compileUI2, compileUIX" description="编译UI资源">
+	</target>
+
+	<target name="bluemixWar" depends="init,compileUI" description="编译UI资源并发布到bluemix"> <!-- test bluemix war -->
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="publishBluemix"></arg>
+			<arg value="--appPath=${appPath}/www${webPath}"></arg>
+			<arg value="${targetDir}"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+
+	<target name="bluemixBaaS" depends="init" description="编译BaaS并发布到bluemix"><!-- test bluemix BaaS -->
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="publishBluemix"></arg>
+			<arg value="--target=publishBaaS"></arg>
+			<arg value="--deployDir=${paasDeployDir}"></arg>
+			<arg value="${targetDir}"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+
+	<target name="prepareSource" depends="init" description="生成源代码">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.compileUI.classpath"></classpath>
+			<arg value="genSource"></arg>
+			<arg value="--appPath=${appPath}"></arg>
+			<arg value="--outputSrc=${outputSrc}"></arg>
+			<arg value="--outputProjectName=${outputProjectName}"></arg>
+			<arg value="${targetDir}"></arg>
+			<arg value="${targetDir}/build/src"></arg>
+		</java>
+	</target>
+
+	<target name="init" description="环境初始化">
+		<property name="appBuilderBin" value="${justepHome}/tools/app-builder/aabin"></property>
+
+		<path id="ant.pack.classpath">
+			<pathelement path="${appBuilderBin}" />
+			<fileset dir="${justepHome}/tools/app-builder/lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<path id="ant.compileUI.classpath">
+			<pathelement path="${appBuilderBin}" />
+			<fileset dir="${justepHome}/tools/app-builder/lib">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${uiServerDir}/WEB-INF/lib">
+				<include name="**/*.jar" />
+			</fileset>
+			<fileset dir="${tomcatLib}">
+				<include name="servlet-api.jar" />
+			</fileset>
+		</path>
+	</target>
+
+	<target name="pack" description="打包" depends="init">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.pack.classpath"></classpath>
+			<arg value="pack"></arg>
+			<arg value="${buildSrcDir}"></arg>
+			<arg value="${targetDir}/dist"></arg>
+		</java>
+	</target>
+
+	<target name="packUseAppBuilderServer" description="使用代理服务生成应用包">
+		<echo level="info">压缩应用源代码......</echo>
+		<zip destfile="${buildProject}.zip" encoding="UTF-8">
+			<fileset dir="${targetDir}">
+				<include name="build/www/" />
+				<include name="www/" />
+				<include name="platforms/" />
+				<include name="config.xml" />
+				<include name="android.keystore" />
+				<include name="ios.*" />
+				<include name="build.properties" />
+				<include name="app.project" />
+			</fileset>
+		</zip>
+
+		<echo level="info">上传应用源代码到服务端......</echo>
+		<Upload appID="${appID}" file="${buildProject}.zip" appBuilderServer="${appBuilderServer}" />
+		<echo level="info">APP打包任务ID：${session}</echo>
+		<echo level="info">放入队列，等待执行......</echo>
+		<Pack appID="${appID}" appBuilderServer="${appBuilderServer}" session="${session}" />
+		<echo level="info">等待服务端执行完成......</echo>
+		<PackState appID="${appID}" appBuilderServer="${appBuilderServer}" session="${session}" waittingState="finished" />
+		<echo level="info">下载应用包......</echo>
+		<Download appID="${appID}" appBuilderServer="${appBuilderServer}" dir="${targetDir}/dist" session="${session}" />
+		<delete file="${buildProject}.zip" />
+	</target>
+
+	<target name="unZipAppBuilderServerPackage" description="解压出应用包文件">
+		<echo level="info">解压应用包......</echo>
+		<unzip src="${targetDir}/dist/app.zip" dest="${targetDir}/dist" overwrite="true" encoding="UTF-8" />
+
+		<delete file="${targetDir}/dist/app.zip" />
+	</target>
+
+	<target name="releaseUpdateFiles" if="wwwExists" description="发布版本更新文件">
+		<echo level="info">发布版本更新文件......</echo>
+
+		<copy todir="${targetDir}/www${webPath}" overwrite="true">
+			<fileset dir="${targetDir}/dist">
+				<include name="app.apk" />
+				<include name="app.ipa" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="compileBaaS" if="compileBaaSNeeded" description="编译BaaS资源">
+		<echo level="info">Baas编译......</echo>
+		<mkdir dir="${paasDeployDir}" />
+		<exec executable="${justepHome}/tools/compile/compileBaas${baasName}${bat}" failonerror="true">
+			<arg value="ide"></arg>
+			<env key="BAAS_MODEL_OUT_JAR_FILENAME" value="${paasDeployDir}/baas_model_service.jar" />
+		</exec>
+	</target>
+
+	<condition property="isPHP" value="">
+		<equals arg1="${baasName}" arg2=".php" />
+	</condition>
+	<condition property="isNotPHP" value="">
+		<not>
+			<equals arg1="${baasName}" arg2=".php" />
+		</not>
+	</condition>
+	<condition property="compressTarNeeded-baas-java">
+		<and>
+			<isset property="compressTarNeeded-baas" />
+			<isset property="isNotPHP" />
+		</and>
+	</condition>
+	<condition property="compressTarNeeded-baas-php">
+		<and>
+			<isset property="compressTarNeeded-baas" />
+			<isset property="isPHP" />
+		</and>
+	</condition>
+
+	<target name="compressTar-baas" if="compressTarNeeded-baas-java" description="压缩BaaS">
+		<delete file="${paasDeployDir}/baas.java.tar.gz" failonerror="false" />
+		<tar destfile="${paasDeployDir}/baas.java.tar.gz" basedir="${paasDeployDir}" includes="*.jar" compression="gzip">
+		</tar>
+	</target>
+
+	<target name="compressTar-baas-php" if="compressTarNeeded-baas-php" description="压缩BaaS(php)">
+		<delete file="${paasDeployDir}/baas.php.tar.gz" failonerror="false" />
+		<tar destfile="${paasDeployDir}/baas.php.tar.gz" basedir="${justepHome}/model/Baas.php" includes="**" compression="gzip">
+		</tar>
+	</target>
+
+	<target name="compressTar-sql" if="compressTarNeeded-sql" description="压缩SQL">
+		<delete file="${paasDeployDir}/sql.tar.gz" />
+		<mkdir dir="${justepHome}/model/Baas${baasName}/sql" />
+		<delete file="${justepHome}/model/Baas${baasName}/sql/*.sql" />
+		<copy todir="${justepHome}/model/Baas${baasName}/sql" overwrite="true" failonerror="false">
+			<fileset dir="${justepHome}/model/Baas${baasName}/${appName}/sql">
+				<include name="*.sql" />
+			</fileset>
+		</copy>
+
+		<condition property="sqlDirExists">
+			<available file="${justepHome}/model/Baas${baasName}/sql" />
+		</condition>
+		<fail unless="sqlDirExists" message="Baas${baasName}/sql文件夹不存在。请确认服务是否需要进行sql初始化，不需要请在部署页面去除sql的选项，若需要请在此文件夹放置初始化sql" />
+
+		<tar destfile="${paasDeployDir}/sql.tar.gz" basedir="${justepHome}/model/Baas${baasName}/sql" includes="*.sql" compression="gzip" />
+	</target>
+
+	<target name="compressTar-data" if="compressTarNeeded-data" description="压缩用户数据">
+		<delete file="${paasDeployDir}/data.tar.gz" />
+
+		<condition property="dataDirExists">
+			<available file="${justepHome}/data" />
+		</condition>
+		<fail unless="dataDirExists" message="data目录不存在。请检查确认开发工具上下的“data”。" />
+
+		<tar destfile="${paasDeployDir}/data.tar.gz" basedir="${justepHome}/data" compression="gzip" />
+	</target>
+
+	<target name="compressTar-app" if="compressTarNeeded-app" description="压缩App">
+		<delete file="${paasDeployDir}/app.tar.gz" />
+		<tar destfile="${paasDeployDir}/app.tar.gz" basedir="${targetDir}/dist" includes="*.apk,*.ipa" compression="gzip" />
+	</target>
+
+	<target name="compressTar-service" if="compressTarNeeded-service" description="压缩服务模型">
+		<delete file="${paasDeployDir}/service.tar.gz" />
+		<tar destfile="${paasDeployDir}/service.tar.gz" basedir="${justepHome}/model/service" compression="gzip" />
+	</target>
+
+	<target name="compressTar-www-version" if="compressTarNeeded-www-version">
+		<delete file="${paasDeployDir}/www.tar.gz" />
+		<tar destfile="${paasDeployDir}/www.tar.gz" basedir="${targetDir}/www" excludes="**/www.zip,**/*.apk,**/*.ipa" compression="gzip" longfile="gnu" />
+	</target>
+
+	<target name="compressTar-www-hash" if="compressTarNeeded-www-hash">
+		<delete file="${paasDeployDir}/www.tar.gz" />
+		<tar destfile="${paasDeployDir}/www.tar.gz" basedir="${targetDir}/www" excludes="**/*.apk,**/*.ipa" compression="gzip" longfile="gnu" />
+	</target>
+
+	<target name="compressTar-www" depends="compressTar-www-hash, compressTar-www-version" description="压缩www">
+	</target>
+
+	<target name="compressTar-ui2" if="compressTarNeeded-ui2" description="压缩model">
+		<delete file="${paasDeployDir}/model.tar.gz" />
+		<tar destfile="${paasDeployDir}/model.tar.gz" compression="gzip" longfile="gnu">
+			<fileset dir="${justepHome}/model">
+				<include name="UI2/" />
+				<exclude name="UI2/system/" />
+				<exclude name="UI2/portal/" />
+				<exclude name="UI2/portal2/" />
+				<exclude name="UI2/SA/" />
+				<exclude name="UI2/wxsys/" />
+				
+				<include name="BIZ/" />
+				<exclude name="BIZ/system/" />
+				<exclude name="BIZ/portal/" />
+				<exclude name="BIZ/portal2/" />
+				<exclude name="BIZ/SA/" />
+			</fileset>
+			<fileset dir="${justepHome}/model">
+				<include name="UI2/portal/config.portal.xml" />
+			</fileset>
+		</tar>
+		<delete file="${paasDeployDir}/index.w" />
+	</target>
+	
+	<target name="echoDistFiles" description="发布的资源">
+		<echo>${paasDistFiles}</echo>
+	</target>
+
+	<target name="compressTar" depends="echoDistFiles, compressTar-baas, compressTar-baas-php, compressTar-sql, compressTar-app, compressTar-www, compressTar-ui2, compressTar-data, compressTar-service"
+		description="生成部署到CloudX5的压缩包" />
+
+	<target name="prepareDeploy" description="准备部署">
+		<mkdir dir="${paasDeployDir}" />
+	</target>
+
+	<target name="deploy" depends="prepareDeploy, compileBaaS, compileUI, compressTar" description="部署到CloudX5">
+		<java classname="com.justep.deploy.app.utils.Builder" fork="true" dir="${justepHome}/tools/app-builder/lib" failonerror="true">
+			<classpath refid="ant.pack.classpath"></classpath>
+			<arg value="cloudx5"></arg>
+			<arg value="--paasConsoleURL=${paasConsoleURL}"></arg>
+			<arg value="--paasToken=${paasToken}"></arg>
+			<arg value="--paasDeployDir=${targetDir}/dist/paas"></arg>
+			<arg value="--paasSession=${paasSession}"></arg>
+			<arg value="--paasServiceID=${paasServiceID}"></arg>
+			<arg value="--paasType=${paasType}"></arg>
+			<arg value="--paasDistFiles=${paasDistFiles}"></arg>
+			<arg value="--mode=${mode}"></arg>
+			<arg value="--webPath=${webPath}"></arg>
+			<arg value="--indexURL=${indexURL}"></arg>
+			<arg value="${targetDir}"></arg>
+			<arg value="${targetDir}"></arg>
+		</java>
+	</target>
+
+	<target name="saveLastPackConfig" description="保存配置信息">
+		<propertyfile file="${targetDir}/build.properties">
+			<entry key="platform" value="${platform}" />
+			<entry key="includeUIRes" value="${includeUIRes}" />
+			<entry key="compileUI" value="${compileUI}" />
+			<entry key="useProxyBuilderServer" value="${useProxyBuilderServer}" />
+			<entry key="proxyBuilderServer" value="${proxyBuilderServer}" />
+			<entry key="releaseMode" value="${releaseMode}" />
+		</propertyfile>
+	</target>
+
+	<target name="compressTarModel" description="归档压缩用户文件">
+		<delete file="${justepHome}/model.tar.gz" />
+		<tar destfile="${justepHome}/model.tar.gz" compression="gzip" longfile="gnu">
+			<fileset dir="${justepHome}/model">
+				<include name="UI2/" />
+				<exclude name="UI2/system/" />
+				<exclude name="UI2/portal/" />
+				<exclude name="UI2/portal2/" />
+				<exclude name="UI2/SA/" />
+				<exclude name="UI2/wxsys/" />
+
+				<include name="Baas/" />
+				<exclude name="Baas/common/" />				
+				
+				<include name="service/" />
+
+				<include name="Native/" />
+				<exclude name="Native/plugins/" />
+				<exclude name="Native/templates/" />
+				
+				<include name="BIZ/" />	
+				<exclude name="BIZ/system/" />
+				<exclude name="BIZ/portal/" />
+				<exclude name="BIZ/portal2/" />
+				<exclude name="BIZ/SA/" />
+			</fileset>
+			<fileset dir="${justepHome}/model">
+				<include name="UI2/portal/config.portal.xml" />
+			</fileset>
+		</tar>
+	</target>
+	
+	<target name="compressTarData" description="保存用户data文件夹数据"> 
+		<delete file="${justepHome}/data.tar.gz" /> 
+		<tar destfile="${justepHome}/data.tar.gz" compression="gzip" longfile="gnu"> 
+			<fileset dir="${justepHome}/data"> </fileset> 
+		</tar> 
+	</target>
+	
+	<target name="compressTarSinglePage" description="归档选中页面">
+		<delete file="${justepHome}/model.tar.gz" />
+		<tar destfile="${justepHome}/model.tar.gz" compression="gzip" longfile="gnu">
+			<fileset dir="${justepHome}/model/${filePath}">
+				<include name="${filename}" />
+			</fileset>
+		</tar>
+	</target>
+</project>

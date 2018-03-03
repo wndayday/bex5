@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template-config>
+	<catalog name="mobile" text="移动" icon="$UI/system/designer/wizard/template/img/mobile.png" order="2">
+		<catalog name="simple" text="简单页面" icon="$UI/system/designer/wizard/template/img/folder.png" order="5">
+			<template path="$UI/system/templates2/normal/empty" text="空白" icon="$UI/system/designer/wizard/template/img/template.gif" />
+			<template path="$UI/system/templates2/simple/list1" text="列表" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/simple/form1" text="表单" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/simple/tree" text="树形视图" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+		</catalog>
+		<catalog name="listDetail" text="列表/详细" icon="$UI/system/designer/wizard/template/img/folder1.png" order="4">
+			<template path="$UI/system/templates2/listDetail/listForm1" text="列表+表单" icon="$UI/system/designer/wizard/template/img/template.gif" />
+			<template path="$UI/system/templates2/listDetail/complexListForm" text="主从表" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+		</catalog>
+		<catalog name="flow" text="流程" icon="$UI/system/designer/wizard/template/img/folder2.png" order="3">
+			<template path="$UI/system/templates2/flow/singleProcess" text="单表流程" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/flow/complexProcess" text="主从表流程" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+<!-- 			<template path="$UI/system/templates2/flow/listFormProcess" text="列表+详细（标签页）" />
+ -->			<!-- <template path="$UI/system/templates/flow/listForm1" text="列表+详细(对话框)" 
+				/> -->
+		</catalog>
+<!-- 		<catalog name="reportChart" text="报表/图表" order="2">
+			<template path="$UI/system/templates/report/grid" text="网格报表" />
+			<template path="$UI/system/templates/report/group" text="分组报表" />
+			<template path="$UI/system/templates/report/cross" text="交叉报表" />
+			<template path="$UI/system/templates/report/chart" text="图表" />
+		</catalog>
+ -->	</catalog>
+	<catalog name="pc" text="桌面" icon="$UI/system/designer/wizard/template/img/pc.png" order="1">
+		<catalog name="simple" text="简单页面" icon="$UI/system/designer/wizard/template/img/folder.png" order="5">
+			<template path="$UI/system/templates2/normalPC/empty" text="空白" icon="$UI/system/designer/wizard/template/img/template.gif" />
+			<template path="$UI/system/templates2/simplePC/list1" text="单表-列表" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/simplePC/tree" text="树形视图" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+		</catalog>
+		<catalog name="listDetailPC" text="列表/详细" icon="$UI/system/designer/wizard/template/img/folder1.png" order="4">
+			<template path="$UI/system/templates2/listDetailPC/listForm1" text="单表-列表+详细（标签页）" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/listDetailPC/listDetailDialog" text="单表-列表+详细（对话框）" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/listDetailPC/complexListForm"	text="主从-列表" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/listDetailPC/complexListForm2" text="主从-表单列表" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/listDetailPC/listFormDetail" text="主从-列表详细" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/listDetailPC/treeForm" text="树形+表单" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/listDetailPC/treeList" text="树形列表" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+		</catalog>
+		<catalog name="flowPC" text="流程" icon="$UI/system/designer/wizard/template/img/folder2.png" order="3">
+			<template path="$UI/system/templates2/flowPC/singleProcess" text="单表流程" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/flowPC/queryProcess2" text="单表流程查询" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/flowPC/mainDetailProcess" text="主从表流程" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/flowPC/complexProcess" text="主从表流程（对话框）" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/flowPC/queryProcess" text="主从表流程查询" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+		</catalog>
+		<catalog name="dialog" text="对话框" icon="$UI/system/designer/wizard/template/img/folder3.png" order="2">
+			<template path="$UI/system/templates2/dialogPC/emptyDialog" text="空白对话框" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/dialogPC/listSingleSelectDialog" text="列表单选" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/dialogPC/listMultiSelectDialog" text="列表多选" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/dialogPC/treeSingleSelectDialog" text="树单选" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+			<template path="$UI/system/templates2/dialogPC/treeMultiSelectDialog" text="树多选" icon="$UI/system/designer/wizard/template/img/template.gif"/>
+		</catalog>
+<!-- 		<catalog name="reportChartPC" text="报表/图表" order="1">
+			<template path="$UI/system/templates/reportPC/grid" text="网格报表" />
+			<template path="$UI/system/templates/reportPC/group" text="分组报表" />
+			<template path="$UI/system/templates/reportPC/cross" text="交叉报表" />
+			<template path="$UI/system/templates/reportPC/chart" text="图表" />
+		</catalog>
+ -->	</catalog>
+</template-config>

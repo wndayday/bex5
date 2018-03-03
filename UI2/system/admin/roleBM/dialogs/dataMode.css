@@ -1,0 +1,10 @@
+.btn-link.btn.successBtn {
+	background-color: #4fc7c5;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.btn-link.btn.successBtn>span,
+.btn-link.btn.successBtn>i
+ {
+	color:#fff;
+}

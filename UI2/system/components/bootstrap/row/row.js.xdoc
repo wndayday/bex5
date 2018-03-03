@@ -1,0 +1,21 @@
+/**
+	@name $UI/system/components/bootstrap/row/row
+	@component 
+	@extends $UI/system/lib/base/viewComponent
+	@description 
+	<xmp>
+		<b>使用场景</b>：实现行和列的布局;
+		<b>使用方法</b>：添加row组件，默认是三列，每列均分屏幕宽度，可以在组件上添加行、列，并调整每列的宽度;
+	</xmp>
+	@model UI2
+	@example
+	<xmp>
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/row/row#xid
+	@attribute 
+	@type string
+	@description 
+*/	

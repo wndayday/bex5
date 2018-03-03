@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQfmyA3" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQfmyA3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.div.cQfmyA3{margin-left: 20px} .btn.cQfmyA3{margin-left: 20px} .x-label.cQfmyA3{margin-left: 20px} .x-contents.cQfmyA3{border: 1px solid rgb(245, 239, 239)} .span_title.cQfmyA3{margin-left: 150px; font-size: 200%} .x-titlebar.cQfmyA3{background-color: rgb(47, 164, 231)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQfmyA3" class="cQfmyA3"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pci6JjEf-iosstatusbar cQfmyA3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQfmyA3"> 
+    <div class="x-panel-top cQfmyA3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQfmyA3">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" xid="titleBar3" class="x-titlebar  cQfmyA3" style="color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;滚动条&quot;}" __cid="cQfmyA3"> 
+        <div class="x-titlebar-left cQfmyA3" xid="left3" __cid="cQfmyA3"/>  
+        <div class="x-titlebar-title cQfmyA3" xid="title3" __cid="cQfmyA3">滚动条</div>  
+        <div class="x-titlebar-right  cQfmyA3" xid="right3" __cid="cQfmyA3">
+          <div class="empty cQfmyA3" __cid="cQfmyA3"/>
+        </div>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showjsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cQfmyA3"> 
+          <i xid="i18" __cid="cQfmyA3" class="cQfmyA3"/>  
+          <span xid="span24" __cid="cQfmyA3" class="cQfmyA3">js</span>
+        </a>
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="sourceBtn" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showPageSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cQfmyA3"> 
+          <i xid="i17" __cid="cQfmyA3" class="cQfmyA3"/>  
+          <span xid="span23" __cid="cQfmyA3" class="cQfmyA3">源码</span>
+        </a>
+      </div>
+    </div>  
+    <div class="x-panel-content cQfmyA3" xid="content7" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQfmyA3">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQfmyA3" xid="contents1" style="width:49%;height:32%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQfmyA3"> 
+        <div class="x-contents-content active cQfmyA3" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQfmyA3">
+          <div xid="div7" __cid="cQfmyA3" class="cQfmyA3">
+            <span xid="span14" class="span_title cQfmyA3" __cid="cQfmyA3">局部滚动</span>
+          </div>
+          <div xid="div1" style="width:90%;height:auto;" class="div cQfmyA3" __cid="cQfmyA3">
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label1" bind-text="&quot;姓名:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label2" bind-text="&quot;密码:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input2" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label3" bind-text="&quot;地址:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label4" bind-text="&quot;备注:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label5" bind-text="&quot;邮箱:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input5" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button1" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cQfmyA3"> 
+              <i xid="i1" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span1" __cid="cQfmyA3" class="cQfmyA3">注册</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button2" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cQfmyA3"> 
+              <i xid="i2" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span2" __cid="cQfmyA3" class="cQfmyA3">取消</span>
+            </a> 
+          </div> 
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQfmyA3" xid="contents2" style="left:50%;width:50%;height:32%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQfmyA3"> 
+        <div class="x-contents-content active cQfmyA3" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQfmyA3">
+          <div xid="div8" __cid="cQfmyA3" class="cQfmyA3"> 
+            <span xid="span15" class="span_title cQfmyA3" __cid="cQfmyA3">局部滚动</span> 
+          </div>
+          <div xid="div2" style="width:90%;height:auto;" class="div cQfmyA3" __cid="cQfmyA3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label6" bind-text="&quot;姓名:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input10" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label7" bind-text="&quot;密码:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input7" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label8" bind-text="&quot;地址:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input6" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label10" bind-text="&quot;备注:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input9" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label9" bind-text="&quot;邮箱:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input8" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button4" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cQfmyA3"> 
+              <i xid="i4" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span4" __cid="cQfmyA3" class="cQfmyA3">注册</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button3" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cQfmyA3"> 
+              <i xid="i3" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span3" __cid="cQfmyA3" class="cQfmyA3">取消</span>
+            </a> 
+          </div> 
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQfmyA3" xid="contents3" style="top:34%;height:32%;width:49%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQfmyA3"> 
+        <div class="x-contents-content active cQfmyA3" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQfmyA3">
+          <div xid="div9" __cid="cQfmyA3" class="cQfmyA3"> 
+            <span xid="span16" class="span_title cQfmyA3" __cid="cQfmyA3">局部滚动</span>
+          </div>
+          <div xid="div3" style="width:90%;height:auto;" class="div cQfmyA3" __cid="cQfmyA3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label13" bind-text="&quot;姓名:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input14" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput15" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label12" bind-text="&quot;密码:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input11" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label15" bind-text="&quot;地址:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input12" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput13" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label11" bind-text="&quot;备注:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input13" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput12" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label14" bind-text="&quot;邮箱:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input15" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button5" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cQfmyA3"> 
+              <i xid="i5" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span5" __cid="cQfmyA3" class="cQfmyA3">注册</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button6" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cQfmyA3"> 
+              <i xid="i6" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span6" __cid="cQfmyA3" class="cQfmyA3">取消</span>
+            </a> 
+          </div> 
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQfmyA3" xid="contents4" style="left:50%;top:34%;height:32%;width:50%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQfmyA3"> 
+        <div class="x-contents-content active cQfmyA3" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQfmyA3">
+          <div xid="div10" __cid="cQfmyA3" class="cQfmyA3"> 
+            <span xid="span17" class="span_title cQfmyA3" __cid="cQfmyA3">局部滚动</span>
+          </div>
+          <div xid="div4" style="width:90%;height:auto;" class="div cQfmyA3" __cid="cQfmyA3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput17" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label18" bind-text="&quot;姓名:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input17" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput18" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label17" bind-text="&quot;密码:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input20" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput19" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label20" bind-text="&quot;地址:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input19" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput20" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label16" bind-text="&quot;备注:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input18" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput16" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label19" bind-text="&quot;邮箱:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input16" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button8" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cQfmyA3"> 
+              <i xid="i8" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span8" __cid="cQfmyA3" class="cQfmyA3">注册</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button7" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cQfmyA3"> 
+              <i xid="i7" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span7" __cid="cQfmyA3" class="cQfmyA3">取消</span>
+            </a> 
+          </div> 
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQfmyA3" xid="contents5" style="top:68%;height:32%;width:49%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQfmyA3"> 
+        <div class="x-contents-content active cQfmyA3" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQfmyA3">
+          <div xid="div11" __cid="cQfmyA3" class="cQfmyA3"> 
+            <span xid="span18" class="span_title cQfmyA3" __cid="cQfmyA3">局部滚动</span>
+          </div>
+          <div xid="div5" style="width:90%;height:auto;" class="div cQfmyA3" __cid="cQfmyA3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput25" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label25" bind-text="&quot;姓名:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input22" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput24" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label24" bind-text="&quot;密码:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input25" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput23" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label21" bind-text="&quot;地址:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input21" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput21" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label23" bind-text="&quot;备注:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input23" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput22" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label22" bind-text="&quot;邮箱:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input24" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button9" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cQfmyA3"> 
+              <i xid="i9" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span9" __cid="cQfmyA3" class="cQfmyA3">注册</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button10" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cQfmyA3"> 
+              <i xid="i10" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span10" __cid="cQfmyA3" class="cQfmyA3">取消</span>
+            </a> 
+          </div> 
+        </div>
+      </div>
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQfmyA3" xid="contents6" style="left:50%;top:68%;height:32%;width:50%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQfmyA3"> 
+        <div class="x-contents-content active cQfmyA3" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQfmyA3">
+          <div xid="div12" __cid="cQfmyA3" class="cQfmyA3"> 
+            <span xid="span19" class="span_title cQfmyA3" __cid="cQfmyA3">局部滚动</span>
+          </div>
+          <div xid="div6" style="width:90%;height:auto;" class="div cQfmyA3" __cid="cQfmyA3"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput29" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label27" bind-text="&quot;姓名:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input27" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput30" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label26" bind-text="&quot;密码:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input30" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput27" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label30" bind-text="&quot;地址:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input26" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput26" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label29" bind-text="&quot;备注:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input28" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cQfmyA3" xid="labelInput28" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cQfmyA3"> 
+              <label class="x-label cQfmyA3" xid="label28" bind-text="&quot;邮箱:&quot;" __cid="cQfmyA3"/>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cQfmyA3" xid="input29" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQfmyA3"/>
+            </div>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button12" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cQfmyA3"> 
+              <i xid="i11" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span12" __cid="cQfmyA3" class="cQfmyA3">注册</span>
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQfmyA3" xid="button11" style="background-color:rgb(245, 239, 239);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cQfmyA3"> 
+              <i xid="i12" __cid="cQfmyA3" class="cQfmyA3"/>  
+              <span xid="span11" __cid="cQfmyA3" class="cQfmyA3">取消</span>
+            </a> 
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <style __cid="cQfmyA3" class="cQfmyA3">.x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pci6JjEf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

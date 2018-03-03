@@ -1,0 +1,28 @@
+/**
+	@name $UI/system/components/justep/input/Range
+	@component 
+	@extends $UI/system/components/justep/input/input
+	@model UI2
+	@description
+	<xmp>
+		<b>使用场景</b>：显示变化范围，例如调色盘;
+		<b>使用方法</b>：添加range组件，绑定变化值的数据，可以设置最大和最小值;
+	</xmp>
+*/
+
+/**
+	@name $UI/system/components/justep/input/Range#min
+	@attribute
+	@property 
+	@type number
+	@description 最小值
+*/
+
+/**
+	@name $UI/system/components/justep/input/Range#max
+	@attribute
+	@property 
+	@type number
+	@description 最大值
+*/
+

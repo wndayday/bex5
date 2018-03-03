@@ -1,0 +1,4 @@
+.property-table thead th>input[type='checkbox']{
+	-webkit-appearance: checkbox !important;
+	height:20px;
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cAbuAru" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAbuAru" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.o-marginLeft.cAbuAru{margin-left: 15px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cAbuAru" class="cAbuAru"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbayei2-iosstatusbar cAbuAru" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cAbuAru"> 
+    <div class="x-panel-content cAbuAru" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAbuAru"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col2" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label12" style="text-align:right;" __cid="cAbuAru">用户名：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cAbuAru" xid="inputName" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;5&quot;,&quot;pattern&quot;:&quot;[a-zA-z]&quot;,&quot;placeHolder&quot;:&quot;请输入用户名&quot;}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center text-danger cAbuAru" xid="col2" __cid="cAbuAru"> 
+          <h5 xid="h51" __cid="cAbuAru" class="cAbuAru">用户名不能为空</h5> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col4" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelPassword1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label13" style="text-align:right;" __cid="cAbuAru">密码：</label>  
+            <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cAbuAru" xid="pwd" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center text-danger cAbuAru" xid="col5" __cid="cAbuAru"> 
+          <h5 xid="h52" __cid="cAbuAru" class="cAbuAru">密码为6位数字或字符组成</h5> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col7" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelPassword2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label14" style="text-align:right;" __cid="cAbuAru">确认密码：</label>  
+            <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit cAbuAru" xid="pwds" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center text-danger cAbuAru" xid="col3" __cid="cAbuAru"> 
+          <h5 xid="h53" __cid="cAbuAru" class="cAbuAru">两次密码必须一致</h5> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col10" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label8" style="text-align:right;" __cid="cAbuAru">年龄：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cAbuAru" xid="inputAge" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Integer&quot;,&quot;maxLength&quot;:&quot;3&quot;,&quot;pattern&quot;:&quot;[0-9]&quot;}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center text-danger cAbuAru" xid="col11" __cid="cAbuAru"> 
+          <h5 xid="h54" __cid="cAbuAru" class="cAbuAru">年龄必须在0-120之间</h5> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col13" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelSelect1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label11" style="text-align:right;" __cid="cAbuAru">学历：</label>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cAbuAru" xid="select" bind-options="educationData.datas" bind-optionsValue="'type'" bind-optionsCaption="'--请选择--'" bind-optionsText="'type'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center cAbuAru" xid="col14" __cid="cAbuAru"> 
+          <h5 xid="h55" __cid="cAbuAru" class="cAbuAru"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col16" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelRadioGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label10" style="text-align:right;" __cid="cAbuAru">性别：</label>  
+            <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radios x-edit cAbuAru" xid="radioGroup" bind-foreach="{data:sexData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="cAbuAru">
+              <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cAbuAru" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('type'),value:ref('type')}" __cid="cAbuAru">
+                <xhtml:input type="radio" __cid="cAbuAru" class="cAbuAru"/>
+                <xhtml:label __cid="cAbuAru" class="cAbuAru"/>
+              </xhtml:span>
+            </span> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center cAbuAru" xid="col17" __cid="cAbuAru"> 
+          <h5 xid="h56" __cid="cAbuAru" class="cAbuAru"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col19" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label9" style="text-align:right;" __cid="cAbuAru">入职日期：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cAbuAru" xid="inputDate" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;,&quot;max&quot;:&quot;js:new Date()&quot;}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center cAbuAru" xid="col20" __cid="cAbuAru"> 
+          <h5 xid="h57" __cid="cAbuAru" class="cAbuAru"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cAbuAru" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cAbuAru"> 
+        <div class="x-col cAbuAru" xid="col22" __cid="cAbuAru"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cAbuAru" xid="labelTextarea1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cAbuAru"> 
+            <label class="x-label cAbuAru" xid="label8" style="text-align:right;" __cid="cAbuAru">备注：</label>  
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cAbuAru" xid="textarea" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;请输入...&quot;}" __cid="cAbuAru"/> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 x-col-center cAbuAru" xid="col23" __cid="cAbuAru"> 
+          <h5 xid="h58" __cid="cAbuAru" class="cAbuAru"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cAbuAru" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAbuAru"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-only-label pull-right o-marginLeft cAbuAru" xid="cancelButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'windowReceiver.windowCancel'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cAbuAru"> 
+        <i xid="i2" __cid="cAbuAru" class="cAbuAru"/>  
+        <span xid="span2" class="text-muted cAbuAru" __cid="cAbuAru">取消</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-info pull-right cAbuAru" xid="OKButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:OKButtonClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cAbuAru"> 
+        <i xid="i1" __cid="cAbuAru" class="cAbuAru"/>  
+        <span xid="span1" __cid="cAbuAru" class="cAbuAru">确定</span> 
+      </a> 
+    </div>  
+    <style __cid="cAbuAru" class="cAbuAru">.x-panel.pcbayei2-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcbayei2-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcbayei2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbayei2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbayei2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcbayei2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbayei2-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbayei2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbayei2-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cAbuAru" class="cAbuAru"/> 
+</div>

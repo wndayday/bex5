@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ceuAfE3" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceuAfE3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-col.ceuAfE3{border: 1px rgb(204, 204, 204) solid} .x-output.ceuAfE3{margin-top: -5px} .x-control-group2.ceuAfE3 x-row.ceuAfE3{border: 0px rgb(204, 204, 204) solid} .form-control.ceuAfE3{width: 50%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceuAfE3" class="ceuAfE3"/>  
+  <h3 xmlns="" xid="h31" style="margin:20px;" __cid="ceuAfE3" class="ceuAfE3">响应式布局</h3>  
+  <a xmlns="" component="$model/UI2/system/components/justep/button/button" class="btn btn-link ceuAfE3" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="ceuAfE3"> 
+    <i xid="i4" __cid="ceuAfE3" class="ceuAfE3"/>  
+    <span xid="span7" __cid="ceuAfE3" class="ceuAfE3">js</span> 
+  </a>  
+  <a xmlns="" component="$model/UI2/system/components/justep/button/button" class="btn btn-link ceuAfE3" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="ceuAfE3"> 
+    <i xid="i4" __cid="ceuAfE3" class="ceuAfE3"/>  
+    <span xid="span5" __cid="ceuAfE3" class="ceuAfE3">源码</span> 
+  </a>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group ceuAfE3" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;信息添加&quot;}" __cid="ceuAfE3"> 
+    <div class="x-control-group-title ceuAfE3" xid="controlGroupTitle1" __cid="ceuAfE3"> 
+      <span xid="span1" __cid="ceuAfE3" class="ceuAfE3">信息添加</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row1" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+      <div class="x-col x-col-fixed ceuAfE3" xid="col1" style="height:auto;width:auto;" __cid="ceuAfE3"> 
+        <img src="@justepContextPath@/v_8b2f41b3ffb1423babd8ea2cb90c8936l_zh_CNs_desktopd_pc/demo/pcSample/forms/img/1.jpg" alt="" xid="image1" __cid="ceuAfE3" class="ceuAfE3"/> 
+      </div>  
+      <div class="x-col ceuAfE3" xid="col2" style="height:100%;" __cid="ceuAfE3"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col4" __cid="ceuAfE3"> 
+            <label xid="label1" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('name')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col5" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input1" data-bind="component:{ref:uData.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col6" __cid="ceuAfE3"> 
+            <label xid="label8" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('sex')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col25" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input2" data-bind="component:{ref:uData.ref('sex'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col7" __cid="ceuAfE3"> 
+            <label xid="label2" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('uname')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col8" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input3" data-bind="component:{ref:uData.ref('uname'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col9" __cid="ceuAfE3"> 
+            <label xid="label9" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('age')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col26" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input4" data-bind="component:{ref:uData.ref('age'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col10" __cid="ceuAfE3"> 
+            <label xid="label3" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('height')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col11" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input5" data-bind="component:{ref:uData.ref('height'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col12" __cid="ceuAfE3"> 
+            <label xid="label10" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('IDcode')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col27" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input6" data-bind="component:{ref:uData.ref('IDcode'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col13" __cid="ceuAfE3"> 
+            <label xid="label4" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('birthday')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col14" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input7" data-bind="component:{ref:uData.ref('birthday'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col15" __cid="ceuAfE3"> 
+            <label xid="label11" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('vocation')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col28" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input8" data-bind="component:{ref:uData.ref('vocation'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col16" __cid="ceuAfE3"> 
+            <label xid="label5" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('culture')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col17" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input9" data-bind="component:{ref:uData.ref('culture'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col18" __cid="ceuAfE3"> 
+            <label xid="label12" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('politics')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col29" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input10" data-bind="component:{ref:uData.ref('politics'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col19" __cid="ceuAfE3"> 
+            <label xid="label6" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('marry')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col20" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input12" data-bind="component:{ref:uData.ref('marry'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col21" __cid="ceuAfE3"> 
+            <label xid="label13" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('family')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col30" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input13" data-bind="component:{ref:uData.ref('family'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col22" __cid="ceuAfE3"> 
+            <label xid="label7" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('Household')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col23" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input14" data-bind="component:{ref:uData.ref('Household'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col24" __cid="ceuAfE3"> 
+            <label xid="label14" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:uData.label('live')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col31" __cid="ceuAfE3"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control ceuAfE3" xid="input15" data-bind="component:{ref:uData.ref('live'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col35" __cid="ceuAfE3"> 
+            <label xid="label15" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('desc')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col36" __cid="ceuAfE3"> 
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control ceuAfE3" xid="textarea2" style="width:60%;height:80px;" data-bind="component:{ref:uData.ref('desc'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col ceuAfE3" xid="col32" __cid="ceuAfE3"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right ceuAfE3" xid="addBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&quot;label&quot;:&quot;保存&quot;}" __cid="ceuAfE3"> 
+              <i xid="i1" __cid="ceuAfE3" class="ceuAfE3"/>  
+              <span xid="span2" __cid="ceuAfE3" class="ceuAfE3">保存</span> 
+            </a> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col33" __cid="ceuAfE3"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ceuAfE3" xid="regest" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:regestClick" data-config="{&quot;label&quot;:&quot;重置&quot;}" __cid="ceuAfE3"> 
+              <i xid="i2" __cid="ceuAfE3" class="ceuAfE3"/>  
+              <span xid="span3" __cid="ceuAfE3" class="ceuAfE3">重置</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group2 ceuAfE3" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;信息展示&quot;}" __cid="ceuAfE3"> 
+    <div class="x-control-group-title ceuAfE3" xid="controlGroupTitle2" __cid="ceuAfE3"> 
+      <span xid="span6" __cid="ceuAfE3" class="ceuAfE3">信息展示</span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row11" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+      <div class="x-col x-col-fixed ceuAfE3" xid="col51" style="height:auto;width:auto;" __cid="ceuAfE3"> 
+        <img src="@justepContextPath@/v_5edbd72fa5f94a1ab939ebac14338351l_zh_CNs_desktopd_pc/demo/pcSample/forms/img/1.jpg" alt="" xid="image2" __cid="ceuAfE3" class="ceuAfE3"/> 
+      </div>  
+      <div class="x-col ceuAfE3" xid="col52" style="height:100%;" __cid="ceuAfE3"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row14" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col48" __cid="ceuAfE3"> 
+            <label xid="label28" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('name')">label</label> 
+          </div>  
+          <div class="x-col  ceuAfE3" xid="col47" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output1" data-bind="component:{ref:userData.ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col50" __cid="ceuAfE3"> 
+            <label xid="label27" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('sex')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col61" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output2" data-bind="component:{ref:userData.ref('sex'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row15" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col49" __cid="ceuAfE3"> 
+            <label xid="label29" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('uname')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col60" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output3" data-bind="component:{ref:userData.ref('uname'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col58" __cid="ceuAfE3"> 
+            <label xid="label26" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('age')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col54" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output4" data-bind="component:{ref:userData.ref('age'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col3" __cid="ceuAfE3"> 
+            <label xid="label30" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('height')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col40" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output6" data-bind="component:{ref:userData.ref('height'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col39" __cid="ceuAfE3"> 
+            <label xid="label20" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('IDcode')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col53" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output5" data-bind="component:{ref:userData.ref('IDcode'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col38" __cid="ceuAfE3"> 
+            <label xid="label25" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('birthday')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col37" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output7" data-bind="component:{ref:userData.ref('birthday'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col44" __cid="ceuAfE3"> 
+            <label xid="label16" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('vocation')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col56" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output8" data-bind="component:{ref:userData.ref('vocation'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col43" __cid="ceuAfE3"> 
+            <label xid="label24" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('culture')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col42" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output9" data-bind="component:{ref:userData.ref('culture'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col41" __cid="ceuAfE3"> 
+            <label xid="label17" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('politics')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col55" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output10" data-bind="component:{ref:userData.ref('politics'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row19" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col34" __cid="ceuAfE3"> 
+            <label xid="label23" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('marry')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col45" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output11" data-bind="component:{ref:userData.ref('marry'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col46" __cid="ceuAfE3"> 
+            <label xid="label18" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('family')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col63" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output12" data-bind="component:{ref:userData.ref('family'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col59" __cid="ceuAfE3"> 
+            <label xid="label22" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('Household')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col57" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output13" data-bind="component:{ref:userData.ref('Household'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div>  
+          <div class="x-col x-col-10 ceuAfE3" xid="col62" __cid="ceuAfE3"> 
+            <label xid="label19" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('live')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col64" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output14" data-bind="component:{ref:userData.ref('live'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row ceuAfE3" xid="row20" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceuAfE3"> 
+          <div class="x-col x-col-10 ceuAfE3" xid="col67" __cid="ceuAfE3"> 
+            <label xid="label21" class="pull-right ceuAfE3" __cid="ceuAfE3" data-bind="text:userData.label('desc')">label</label> 
+          </div>  
+          <div class="x-col ceuAfE3" xid="col66" __cid="ceuAfE3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output ceuAfE3" xid="output15" data-bind="component:{ref:userData.ref('desc'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceuAfE3"/> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>
